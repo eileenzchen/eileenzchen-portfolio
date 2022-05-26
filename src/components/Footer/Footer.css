@@ -1,0 +1,16 @@
+footer {
+  color: #FFFFFF;
+  font-size: 12px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  background-color: #D2B597;
+}
+
+.social-icon {
+  margin-right: 15px;
+  width: 44px;
+}
+
+.footer-text {
+  margin-top: 20px;
+}

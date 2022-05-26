@@ -1,0 +1,41 @@
+.polaroid {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: inline-block;
+  background: #ffffff;
+  padding: 25px;
+  text-align: center;
+  filter: drop-shadow(1px 4px 6px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+
+.polaroid:before {
+  width: 50%;
+  height: 30px;
+  display: block;
+  content: "";
+  background: rgba(146, 173, 112, 0.5);
+  transform: translateX(50%) translateY(calc(-50% - 25px));
+}
+
+
+.polaroid a {
+  text-decoration: none;
+  color: #3D2309;
+}
+
+img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.aspectRatioRegular {
+  aspect-ratio: 4/3;
+}
+
+.aspectRatioWide {
+  aspect-ratio: 16/9;
+}

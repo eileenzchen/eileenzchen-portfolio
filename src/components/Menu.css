@@ -1,0 +1,9 @@
+#Menu {
+  position:fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.MenuItem {
+  margin-bottom: 10px;
+}

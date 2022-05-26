@@ -1,0 +1,6 @@
+.PreviewImage {
+  max-width: 100%;
+  object-fit: fill;
+  justify-content: center;
+}
+
