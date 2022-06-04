@@ -1,15 +1,16 @@
 import React from 'react'
 import './Button.css';
+import {Link} from 'react-router-dom'
 
 
 function Button(props) {
 
-  return (      
-    <a href={props.buttonLink} target={props.target}>
+  return (  
+    <Link to={props.buttonLink} target={props.target}>
       <button className="monospace-500">
         {props.buttonText}
       </button>
-    </a>
+    </Link> 
   )
 }
 

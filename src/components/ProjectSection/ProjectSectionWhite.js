@@ -2,7 +2,7 @@ import React from 'react'
 import { Grid, Container } from '@mui/material';
 import Button from '../Button/Button.js';
 import Polaroid from '../Polaroid/Polaroid.js';
-import tonysImage from '../../images/me_w_tonys_pizza.JPG';
+import ProjectSummary from './ProjectSummary.js'
 import './ProjectSection.css';
 
 
@@ -12,31 +12,12 @@ function ProjectSectionWhite(props) {
       <Container maxWidth="lg">
         <Grid container columns={12} rowSpacing={0} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
 
+        <Grid item xs={0} md={1}></Grid>
+
           {/* project description */}
-          <Grid item xs={12} md={5} justifyContent="right">
+          <Grid item xs={12} md={4}>
             <div className="dividerTan"></div>
-            <table>
-              <tr>
-                <td className="monospace-500">role</td>
-                <td className="monospace-400">{props.projectProps.desc.role}</td>
-              </tr>
-              <tr>
-                <td className="monospace-500">team</td>
-                <td className="monospace-400">{props.projectProps.desc.team}</td>
-              </tr>
-              <tr>
-                <td className="monospace-500">skills</td>
-                <td className="monospace-400">{props.projectProps.desc.skills}</td>
-              </tr>
-              <tr>
-                <td className="monospace-500">tools</td>
-                <td className="monospace-400">{props.projectProps.desc.tools}</td>
-              </tr>
-              <tr>
-                <td className="monospace-500">duration</td>
-                <td className="monospace-400">{props.projectProps.desc.duration}</td>
-              </tr>
-            </table>
+            <ProjectSummary desc={props.projectProps.desc}/>
             <Button buttonText={props.projectProps.button.buttonText} buttonLink={props.projectProps.button.buttonLink} target={props.projectProps.button.target}></Button>
           </Grid>
 

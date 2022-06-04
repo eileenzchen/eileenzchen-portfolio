@@ -1,5 +1,6 @@
 // https://medium.com/the-coders-guide-to-javascript/smooth-scrolling-anchor-menu-in-reactjs-175030d0bce2
 import React, { useState, useEffect } from 'react';
+import './MenuItem.css'
 
 /*
  * A single menu item
@@ -43,9 +44,8 @@ const MenuItem = ({ itemName, linkClass }) => {
       <div className="MenuItem">
         <a href={`#${itemName}`}
          onClick={handleClick}
-         className={linkClass}
          aria-label={`Scroll to ${itemName}`}>
-          {itemName}
+           <p className={`monospace-300 ${linkClass}`}>{itemName}</p>
         </a>
       </div>
   );

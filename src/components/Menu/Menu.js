@@ -3,29 +3,30 @@ import React, { useState, useEffect, useCallback } from 'react';
 
 import MenuItem from './MenuItem';
 import './Menu.css';
+import './MenuItem.css'
 
 /*
  * The list of our Menu Titles (Sections) as keys, with their
  * Y-pixel position on the page as the values
  * 'About' generically references the top of the page
  */
-const menuItems = {
-  About: 0,
-  Project1Preview: null,
-  Project2Preview: null,
-  Project3Preview: null,
-  Project4Preview: null
-}
+// const menuItems = {
+//   About: 0,
+//   Project1Preview: null,
+//   Project2Preview: null,
+//   Project3Preview: null,
+//   Project4Preview: null
+// }
 
 /*
  * Our menu component
  */
-const Menu = () => {
+const Menu = ({menuItems}) => {
   /*
    * Store the active menuItem in state to force update
    * when changed
    */
-  const [activeItem, setActiveItem] = useState('About')
+  const [activeItem, setActiveItem] = useState('Intro')
   
   /*
     * Determine which section the user is viewing, based on their scroll-depth
@@ -44,14 +45,30 @@ const Menu = () => {
       * If your items are out-of-order, this code will not function correctly
       */
     for (const section in menuItems) {
-      curSection = menuItems[section] >= curPos ? section : curSection
-      if (curSection !== section) {
-        break
+      if (document.getElementById(section)){
+        const rect = document.getElementById(section).getBoundingClientRect();
+
+        if (curPos < rect.bottom) {
+          curSection = section
+        }
       }
+
+      // curSection = menuItems[section] >= curPos ? section : curSection
+      // console.log("start");
+      // console.log(curPos);
+      // console.log(menuItems[section]);
+      // console.log(curSection);
+      // if (curSection !== section) {
+      //   break
+      // }
+
     }
     if (curSection !== activeItem) {
       setActiveItem(curSection)
     }
+
+
+    // console.log(activeItem);
   }, [activeItem]);
 
   /*
@@ -64,16 +81,17 @@ const Menu = () => {
       window.innerHeight || 0
     );
     for (const key in menuItems) {
-      menuItems[key] =
+      if (document.getElementById(key)){
+        menuItems[key] =
         document.getElementById(key).getBoundingClientRect().top + curScroll;
+      }
     }
-    console.log(menuItems);
-    const bottom = document.body.offsetHeight;
+    // const bottom = document.body.offsetHeight;
     // handleScroll();
   }, []);
 
   /*
-   * The MutationObserver allows us to watch for a f,ew different
+   * The MutationObserver allows us to watch for a few different
    * events, including page resizing when new elements might be 
    * added to the page (potentially changing the location of our 
    * anchor points)
@@ -82,19 +100,22 @@ const Menu = () => {
    */
   useEffect(() => {
 
-    const observer = new MutationObserver(getAnchorPoints);
-    observer.observe(document.getElementById('root'), {
-      childList: true,
-      subtree: true,
-    });
+    // const observer = new MutationObserver(getAnchorPoints);
+    // observer.observe(document.getElementById('root'), {
+    //   childList: true,
+    //   subtree: true,
+    // });
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', getAnchorPoints);
+    window.addEventListener('resize', handleScroll);
+    window.addEventListener('resize', getAnchorPoints);
   }, [getAnchorPoints, handleScroll]);
 
   /*
    * Create the list of MenuItems based on the menuItems object we have defined above
    */
   const menuList = Object.keys(menuItems).map((e, i) => 
-    <MenuItem itemName={e} key={`menuitem_${i}`} linkClass={e === activeItem ? "activeItem" : "inactiveItem"} />
+    <MenuItem itemName={e} key={`menuitem_${i}`} linkClass={e === activeItem ? "link activeItem" : "link"} />
   )
 
   /*

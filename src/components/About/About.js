@@ -7,7 +7,7 @@ import Resume from '../../images/EileenZChen_Resume.pdf';
 
 function About() {
   return (
-    <div className="heading-text">
+    <div style={{marginBottom: 30}}>
       <Container maxWidth="lg">
         <Grid container columns={12} rowSpacing={0} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
 
@@ -43,7 +43,7 @@ function About() {
         {/* polaroid */}
         <Grid item xs={12} md={4}>
           <Polaroid 
-            linkUrl="#" 
+            linkUrl="/" 
             imageUrl={tonysImage} 
             alt="Me with Tony's Pizza"
             polaroidTitle="Tony's Pizza ~ 5.4.22"

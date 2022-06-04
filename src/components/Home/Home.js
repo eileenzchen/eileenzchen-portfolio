@@ -1,15 +1,14 @@
 import React from 'react'
-import Menu from '../Menu.js'
-import { Grid } from '@mui/material';
 import About from '../About/About.js';
 import ProjectSectionTan from '../ProjectSection/ProjectSectionTan.js';
 import ProjectSectionWhite from '../ProjectSection/ProjectSectionWhite.js'
+import tonysImage from '../../images/me_w_tonys_pizza.JPG'
 
 function Home() {
   const project1Props = {
     polaroid: {
       linkUrl: "#",
-      imageUrl: "../../images/me_w_tonys_pizza.JPG",
+      imageUrl: tonysImage,
       alt: "asdfjkl",
       polaroidTitle: "asjdflk;",
       polaroidDescription: "asdfjkl",
@@ -23,8 +22,8 @@ function Home() {
       duration: "qwejfio;"
     },
     button: {
-      buttonText: "read more about What2Yum",
-      buttonLink: "#",
+      buttonText: "learn more",
+      buttonLink: "/project1",
       target: "_self"
     }
   }
@@ -32,7 +31,7 @@ function Home() {
   const project2Props = {
     polaroid: {
       linkUrl: "#",
-      imageUrl: "../../images/me_w_tonys_pizza.JPG",
+      imageUrl: tonysImage,
       alt: "asdfjkl",
       polaroidTitle: "asjdflk;",
       polaroidDescription: "asdfjkl",
@@ -46,7 +45,7 @@ function Home() {
       duration: "qwejfio;"
     },
     button: {
-      buttonText: "read more about What2Yum",
+      buttonText: "learn more",
       buttonLink: "#",
       target: "_self"
     }
@@ -55,7 +54,7 @@ function Home() {
   const project3Props = {
     polaroid: {
       linkUrl: "#",
-      imageUrl: "../../images/me_w_tonys_pizza.JPG",
+      imageUrl: tonysImage,
       alt: "asdfjkl",
       polaroidTitle: "asjdflk;",
       polaroidDescription: "asdfjkl",
@@ -69,7 +68,7 @@ function Home() {
       duration: "qwejfio;"
     },
     button: {
-      buttonText: "read more about What2Yum",
+      buttonText: "learn more",
       buttonLink: "#",
       target: "_self"
     }
@@ -78,7 +77,7 @@ function Home() {
   const project4Props = {
     polaroid: {
       linkUrl: "#",
-      imageUrl: "../../images/me_w_tonys_pizza.JPG",
+      imageUrl: tonysImage,
       alt: "asdfjkl",
       polaroidTitle: "asjdflk;",
       polaroidDescription: "asdfjkl",
@@ -92,7 +91,7 @@ function Home() {
       duration: "qwejfio;"
     },
     button: {
-      buttonText: "read more about What2Yum",
+      buttonText: "learn more",
       buttonLink: "#",
       target: "_self"
     }

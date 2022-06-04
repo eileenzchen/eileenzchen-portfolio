@@ -4,7 +4,7 @@ import './Polaroid.css';
 
 function Polaroid(props) {
 
-  const photo = require(props.imageUrl).default;
+  // const photo = require(props.imageUrl).default;
 
   return (
     <>
@@ -13,7 +13,7 @@ function Polaroid(props) {
       
       <a href={props.linkUrl}>
 
-        <img src={photo} alt={props.alt} title={props.alt} className={props.aspectRatio}></img>
+        <img src={props.imageUrl} alt={props.alt} title={props.alt} className={props.aspectRatio}></img>
         <div className="polaroidText">
           <p className="monospace-500">{props.polaroidTitle}</p>
           <p className="monospace-300">{props.polaroidDescription}</p>

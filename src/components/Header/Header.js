@@ -6,7 +6,7 @@ function Header() {
   return (      
     <header>
       <Container maxWidth="lg">
-          <a href="#">
+          <a href="/">
             <p className="monospace-200 header-name">Eileen Z Chen</p>
             <p className="monospace-400 header-subheading">designer x engineer</p>
           </a>
