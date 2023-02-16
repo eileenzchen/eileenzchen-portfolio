@@ -1,5 +1,5 @@
 #Menu {
-  position:fixed;
+  position:sticky;
   top: 50%;
   transform: translateY(-50%);
 }

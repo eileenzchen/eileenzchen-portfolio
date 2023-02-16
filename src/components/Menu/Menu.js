@@ -22,6 +22,22 @@ import './MenuItem.css'
  * Our menu component
  */
 const Menu = ({menuItems}) => {
+  const menuNameMappings = {
+    Intro: "intro",
+    Summary: "summary",
+    Problem: "problem space",
+    IdeationValueProp: "value proposition",
+    IdeationFeatures: "features & interactions",
+    WireframesTesting: "wireframes & testing",
+    FeaturePrioritization: "feature prioritization",
+    WorkingWithinConstraints: "working within constraints",
+    FinalPitch: "final pitch",
+    Learnings: "learnings & reflection",
+    QuickSketches: "quick sketches",
+    PersonasUseCases: "personas & use cases",
+    ContextualizingDesign: "placing the design in context",
+    Interplay: "interplay between design & engineering"
+  }
   /*
    * Store the active menuItem in state to force update
    * when changed
@@ -115,7 +131,7 @@ const Menu = ({menuItems}) => {
    * Create the list of MenuItems based on the menuItems object we have defined above
    */
   const menuList = Object.keys(menuItems).map((e, i) => 
-    <MenuItem itemName={e} key={`menuitem_${i}`} linkClass={e === activeItem ? "link activeItem" : "link"} />
+    <MenuItem itemName={e} key={`menuitem_${i}`} displayName={menuNameMappings[e]} linkClass={e === activeItem ? "link activeItem" : "link"} />
   )
 
   /*

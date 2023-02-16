@@ -7,7 +7,7 @@ import './MenuItem.css'
  * I deconstruct props to provide more readable code, allowing
  * any future coders to see exactly what props are expected
  */
-const MenuItem = ({ itemName, linkClass }) => {
+const MenuItem = ({ itemName, linkClass, displayName }) => {
   /*
    * Store our anchorTarget in state
    * We do not set it here, preferring to wait for after the component
@@ -45,7 +45,7 @@ const MenuItem = ({ itemName, linkClass }) => {
         <a href={`#${itemName}`}
          onClick={handleClick}
          aria-label={`Scroll to ${itemName}`}>
-           <p className={`monospace-300 ${linkClass}`}>{itemName}</p>
+           <p><span className={`monospace-400 ${linkClass}`}>{displayName}</span></p>
         </a>
       </div>
   );

@@ -6,11 +6,13 @@ import {Link} from 'react-router-dom'
 function Button(props) {
 
   return (  
-    <Link to={props.buttonLink} target={props.target}>
-      <button className="monospace-500">
-        {props.buttonText}
-      </button>
-    </Link> 
+    <div className="buttonWrapper">
+      <Link to={props.buttonLink} target={props.target}>
+        <button className="monospace-500 drop-shadow drop-shadow-hover">
+          {props.buttonText}
+        </button>
+      </Link> 
+    </div>
   )
 }
 

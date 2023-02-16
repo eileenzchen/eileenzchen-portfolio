@@ -1,0 +1,18 @@
+/* .menuBlock:hover p {
+  color: #3D2309;
+}
+
+@media (hover: none) and (max-width: 600px) {
+  .menuBlock p {
+    color: #3D2309;
+  }
+} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500&family=Roboto:wght@100;300;400&display=swap');
+
+@media (max-width: 900px) {
+  .menuBlock {
+    display: none;
+  }
+}
+
+/* add mobile menu on lower right corner where it can expand to go to diff sections */

@@ -1,22 +1,27 @@
-import React from 'react'
-import { Grid } from '@mui/material';
+import React, { useEffect } from 'react';
+import Aos from "aos";
+import 'aos/dist/aos.css';
 import './Polaroid.css';
+import ModalImage from "react-modal-image";
 
 function Polaroid(props) {
 
   // const photo = require(props.imageUrl).default;
+  const hrefAttribute = props.linkUrl ? {href: props.linkUrl} : {};
+
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  }, []);
 
   return (
     <>
-    <div className="polaroid">
-      {/* <div className="tape"></div> */}
+    <div data-aos="fade-up" className="polaroid">
       
-      <a href={props.linkUrl}>
-
+      <a {...hrefAttribute}>
         <img src={props.imageUrl} alt={props.alt} title={props.alt} className={props.aspectRatio}></img>
         <div className="polaroidText">
-          <p className="monospace-500">{props.polaroidTitle}</p>
-          <p className="monospace-300">{props.polaroidDescription}</p>
+          <p className="monospace-500 title">{props.polaroidTitle}</p>
+          <p className="monospace-300 description">{props.polaroidDescription}</p>
         </div>
         
       </a>
@@ -24,7 +29,7 @@ function Polaroid(props) {
     </div>
   </>
     
-  )
+  );
 }
 
 export default Polaroid 

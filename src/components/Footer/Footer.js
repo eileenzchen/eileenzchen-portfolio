@@ -9,9 +9,9 @@ function Footer() {
   return (      
     <footer>
       <Container maxWidth="lg">
-        <a href="https://www.linkedin.com/in/eileenzchen/" target="_blank"><LinkedIn className="social-icon"/></a>
-        <a href="mailto:ezch09@gmail.com" target="_blank"><Email className="social-icon"/></a>
-        <a href="https://github.com/eileenzchen" target="_blank"><Github className="social-icon"/></a>
+        <a href="https://www.linkedin.com/in/eileenzchen/" target="_blank" rel="noopener noreferrer"><LinkedIn className="social-icon"/></a>
+        <a href="mailto:ezch09@gmail.com" target="_blank" rel="noopener noreferrer"><Email className="social-icon"/></a>
+        <a href="https://github.com/eileenzchen" target="_blank" rel="noopener noreferrer nofollow"><Github className="social-icon"/></a>
         <p className="monospace-500 footer-text">© 2022 designed 🎨 and coded 👩🏻‍💻 by Eileen Chen with React and Material UI.</p>
       </Container>
     </footer>

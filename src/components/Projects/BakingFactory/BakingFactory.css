@@ -1,0 +1,37 @@
+@media (max-width: 900px) {
+  .menuBlock {
+    display: none;
+  }
+}
+
+table {
+  margin: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: 600;
+}
+
+.useCases th, .useCases td {
+  padding: 10px;
+}
+
+td {
+  font-weight: 300;
+}
+
+.tr-dark {
+  background-color: #efdac5;
+}
+.tr-light {
+  background-color: #f9f1ea;
+}
+
+/* .drop-shadow {
+  filter: drop-shadow(1px 4px 6px rgba(0, 0, 0, 0.25));
+}
+.drop-shadow:hover {
+  filter: drop-shadow(1px 6px 8px rgba(0, 0, 0, 0.4));
+} */
+
