@@ -2,7 +2,7 @@ import React from 'react'
 import About from './About/About.js';
 import ProjectSectionTan from './ProjectSection/ProjectSectionTan.js';
 import ProjectSectionWhite from './ProjectSection/ProjectSectionWhite.js';
-import tonysImage from '../../images/me_w_tonys_pizza.jpg';
+import tonysImage from './assets/me_w_tonys_pizza.jpg';
 import what2yumPreview from '../Projects/What2Yum/assets/what2yum_preview.png';
 import bakingFactoryPreview from '../Projects/BakingFactory/assets/baking-factory-preview.png'
 

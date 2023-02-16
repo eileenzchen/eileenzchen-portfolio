@@ -4,7 +4,7 @@ import Polaroid from '../../../components/Polaroid/Polaroid.js';
 import Button from '../../../components/Button/Button.js';
 // @ts-ignore
 import resume from '../../../images/EileenZChen_resume.pdf';
-import tonysImage from '../../../images/me_w_tonys_pizza.jpg';
+import tonysImage from '../assets/me_w_tonys_pizza.jpg';
 import './About.css'
 
 
