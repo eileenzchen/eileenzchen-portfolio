@@ -33,19 +33,19 @@ export function Summary() {
   return (
     <div id="Summary">
       <h1><span className="section-title highlight">summary</span></h1>
-      <h2>problem</h2>
+      <p className="subheading">problem</p>
       <p>
         Bakeries get hundreds of orders a day and there are often inefficiencies in the way orders are delivered. How can we build an ecommerce platform that aligns the business and consumer needs that meet the day-to-day operational needs of a bakery? 
       </p>
-      <h2>solution</h2>
+      <p className="subheading">solution</p>
       <p>
         I implemented a central bakery web application where customers and employees alike can authenticate and easily complete and track their orders. 
       </p>
-      <h2>role</h2>
+      <p className="subheading">role</p>
       <p>
         I designed and developed the entire web application starting from database and user interaction design to implementation.
       </p>
-      <h2>growth</h2>
+      <p className="subheading">growth</p>
       <p>
         Through this project, I not only learned how to quickly iterate and develop in sprints, but also learned how to empathize with different users' needs and motivations. 
       </p>
@@ -352,7 +352,7 @@ export function Learnings() {
   return (
     <div id="Learnings">
       <h1><span className="section-title highlight">learnings & reflection</span></h1>
-      <h2>Learnings</h2>
+      <p className="subheading">Learnings</p>
       <p><b>1. Understanding user motivation is key</b></p>
       <p>
         Use cases tie user needs with technical system requirements, but are not insightful about why a user is coming to the site and how to engage users. I started empathizing with the customers more and understanding how to present certain information so that users get where they want to be and we get users where we want them to be in the easiest way.
@@ -361,7 +361,7 @@ export function Learnings() {
       <p>
         Although there are design patterns and general rules and practices, it does not mean it applies in every situation. Hero banners may be great for marketing a single mobile app with a download button, but are not effective for a bakery app with many items.
       </p>
-      <h2>What I would do differently</h2>
+      <p className="subheading">What I would do differently</p>
       <p><b>1. Conduct thorough user testing</b></p>
       <p>
         With more time, I would have conducted thorough user testing to see how efficiently and smoothly users would have been able to accomplish certain tasks like changing the price of an item for admins and how to buy a previous item again for customers.

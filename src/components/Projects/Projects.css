@@ -1,8 +1,9 @@
 .videoContainer {
+  margin-top: 10px;
   position: relative;
   width: 100%;
   height: 0;
-  padding-bottom: 56.25%;
+  padding-bottom: 50%;
 }
 .video {
   position: absolute;
@@ -18,6 +19,14 @@
   margin-right: auto;
 }
 
-h2 {
+.subheading {
   font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  margin-top: 36px;
+}
+
+p {
+  margin-block-start: 0.75em;
+  margin-block-end: 0.75em;
 }

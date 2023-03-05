@@ -13,29 +13,20 @@ function What2Yum() {
         <Grid container columns={16} columnSpacing={12}>
           <Grid className="menuBlock" item sm={0} md={3}>
             <Menu menuItems={{
-              Intro:null, 
-              Summary:null, 
-              Problem:null, 
-              IdeationValueProp: null,
-              IdeationFeatures: null,
-              WireframesTesting: null,
-              FeaturePrioritization: null,
-              WorkingWithinConstraints: null,
-              FinalPitch: null,
-              Learnings: null
+              Summary: null, 
+              Problem: null, 
+              CompetitiveAnalysis: null,
+              SolutionExploration: null,
+              FinalDesign: null,
               }}></Menu>
           </Grid>
           <Grid item sm={16} md={10} sx={{pb:10}}>
             <What2YumContent.Intro/>
             <What2YumContent.Summary/>
             <What2YumContent.Problem/>
-            <What2YumContent.IdeationValueProp/>
-            <What2YumContent.IdeationFeatures/>
-            <What2YumContent.WireframesTesting/>
-            <What2YumContent.FeaturePrioritization/>
-            <What2YumContent.WorkingWithinConstraints/>
-            <What2YumContent.FinalPitch/>
-            <What2YumContent.Learnings/>
+            <What2YumContent.CompetitiveAnalysis/>
+            <What2YumContent.SolutionExploration/>
+            <What2YumContent.FinalDesign/>
           </Grid>
         </Grid>
       </Container>
