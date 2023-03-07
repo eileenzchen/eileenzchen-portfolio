@@ -235,8 +235,6 @@ export function FinalDesign() {
         style={{marginTop: "30px"}}
         className="swiper-container"
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-        // spaceBetween={20}
-        slidesPerView={2}
         loop
         centeredSlides={true}
         centeredSlidesBounds={true}
@@ -245,6 +243,7 @@ export function FinalDesign() {
           clickable: true,
           el: '.swiper-custom-pagination',
         }}
+        slidesPerView={1}
         followFinger
         onSlideChange={
           () =>  playPauseVideo()
@@ -330,6 +329,7 @@ async function playPauseVideo() {
   const activeSlide = document.querySelector(".swiper-slide-active");
   if (activeSlide) {
     const activeSlideVideo = activeSlide.getElementsByTagName('video')[0];
+    activeSlideVideo.currentTime = 0;
     activeSlideVideo.play();
   }
 }
