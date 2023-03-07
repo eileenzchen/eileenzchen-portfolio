@@ -5,7 +5,7 @@ import ModalImage from "react-modal-image";
 import * as Assets from './assets'
 import './What2Yum.css'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
-import { Swiper, SwiperSlide } from 'swiper/react/swiper-react'
+import { Swiper, SwiperSlide } from 'swiper/react'
 // Import Swiper styles
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
