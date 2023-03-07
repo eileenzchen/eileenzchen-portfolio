@@ -325,24 +325,24 @@ export function Interplay() {
        For example, when an order is placed or the credit card number is invalid during checkout, customers receive a notification within the site to inform them of the result of their action. This notification pattern provides users feedback that their actions match their mental model of how the ecommerce system works, instills confidence in their actions, and builds trust in the system. 
       </p>
 
-      <video className="drop-shadow" width="100%" height="auto" style={{marginTop: "30px", marginBottom: "30px"}} autoPlay loop muted>
+      <video className="drop-shadow" width="100%" height="auto" style={{marginTop: "30px", marginBottom: "30px"}} autoPlay loop muted playsInline>
         <source src={Assets.InvalidCC} type="video/mp4" />
       </video>
       <p>
         Given the number of items sold was a primary KPI for the owners, I also thought about how to empower customers to easily add items to their cart. If a user comes back to the Baking Factory, they likely enjoyed what they bought before, and thus I positioned the customer’s last order at the top of the page with “buy again” CTAs to easily add their previously bought items to cart. For discoverability of new products, there is a search bar and a featured product of the week.  
       </p>
-      <video className="drop-shadow" width="100%" height="auto" style={{marginTop: "30px", marginBottom: "30px"}} autoPlay loop muted>
+      <video className="drop-shadow" width="100%" height="auto" style={{marginTop: "30px", marginBottom: "30px"}} autoPlay loop muted playsInline>
         <source src={Assets.BuyAgain} type="video/mp4" />
       </video>
       <p>
         Bakers and shippers come to the Baking Factory for the very specific purpose of tracking what to bake and what to ship, so the UI is kept very simple. For shippers, the two tabs allow them to easily filter between what is shipped and what needs to be shipped. Furthermore, an inline CTA allows them to mark and unmark items as shipped through just one click. For bakers, they have categorized tabs that show them what needs to be baked that day.
       </p>
 
-      <video className="drop-shadow" width="100%" height="auto" style={{marginTop: "30px"}} autoPlay loop muted>
+      <video className="drop-shadow" width="100%" height="auto" style={{marginTop: "30px"}} autoPlay loop muted playsInline>
         <source src={Assets.Shipper} type="video/mp4" />
       </video>
       <caption style={{marginBottom: "30px"}}>shipper dashboard</caption>
-      <video className="drop-shadow" width="100%" height="auto" autoPlay loop muted>
+      <video className="drop-shadow" width="100%" height="auto" autoPlay loop muted playsInline>
         <source src={Assets.Baker} type="video/mp4" />
       </video>
       <caption style={{marginBottom: "30px"}}>baker dashboard</caption>
@@ -352,7 +352,7 @@ export function Interplay() {
       <p>
         The admins are also able to perform the most amount of actions, as we learned by listing out use cases. For example, they are able to update prices of items, add new items, and upload a picture for an item. They are also able to create, view, update, and/or delete orders, customers, addresses, and employees. With so many functionalities, I organized them in the navigation by buckets. 
       </p>
-      <video className="drop-shadow" width="100%" height="auto" style={{marginTop: "30px", marginBottom: "30px"}} autoPlay loop muted>
+      <video className="drop-shadow" width="100%" height="auto" style={{marginTop: "30px", marginBottom: "30px"}} autoPlay loop muted playsInline>
         <source src={Assets.AdminDashboard} type="video/mp4" />
       </video>
       <p>
@@ -361,7 +361,7 @@ export function Interplay() {
       <p>
         However, in certain cases, user flows are modified in order to make completing a frequent task easier. Updating an item price is something the admins would more frequently interact with than updating the name or weight of an item. So instead of embedding it in the edit item form, I brought the functionality out to the main item page. 
       </p>
-      <video className="drop-shadow" width="100%" height="auto" style={{marginTop: "30px", marginBottom: "30px"}} autoPlay loop muted>
+      <video className="drop-shadow" width="100%" height="auto" style={{marginTop: "30px", marginBottom: "30px"}} autoPlay loop muted playsInline>
         <source src={Assets.UpdatingItemPrice} type="video/mp4" />
       </video>
       <p>

@@ -282,7 +282,7 @@ export function FinalDesign() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="carousel-video-container">
-            <video className="carousel-video" loop muted>
+            <video className="carousel-video" loop muted playsInline>
               <source src={Assets.Suggestions} type="video/mp4" />
             </video>
           </div>
