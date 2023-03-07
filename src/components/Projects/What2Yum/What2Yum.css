@@ -73,7 +73,7 @@
   background: rgba(255, 255, 255, 1) !important;
   width: 60px !important;
   height: 80px !important;
-  margin-top: calc(0px - ((var(--swiper-navigation-size)) -2 / 2)) !important;
+  margin-top: -40px !important;
 }
 .swiper-button-prev {
   left: var(--swiper-navigation-sides-offset,-1px) !important;

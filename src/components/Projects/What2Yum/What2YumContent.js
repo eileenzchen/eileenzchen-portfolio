@@ -157,12 +157,12 @@ export function SolutionExploration() {
       </p>
       <Grid container columns={2} style={{marginTop: "30px", marginBottom: "30px"}}>
         <Grid item xs={2} sm={1} className="align-right">
-          <video className="small-asset" autoPlay loop muted>
+          <video className="small-asset" autoPlay loop muted playsInline>
             <source src={Assets.LofiSwipeGif} type="video/mp4" />
           </video>
         </Grid>
         <Grid item xs={2} sm={1} display="flex">
-          <video className="small-asset" autoPlay loop muted>
+          <video className="small-asset" autoPlay loop muted playsInline>
             <source src={Assets.LofiSyncSharingGif} type="video/mp4" />
           </video>
         </Grid>
@@ -253,7 +253,7 @@ export function FinalDesign() {
       >
         <SwiperSlide>
           <div className="carousel-video-container">
-            <video className="carousel-video" loop muted>
+            <video className="carousel-video" loop muted playsInline>
               <source src={Assets.AppLaunch} type="video/mp4" />
             </video>
           </div>
@@ -261,21 +261,21 @@ export function FinalDesign() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="carousel-video-container">
-            <video className="carousel-video" loop muted>
+            <video className="carousel-video" loop muted playsInline>
               <source src={Assets.Create} type="video/mp4" />
             </video>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="carousel-video-container">
-            <video className="carousel-video" loop muted>
+            <video className="carousel-video" loop muted playsInline>
               <source src={Assets.Join} type="video/mp4" />
             </video>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="carousel-video-container">
-            <video className="carousel-video" loop muted>
+            <video className="carousel-video" loop muted playsInline>
               <source src={Assets.Swipe} type="video/mp4" />
             </video>
           </div>
