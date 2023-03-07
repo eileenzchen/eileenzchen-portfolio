@@ -139,15 +139,10 @@ a:visited {
   color: #3D2309;
 }
 
-.content-link {
+.content-link, .content-link:visited {
   color: #637b46;
   font-weight: 500;
-  
-}
-
-.content-link:visited {
-  color: #637b46;
-  font-weight: 500;
+  text-decoration: underline;
 }
 
 blockquote {
@@ -178,7 +173,19 @@ b {
 }
 
 .__react_modal_image__header {
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-color: transparent !important;
+}
+
+.__react_modal_image__caption {
+  color: transparent;
+}
+
+.__react_modal_image__icon_menu {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.__react_modal_image__modal_container {
+  background-color: rgba(254, 254, 254, 0.75) !important;
 }
 
 
@@ -202,7 +209,7 @@ b {
 }
 
 .drop-shadow-hover-light:hover {
-  filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.08));
 }
 
 

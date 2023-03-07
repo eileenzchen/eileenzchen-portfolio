@@ -104,6 +104,8 @@ export function PersonasUseCases() {
         large={Assets.ERD}
         alt="entity relationship diagram"
         imageBackgroundColor="transparent"
+        hideDownload={true}
+        hideZoom={true}
       />
       </div>
       <caption>entity relationship diagram of The Baking Factory</caption>
@@ -129,6 +131,8 @@ export function QuickSketches() {
         large={Assets.Sketches}
         alt="baking factory initial sketches"
         imageBackgroundColor="transparent"
+        hideDownload={true}
+        hideZoom={true}
         />
       </div>
       <p>
@@ -169,6 +173,8 @@ export function ContextualizingDesign() {
           large={Assets.GuestHomeV1}
           alt="guest home midfi wireframe v1"
           imageBackgroundColor="transparent"
+          hideDownload={true}
+          hideZoom={true}
           />
         </Grid>
         <Grid item xs={2} sm={1}>
@@ -178,6 +184,8 @@ export function ContextualizingDesign() {
           large={Assets.CustomerDashboardV1}
           alt="customer dashboard midfi wireframe v1"
           imageBackgroundColor="transparent"
+          hideDownload={true}
+          hideZoom={true}
           />
         </Grid>
       </Grid>
@@ -197,6 +205,8 @@ export function ContextualizingDesign() {
           large={Assets.GuestHomeV2}
           alt="guest home midfi wireframe v2"
           imageBackgroundColor="transparent"
+          hideDownload={true}
+          hideZoom={true}
           />
         </Grid>
         <Grid item xs={2} sm={1}>
@@ -206,6 +216,8 @@ export function ContextualizingDesign() {
           large={Assets.CustomerDashboardV2}
           alt="customer dashboard midfi wireframe v2"
           imageBackgroundColor="transparent"
+          hideDownload={true}
+          hideZoom={true}
           />
         </Grid>
       </Grid>
@@ -219,6 +231,8 @@ export function ContextualizingDesign() {
           large={Assets.CartMidfi}
           alt="cart midfi wireframe"
           imageBackgroundColor="transparent"
+          hideDownload={true}
+          hideZoom={true}
           />
         </Grid>
         <Grid item xs={4} sm={1}>
@@ -228,6 +242,8 @@ export function ContextualizingDesign() {
           large={Assets.CheckoutMidfi}
           alt="checkout midfi wireframe"
           imageBackgroundColor="transparent"
+          hideDownload={true}
+          hideZoom={true}
           />
         </Grid>
         <Grid item xs={4} sm={1}>
@@ -237,6 +253,8 @@ export function ContextualizingDesign() {
           large={Assets.OrderDetailsMidfi}
           alt="order details midfi wireframe"
           imageBackgroundColor="transparent"
+          hideDownload={true}
+          hideZoom={true}
           />
         </Grid>
         <Grid item xs={4} sm={1}>
@@ -246,6 +264,8 @@ export function ContextualizingDesign() {
           large={Assets.OrdersMidfi}
           alt="all orders midfi wireframe"
           imageBackgroundColor="transparent"
+          hideDownload={true}
+          hideZoom={true}
           />
         </Grid>
       </Grid>
@@ -262,6 +282,8 @@ export function ContextualizingDesign() {
           large={Assets.PinkTheme}
           alt="pink color theme exploration"
           imageBackgroundColor="transparent"
+          hideDownload={true}
+          hideZoom={true}
           />
         </Grid>
         <Grid item xs={3} sm={1}>
@@ -271,6 +293,8 @@ export function ContextualizingDesign() {
           large={Assets.PinkWhiteTheme}
           alt="pink and white color theme exploration"
           imageBackgroundColor="transparent"
+          hideDownload={true}
+          hideZoom={true}
           />
         </Grid>
         <Grid item xs={3} sm={1}>
@@ -280,6 +304,8 @@ export function ContextualizingDesign() {
           large={Assets.BrownTheme}
           alt="tan color theme exploration"
           imageBackgroundColor="transparent"
+          hideDownload={true}
+          hideZoom={true}
           />
         </Grid>
       </Grid>

@@ -113,11 +113,12 @@ export function SolutionExploration() {
 
       <div style={{marginTop: "30px"}}>
         <ModalImage
-          
           small={Assets.PaperPrototypeV1}
           large={Assets.PaperPrototypeV1}
           alt="form filling paper prototype"
           imageBackgroundColor="transparent"
+          hideDownload={true}
+          hideZoom={true}
         />
       </div>
       <caption>my paper prototype - form filling</caption>
@@ -129,6 +130,8 @@ export function SolutionExploration() {
           large={Assets.PaperPrototypeV2}
           alt="Tinder swiping paper prototype"
           imageBackgroundColor="transparent"
+          hideDownload={true}
+          hideZoom={true}
         />
       </div>
       <caption style={{marginBottom: "30px"}}>teammate's paper prototype - Tinder-like swiping</caption>
@@ -146,6 +149,8 @@ export function SolutionExploration() {
         large={Assets.AsyncSyncFlow}
         alt="synchronous vs asynchronous user flow"
         imageBackgroundColor="transparent"
+        hideDownload={true}
+        hideZoom={true}
       />
       <p>
         We simulated interactions such as a user waiting for five others to join during the synchronous experience. We furthermore sent out a user servey to collect data on user behavior when deciding what to eat with friends as well as their preferred experience.
@@ -179,6 +184,8 @@ export function SolutionExploration() {
           large={Assets.HifiSwipeChoices}
           alt="swiping preferences vs picking out of two choices"
           imageBackgroundColor="transparent"
+          hideDownload={true}
+          hideZoom={true}
         />
       </div>
       <p>
@@ -195,6 +202,8 @@ export function SolutionExploration() {
             large={Assets.HifiSuggestionV1}
             alt="suggestion screen v1"
             imageBackgroundColor="transparent"
+            hideDownload={true}
+            hideZoom={true}
           />
         </Grid>
         <Grid item xs={2} sm={1} >
@@ -204,6 +213,8 @@ export function SolutionExploration() {
             large={Assets.HifiSuggestionV2}
             alt="suggestion screen v2"
             imageBackgroundColor="transparent"
+            hideDownload={true}
+            hideZoom={true}
           />
         </Grid>
       </Grid>
@@ -243,9 +254,10 @@ export function FinalDesign() {
         <SwiperSlide>
           <div className="carousel-video-container">
             <video className="carousel-video" loop muted>
-             <source src={Assets.AppLaunch} type="video/mp4" />
-           </video>
+              <source src={Assets.AppLaunch} type="video/mp4" />
+            </video>
           </div>
+          {/* <p style={{textAlign: "left", width: "70%"}}>launch animation with simple create and join event options, event history, and an intro to What2Yum for beginning users</p> */}
         </SwiperSlide>
         <SwiperSlide>
           <div className="carousel-video-container">
@@ -276,11 +288,13 @@ export function FinalDesign() {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className="swiper-custom-pagination"/>
+      <div style={{marginTop: "20px"}} className="swiper-custom-pagination"/>
+      
+      <p className="subheading">app store</p>
+      <p>Live in the <a href="https://apps.apple.com/us/app/what2yum/id1540868286" className="content-link" target="_blank" rel="noopener noreferrer">app store</a></p>
+      <img alt="app store screenshots" src={Assets.AppStore}></img>
 
-      <img alt="app store screenshots" src={Assets.AppStore} style={{marginTop: "30px", marginBottom: "30px"}}></img>
-
-      <p className="subheading">demo video</p>
+      <p className="subheading" style={{marginBottom: "20px"}}>demo video</p>
       <div className="videoContainer pitchContent">
         <iframe className="video" src="https://www.youtube.com/embed/8_s1joibork" title="What2Yum demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
