@@ -45,7 +45,7 @@ const MenuItem = ({ itemName, linkClass, displayName }) => {
         <a href={`#${itemName}`}
          onClick={handleClick}
          aria-label={`Scroll to ${itemName}`}>
-           <p><span className={`monospace-400 ${linkClass}`}>{displayName}</span></p>
+           <p><span className={`${linkClass}`}>{displayName}</span></p>
         </a>
       </div>
   );

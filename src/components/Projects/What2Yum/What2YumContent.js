@@ -70,6 +70,11 @@ export function Summary() {
       <p>
         Through this project, I learned the true meaning of the double diamond design model and how "going wide then narrow" applies to all phases of the product lifecycle. I also learned what draws users to mobile apps and how to leverage that to make a valuable, sustainable, and easy-to-use app. 
       </p>
+      <p className="subheading" style={{marginBottom: '20px'}}>promotional video</p>
+      <div className="videoContainer pitchContent">
+        <iframe className="video" src="https://www.youtube.com/embed/0OwvGgoA4-E" title="What2Yum video pitch" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+      </div>
+      <p>created by teammate Kevin Wang</p>
     </div>
   )
 }
@@ -288,20 +293,23 @@ export function FinalDesign() {
         </SwiperSlide>
       </Swiper>
       <div style={{marginTop: "20px"}} className="swiper-custom-pagination"/>
-      
-      <p className="subheading">app store</p>
-      <p>Live in the <a href="https://apps.apple.com/us/app/what2yum/id1540868286" className="content-link" target="_blank" rel="noopener noreferrer">app store</a></p>
-      <img alt="app store screenshots" src={Assets.AppStore}></img>
 
       <p className="subheading" style={{marginBottom: "20px"}}>demo video</p>
       <div className="videoContainer pitchContent">
         <iframe className="video" src="https://www.youtube.com/embed/8_s1joibork" title="What2Yum demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
-      <p className="subheading">promotional video</p>
-      <p>created by teammate Kevin Wang</p>
-      <div className="videoContainer pitchContent">
-        <iframe className="video" src="https://www.youtube.com/embed/0OwvGgoA4-E" title="What2Yum video pitch" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-      </div><br></br><br></br>
+
+      <p  style={{marginTop: "30px"}}>If you want to try it yourself, <a href="https://apps.apple.com/us/app/what2yum/id1540868286" className="content-link" target="_blank" rel="noopener noreferrer">download it on the app store today</a></p>
+      <ModalImage
+          small={Assets.AppStoreScreenshots}
+          large={Assets.AppStoreScreenshots}
+          alt="app store screenshots"
+          imageBackgroundColor="transparent"
+          hideDownload={true}
+          hideZoom={true}
+        />
+
+      <br></br><br></br>
       {/* <p className="subheading">keynote presentation deck</p>
       <div className="pitchContent">
         <a href={Assets.What2yumKeynote} target="_blank" rel="noopener noreferrer nofollow">

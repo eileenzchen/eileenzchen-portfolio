@@ -15,7 +15,8 @@ import HifiSuggestionV2 from './hifi-suggestions-v2.png';
 // import Join from './final-vids/joining-what2yum.mp4';
 // import Swipe from './final-vids/swiping-prefs.mp4';
 // import Suggestions from './final-vids/suggestions.mp4';
-import AppStore from './app-store-screenshots.png';
+import AppStoreScreenshots from './app-store-screenshots.png';
+import AppStore from './app-store.jpeg';
 import iPhone from './iphoneX.png';
 import iPhone13 from './iphone13pro.png';
 import AppLaunch from './final-vids-with-iphone/app-launch.mp4'
@@ -43,6 +44,7 @@ export {
   Join,
   Swipe,
   Suggestions,
+  AppStoreScreenshots,
   AppStore,
   iPhone,
   iPhone13
