@@ -46,6 +46,14 @@ export function Summary() {
       <p>
         I learned to <b>design for an actual product with business goals, user incentives, and pre-existing workflows & design systems</b>. I was not building something from scratch here; I had to put myself in the mindset of a Weee designer and leverage the systems in place while thinking creatively in order to effectively design for Weee's product needs and goals.
       </p>
+      <ModalImage
+        small={Assets.HomeHifi}
+        large={Assets.HomeHifi}
+        alt="hifi wireframes for the home and community pages"
+        imageBackgroundColor="transparent"
+        hideDownload={true}
+        hideZoom={true}
+      />
 
     </div>
   )
