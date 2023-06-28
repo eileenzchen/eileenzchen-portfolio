@@ -1,0 +1,11 @@
+@media (max-width: 900px) {
+  .menuBlock {
+    display: none;
+  }
+}
+
+.small-asset {
+  width: 100%;
+  height: auto;
+  padding: 10px 0 10px 0;
+}

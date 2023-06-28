@@ -1,6 +1,6 @@
 import React from 'react'
 import Polaroid from '../../Polaroid/Polaroid.js'
-import ProjectSummary from '../../ProjectSummary/ProjectSummary.js'
+import * as Assets from './assets'
 
 export function Intro() {
   const desc =  {
@@ -21,7 +21,6 @@ export function Intro() {
         polaroidTitle="replace"
         polaroidDescription="replace"
         aspectRatio="aspectRatioWide"/>
-      <ProjectSummary desc={desc} style={{fontSize: 12}}/>
     </div>
   )
 }

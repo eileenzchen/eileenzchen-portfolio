@@ -7,17 +7,24 @@ import './Fitvio.css'
 function Fitvio() {
   return (
     <>
-      <Container maxWidth="lg">
-        <Grid container columns={14}>
-          <Grid className="menuBlock" item sm={0} md={4}>
+      <Container className="project-content" maxWidth="xl">
+        <Grid container columns={16} columnSpacing={12}>
+          <Grid className="menuBlock" item sm={0} md={3}>
             <Menu menuItems={{
-              Intro:null, 
-
+              // Summary: null, 
+              // Problem: null, 
+              // CompetitiveAnalysis: null,
+              // SolutionExploration: null,
+              // FinalDesign: null,
               }}></Menu>
           </Grid>
-          <Grid item sm={14} md={10} sx={{pb:10}}>
-            <FitvioContent.Intro/>
-            
+          <Grid item sm={16} md={10} sx={{pb:10}}>
+            {/* <What2YumContent.Intro/>
+            <What2YumContent.Summary/>
+            <What2YumContent.Problem/>
+            <What2YumContent.CompetitiveAnalysis/>
+            <What2YumContent.SolutionExploration/>
+            <What2YumContent.FinalDesign/> */}
           </Grid>
         </Grid>
       </Container>

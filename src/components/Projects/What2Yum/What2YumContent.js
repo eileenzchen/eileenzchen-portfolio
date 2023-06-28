@@ -9,12 +9,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 // Import Swiper styles
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-// import 'swiper/css/scrollbar';
-// import 'swiper/swiper.min.css'
-// import 'swiper/swiper-bundle.min.css'
-// import 'swiper/modules/pagination/pagination.min.css'
 
 export function Intro() {
   const desc =  {
@@ -35,7 +29,6 @@ export function Intro() {
         polaroidTitle="What2Yum"
         polaroidDescription="Empowering friends and couples to decide where to eat within minutes——no bickering, no indecisiveness"
         aspectRatio="aspectRatioWide"/>
-      {/* <ProjectSummary desc={desc} style={{fontSize: 12}}/> */}
     </div>
   )
 }
@@ -55,7 +48,7 @@ export function Summary() {
       
       <p className="subheading">problem</p>
       <p>
-        We have all been in the ping pong situation of deciding where to eat, whether it is by ourselves, with a significant other, or with a group of friends. 
+        We have all been in the ping pong situation of deciding where to eat, whether it is by ourselves, with a significant other, or with a group of friends. How can we create an efficient and effective for people to decide what to eat together?
       </p>
       <p className="subheading">solution</p>
       <p>
@@ -199,30 +192,14 @@ export function SolutionExploration() {
       <p>
         Additionally through user testing, I discovered that people want more explainable suggestions. They want to know why those particular restaurant suggestions were shown in that order. I thus added ranking factors such as the number of people in the group that voted for the particular restaurant and the distance from the user's chosen location. I also made a couple iterations of the suggestions page to improve clarity and readability. I grouped each restaurant into its own card and restructured the flow of information.
       </p>
-      <Grid container columns={2} style={{marginTop: "30px", marginBottom: "30px", alignItems: "flex-start"}}>
-        <Grid item xs={2} sm={1} className="align-right">
-          <ModalImage
-            className="small-asset"
-            small={Assets.HifiSuggestionV1}
-            large={Assets.HifiSuggestionV1}
-            alt="suggestion screen v1"
-            imageBackgroundColor="transparent"
-            hideDownload={true}
-            hideZoom={true}
-          />
-        </Grid>
-        <Grid item xs={2} sm={1} >
-          <ModalImage
-            className="small-asset"
-            small={Assets.HifiSuggestionV2}
-            large={Assets.HifiSuggestionV2}
-            alt="suggestion screen v2"
-            imageBackgroundColor="transparent"
-            hideDownload={true}
-            hideZoom={true}
-          />
-        </Grid>
-      </Grid>
+      <ModalImage
+        small={Assets.HifiRecommendations}
+        large={Assets.HifiRecommendations}
+        alt="suggestion screens"
+        imageBackgroundColor="transparent"
+        hideDownload={true}
+        hideZoom={true}
+      />
     </div>
 
   )

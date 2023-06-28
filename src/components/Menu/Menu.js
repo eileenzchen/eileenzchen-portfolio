@@ -33,7 +33,14 @@ const Menu = ({menuItems}) => {
     QuickSketches: "quick sketches",
     PersonasUseCases: "personas & use cases",
     ContextualizingDesign: "placing the design in context",
-    Interplay: "interplay between design & engineering"
+    Interplay: "interplay between design & engineering",
+    BackgroundResearch: "background research",
+    UserResearch: "user research",
+    DesignPatterns: "analyzing design patterns",
+    Sketching: "sketching",
+    Wireframing: "wireframing",
+    PrototypingDetails: "refining & prototyping",
+    Challenges: "challenges & takeaways"
   }
   /*
    * Store the active menuItem in state to force update

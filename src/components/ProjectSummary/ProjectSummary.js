@@ -30,24 +30,24 @@ function ProjectSummary(props) {
       <table>
         <tbody>
           <tr>
-            <td className="monospace-500">role</td>
-            <td className="monospace-400">{roles}</td>
+            <td style={{fontWeight: 600, letterSpacing:1}}>role</td>
+            <td style={{letterSpacing:1}}>{roles}</td>
           </tr>
           <tr>
-            <td className="monospace-500">team</td>
-            <td className="monospace-400">{props.desc.team}</td>
+            <td style={{fontWeight: 600, letterSpacing:1}}>team</td>
+            <td style={{letterSpacing:1}}>{props.desc.team}</td>
           </tr>
           <tr>
-            <td className="monospace-500">skills</td>
-            <td className="monospace-400">{skills}</td>
+            <td style={{fontWeight: 600, letterSpacing:1}}>skills</td>
+            <td style={{letterSpacing:1}}>{skills}</td>
           </tr>
           <tr>
-            <td className="monospace-500">tools</td>
-            <td className="monospace-400">{props.desc.tools}</td>
+            <td style={{fontWeight: 600, letterSpacing:1}}>tools</td>
+            <td style={{letterSpacing:1}}>{tools}</td>
           </tr>
           <tr>
-            <td className="monospace-500">duration</td>
-            <td className="monospace-400">{props.desc.duration}</td>
+            <td style={{fontWeight: 600, letterSpacing:1}}>duration</td>
+            <td style={{letterSpacing:1}}>{props.desc.duration}</td>
           </tr>               
         </tbody>
       </table>

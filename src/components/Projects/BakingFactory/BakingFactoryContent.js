@@ -9,7 +9,7 @@ export function Intro() {
   const desc =  {
     role: "Full-stack Engineer, UX Designer",
     team: "individual",
-    skills: "wireframing, user testing, web app development, database design, test-driven",
+    skills: "wireframing, user testing, full-stack dev, database design",
     tools: "Figma, HTML/CSS, Javascript, Ruby on Rails",
     duration: "4 months",
     cols: 2

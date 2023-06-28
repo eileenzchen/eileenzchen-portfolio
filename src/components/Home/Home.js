@@ -5,8 +5,33 @@ import ProjectSectionWhite from './ProjectSection/ProjectSectionWhite.js';
 import tonysImage from './assets/me_w_tonys_pizza.jpg';
 import what2yumPreview from '../Projects/What2Yum/assets/what2yum_preview.png';
 import bakingFactoryPreview from '../Projects/BakingFactory/assets/baking-factory-preview.png'
+import weeePreview from '../Projects/Weee/assets/weee-preview.png'
 
 function Home() {
+  const weeeProps = {
+    polaroid: {
+      linkUrl: "/weee",
+      imageUrl: weeePreview,
+      alt: "Weee Redesign",
+      polaroidTitle: "Weee Redesign",
+      polaroidDescription: "Fostering community within the grocery purchasing journey to inspire shoppers and drive e-grocery sales",
+      aspectRatio: "aspectRatioWide"
+    },
+    desc: {
+      role: "UX Designer & Researcher",
+      team: "individual",
+      skills: "user research, usability testing, wireframing, prototyping",
+      tools: "Figma",
+      duration: "1 month",
+      cols: 1
+    },
+    button: {
+      buttonText: "learn more",
+      buttonLink: "/weee",
+      target: "_self"
+    }
+  }
+
   const what2yumProps = {
     polaroid: {
       linkUrl: "/what2yum",
@@ -31,7 +56,7 @@ function Home() {
     }
   }
 
-  const project2Props = {
+  const bakingFactoryProps = {
     polaroid: {
       linkUrl: "/bakingfactory",
       imageUrl: bakingFactoryPreview,
@@ -43,7 +68,7 @@ function Home() {
     desc: {
       role: "Full-stack Engineer, UX Designer",
       team: "individual",
-      skills: "wireframing, user testing, web app development, database design, test-driven",
+      skills: "wireframing, user testing, full-stack dev, database design",
       tools: "Figma, HTML/CSS, Javascript, Ruby on Rails",
       duration: "4 months",
       cols: 1
@@ -55,7 +80,7 @@ function Home() {
     }
   }
 
-  const project3Props = {
+  const fitvioProps = {
     polaroid: {
       linkUrl: "/fitvio",
       imageUrl: tonysImage,
@@ -106,10 +131,11 @@ function Home() {
   return (  
     <>
      <About></About>
-     <ProjectSectionTan projectProps={what2yumProps}></ProjectSectionTan>
-     <ProjectSectionWhite projectProps={project2Props}></ProjectSectionWhite>
-     <ProjectSectionTan projectProps={project3Props}></ProjectSectionTan>
-     <ProjectSectionWhite projectProps={project4Props}></ProjectSectionWhite>
+     <ProjectSectionTan projectProps={weeeProps}></ProjectSectionTan>
+     <ProjectSectionWhite projectProps={what2yumProps}></ProjectSectionWhite>
+     <ProjectSectionTan projectProps={bakingFactoryProps}></ProjectSectionTan>
+     <ProjectSectionWhite projectProps={fitvioProps}></ProjectSectionWhite>
+     <ProjectSectionTan projectProps={project4Props}></ProjectSectionTan>
     </>
 
     

@@ -8,6 +8,7 @@ import Header from './components/Header/Header.js';
 import What2Yum from './components/Projects/What2Yum/What2Yum.js'
 import BakingFactory from './components/Projects/BakingFactory/BakingFactory.js'
 import Fitvio from 'components/Projects/Fitvio/Fitvio';
+import Weee from 'components/Projects/Weee/Weee';
 import NotFound from './components/NotFound/NotFound.js'
 import ScrollToTop from './components/ScrollToTop';
 import {
@@ -19,23 +20,27 @@ import {
 
 function App() {
   return (
-    <Router>
-      {/* take to top of page when redirect to new route */}
-      <ScrollToTop />
-      <div className="Site">
-        <Header />
-        <div className="SiteContent">
-          <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route path="/what2yum" component={What2Yum}/>
-            <Route path="/bakingfactory" component={BakingFactory}/>
-            <Route path="/fitvio" component={Fitvio}/>
-            <Route path="*" component={NotFound} />
-          </Switch>
-        </div>
-        <Footer />
-      </div>      
-    </Router>
+    <>
+      <Router>
+        {/* take to top of page when redirect to new route */}
+        <ScrollToTop />
+        <div className="Site">
+          <Header />
+          <div className="SiteContent">
+            <Switch>
+              <Route exact path="/" component={Home}/>
+              <Route path="/weee" component={Weee}/>
+              <Route path="/what2yum" component={What2Yum}/>
+              <Route path="/bakingfactory" component={BakingFactory}/>
+              <Route path="/fitvio" component={Fitvio}/>
+              <Route path="*" component={NotFound} />
+            </Switch>
+          </div>
+          <Footer />
+        </div>      
+      </Router>
+    </>
+   
   );
 }
 
