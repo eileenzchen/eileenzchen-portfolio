@@ -18,6 +18,8 @@ function Weee() {
               Sketching: null,
               Wireframing: null,
               PrototypingDetails: null,
+              Color: null,
+              Joy: null,
               Challenges: null,
               }}></Menu>
           </Grid>
@@ -30,6 +32,8 @@ function Weee() {
             <WeeeContent.Sketching/>
             <WeeeContent.Wireframing/>
             <WeeeContent.PrototypingDetails/>
+            <WeeeContent.Color/>
+            <WeeeContent.Joy/>
             <WeeeContent.Challenges/>
           </Grid>
         </Grid>

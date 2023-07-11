@@ -38,9 +38,11 @@ const Menu = ({menuItems}) => {
     UserResearch: "user research",
     DesignPatterns: "analyzing design patterns",
     Sketching: "sketching",
-    Wireframing: "wireframing",
+    Wireframing: "lofi wireframing",
     PrototypingDetails: "refining & prototyping",
-    Challenges: "challenges & takeaways"
+    Challenges: "challenges & takeaways",
+    Joy: "sparking joy!",
+    Color: "being intentional with color"
   }
   /*
    * Store the active menuItem in state to force update

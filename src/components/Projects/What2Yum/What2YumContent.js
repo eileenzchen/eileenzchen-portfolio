@@ -4,9 +4,9 @@ import Polaroid from '../../Polaroid/Polaroid.js'
 import ModalImage from "react-modal-image";
 import * as Assets from './assets'
 import './What2Yum.css'
+// Import Swiper styles
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-// Import Swiper styles
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 
@@ -119,7 +119,9 @@ export function SolutionExploration() {
           hideZoom={true}
         />
       </div>
-      <caption>my paper prototype - form filling</caption>
+      <div className="caption-container">
+        <caption>my paper prototype - form filling</caption>
+      </div>
 
       <div style={{marginTop: "30px"}}>
         <ModalImage
@@ -132,7 +134,9 @@ export function SolutionExploration() {
           hideZoom={true}
         />
       </div>
-      <caption style={{marginBottom: "30px"}}>teammate's paper prototype - Tinder-like swiping</caption>
+      <div className="caption-container">
+        <caption style={{marginBottom: "30px"}}>teammate's paper prototype - Tinder-like swiping</caption>
+      </div>
       
       <p>
         After user testing, we gathered that users liked the fun interaction of swiping their preferences, but also wanted to be able to fill out a couple preferences like location and price. Thus, we essentially took the best of both worlds and merged our two user flows for our next iteration of lofi prototypes.

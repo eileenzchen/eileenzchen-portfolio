@@ -2,6 +2,11 @@ import React from 'react'
 import Polaroid from '../../Polaroid/Polaroid.js'
 import * as Assets from './assets/index.js'
 import ModalImage from 'react-modal-image'
+// Import Swiper styles
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
 
 export function Intro() {
   const desc =  {
@@ -47,13 +52,25 @@ export function Summary() {
         I learned to <b>design for an actual product with business goals, user incentives, and pre-existing workflows & design systems</b>. I was not building something from scratch here; I had to put myself in the mindset of a Weee designer and leverage the systems in place while thinking creatively in order to effectively design for Weee's product needs and goals.
       </p>
       <ModalImage
-        small={Assets.HomeHifi}
-        large={Assets.HomeHifi}
-        alt="hifi wireframes for the home and community pages"
+        className="drop-shadow-hover-light"
+        small={Assets.FinalScreensHighlight}
+        large={Assets.FinalScreensHighlight}
+        alt="final design"
         imageBackgroundColor="transparent"
         hideDownload={true}
         hideZoom={true}
       />
+      <div className="caption-container">
+        <caption style={{marginTop:"-15px", marginBottom: "30px"}}>a few final designs</caption>        
+      </div>
+      <div style={{textAlign:"center"}}>
+        <video className="small-asset" style={{width: "40%"}} autoPlay loop muted playsInline>
+          <source src={Assets.EnhanceCartVid} type="video/mp4"/>
+        </video>
+      </div>
+      <div className="caption-container">
+        <caption style={{marginBottom: "30px"}}>adding a moment of delight during checkout &#8212; read on for my process!</caption>
+      </div>
 
     </div>
   )
@@ -135,13 +152,14 @@ export function DesignPatterns() {
     <div id="DesignPatterns">
       <h1><span className="section-title highlight">analyzing design patterns</span></h1>
       <p>
-        With an idea of what the problem I wanted to tackle was, I turned to existing successful social media and ecommerce products to analyze how they approach community engagement and searching compared to Weee. I examined Pinterest, Amazon, and Instagram. An interesting experience that differed across the apps was the default search page. Pinterest had a default search page with personalized category widgets meant to help users quickly search something they are interested in. Instagram's was for infinitely exploring filled with personalized images and videos. Amazon was the only one without a separate search page, with the home page serving the same purpose. The home screen encouraged people to continue their shopping journey right away and also recommended deals. 
+        With an idea of what the problem I wanted to tackle was, I <b>turned to existing successful social media and ecommerce products to analyze how they approach community engagement and searching compared to Weee</b>. I examined Pinterest, Amazon, and Instagram. An interesting experience that differed across the apps was the default search page. Pinterest had a default search page with personalized category widgets meant to help users quickly search something they are interested in. Instagram's was for infinitely exploring filled with personalized images and videos. Amazon was the only one without a separate search page, with the home page serving the same purpose. The home screen encouraged people to continue their shopping journey right away and also recommended deals. 
         </p>
         
         <p>
           A consistent design practice I saw across the three apps was having recent searches show once users tapped the search bar. The use of drawers were also common for showing more information without taking users away from a page. For social engagement pages within Instagram and Pinterest, the media was always the focus of the page and the rest of the page was kept to a minimal so that the content could pretty much speak for itself. 
         </p>
         <ModalImage
+          className="drop-shadow-hover-light"
           small={Assets.DesignPatterns}
           large={Assets.DesignPatterns}
           alt="design patterns analysis"
@@ -158,10 +176,10 @@ export function Sketching() {
     <div id="Sketching">
       <h1><span className="section-title highlight">sketching</span></h1>
       <p>
-        With an idea of how other products approach social feeds and searching, I began to sketch out different points in the grocery shopping process where community posts could be brought in for inspiration. As the main point of the community posts are to inspire people to buy more groceries, I knew there had to be an easier way for people to add something to cart after seeing a post. 
+        With an idea of how other products approach social feeds and searching, I began to sketch out different points in the grocery shopping process where community posts could be brought in for inspiration. As the main point of the community posts are to inspire people to buy more groceries, <b>I knew there had to be an easier way for people to add something to cart after seeing a post</b>. 
       </p>
       <p>
-        After sketching my ideas out, I mocked a user flow to make sense of how the different journeys users could take to ultimately add an item to cart. With this mapping, I was able to identify points in the journey I missed.
+        After sketching my ideas out, I mocked a user flow to make sense of how the different journeys users could take to ultimately add an item to cart. <b>With this mapping, I was able to identify points in the journey I missed.</b>
       </p>
       <img style={{marginTop:"20px", marginBottom:"20px"}} alt="sketches user flow" src={Assets.SketchUserFlow}/>
       <p>
@@ -178,7 +196,7 @@ export function Sketching() {
             It would be nice to see what items are trending
           </li>
           <li>
-            What’s the difference between the search bar on the home page and the search bar on the search page? I just want to find my groceries quickly
+            What's the difference between the search bar on the home page and the search bar on the search page? I just want to find my groceries quickly
           </li>
           <li>
             I prefer the gallery view for inspiration – I like seeing multiple things at once
@@ -196,11 +214,12 @@ export function Sketching() {
 export function Wireframing() {
   return (
     <div id="Wireframing">
-      <h1><span className="section-title highlight">wireframing</span></h1>
+      <h1><span className="section-title highlight">lofi wireframing</span></h1>
       <p>
-        I then began adding more fidelity into wireframes, focusing on incorporating the feedback and how different components and new features would work together to drive discovery and purchases.
+        I then began adding more fidelity into wireframes, focusing on incorporating the feedback and how different components and new features would work together to <b>drive discovery and purchases</b>.
       </p>
       <ModalImage
+        className="drop-shadow-hover-light"
         small={Assets.GroceriesSearchLofi}
         large={Assets.GroceriesSearchLofi}
         alt="lofi wireframes for the groceries and search pages"
@@ -208,7 +227,17 @@ export function Wireframing() {
         hideDownload={true}
         hideZoom={true}
       />
+      <p>
+        <ul>
+          <li>collapsed home and search to a groceries tab in the navigation bar</li>
+          <li>incorporated popular searches as a way of quick searching</li>
+          <li>denoted trending items with a fire icon</li>
+          <li>added a "keep searching for" section for users to pick up where they left off</li>
+          <li>created another avenue for users to see community posts for inspiration from search</li>
+        </ul>
+      </p>
       <ModalImage
+        className="drop-shadow-hover-light"
         small={Assets.ProductLofi}
         large={Assets.ProductLofi}
         alt="lofi wireframes for the product pages"
@@ -216,7 +245,14 @@ export function Wireframing() {
         hideDownload={true}
         hideZoom={true}
       />
+      <p>
+        <ul>
+          <li>moved the community recipe video to the last item instead of the first reduce distraction and follow users' mental model of a product image being first</li>
+          <li>included additional language to convey a sense of limit in quantity and popularity</li>
+        </ul>
+      </p>
       <ModalImage
+        className="drop-shadow-hover-light"
         small={Assets.CommunityLofi}
         large={Assets.CommunityLofi}
         alt="lofi wireframes for the community pages"
@@ -224,6 +260,15 @@ export function Wireframing() {
         hideDownload={true}
         hideZoom={true}
       />
+      <p>
+        <ul>
+          <li>thought through how only one video would be playing at a time in gallery view to not overwhelm the user</li>
+          <li>created a grocery bag button that would show users what was used in the recipe in an overlaying drawer</li>
+        </ul>
+      </p>
+      <p>
+        After reviewing the lofi wireframes with my mentor, I was ready to add more details and align with Weee's brand.
+      </p>
     </div>
   )
 }
@@ -233,34 +278,130 @@ export function PrototypingDetails() {
     <div id="PrototypingDetails">
       <h1><span className="section-title highlight">refining & prototyping</span></h1>
       <p>
-        Along with finalizing the individual screens, I was now ready to focus on more details with specific copy, colors, product images, and even envision small animations that would help catch user attention. Throughout this process, I closely aligned with Weee's current design system and patterns (font, sizing, button components, use of graphics) to ensure that my redesign would be practical and fit in branding with the current system. At the same time, I took liberties where I saw fit, such as with pops of color and animations.
+        Along with finalizing the individual screens, I <b>focused on details</b> with specific copy, colors, product images, and even envision small animations that would help catch user attention. Throughout this process, I closely <b>aligned with Weee's current design system and patterns</b> (font, sizing, button components, use of graphics) to ensure that my redesign would be practical and fit in branding with the current system. At the same time, I <b>took liberties where I saw fit</b>, such as with pops of color and animations.
       </p>
       <ModalImage
-        small={Assets.HomeHifi}
-        large={Assets.HomeHifi}
-        alt="hifi wireframes for home and community pages"
+        className="drop-shadow-hover-light"
+        small={Assets.HifiHomeProduct}
+        large={Assets.HifiHomeProduct}
+        alt="hifi wireframes for home and product pages"
         imageBackgroundColor="transparent"
         hideDownload={true}
         hideZoom={true}
       />
       <ModalImage
-        small={Assets.SearchHifi}
-        large={Assets.SearchHifi}
-        alt="hifi wireframes for the search pages"
+        className="drop-shadow-hover-light"
+        small={Assets.HifiSearchCommunity}
+        large={Assets.HifiSearchCommunity}
+        alt="hifi wireframes for search and community pages"
         imageBackgroundColor="transparent"
         hideDownload={true}
         hideZoom={true}
       />
-      <ModalImage
-        small={Assets.ProductHifi}
-        large={Assets.ProductHifi}
-        alt="hifi wireframes for the product pages"
-        imageBackgroundColor="transparent"
-        hideDownload={true}
-        hideZoom={true}
-      />
-      {/* insert final gifs (zoom in animation of view items used slide button, slider of groceries to community, overall user flow gifs in a carousel) */}
+      <p>
+        <ul>
+          <li>brought back the home screen since users feel more grounded with a home screen</li>
+          <li>made the home search a global search with local searches within groceries, restaurants, and community</li>
+          <li>instead of a fire icon for trending, I created tag pills of different colors to show trending products, bestsellers, and how many were sold</li>
+          <li>made it only one tap away instead of two to see items used in a video</li>
+          <li>brought the "view items used" concept to the product page as well, but shown further down the screen instead of as an overlay to allow users to see additional details about an item like reviews and other recipe videos from the community</li>
+        </ul>
+      </p>
+      
+      <Swiper
+        style={{marginTop: "30px"}}
+        className="swiper-container"
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        loop
+        centeredSlides={true}
+        centeredSlidesBounds={true}
+        navigation
+        pagination={{
+          clickable: true,
+          el: '.swiper-custom-pagination',
+        }}
+        slidesPerView={1}
+        followFinger
+        onSlideChange={
+          () =>  playPauseVideo()
+        }
+        onSwiper={(swiper) => console.log(swiper)}
+      >
+        <SwiperSlide>
+          <div className="carousel-video-container">
+            <video className="carousel-video" loop muted playsInline>
+              <source src={Assets.FinalGifCommunity} type="video/mp4" />
+            </video>
+          </div>
+          <div className="caption-container" style={{marginTop: "20px"}}>
+            <caption>be inspired by the community throughout the shopping experience</caption>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="carousel-video-container">
+            <video className="carousel-video" loop muted playsInline>
+              <source src={Assets.FinalGifProduct} type="video/mp4" />
+            </video>
+          </div>
+          <div className="caption-container" style={{marginTop: "20px"}}>
+            <caption>quickly find items and related items</caption>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="carousel-video-container">
+            <video className="carousel-video" loop muted playsInline>
+              <source src={Assets.FinalGifViewItemFullPhone} type="video/mp4" />
+            </video>
+          </div>
+          <div className="caption-container" style={{marginTop: "20px"}}>
+            <caption>easily view items used by other Weee shoppers</caption>
+          </div>
+        </SwiperSlide>
+      </Swiper>
+      <div style={{marginTop: "20px"}} className="swiper-custom-pagination"/>
+    </div>
+  )
+}
 
+export function Color() {
+  return (
+    <div id="Color">
+      <h1><span className="section-title highlight">being intentional with color</span></h1>
+      <p>
+        After a round of final critique with my design mentor, I realized that <b>I could be a lot more intentional about how I use color to draw the eye to elements and space elements out</b>. Also, I needed to think more critically about <b>accessibility</b> when choosing and overlaying colors. Thus, I focused on a few screens to improve the following:
+        <ul>
+          <li>
+            should not have competing action buttons (e.g. community feed page)
+          </li>
+          <li>
+            the usage of gray could be misleading for interactive elements as it usually dentoes something is disabled or inactive. 
+          </li>
+          <li>
+            color blocking can be used to space sections out
+          </li>
+          <li>
+            a set color palette could better inform color choices
+          </li>
+        </ul>
+      </p>
+      <p className="subheading" style={{marginBottom:"10px"}}>color palettes generated with plugin UI Color Palette</p>
+      <img src={Assets.PrimaryPalette} alt="primary color palette"/>
+      <img src={Assets.SecondaryPalette} alt="secondary color palette for highlights"/>
+      <p className="subheading" style={{marginBottom:"0px"}}>final designs</p>
+      <ModalImage
+        className="drop-shadow-hover-light"
+        small={Assets.FinalColor}
+        large={Assets.FinalColor}
+        alt="final color iteration"
+        imageBackgroundColor="transparent"
+        hideDownload={true}
+        hideZoom={true}
+      />
+      <div style={{textAlign:"center"}}>
+        <video className="small-asset" style={{width: "40%"}} autoPlay loop muted playsInline>
+          <source src={Assets.FinalColorVid} type="video/mp4"/>
+        </video>
+      </div>
     </div>
   )
 }
@@ -268,33 +409,32 @@ export function PrototypingDetails() {
 export function Joy() {
   return (
     <div id="Joy">
-      <h1><span className="section-title highlight">a little nugget of joy</span></h1>
+      <h1><span className="section-title highlight">sparking joy!</span></h1>
       <p>
-        Seems like I was done with the redesign here. And I was pretty proud of my work--it integrated the community with the shopping experience and was clean and intuitive. But I recently listened to a talk, "Putting Joy on the Roadmap", at Config by Figma designers and product managers Jenny Wen, Mihika Kapoor, and Kee Yen Yeo that really inspired and prompted me to go back to the drawing board once more. Their talk was about bringing joy and delight to people in our digital products, seeking inspiration from our physical world. The talk highlighted how little interactions that bring joy to our users may not be the most seemingly critical features, but it may bring the joy we experience in the physical world to the digital one. The fun high fiving feature on FigJam was a prime example of an interaction that brought smiles to peoples' faces when performing a productivity task. 
+        Seems like I was done with the redesign here. And I was pretty proud of my work&#8212;it integrated the community with the shopping experience and was clean and intuitive. But I recently listened to a talk, <a href="https://config.figma.com/video-on-demand/6329868113112" className="content-link" target="_blank" rel="noopener noreferrer">Putting Joy on the Roadmap</a>, at Config by Figma designers and product managers Jenny Wen, Mihika Kapoor, and Kee Yen Yeo, that <b>really inspired and prompted me to go back to the drawing board once more</b>. Their talk was about bringing joy and delight to people in our digital products, seeking inspiration from our physical world. The talk highlighted how little interactions that bring joy to our users may not be the most seemingly critical features, but it may <b>bring the joy we experience in the physical world to the digital one</b>. The fun high fiving feature on FigJam was a prime example of an interaction that brought smiles to peoples' faces when performing a productivity task. 
       </p>
       <p>
-        I immediately thought back to the Weee CEO's words of making grocery shopping "much more inspiring and fun". Looking at my prototype again, I didn't exactly do that. And thus I began thinking, "How can I bring a smile to someone's face when shopping on Weee"? I could spend hours going down every single aisle and freezer chest at Trader Joe's, picking up random snacks and frozen meals that were not planned for along the way. I could also go to 99 Ranch and beeline to any sales I see, oggle at the live fish and crabs, and throw some instant ramen into my cart on the way out just because how could you not when there are fifty kinds?
+        I immediately thought back to the <b>Weee CEO's words of making grocery shopping "much more inspiring and fun"</b>. Looking at my design again, there wasn't quite any interaction that sparked joy. And thus I began thinking, <b>"How can I bring a smile to someone's face when shopping on Weee"</b>? Personally, I could spend hours going down every single aisle and freezer chest at Trader Joe's, picking up random snacks and frozen meals that were not planned for along the way. I could also go to 99 Ranch and beeline to any sales I see, oggle at the live fish and crabs, and throw some instant ramen into my cart on the way out just because how could you not when there are fifty different kinds?
       </p>
       <p>
-        To really pinpoint the moments that bring someone joy when grocery shopping at a brick and mortar store, I asked a user to describe the last time they enjoyed their grocery shopping experience in person. And from that, I created a storyboard. From storyboarding, I realized that people get a lot of joy from moments of pleasant surprise and discovery, such as picking up spur of the moment items. Ben picked up a bottle of wine, a bag of okra chips, and a bouquet of flowers, none of which were on his grocery list coming in or remotely related to the other items, but got him excited. The flowers caught his eye in the beginning of his shopping time, and the wine and okra caught his eye at the end of his shopping experience, starting and ending the trip with moments of delight.
+        To really pinpoint the moments that bring someone joy when grocery shopping at a brick and mortar store, I asked a user to describe the last time they enjoyed their grocery shopping experience in person. And from that, I created a storyboard. <b>From storyboarding, I realized that people get a lot of joy from moments of pleasant surprise and discovery</b>, such as picking up spur of the moment items. Ben picked up a bottle of wine, a bag of okra chips, and a bouquet of flowers, none of which were on his grocery list coming in or remotely related to the other items, but got him excited. The flowers caught his eye in the beginning of his shopping time, and the wine and okra caught his eye at the end of his shopping experience, starting and ending the trip with moments of delight.
       </p>
+      <img src={Assets.Storyboard} alt="storyboard of shopping at Trader Joe's" style={{marginBottom: "30px"}}></img>
       <p>
-        These are some of my initial ideas:
-        - flicking grocery item into cart, a little swish when it goes in depending on physics of swipe and accuracy
-        - community profile pic person animation or pops up to react to your add to cart from a video
-        - autoscroll of items that people might like (like walking down grocery aisle)
-        - recipes in community tab, share a recipe, get a recipe 
-        - autocomplete for the cart/basket for free shipping
-        - in the community screen with items used, something like "make pineapple fried rice" that adds all ingredients to the cart at once and the recipe itself
-        - a grocery sale ad newspaper (always see my mom's eyes light up when she sees one near the entrance, never fails to grab one and come out with something from the ad)
-        - under every product, show a row of "aisle browsing items"
-      </p>
-      <p>
-        Throughout the design process, I made sure to balance bringing joy while not detracting from the productivity of grocery shopping as the convenience and efficiency is a big draw of Weee.
+        From here, I thought about how to incorporate a moment of delightful surprise when discovering an add-on item. Throughout the design process, I made sure to <b>balance bringing joy while not detracting from the productivity of grocery shopping</b> as the convenience and efficiency is a big draw of Weee. During checkout seemed the most logical place to introduce people to a few possible add-on items. With the Weee Community feature, people already post recipes from their shopping hauls and tag which Weee items they used. <b>I realized how that user generated recipe data could be leveraged</b> to create an <b>AI feature where Weee identifies what the shopper is trying to cook based on ingredients in their cart and would suggest a few more add-on items to enhance their dish</b>.
       </p>
       <p>
         I hope what I came up with will bring a smile to people's faces because I sure had a lot of fun creating it! 
       </p>
+      <div style={{textAlign:"center"}}>
+        <video className="small-asset" style={{width: "40%"}} autoPlay loop muted playsInline>
+          <source src={Assets.EnhanceCartVid} type="video/mp4"/>
+        </video>
+      </div>
+      <div className="caption-container">
+        <caption>Weee suggests ingredients for kimchi fried rice based on shopper's cart</caption>
+      </div>
+
 
     </div>
   )
@@ -307,17 +447,37 @@ export function Challenges() {
       <p>
         <ol>
           <li>
-           I learned how to ruthlessly prioritize top features (and correspondingly, how to deprioritize ideas that could be A/B tested later)
+           I learned how to <b>ruthlessly prioritize</b> top features (and correspondingly, how to deprioritize ideas that could be A/B tested later)
           </li>
           <li>
-            I also continued my  growth in designing entire user journeys not just single interfaces that required an end-to-end analysis and redesign—all the while staying consistent with Weee’s current design system and workflows. I considered that if this redesign would be released that it would not completely disrupt users’ mental models.
+            I also continued my growth in <b>designing entire user journeys</b> not just single interfaces that required an end-to-end analysis and redesign&mdash;all the while staying <b>consistent with Weee's current design system and workflows</b>. I considered that if this redesign would be released that it would not completely disrupt users' mental models.
           </li>
           <li>
-            I was also able to continue honing my Figma prototyping skills through creating micro-interactions and design fundamentals by focusing on information architecture, spacing, hierarchy, and more. 
+            I was also able to continue honing my Figma <b>prototyping skills through creating micro-interactions</b> and <b>design fundamentals</b> by focusing on information architecture, spacing, hierarchy, and more. 
           </li>
         </ol>
       </p>
     </div>
   )
+}
+
+async function playPauseVideo() {
+  const slides = document.querySelectorAll('.swiper-slide');
+  slides.forEach((slide) => 
+    slide.getElementsByTagName('video')[0].pause()
+  );
+  await delay(50);
+  const activeSlide = document.querySelector(".swiper-slide-active");
+  if (activeSlide) {
+    const activeSlideVideo = activeSlide.getElementsByTagName('video')[0];
+    activeSlideVideo.currentTime = 0;
+    activeSlideVideo.play();
+  }
+}
+
+function delay(ms) {
+  return new Promise((resolve) => {
+     setTimeout(resolve, ms);
+  })
 }
 

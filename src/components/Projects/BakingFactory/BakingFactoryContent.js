@@ -58,7 +58,7 @@ export function PersonasUseCases() {
     <div id="PersonasUseCases">
       <h1><span className="section-title highlight">personas & use cases</span></h1>
       <p>
-        Provided with a <a href={Assets.Narrative}>fictitious story</a> of two owners starting The Baking Factory, I first extracted who the actors of the system were and what each of their user needs were. The five actors were system admin, shippers, bakers, customers, and guests. Listing out <a href={Assets.UseCases}>use cases</a> then helped lay out the similar and different user goals of each actor and how they translated to functional or system requirements. It also helped with prioritizing what were A versus B level use cases.
+        Provided with a <a href={Assets.Narrative } className="content-link" target="_blank" rel="noopener noreferrer">fictitious story</a> of two owners starting The Baking Factory, I first extracted who the actors of the system were and what each of their user needs were. The five actors were system admin, shippers, bakers, customers, and guests. Listing out <a href={Assets.UseCases} className="content-link" target="_blank" rel="noopener noreferrer">use cases</a> then helped lay out the similar and different user goals of each actor and how they translated to functional or system requirements. It also helped with prioritizing what were A versus B level use cases.
       </p>
       <table className="useCases" style={{ marginTop: "30px"}}>
         <tr className="tr-dark">
@@ -92,14 +92,16 @@ export function PersonasUseCases() {
           <td>The user can add a new customer to the system (create an account).</td>
         </tr>
       </table>
-      <caption style={{ marginBottom: "30px"}}>example use cases for different users/actors</caption>
+      <div className="caption-container">
+        <caption style={{ marginBottom: "30px"}}>example use cases for different users/actors</caption>
+      </div>
       <p>
         In addition to an overview of who was involved and their goals, it was also vital to think about the relationship between the different components in the system such as how items made up an order and customers could have many orders. I created an entity-relationship diagram to visually show the data that is going to be stored within the database and how they related to each other. It helped to structure the way the database should be designed and highlight the business needs of the system, such as seeing a history of prices for a particular item.
       </p>
 
       <div style={{marginTop: "30px"}}>
         <ModalImage
-        className="drop-shadow drop-shadow-hover"
+        className="drop-shadow-hover-light"
         small={Assets.ERD}
         large={Assets.ERD}
         alt="entity relationship diagram"
@@ -108,7 +110,9 @@ export function PersonasUseCases() {
         hideZoom={true}
       />
       </div>
-      <caption>entity relationship diagram of The Baking Factory</caption>
+      <div className="caption-container">
+        <caption>entity relationship diagram of The Baking Factory</caption>
+      </div>
       
     </div>
   )
@@ -126,7 +130,7 @@ export function QuickSketches() {
       </p>
       <div style={{marginTop: "30px", marginBottom: "30px"}}>
         <ModalImage
-        className="drop-shadow drop-shadow-hover"
+        className="drop-shadow-hover-light"
         small={Assets.Sketches}
         large={Assets.Sketches}
         alt="baking factory initial sketches"
@@ -168,7 +172,7 @@ export function ContextualizingDesign() {
       <Grid container columns={2} spacing={1} style={{marginTop: "30px"}}>
         <Grid item xs={2} sm={1}>
           <ModalImage
-          className="drop-shadow drop-shadow-hover"
+          className="drop-shadow-hover-light"
           small={Assets.GuestHomeV1}
           large={Assets.GuestHomeV1}
           alt="guest home midfi wireframe v1"
@@ -179,7 +183,7 @@ export function ContextualizingDesign() {
         </Grid>
         <Grid item xs={2} sm={1}>
           <ModalImage
-          className="drop-shadow drop-shadow-hover"
+          className="drop-shadow-hover-light"
           small={Assets.CustomerDashboardV1}
           large={Assets.CustomerDashboardV1}
           alt="customer dashboard midfi wireframe v1"
@@ -200,7 +204,7 @@ export function ContextualizingDesign() {
       <Grid container columns={2} spacing={1} style={{marginTop: "30px"}}>
         <Grid item xs={2} sm={1}>
           <ModalImage
-          className="drop-shadow drop-shadow-hover"
+          className="drop-shadow-hover-light"
           small={Assets.GuestHomeV2}
           large={Assets.GuestHomeV2}
           alt="guest home midfi wireframe v2"
@@ -211,7 +215,7 @@ export function ContextualizingDesign() {
         </Grid>
         <Grid item xs={2} sm={1}>
           <ModalImage
-          className="drop-shadow drop-shadow-hover"
+          className="drop-shadow-hover-light"
           small={Assets.CustomerDashboardV2}
           large={Assets.CustomerDashboardV2}
           alt="customer dashboard midfi wireframe v2"
@@ -221,12 +225,14 @@ export function ContextualizingDesign() {
           />
         </Grid>
       </Grid>
-      <caption style={{marginBottom: "30px"}}>v2 midfi wireframes for customer and guest home pages</caption>
+      <div className="caption-container">
+        <caption style={{marginBottom: "30px"}}>v2 midfi wireframes for customer and guest home pages</caption>
+      </div>
 
       <Grid container columns={4} spacing={1} style={{marginTop: "30px"}}>
         <Grid item xs={4} sm={1}>
           <ModalImage
-          className="drop-shadow drop-shadow-hover"
+          className="drop-shadow-hover-light"
           small={Assets.CartMidfi}
           large={Assets.CartMidfi}
           alt="cart midfi wireframe"
@@ -237,7 +243,7 @@ export function ContextualizingDesign() {
         </Grid>
         <Grid item xs={4} sm={1}>
           <ModalImage
-          className="drop-shadow drop-shadow-hover"
+          className="drop-shadow-hover-light"
           small={Assets.CheckoutMidfi}
           large={Assets.CheckoutMidfi}
           alt="checkout midfi wireframe"
@@ -248,7 +254,7 @@ export function ContextualizingDesign() {
         </Grid>
         <Grid item xs={4} sm={1}>
           <ModalImage
-          className="drop-shadow drop-shadow-hover"
+          className="drop-shadow-hover-light"
           small={Assets.OrderDetailsMidfi}
           large={Assets.OrderDetailsMidfi}
           alt="order details midfi wireframe"
@@ -259,7 +265,7 @@ export function ContextualizingDesign() {
         </Grid>
         <Grid item xs={4} sm={1}>
           <ModalImage
-          className="drop-shadow drop-shadow-hover"
+          className="drop-shadow-hover-light"
           small={Assets.OrdersMidfi}
           large={Assets.OrdersMidfi}
           alt="all orders midfi wireframe"
@@ -269,7 +275,9 @@ export function ContextualizingDesign() {
           />
         </Grid>
       </Grid>
-      <caption style={{marginBottom: "30px"}}>v2 midfi wireframes for customer ordering and checkout experience</caption>
+      <div className="caption-container">
+        <caption style={{marginBottom: "30px"}}>v2 midfi wireframes for customer ordering and checkout experience</caption>
+      </div>
 
       <p>
         Lastly before coding, I created a couple of different color themes in the context of the home page. Ultimately, the goal of the colors was to allow the bakery item images to stand out and create a warm and welcoming feeling, as one would get walking into a bakery shop. The pink background, although providing a cozy feeling, distracts from the products themselves and provides lower text contrast. The inverted white background pink accent is cleaner and creates greater contrast with the images, but it creates a cooler and modern mood versus an inviting one. The last iteration keeps the legibility while tying the different baked goods together with its warm wheat color.
@@ -277,7 +285,7 @@ export function ContextualizingDesign() {
       <Grid container columns={3} spacing={1} style={{marginTop: "30px"}}>
         <Grid item xs={3} sm={1}>
           <ModalImage
-          className="drop-shadow drop-shadow-hover"
+          className="drop-shadow-hover-light"
           small={Assets.PinkTheme}
           large={Assets.PinkTheme}
           alt="pink color theme exploration"
@@ -288,7 +296,7 @@ export function ContextualizingDesign() {
         </Grid>
         <Grid item xs={3} sm={1}>
           <ModalImage
-          className="drop-shadow drop-shadow-hover"
+          className="drop-shadow-hover-light"
           small={Assets.PinkWhiteTheme}
           large={Assets.PinkWhiteTheme}
           alt="pink and white color theme exploration"
@@ -299,7 +307,7 @@ export function ContextualizingDesign() {
         </Grid>
         <Grid item xs={3} sm={1}>
           <ModalImage
-          className="drop-shadow drop-shadow-hover"
+          className="drop-shadow-hover-light"
           small={Assets.BrownTheme}
           large={Assets.BrownTheme}
           alt="tan color theme exploration"
@@ -341,11 +349,16 @@ export function Interplay() {
       <video className="drop-shadow" width="100%" height="auto" style={{marginTop: "30px"}} autoPlay loop muted playsInline>
         <source src={Assets.Shipper} type="video/mp4" />
       </video>
-      <caption style={{marginBottom: "30px"}}>shipper dashboard</caption>
+      <div className="caption-container">
+        <caption style={{marginBottom: "30px"}}>shipper dashboard</caption>
+      </div>
       <video className="drop-shadow" width="100%" height="auto" autoPlay loop muted playsInline>
         <source src={Assets.Baker} type="video/mp4" />
       </video>
-      <caption style={{marginBottom: "30px"}}>baker dashboard</caption>
+      <div className="caption-container">
+        <caption style={{marginBottom: "30px"}}>baker dashboard</caption>
+      </div>
+
       <p>
         For the admins, who are also the owners, knowing how their business was doing was vital. Thus, I created an admin dashboard on their home screen to provide them with key insights as the first thing they see when signed in. I stood in their shoes to consider what would be the most important sales information to show in the admin's data dashboard and what kinds of visualizations would be most appropriate.
       </p>

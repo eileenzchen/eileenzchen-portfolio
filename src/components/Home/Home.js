@@ -26,7 +26,7 @@ function Home() {
       cols: 1
     },
     button: {
-      buttonText: "learn more",
+      buttonText: "view case study",
       buttonLink: "/weee",
       target: "_self"
     }
@@ -50,7 +50,7 @@ function Home() {
       cols: 1
     },
     button: {
-      buttonText: "learn more",
+      buttonText: "view case study",
       buttonLink: "/what2yum",
       target: "_self"
     }
@@ -74,7 +74,7 @@ function Home() {
       cols: 1
     },
     button: {
-      buttonText: "learn more",
+      buttonText: "view case study",
       buttonLink: "/bakingfactory",
       target: "_self"
     }
@@ -98,7 +98,7 @@ function Home() {
       cols: 1
     },
     button: {
-      buttonText: "learn more",
+      buttonText: "view case study",
       buttonLink: "/fitvio",
       target: "_self"
     }
@@ -122,7 +122,7 @@ function Home() {
       cols: 1
     },
     button: {
-      buttonText: "learn more",
+      buttonText: "view case study",
       buttonLink: "#",
       target: "_self"
     }
