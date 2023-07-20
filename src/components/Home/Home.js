@@ -6,6 +6,7 @@ import tonysImage from './assets/me_w_tonys_pizza.jpg';
 import what2yumPreview from '../Projects/What2Yum/assets/what2yum_preview.png';
 import bakingFactoryPreview from '../Projects/BakingFactory/assets/baking-factory-preview.png'
 import weeePreview from '../Projects/Weee/assets/weee-preview.png'
+import fitvioPreview from '../Projects/Fitvio/assets/fitvio-preview.png'
 
 function Home() {
   const weeeProps = {
@@ -83,18 +84,18 @@ function Home() {
   const fitvioProps = {
     polaroid: {
       linkUrl: "/fitvio",
-      imageUrl: tonysImage,
-      alt: "asdfjkl",
-      polaroidTitle: "asjdflk;",
-      polaroidDescription: "asdfjkl",
+      imageUrl: fitvioPreview,
+      alt: "Fitvio Startup",
+      polaroidTitle: "Fitvio",
+      polaroidDescription: "Designing an easily accessible fitness app – and wearing many design hats along the way",
       aspectRatio: "aspectRatioWide"
     },
     desc: {
-      role: "qwefjio;",
-      team: "qwejifo;",
-      skills: "qwejfi;",
-      tools: "qwejfio;",
-      duration: "qwejfio;",
+      role: "Head of Design",
+      team: "cross-functional startup team (<10 people)",
+      skills: "brand design, design strategy, roadmapping, interviewing, prototyping",
+      tools: "Figma, InDesign, Illustrator",
+      duration: "4 months",
       cols: 1
     },
     button: {
@@ -133,9 +134,9 @@ function Home() {
      <About></About>
      <ProjectSectionTan projectProps={weeeProps}></ProjectSectionTan>
      <ProjectSectionWhite projectProps={what2yumProps}></ProjectSectionWhite>
-     <ProjectSectionTan projectProps={bakingFactoryProps}></ProjectSectionTan>
-     <ProjectSectionWhite projectProps={fitvioProps}></ProjectSectionWhite>
-     <ProjectSectionTan projectProps={project4Props}></ProjectSectionTan>
+     <ProjectSectionTan projectProps={fitvioProps}></ProjectSectionTan>
+     <ProjectSectionWhite projectProps={bakingFactoryProps}></ProjectSectionWhite>
+     {/* <ProjectSectionTan projectProps={project4Props}></ProjectSectionTan> */}
     </>
 
     

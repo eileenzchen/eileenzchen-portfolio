@@ -63,11 +63,13 @@ export function Summary() {
       <p>
         Through this project, I learned the true meaning of the double diamond design model and how "going wide then narrow" applies to all phases of the product lifecycle. I also learned what draws users to mobile apps and how to leverage that to make a valuable, sustainable, and easy-to-use app. 
       </p>
-      <p className="subheading" style={{marginBottom: '20px'}}>promotional video</p>
+      <p className="subheading" style={{marginBottom: '15px'}}>promotional video</p>
       <div className="videoContainer pitchContent">
         <iframe className="video" src="https://www.youtube.com/embed/0OwvGgoA4-E" title="What2Yum video pitch" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
-      <p>created by teammate Kevin Wang</p>
+      <div className="caption-container">
+        <caption>created by teammate Kevin Wang</caption>
+      </div>
     </div>
   )
 }

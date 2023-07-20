@@ -11,20 +11,22 @@ function Fitvio() {
         <Grid container columns={16} columnSpacing={12}>
           <Grid className="menuBlock" item sm={0} md={3}>
             <Menu menuItems={{
-              // Summary: null, 
-              // Problem: null, 
-              // CompetitiveAnalysis: null,
-              // SolutionExploration: null,
-              // FinalDesign: null,
+              Summary: null, 
+              UnderstandingUsers: null,
+              ProductRoadmapping: null,
+              UserAcquisitionOnboarding: null,
+              Rebranding: null,
+              Challenges: null
               }}></Menu>
           </Grid>
           <Grid item sm={16} md={10} sx={{pb:10}}>
-            {/* <What2YumContent.Intro/>
-            <What2YumContent.Summary/>
-            <What2YumContent.Problem/>
-            <What2YumContent.CompetitiveAnalysis/>
-            <What2YumContent.SolutionExploration/>
-            <What2YumContent.FinalDesign/> */}
+            <FitvioContent.Intro/>
+            <FitvioContent.Summary/>
+            <FitvioContent.UnderstandingUsers/>
+            <FitvioContent.ProductRoadmapping/>
+            <FitvioContent.UserAcquisitionOnboarding/>
+            <FitvioContent.Rebranding/>
+            <FitvioContent.Challenges/>
           </Grid>
         </Grid>
       </Container>

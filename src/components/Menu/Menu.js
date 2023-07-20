@@ -42,7 +42,11 @@ const Menu = ({menuItems}) => {
     PrototypingDetails: "refining & prototyping",
     Challenges: "challenges & takeaways",
     Joy: "sparking joy!",
-    Color: "being intentional with color"
+    Color: "being intentional with color",
+    UnderstandingUsers: "understanding our users",
+    ProductRoadmapping: "product roadmapping",
+    UserAcquisitionOnboarding: "user acquisition & onboarding",
+    Rebranding: "rebranding"
   }
   /*
    * Store the active menuItem in state to force update
