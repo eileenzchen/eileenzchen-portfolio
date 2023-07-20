@@ -23,8 +23,8 @@ export function Intro() {
       <Polaroid 
         linkUrl="https://www.figma.com/proto/RnKtg5yRt8PQmSb0G185lA/Weee!-Redesign?type=design&node-id=464-11434&scaling=scale-down&page-id=464%3A11433&starting-point-node-id=464%3A11434" 
         imageUrl={Assets.WeeePreview} 
-        alt="Weee Redesign"
-        polaroidTitle="Weee Redesign"
+        alt="Weee! Redesign"
+        polaroidTitle="Weee! Redesign"
         polaroidDescription="Fostering community within the grocery purchasing journey to inspire shoppers and drive e-grocery sales"
         aspectRatio="aspectRatioWide"/>
     </div>
@@ -37,11 +37,11 @@ export function Summary() {
       <h1><span className="section-title highlight">summary</span></h1>
       <p className="subheading">problem</p>
       <p>
-        In this case study of Weee, my <b>primary KPI is volume of groceries purchased</b>. As such, my problem statement is: <b>How can we encourage people to discover more new foods, and thus, purchase more groceries?</b>
+        In this case study of Weee!, my <b>primary KPI is volume of groceries purchased</b>. As such, my problem statement is: <b>How can we encourage people to discover more new foods, and thus, purchase more groceries?</b>
       </p>
       <p className="subheading">solution</p>
       <p>
-        I redesigned the Weee Search experience and Community journey in order to <b>increase findability of groceries</b> and <b>foster interactions with community content</b> throughout the purchasing process. 
+        I redesigned the Weee! Search experience and Community journey in order to <b>increase findability of groceries</b> and <b>foster interactions with community content</b> throughout the purchasing process. 
       </p>
       <p className="subheading">role</p>
       <p>
@@ -49,7 +49,7 @@ export function Summary() {
       </p>
       <p className="subheading">growth</p>
       <p>
-        I learned to <b>design for an actual product with business goals, user incentives, and pre-existing workflows & design systems</b>. I was not building something from scratch here; I had to put myself in the mindset of a Weee designer and leverage the systems in place while thinking creatively in order to effectively design for Weee's product needs and goals.
+        I learned to <b>design for an actual product with business goals, user incentives, and pre-existing workflows & design systems</b>. I was not building something from scratch here; I had to put myself in the mindset of a Weee! designer and leverage the systems in place while thinking creatively in order to effectively design for Weee!'s product needs and goals.
       </p>
       <ModalImage
         className="drop-shadow-hover-light"
@@ -81,13 +81,13 @@ export function BackgroundResearch() {
     <div id="BackgroundResearch">
       <h1><span className="section-title highlight">background research</span></h1>
       <p>
-      When I first started thinking about the Weee redesign, I went into it with my own experiences of using the app to grocery shop and check things off my grocery list. I thus assumed that I would be redesigning the experience of finding and buying groceries. But, as I began to dig into Weee's mission and niche, I realized that I was inadvertently bringing my own personal biases into how I was approaching the redesign. Weee's mission is much more than making it easy for people to buy groceries. It is to <b>create a community of shoppers who connect and inspire each other through their love and excitement for Asian and Hispanic food</b>. And thus, I reevaluated the way I was approaching the redesign and pivoted to focusing on how Weee can build and leverage the community to help people discover new foods in an easy way. 
+      When I first started thinking about the Weee! redesign, I went into it with my own experiences of using the app to grocery shop and check things off my grocery list. I thus assumed that I would be redesigning the experience of finding and buying groceries. But, as I began to dig into Weee!'s mission and niche, I realized that I was inadvertently bringing my own personal biases into how I was approaching the redesign. Weee!'s mission is much more than making it easy for people to buy groceries. It is to <b>create a community of shoppers who connect and inspire each other through their love and excitement for Asian and Hispanic food</b>. And thus, I reevaluated the way I was approaching the redesign and pivoted to focusing on how Weee! can build and leverage the community to help people discover new foods in an easy way. 
       </p>
       <p>
-        As CEO and founder of Weee, Larry Liu, puts it, “food shopping...should be much, much better, much, much more <b>inspiring and fun</b>”. On top of making it more accessible and affordable for people to get Asian and Hispanic groceries, Weee seeks to storytell the traditions and flavors of different ethnicities. 
+        As CEO and founder of Weee!, Larry Liu, puts it, “food shopping...should be much, much better, much, much more <b>inspiring and fun</b>”. On top of making it more accessible and affordable for people to get Asian and Hispanic groceries,Weee!e seeks to storytell the traditions and flavors of different ethnicities. 
       </p>
       <p>
-        To build this community, Weee relies on <b>social commerce</b>, such as word of mouth and social media, to acquire and engage customers. A couple of notable features are order sharing to get rewards and a new community feed where Weee users can post recipe or unboxing videos to share with other users. The idea behind it all is that users will be excited about certain foods, share their excitement, and prompt their friends and family to want to buy what they are buying. 
+        To build this community, Weee! relies on <b>social commerce</b>, such as word of mouth and social media, to acquire and engage customers. A couple of notable features are order sharing to get rewards and a new community feed where Weee! users can post recipe or unboxing videos to share with other users. The idea behind it all is that users will be excited about certain foods, share their excitement, and prompt their friends and family to want to buy what they are buying. 
       </p>
     </div>
   )
@@ -98,10 +98,10 @@ export function UserResearch() {
     <div id="UserResearch">
       <h1><span className="section-title highlight">user research</span></h1>
       <p>
-        Since Weee positions itself as an e-grocer that provides a <b>discovery and social grocery shopping experience</b> versus a more individual search-based experience, I wanted to put that to the test and see if that mission resonated with users currently purchasing groceries on the app.
+        Since Weee! positions itself as an e-grocer that provides a <b>discovery and social grocery shopping experience</b> versus a more individual search-based experience, I wanted to put that to the test and see if that mission resonated with users currently purchasing groceries on the app.
       </p>
       <p>
-        Weee's customer base started out as primarily first generation Chinese immigrants and has since grown with second- and third-generation shoppers. Thus, I interviewed both <b>first generation shoppers 50+ years old and second and third generation shoppers in their 20s</b>. Users' frequency of use ranged from once every few months to biweekly. By <b>conducting grocery purchase task analyses and asking qualitative questions</b>, I gathered user behavior and opinions on Weee. 
+        Weee!'s customer base started out as primarily first generation Chinese immigrants and has since grown with second- and third-generation shoppers. Thus, I interviewed both <b>first generation shoppers 50+ years old and second and third generation shoppers in their 20s</b>. Users' frequency of use ranged from once every few months to biweekly. By <b>conducting grocery purchase task analyses and asking qualitative questions</b>, I gathered user behavior and opinions on Weee!. 
       </p>
       <p>
         Through first bucketing the type of feedback I got (pain points, strength, recommendation, user patterns) and then <b>affinity mapping</b> them to pain point categories such as navigation and communication, I was able to start formulating areas of the app that could use redesigning. 
@@ -139,7 +139,7 @@ export function UserResearch() {
       </p> 
       <img alt="problem framing" src={Assets.ProblemFraming}></img>
       <blockquote>
-        How can we have Weee users inspire each other to try new items throughout the purchasing process?
+        How can we have Weee! users inspire each other to try new items throughout the purchasing process?
       </blockquote>
 
 
@@ -152,7 +152,7 @@ export function DesignPatterns() {
     <div id="DesignPatterns">
       <h1><span className="section-title highlight">analyzing design patterns</span></h1>
       <p>
-        With an idea of what the problem I wanted to tackle was, I <b>turned to existing successful social media and ecommerce products to analyze how they approach community engagement and searching compared to Weee</b>. I examined Pinterest, Amazon, and Instagram. An interesting experience that differed across the apps was the default search page. Pinterest had a default search page with personalized category widgets meant to help users quickly search something they are interested in. Instagram's was for infinitely exploring filled with personalized images and videos. Amazon was the only one without a separate search page, with the home page serving the same purpose. The home screen encouraged people to continue their shopping journey right away and also recommended deals. 
+        With an idea of what the problem I wanted to tackle was, I <b>turned to existing successful social media and ecommerce products to analyze how they approach community engagement and searching compared to Weee!</b>. I examined Pinterest, Amazon, and Instagram. An interesting experience that differed across the apps was the default search page. Pinterest had a default search page with personalized category widgets meant to help users quickly search something they are interested in. Instagram's was for infinitely exploring filled with personalized images and videos. Amazon was the only one without a separate search page, with the home page serving the same purpose. The home screen encouraged people to continue their shopping journey right away and also recommended deals. 
         </p>
         
         <p>
@@ -267,7 +267,7 @@ export function Wireframing() {
         </ul>
       </p>
       <p>
-        After reviewing the lofi wireframes with my mentor, I was ready to add more details and align with Weee's brand.
+        After reviewing the lofi wireframes with my mentor, I was ready to add more details and align with Weee!'s brand.
       </p>
     </div>
   )
@@ -278,7 +278,7 @@ export function PrototypingDetails() {
     <div id="PrototypingDetails">
       <h1><span className="section-title highlight">refining & prototyping</span></h1>
       <p>
-        Along with finalizing the individual screens, I <b>focused on details</b> with specific copy, colors, product images, and even envision small animations that would help catch user attention. Throughout this process, I closely <b>aligned with Weee's current design system and patterns</b> (font, sizing, button components, use of graphics) to ensure that my redesign would be practical and fit in branding with the current system. At the same time, I <b>took liberties where I saw fit</b>, such as with pops of color and animations.
+        Along with finalizing the individual screens, I <b>focused on details</b> with specific copy, colors, product images, and even envision small animations that would help catch user attention. Throughout this process, I closely <b>aligned with Weee!'s current design system and patterns</b> (font, sizing, button components, use of graphics) to ensure that my redesign would be practical and fit in branding with the current system. At the same time, I <b>took liberties where I saw fit</b>, such as with pops of color and animations.
       </p>
       <ModalImage
         className="drop-shadow-hover-light"
@@ -354,7 +354,7 @@ export function PrototypingDetails() {
             </video>
           </div>
           <div className="caption-container" style={{marginTop: "20px"}}>
-            <caption>easily view items used by other Weee shoppers</caption>
+            <caption>easily view items used by other Weee! shoppers</caption>
           </div>
         </SwiperSlide>
       </Swiper>
@@ -414,14 +414,14 @@ export function Joy() {
         Seems like I was done with the redesign here. And I was pretty proud of my work&#8212;it integrated the community with the shopping experience and was clean and intuitive. But I recently listened to a talk, <a href="https://config.figma.com/video-on-demand/6329868113112" className="content-link" target="_blank" rel="noopener noreferrer">Putting Joy on the Roadmap</a>, at Config by Figma designers and product managers Jenny Wen, Mihika Kapoor, and Kee Yen Yeo, that <b>really inspired and prompted me to go back to the drawing board once more</b>. Their talk was about bringing joy and delight to people in our digital products, seeking inspiration from our physical world. The talk highlighted how little interactions that bring joy to our users may not be the most seemingly critical features, but it may <b>bring the joy we experience in the physical world to the digital one</b>. The fun high fiving feature on FigJam was a prime example of an interaction that brought smiles to peoples' faces when performing a productivity task. 
       </p>
       <p>
-        I immediately thought back to the <b>Weee CEO's words of making grocery shopping "much more inspiring and fun"</b>. Looking at my design again, there wasn't quite any interaction that sparked joy. And thus I began thinking, <b>"How can I bring a smile to someone's face when shopping on Weee"</b>? Personally, I could spend hours going down every single aisle and freezer chest at Trader Joe's, picking up random snacks and frozen meals that were not planned for along the way. I could also go to 99 Ranch and beeline to any sales I see, oggle at the live fish and crabs, and throw some instant ramen into my cart on the way out just because how could you not when there are fifty different kinds?
+        I immediately thought back to the <b>Weee! CEO's words of making grocery shopping "much more inspiring and fun"</b>. Looking at my design again, there wasn't quite any interaction that sparked joy. And thus I began thinking, <b>"How can I bring a smile to someone's face when shopping on Weee!"</b>? Personally, I could spend hours going down every single aisle and freezer chest at Trader Joe's, picking up random snacks and frozen meals that were not planned for along the way. I could also go to 99 Ranch and beeline to any sales I see, oggle at the live fish and crabs, and throw some instant ramen into my cart on the way out just because how could you not when there are fifty different kinds?
       </p>
       <p>
         To really pinpoint the moments that bring someone joy when grocery shopping at a brick and mortar store, I asked a user to describe the last time they enjoyed their grocery shopping experience in person. And from that, I created a storyboard. <b>From storyboarding, I realized that people get a lot of joy from moments of pleasant surprise and discovery</b>, such as picking up spur of the moment items. Ben picked up a bottle of wine, a bag of okra chips, and a bouquet of flowers, none of which were on his grocery list coming in or remotely related to the other items, but got him excited. The flowers caught his eye in the beginning of his shopping time, and the wine and okra caught his eye at the end of his shopping experience, starting and ending the trip with moments of delight.
       </p>
       <img src={Assets.Storyboard} alt="storyboard of shopping at Trader Joe's" style={{marginBottom: "30px"}}></img>
       <p>
-        From here, I thought about how to incorporate a moment of delightful surprise when discovering an add-on item. Throughout the design process, I made sure to <b>balance bringing joy while not detracting from the productivity of grocery shopping</b> as the convenience and efficiency is a big draw of Weee. During checkout seemed the most logical place to introduce people to a few possible add-on items. With the Weee Community feature, people already post recipes from their shopping hauls and tag which Weee items they used. <b>I realized how that user generated recipe data could be leveraged</b> to create an <b>AI feature where Weee identifies what the shopper is trying to cook based on ingredients in their cart and would suggest a few more add-on items to enhance their dish</b>.
+        From here, I thought about how to incorporate a moment of delightful surprise when discovering an add-on item. Throughout the design process, I made sure to <b>balance bringing joy while not detracting from the productivity of grocery shopping</b> as the convenience and efficiency is a big draw of Weee!. During checkout seemed the most logical place to introduce people to a few possible add-on items. With the Weee! Community feature, people already post recipes from their shopping hauls and tag which Weee! items they used. <b>I realized how that user generated recipe data could be leveraged</b> to create an <b>AI feature where Weee! identifies what the shopper is trying to cook based on ingredients in their cart and would suggest a few more add-on items to enhance their dish</b>.
       </p>
       <p>
         I hope what I came up with will bring a smile to people's faces because I sure had a lot of fun creating it! 
@@ -432,7 +432,7 @@ export function Joy() {
         </video>
       </div>
       <div className="caption-container">
-        <caption>Weee suggests ingredients for kimchi fried rice based on shopper's cart</caption>
+        <caption>Weee! suggests ingredients for kimchi fried rice based on shopper's cart</caption>
       </div>
 
 
@@ -450,7 +450,7 @@ export function Challenges() {
            I learned how to <b>ruthlessly prioritize</b> top features (and correspondingly, how to deprioritize ideas that could be A/B tested later)
           </li>
           <li>
-            I also continued my growth in <b>designing entire user journeys</b> not just single interfaces that required an end-to-end analysis and redesign&mdash;all the while staying <b>consistent with Weee's current design system and workflows</b>. I considered that if this redesign would be released that it would not completely disrupt users' mental models.
+            I also continued my growth in <b>designing entire user journeys</b> not just single interfaces that required an end-to-end analysis and redesign&mdash;all the while staying <b>consistent with Weee!'s current design system and workflows</b>. I considered that if this redesign would be released that it would not completely disrupt users' mental models.
           </li>
           <li>
             I was also able to continue honing my Figma <b>prototyping skills through creating micro-interactions</b> and <b>design fundamentals</b> by focusing on information architecture, spacing, hierarchy, and more. 

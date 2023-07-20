@@ -14,7 +14,7 @@ function Home() {
       linkUrl: "/weee",
       imageUrl: weeePreview,
       alt: "Weee Redesign",
-      polaroidTitle: "Weee Redesign",
+      polaroidTitle: "Weee! Redesign",
       polaroidDescription: "Fostering community within the grocery purchasing journey to inspire shoppers and drive e-grocery sales",
       aspectRatio: "aspectRatioWide"
     },
