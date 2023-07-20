@@ -170,6 +170,11 @@ export function UserAcquisitionOnboarding() {
   )
 }
 export function Rebranding() {
+  const handleClick = event => {
+    event.preventDefault();
+    const anchor = document.querySelector('#brand-guidelines-heading')
+    anchor.scrollIntoView({ behavior: 'smooth', block: "start" });
+  };
   return (
     <div id="Rebranding">
       <h1><span className="section-title highlight">rebranding</span></h1>
@@ -178,6 +183,9 @@ export function Rebranding() {
       </p>
       <p>
         Beyond the pure design, I wanted to <b>extend the brand to all parts of Fitvio</b>, including the team itself. As we were working completely virtually, it was hard to build a team culture of connection and engagement. I uploaded our new logo as a Slack emoji to <b>socialize the new brand with the team and build excitement</b>.
+      </p>
+      <p>
+        See the full <a className="content-link" href="#brand-guidelines-heading" onClick={handleClick}>brand guidelines</a> below.
       </p>
       <div style={{marginTop: "30px"}}>
         <ModalImage
@@ -261,7 +269,7 @@ export function Rebranding() {
           hideZoom={true}
         />
       </div>
-      <p className="subheading" style={{margin:"20px"}}>Fitvio brand guidelines</p>
+      <p className="subheading" id="brand-guidelines-heading" style={{margin:"20px", scrollMarginBlockStart:40}}>Fitvio brand guidelines</p>
       <object id="brand-guidelines-pdf" data={Assets.BrandGuidelines} type="application/pdf">
         <p>
           Unable to display brand guidelines pdf. <a href={Assets.BrandGuidelines} target="_blank" rel="noopener noreferrer nofollow">Download</a> instead.
