@@ -11,6 +11,7 @@ function Weee() {
         <Grid container columns={16} columnSpacing={12}>
           <Grid className="menuBlock" item sm={0} md={3}>
             <Menu menuItems={{
+              BackToTop: null,
               Summary: null, 
               BackgroundResearch: null, 
               UserResearch: null,

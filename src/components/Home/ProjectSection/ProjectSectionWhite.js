@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid, Container } from '@mui/material';
 import Polaroid from '../../../components/Polaroid/Polaroid.js';
-import Button from '../../../components/Button/Button.js';
+import PrimaryButton from '../../PrimaryButton/PrimaryButton.js';
 import ProjectSummary from '../../../components/ProjectSummary/ProjectSummary.js'
 import './ProjectSection.css';
 
@@ -18,7 +18,7 @@ function ProjectSectionWhite(props) {
           <Grid item xs={12} md={4} order={{ xs: 2, md: 1}}>
             <div className="dividerTan"></div>
             <ProjectSummary desc={props.projectProps.desc}/>
-            <Button buttonText={props.projectProps.button.buttonText} buttonLink={props.projectProps.button.buttonLink} target={props.projectProps.button.target}></Button>
+            <PrimaryButton buttonText={props.projectProps.button.buttonText} buttonLink={props.projectProps.button.buttonLink} target={props.projectProps.button.target}></PrimaryButton>
           </Grid>
 
           {/* polaroid */}

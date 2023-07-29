@@ -22,20 +22,21 @@ export function Intro() {
 
   return (
     <div id="Intro">
-      <Polaroid 
+      <img src={Assets.What2yumPreview} alt="What2Yum" title="What2Yum" style={{marginTop: "30px"}}/>
+      {/* <Polaroid 
         linkUrl="https://apps.apple.com/us/app/what2yum/id1540868286" 
         imageUrl={Assets.What2yumPreview} 
         alt="What2Yum"
         polaroidTitle="What2Yum"
         polaroidDescription="Empowering friends and couples to decide where to eat within minutes——no bickering, no indecisiveness"
-        aspectRatio="aspectRatioWide"/>
+        aspectRatio="aspectRatioWide"/> */}
     </div>
   )
 }
 
 export function Summary() {
   return (
-    <div id="Summary">
+    <div id="Summary" className="project-section">
       <h1><span className="section-title highlight">summary</span></h1>
       {/* <Grid container columns={2}>
         <Grid item xs={2} sm={1}>
@@ -91,7 +92,7 @@ export function Problem() {
 
 export function CompetitiveAnalysis() {
   return (
-    <div id="CompetitiveAnalysis">
+    <div id="CompetitiveAnalysis" className="project-section">
       <h1><span className="section-title highlight">competitive analysis</span></h1>
       <p>
         Currently, people search across <b>Google, Yelp, and food delivery apps</b> to decide what to eat based on reviews and other filters like distance and price. However, these apps <b>do not allow for collaborative decision making</b>. There are also apps like Tiny Decisions that help people make decisions. However, these apps are often based on a <b>random</b> generator.
@@ -105,7 +106,7 @@ export function CompetitiveAnalysis() {
 
 export function SolutionExploration() {
   return (
-    <div id="SolutionExploration">
+    <div id="SolutionExploration" className="project-section">
       <h1><span className="section-title highlight">solution exploration</span></h1>
       <p>
         To start off, we employed parallel design and independently sketched a couple paper prototypes with our initial features in mind. We wanted to quickly gain user feedback on multiple interactions and merge the good parts of the designs. The main interactions we wanted to test were filling out a preference questionnaire versus using a Tinder-like swiping mechanism to gather data on user food preferences.
@@ -213,7 +214,7 @@ export function SolutionExploration() {
 
 export function FinalDesign() {
   return (
-    <div id="FinalDesign">
+    <div id="FinalDesign" className="project-section">
       <h1><span className="section-title highlight">final design</span></h1>
       <p>
         For the final versions of our app, we continuously re-evaluated our development priorities as we built out different features based on user feedback, our timeline, and the techinical difficulty versus impact of the feature. I also designed the app logo, icon, and app store screenshots for launching our app in the Apple app store.

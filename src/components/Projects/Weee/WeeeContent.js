@@ -20,20 +20,21 @@ export function Intro() {
 
   return (
     <div id="Intro">
-      <Polaroid 
+      <img src={Assets.WeeePreview} alt="Weee! Redesign" title="Weee! Redesign" style={{marginTop: "30px"}}/>
+      {/* <Polaroid 
         linkUrl="https://www.figma.com/proto/RnKtg5yRt8PQmSb0G185lA/Weee!-Redesign?type=design&node-id=464-11434&scaling=scale-down&page-id=464%3A11433&starting-point-node-id=464%3A11434" 
         imageUrl={Assets.WeeePreview} 
         alt="Weee! Redesign"
         polaroidTitle="Weee! Redesign"
         polaroidDescription="Fostering community within the grocery purchasing journey to inspire shoppers and drive e-grocery sales"
-        aspectRatio="aspectRatioWide"/>
+        aspectRatio="aspectRatioWide"/> */}
     </div>
   )
 }
 
 export function Summary() {
   return (
-    <div id="Summary">
+    <div id="Summary" className="project-section">
       <h1><span className="section-title highlight">summary</span></h1>
       <p className="subheading">problem</p>
       <p>
@@ -78,7 +79,7 @@ export function Summary() {
 
 export function BackgroundResearch() {
   return (
-    <div id="BackgroundResearch">
+    <div id="BackgroundResearch" className="project-section">
       <h1><span className="section-title highlight">background research</span></h1>
       <p>
       When I first started thinking about the Weee! redesign, I went into it with my own experiences of using the app to grocery shop and check things off my grocery list. I thus assumed that I would be redesigning the experience of finding and buying groceries. But, as I began to dig into Weee!'s mission and niche, I realized that I was inadvertently bringing my own personal biases into how I was approaching the redesign. Weee!'s mission is much more than making it easy for people to buy groceries. It is to <b>create a community of shoppers who connect and inspire each other through their love and excitement for Asian and Hispanic food</b>. And thus, I reevaluated the way I was approaching the redesign and pivoted to focusing on how Weee! can build and leverage the community to help people discover new foods in an easy way. 
@@ -95,7 +96,7 @@ export function BackgroundResearch() {
 
 export function UserResearch() {
   return (
-    <div id="UserResearch">
+    <div id="UserResearch" className="project-section">
       <h1><span className="section-title highlight">user research</span></h1>
       <p>
         Since Weee! positions itself as an e-grocer that provides a <b>discovery and social grocery shopping experience</b> versus a more individual search-based experience, I wanted to put that to the test and see if that mission resonated with users currently purchasing groceries on the app.
@@ -149,7 +150,7 @@ export function UserResearch() {
 
 export function DesignPatterns() {
   return (
-    <div id="DesignPatterns">
+    <div id="DesignPatterns" className="project-section">
       <h1><span className="section-title highlight">analyzing design patterns</span></h1>
       <p>
         With an idea of what the problem I wanted to tackle was, I <b>turned to existing successful social media and ecommerce products to analyze how they approach community engagement and searching compared to Weee!</b>. I examined Pinterest, Amazon, and Instagram. An interesting experience that differed across the apps was the default search page. Pinterest had a default search page with personalized category widgets meant to help users quickly search something they are interested in. Instagram's was for infinitely exploring filled with personalized images and videos. Amazon was the only one without a separate search page, with the home page serving the same purpose. The home screen encouraged people to continue their shopping journey right away and also recommended deals. 
@@ -173,7 +174,7 @@ export function DesignPatterns() {
 
 export function Sketching() {
   return (
-    <div id="Sketching">
+    <div id="Sketching" className="project-section">
       <h1><span className="section-title highlight">sketching</span></h1>
       <p>
         With an idea of how other products approach social feeds and searching, I began to sketch out different points in the grocery shopping process where community posts could be brought in for inspiration. As the main point of the community posts are to inspire people to buy more groceries, <b>I knew there had to be an easier way for people to add something to cart after seeing a post</b>. 
@@ -213,7 +214,7 @@ export function Sketching() {
 
 export function Wireframing() {
   return (
-    <div id="Wireframing">
+    <div id="Wireframing" className="project-section">
       <h1><span className="section-title highlight">lofi wireframing</span></h1>
       <p>
         I then began adding more fidelity into wireframes, focusing on incorporating the feedback and how different components and new features would work together to <b>drive discovery and purchases</b>.
@@ -275,7 +276,7 @@ export function Wireframing() {
 
 export function PrototypingDetails() {
   return (
-    <div id="PrototypingDetails">
+    <div id="PrototypingDetails" className="project-section">
       <h1><span className="section-title highlight">refining & prototyping</span></h1>
       <p>
         Along with finalizing the individual screens, I <b>focused on details</b> with specific copy, colors, product images, and even envision small animations that would help catch user attention. Throughout this process, I closely <b>aligned with Weee!'s current design system and patterns</b> (font, sizing, button components, use of graphics) to ensure that my redesign would be practical and fit in branding with the current system. At the same time, I <b>took liberties where I saw fit</b>, such as with pops of color and animations.
@@ -325,7 +326,7 @@ export function PrototypingDetails() {
         onSlideChange={
           () =>  playPauseVideo()
         }
-        onSwiper={(swiper) => console.log(swiper)}
+        // onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
           <div className="carousel-video-container">
@@ -365,7 +366,7 @@ export function PrototypingDetails() {
 
 export function Color() {
   return (
-    <div id="Color">
+    <div id="Color" className="project-section">
       <h1><span className="section-title highlight">being intentional with color</span></h1>
       <p>
         After a round of final critique with my design mentor, I realized that <b>I could be a lot more intentional about how I use color to draw the eye to elements and space elements out</b>. Also, I needed to think more critically about <b>accessibility</b> when choosing and overlaying colors. Thus, I focused on a few screens to improve the following:
@@ -408,7 +409,7 @@ export function Color() {
 
 export function Joy() {
   return (
-    <div id="Joy">
+    <div id="Joy" className="project-section">
       <h1><span className="section-title highlight">sparking joy!</span></h1>
       <p>
         Seems like I was done with the redesign here. And I was pretty proud of my work&#8212;it integrated the community with the shopping experience and was clean and intuitive. But I recently listened to a talk, <a href="https://config.figma.com/video-on-demand/6329868113112" className="content-link" target="_blank" rel="noopener noreferrer">Putting Joy on the Roadmap</a>, at Config by Figma designers and product managers Jenny Wen, Mihika Kapoor, and Kee Yen Yeo, that <b>really inspired and prompted me to go back to the drawing board once more</b>. Their talk was about bringing joy and delight to people in our digital products, seeking inspiration from our physical world. The talk highlighted how little interactions that bring joy to our users may not be the most seemingly critical features, but it may <b>bring the joy we experience in the physical world to the digital one</b>. The fun high fiving feature on FigJam was a prime example of an interaction that brought smiles to peoples' faces when performing a productivity task. 
@@ -442,7 +443,7 @@ export function Joy() {
 
 export function Challenges() {
   return (
-    <div id="Challenges">
+    <div id="Challenges" className="project-section">
       <h1><span className="section-title highlight">challenges & takeaways</span></h1>
       <p>
         <ol>

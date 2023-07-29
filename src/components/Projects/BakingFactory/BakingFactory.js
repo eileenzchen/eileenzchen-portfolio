@@ -12,7 +12,7 @@ function BakingFactory() {
         <Grid container columns={16} columnSpacing={12}>
           <Grid className="menuBlock" item sm={0} md={3}>
             <Menu menuItems={{
-              Intro:null, 
+              BackToTop: null,
               Summary:null,
               PersonasUseCases:null,
               QuickSketches:null,

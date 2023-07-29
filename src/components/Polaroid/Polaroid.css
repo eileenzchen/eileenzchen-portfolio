@@ -10,7 +10,14 @@
   box-sizing: border-box;
 }
 
+.polaroid:hover a img{
+  opacity: 60%;
+  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-in-out;  
+  -moz-transition: opacity 200ms ease-in-out;
+}
 
+/* washy tape */
 .polaroid:before {
   width: 50%;
   height: 30px;

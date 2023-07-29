@@ -1,15 +1,20 @@
+header {
+  display: inline-block;
+}
+
 header a {
   text-decoration: none;
 }
 
 .header-name {
   font-size: 30px;
-  margin: 30px 0px 0px 0px;
+  margin: 0;
+  padding: 30px 0px 0px 0px;
   color: #3D2309;
 }
 
 .header-subheading {
   font-size: 16px;
-  margin-top: 10px;
+  /* padding-top: 10px; */
   color: #92AD70;
 }

@@ -10,11 +10,21 @@ function Polaroid(props) {
   const hrefAttribute = props.linkUrl ? {href: props.linkUrl} : {};
 
   useEffect(() => {
-    Aos.init({duration: 1000});
+    Aos.init({duration: 1000, offset: -25});
   }, []);
 
+  if (props.aspectRatio == 'aspectRatioRegular') {
+    return (
+      <div data-aos="fade-up" className="polaroid">
+        <img src={props.imageUrl} alt={props.alt} title={props.alt} className={props.aspectRatio}></img>
+        <div className="polaroidText">
+          <p className="monospace-500 title">{props.polaroidTitle}</p>
+          <p className="monospace-300 description">{props.polaroidDescription}</p>
+        </div>
+      </div>
+    );
+  }
   return (
-    <>
     <div data-aos="fade-up" className="polaroid">
       
       <a {...hrefAttribute}>
@@ -27,8 +37,6 @@ function Polaroid(props) {
       </a>
       
     </div>
-  </>
-    
   );
 }
 

@@ -45,21 +45,8 @@ body {
   }
 }
 
-.link {
-  /* display: inline-block; */
-  background:linear-gradient(180deg, transparent 50%, rgba(146, 173, 112, 0.5) 50%);
-  background: linear-gradient(180deg, rgba(146, 173, 112, 0.5), rgba(146, 173, 112, 0.5));
-  background-position: 0 100%;
-  background-size: 0% 50%;
-  background-repeat: no-repeat;
-  transition:
-    background-size 0.3s,
-    background-position 0s 0.3s; 
-}
-
-.link:hover {
-  background-position: 100% 100%;
-  background-size: 100% 50%;
+.project-section {
+  scroll-margin-block-start: 100px;
 }
 
 .highlight {
@@ -206,13 +193,13 @@ b {
   height: 85%;
 }
 
-/* .drop-shadow {
+.drop-shadow {
   filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.3));
 }
 
 .drop-shadow-hover:hover {
   filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.4));
-} */
+}
 
 .drop-shadow-hover-light:hover {
   filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.08));

@@ -1,0 +1,33 @@
+.button-secondary {
+  background-color: #FFFFFF;
+  border-radius: 8px; 
+  border:#92AD70 1px solid;
+  /* border: none; */
+  color: #92AD70 !important;
+  text-align: center;
+  /* text-decoration: none; */
+  font-size: 20px;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-decoration: underline solid transparent; */
+}
+
+.button-secondary:hover {
+  cursor: pointer;
+  /* background-color: #f6fcef; */
+  /* text-decoration: underline; */
+  color: #718d4e !important;
+  border:#718d4e 2px solid;
+  transition: 200ms ease-in-out;
+  -webkit-transition: 200ms ease-in-out;  
+  -moz-transition: 200ms ease-in-out;
+}
+
+.buttonWrapper {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+

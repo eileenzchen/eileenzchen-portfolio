@@ -4,7 +4,28 @@ h1 {
 
 @media screen and (min-width: 900px) {
   .spacer {
-    height: 72px;
+    height: 24px;
+  }
+  /* .tonys-polaroid {
+    margin-top: -96px !important;
+  } */
+}
+
+.about-button button {
+  width: 200px;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  .about-button button {
+    width: 155px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about-button .buttonWrapper {
+    padding-top: 10px;
+    padding-bottom: 0px;
   }
 }
 

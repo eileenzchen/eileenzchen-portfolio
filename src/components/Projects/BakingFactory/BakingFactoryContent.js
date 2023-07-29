@@ -17,13 +17,14 @@ export function Intro() {
 
   return (
     <div id="Intro">
-      <Polaroid 
+      <img src={Assets.BakingFactoryPreview} alt="The Baking Factory" title="The Baking Factory" style={{marginTop: "30px"}}/>
+      {/* <Polaroid 
         linkUrl="" 
         imageUrl={Assets.BakingFactoryPreview} 
         alt="The Baking Factory"
         polaroidTitle="The Baking Factory"
         polaroidDescription="An ecommerce system enabling both customers and employees to streamline bakery transactions"
-        aspectRatio="aspectRatioWide"/>
+        aspectRatio="aspectRatioWide"/> */}
       {/* <ProjectSummary desc={desc} style={{fontSize: 12}}/> */}
     </div>
   )
@@ -31,7 +32,7 @@ export function Intro() {
 
 export function Summary() {
   return (
-    <div id="Summary">
+    <div id="Summary" className="project-section">
       <h1><span className="section-title highlight">summary</span></h1>
       <p className="subheading">problem</p>
       <p>
@@ -55,7 +56,7 @@ export function Summary() {
 
 export function PersonasUseCases() {
   return (
-    <div id="PersonasUseCases">
+    <div id="PersonasUseCases" className="project-section">
       <h1><span className="section-title highlight">personas & use cases</span></h1>
       <p>
         Provided with a <a href={Assets.Narrative } className="content-link" target="_blank" rel="noopener noreferrer">fictitious story</a> of two owners starting The Baking Factory, I first extracted who the actors of the system were and what each of their user needs were. The five actors were system admin, shippers, bakers, customers, and guests. Listing out <a href={Assets.UseCases} className="content-link" target="_blank" rel="noopener noreferrer">use cases</a> then helped lay out the similar and different user goals of each actor and how they translated to functional or system requirements. It also helped with prioritizing what were A versus B level use cases.
@@ -120,7 +121,7 @@ export function PersonasUseCases() {
 
 export function QuickSketches() {
   return (
-    <div id="QuickSketches">
+    <div id="QuickSketches" className="project-section">
       <h1><span className="section-title highlight">quick sketches</span></h1>
       <p>
       With a deeper understanding of who I'm creating the system for and their utility of the baking factory ecommerce system, I began with some rough sketches of the site to quickly ideate on how different elements could work together to help users accomplish their goals.
@@ -163,7 +164,7 @@ export function QuickSketches() {
 
 export function ContextualizingDesign() {
   return (
-    <div id="ContextualizingDesign">
+    <div id="ContextualizingDesign" className="project-section">
       <h1><span className="section-title highlight">placing the design in context</span></h1>
       <p>
         From what I learned from some quick sketches, I wanted to create higher fidelity wireframes to see the different components in context and visualize how the aesthetics of the site will support the functionality. The first version was in grayscale so that I could focus on the information architecture and visual hierarchy. Since I had very limited time to flesh out designs, I prioritized the customer interactions, including the home and customer dashboard pages. 
@@ -323,7 +324,7 @@ export function ContextualizingDesign() {
 
 export function Interplay() {
   return (
-    <div id="Interplay">
+    <div id="Interplay" className="project-section">
       <h1><span className="section-title highlight">the interplay between design and engineering</span></h1>
       <p>
         Due to limited time, I started development work and utilized the Materialize framework in order to quickly implement a design standard across the website. As I started coding out the different functionalities of the site for different users, I started honing in on affordances and feedback states to more effectively guide and encourage user interactions (full video at end of this section). 
@@ -389,7 +390,7 @@ export function Interplay() {
 
 export function Learnings() {
   return (
-    <div id="Learnings">
+    <div id="Learnings" className="project-section">
       <h1><span className="section-title highlight">learnings & reflection</span></h1>
       <p className="subheading">Learnings</p>
       <p><b>1. Understanding user motivation is key</b></p>

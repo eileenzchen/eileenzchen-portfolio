@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import MenuItem from './MenuItem';
 import './Menu.css';
 import './MenuItem.css'
-
+import ArrowUpwardRoundedIcon from '@mui/icons-material/ArrowUpwardRounded';
 /*
  * The list of our Menu Titles (Sections) as keys, with their
  * Y-pixel position on the page as the values
@@ -23,6 +23,7 @@ import './MenuItem.css'
  */
 const Menu = ({menuItems}) => {
   const menuNameMappings = {
+    BackToTop: "scroll to top",
     Intro: "intro",
     Summary: "summary",
     Problem: "problem space",
@@ -52,7 +53,11 @@ const Menu = ({menuItems}) => {
    * Store the active menuItem in state to force update
    * when changed
    */
-  const [activeItem, setActiveItem] = useState('Intro')
+  const [activeItem, setActiveItem] = useState('');
+  const [showBackToTop, setBackToTop] = useState(false);
+  const [menuState, setMenuState] = useState('closed');
+
+  const [showHamburger, setShowHamburger] = useState(window.screen.width <= 900);
   
   /*
     * Determine which section the user is viewing, based on their scroll-depth
@@ -62,6 +67,12 @@ const Menu = ({menuItems}) => {
   const handleScroll = useCallback(() => {
     const curPos = window.scrollY;
     let curSection = null;
+    if (curPos > 100) {
+      setBackToTop(true);
+    }
+    else {
+      setBackToTop(false);
+    }
     /*
       * Iterate through our sections object to find which section matches with
       * the current scrollDepth of the user.
@@ -73,28 +84,15 @@ const Menu = ({menuItems}) => {
     for (const section in menuItems) {
       if (document.getElementById(section)){
         const rect = document.getElementById(section).getBoundingClientRect();
-
-        if (curPos < rect.bottom) {
-          curSection = section
+        if (curPos >= (rect.top + curPos - 300) && curPos < rect.bottom + curPos - 300) {
+          curSection = section;
+          break;
         }
       }
-
-      // curSection = menuItems[section] >= curPos ? section : curSection
-      // console.log("start");
-      // console.log(curPos);
-      // console.log(menuItems[section]);
-      // console.log(curSection);
-      // if (curSection !== section) {
-      //   break
-      // }
-
     }
     if (curSection !== activeItem) {
       setActiveItem(curSection)
     }
-
-
-    // console.log(activeItem);
   }, [activeItem]);
 
   /*
@@ -109,12 +107,22 @@ const Menu = ({menuItems}) => {
     for (const key in menuItems) {
       if (document.getElementById(key)){
         menuItems[key] =
-        document.getElementById(key).getBoundingClientRect().top + curScroll;
+        document.getElementById(key).getBoundingClientRect().top;
       }
     }
-    // const bottom = document.body.offsetHeight;
-    // handleScroll();
+    handleScroll();
   }, []);
+
+  // for window listener of screen resize toggle whether or not to show hamburger
+  const handleMenuDisplay = event => {
+    event.preventDefault();
+    if (window.screen.width <= 900 && !showHamburger) {
+      setShowHamburger(true);
+    }
+    else if (window.screen.width > 900 && showHamburger) {
+      setShowHamburger(false);
+    }
+  };
 
   /*
    * The MutationObserver allows us to watch for a few different
@@ -125,33 +133,93 @@ const Menu = ({menuItems}) => {
    * on our user's scroll depth
    */
   useEffect(() => {
-
-    // const observer = new MutationObserver(getAnchorPoints);
-    // observer.observe(document.getElementById('root'), {
-    //   childList: true,
-    //   subtree: true,
-    // });
+    const observer = new MutationObserver(getAnchorPoints);
+    observer.observe(document.getElementById('root'), {
+      childList: true,
+      subtree: true,
+    });
     window.addEventListener('scroll', handleScroll);
-    window.addEventListener('scroll', getAnchorPoints);
+    // window.addEventListener('scroll', getAnchorPoints);
     window.addEventListener('resize', handleScroll);
-    window.addEventListener('resize', getAnchorPoints);
-  }, [getAnchorPoints, handleScroll]);
+    window.addEventListener('resize', handleMenuDisplay);
+    // window.addEventListener('resize', getAnchorPoints);
+  }, [getAnchorPoints, handleScroll, handleMenuDisplay]);
+
+
 
   /*
    * Create the list of MenuItems based on the menuItems object we have defined above
    */
   const menuList = Object.keys(menuItems).map((e, i) => 
-    <MenuItem itemName={e} key={`menuitem_${i}`} displayName={menuNameMappings[e]} linkClass={e === activeItem ? "link activeItem" : "link"} />
+    <MenuItem itemName={e} key={`menuitem_${i}`} displayName={menuNameMappings[e]} linkClass={e === activeItem ? "link activeItem" : "link"} containerClass={e === activeItem ? "activeItemContainer" : ''}  />
   )
+
+  // on non mobile/tablet have a back to top link within menu
+  if (showBackToTop && menuList[0].props.itemName !== 'BackToTop') {
+    menuList.unshift(
+      <MenuItem itemName={'BackToTop'} key={ `menuitem_00`} displayName={menuNameMappings['BackToTop']} linkClass={'BackToTop' === activeItem ? "link activeItem" : "link"} containerClass={'BackToTop' === activeItem ? "activeItemContainer" : ''}/>
+    )
+  }
+  else if (!showBackToTop) {
+    menuList.shift();
+  }
+
+  // hamburger open or closed state
+  const toggleMenu = event => {
+    event.preventDefault();
+    if (menuState == 'closed') {
+      setMenuState('open');
+    }
+    else {
+      setMenuState('closed');
+    }
+  };
+
+  const scrollToTop = event => {
+    event.preventDefault();
+    document.querySelector('header').scrollIntoView({ behavior: 'smooth'})
+  };
+
 
   /*
    * Return the JSX Menu, complete with nested MenuItems
    */
+
+  if (showHamburger) {
+    return (
+    <>
+      {
+      showBackToTop 
+        && menuList.shift()
+        &&
+        <a id="scrollTopButton" role="button" aria-label="scroll to top button" onClick={scrollToTop}>
+          <ArrowUpwardRoundedIcon/>
+        </a>
+      }
+      <section id="Menu" className={menuState}>
+        <div id="main-menu" className={menuState}>
+          {menuList}
+        </div>
+        <nav role="navigation" aria-label="menu" onClick={toggleMenu} id='hamburgerContainer'>
+          <button aria-expanded={menuState === 'open' ? true : false} id='hamburger' className={menuState} aria-controls="main-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </section>
+    </>
+    );
+  }
   return (
-    <section id="Menu">
+    <>
+      <nav role="navigation" aria-label="menu" id="Menu">
         {menuList}
-    </section>
-  );
+      </nav>
+    </>
+    );
+
 }
 
 export default Menu

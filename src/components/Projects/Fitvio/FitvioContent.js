@@ -16,13 +16,14 @@ export function Intro() {
 
   return (
     <div id="Intro">
-      <Polaroid 
+      <img src={Assets.FitvioPreview} alt="Fitvio" title="Fitvio" style={{marginTop: "30px"}}/>
+      {/* <Polaroid 
         linkUrl="/fitvio" 
         imageUrl={Assets.FitvioPreview} 
         alt="Fitvio"
         polaroidTitle="Fitvio"
         polaroidDescription="Designing an easily accessible fitness app – and wearing many design hats along the way"
-        aspectRatio="aspectRatioWide"/>
+        aspectRatio="aspectRatioWide"/> */}
     </div>
   )
 
@@ -30,7 +31,7 @@ export function Intro() {
 
 export function Summary() {
   return (
-    <div id="Summary">
+    <div id="Summary" className="project-section">
       <h1><span className="section-title highlight">summary</span></h1>
       <p className="subheading">context</p>
       <p>
@@ -63,7 +64,7 @@ export function Summary() {
 }
 export function UnderstandingUsers() {
   return (
-    <div id="UnderstandingUsers">
+    <div id="UnderstandingUsers" className="project-section">
       <h1><span className="section-title highlight">understanding our users</span></h1>
       <p>
         As the only thing we had was an idea so far, I knew that it was vital to first understand our users. And not just for me to understand our users, but for the whole team from our engineer to the data analyst to the cofounders. From the get-go, I wanted to <b>establish design as a critical function for Fitvio and one that the whole team should understand and partake in</b>. I demonstrated that design was not there to make things look pretty, but to advocate for Fitvio's users and create experiences that are both usable and beautiful. 
@@ -120,7 +121,7 @@ export function UnderstandingUsers() {
 }
 export function ProductRoadmapping() {
   return (
-    <div id="ProductRoadmapping">
+    <div id="ProductRoadmapping" className="project-section">
       <h1><span className="section-title highlight">product roadmapping</span></h1>
       <p>
         With our workshopping sessions and weekly sync meetings, I <b>learned to work in parallel with my partners</b> in engineering, product, marketing, and business to align on the goals of each phase of development and work, even as pivots or changes came up&mdash;which they often did. 
@@ -144,7 +145,7 @@ export function ProductRoadmapping() {
 }
 export function UserAcquisitionOnboarding() {
   return (
-    <div id="UserAcquisitionOnboarding">
+    <div id="UserAcquisitionOnboarding" className="project-section">
       <h1><span className="section-title highlight">user acquisition & onboarding</span></h1>
       <p>
         As we were working towards an MVP, I thought that <b>first and foremost the design strategy should be to acquire customers</b>. With no customers, no one will be seeing the product. With just an initial outsourced logo to work off of that was handed to me by one of the cofounders, I built an <b>onboarding experience for new users, starting from the Fitvio marketing page all the way to the authenticated home page</b>. 
@@ -280,7 +281,7 @@ export function Rebranding() {
 }
 export function Challenges() {
   return (
-    <div id="Challenges">
+    <div id="Challenges" className="project-section">
       <h1><span className="section-title highlight">challenges & takeaways</span></h1>
       <p>
         <ol>
