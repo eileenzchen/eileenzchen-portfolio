@@ -83,7 +83,7 @@ function About() {
             imageUrl={tonysImageCropped} 
             alt="Me with Tony's Pizza"
             polaroidTitle=""
-            polaroidDescription="I strive to design with compassion and an open mind"
+            polaroidDescription="Always striving to design with compassion and an open mind ✌️"
             aspectRatio="aspectRatioRegular">
           </Polaroid>
         </Grid>
