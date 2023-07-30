@@ -220,13 +220,13 @@ li {
   font-weight: 300;
   font-size: 15px;
   margin-left: -6px;
-  &:hover {
-    text-decoration: underline;
-    font-weight: 400;
-  }
-  > svg {
-    margin: 0;
-  }
+}
+.return-home-container:hover {
+  text-decoration: underline;
+  font-weight: 400;
+}
+.return-home-container svg {
+  margin: 0;
 }
 
 

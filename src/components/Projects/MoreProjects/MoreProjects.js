@@ -7,13 +7,16 @@ import './MoreProjects.css'
 function MoreProjects(props) {
 
   const polaroidsList = props.relatedProjects.map((projectKey, i) => 
-    <Polaroid 
-      linkUrl={projectsMap[projectKey].polaroid.linkUrl}
-      imageUrl={projectsMap[projectKey].polaroid.imageUrl} 
-      alt={projectsMap[projectKey].polaroid.alt} 
-      polaroidTitle={projectsMap[projectKey].polaroid.polaroidTitle} 
-      polaroidDescription={projectsMap[projectKey].polaroid.polaroidDescription}
-      aspectRatio={projectsMap[projectKey].polaroid.aspectRatio}/>
+    <div key={projectKey}>
+      <Polaroid 
+        linkUrl={projectsMap[projectKey].polaroid.linkUrl}
+        imageUrl={projectsMap[projectKey].polaroid.imageUrl} 
+        alt={projectsMap[projectKey].polaroid.alt} 
+        polaroidTitle={projectsMap[projectKey].polaroid.polaroidTitle} 
+        polaroidDescription={projectsMap[projectKey].polaroid.polaroidDescription}
+        aspectRatio={projectsMap[projectKey].polaroid.aspectRatio}/>
+    </div>
+
     // <MenuItem itemName={e} key={`menuitem_${i}`} displayName={menuNameMappings[e]} linkClass={e === activeItem ? "link activeItem" : "link"} containerClass={e === activeItem ? "activeItemContainer" : ''}  />
     // linkUrl: "/fitvio",
     // imageUrl: FitvioPreview,

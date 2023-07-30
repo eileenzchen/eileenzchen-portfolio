@@ -65,9 +65,11 @@ const Menu = ({menuItems}) => {
     * item is currently active
     */
   const handleScroll = useCallback(() => {
+    console.log('handle scroll');
     const curPos = window.scrollY;
     let curSection = null;
     if (curPos > 100) {
+      console.log('scroll pos', curPos);
       setBackToTop(true);
     }
     else {
@@ -148,18 +150,18 @@ const Menu = ({menuItems}) => {
       childList: true,
       subtree: true,
     });
-    document.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
     // window.addEventListener('scroll', getAnchorPoints);
     window.addEventListener('resize', handleScroll);
     window.addEventListener('resize', handleMenuDisplay);
     // Bind the event listener
-    document.addEventListener("mousedown", handleClickOutside);
+    window.addEventListener("mousedown", handleClickOutside);
     return () => {
       // Unbind the event listener on clean up
-      document.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleScroll);
       window.removeEventListener('resize', handleMenuDisplay);
-      document.removeEventListener("mousedown", handleClickOutside);
+      window.removeEventListener("mousedown", handleClickOutside);
     };
     // window.addEventListener('resize', getAnchorPoints);
   }, [getAnchorPoints, handleScroll, handleMenuDisplay]);

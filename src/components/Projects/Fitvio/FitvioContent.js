@@ -169,8 +169,11 @@ export function Rebranding() {
       <p>
         Beyond the pure design, I wanted to <b>extend the brand to all parts of Fitvio</b>, including the team itself. As we were working completely virtually, it was hard to build a team culture of connection and engagement. I uploaded our new logo as a Slack emoji to <b>socialize the new brand with the team and build excitement</b>.
       </p>
-      <p>
+      {/* <p>
         See the full <a className="content-link" href="#brand-guidelines-heading" onClick={handleClick}>brand guidelines</a> below.
+      </p> */}
+      <p>
+        See the full <a className="content-link" href={Assets.BrandGuidelines}>brand guidelines</a> here.
       </p>
       <div style={{marginTop: "30px"}}>
         <ModalImage
@@ -254,12 +257,15 @@ export function Rebranding() {
           hideZoom={true}
         />
       </div>
-      <p className="subheading" id="brand-guidelines-heading" style={{margin:"20px", scrollMarginBlockStart:40}}>Fitvio brand guidelines</p>
-      <object id="brand-guidelines-pdf" data={Assets.BrandGuidelines} type="application/pdf">
+      <p className="subheading" id="brand-guidelines-heading" style={{marginBottom:"20px", scrollMarginBlockStart:40}}>Fitvio brand guidelines</p>
+      {/* <object id="brand-guidelines-pdf" data={Assets.BrandGuidelines} type="application/pdf">
         <p>
-          Unable to display brand guidelines pdf. <a href={Assets.BrandGuidelines} target="_blank" rel="noopener noreferrer nofollow">Download</a> instead.
+          Unable to display brand guidelines pdf. <a href={Assets.BrandGuidelines} target="_blank" rel="noopener noreferrer nofollow" className='content-link'>Download</a> instead.
         </p>
-      </object>
+      </object> */}
+      <p>
+        <a href={Assets.BrandGuidelines} target="_blank" rel="noopener noreferrer nofollow" className='content-link'>Open the Fitvio brand guidelines</a> pdf in a new tab.
+      </p>
     </div>
   )
 }
