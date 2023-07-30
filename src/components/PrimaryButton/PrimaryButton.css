@@ -16,9 +16,10 @@
 .button-primary:hover {
   cursor: pointer;
   background-color: #718d4e;
-  transition: background-color 200ms ease-in-out;
-  -webkit-transition: background-color 200ms ease-in-out;  
-  -moz-transition: background-color 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  -webkit-transition: 200ms ease-in-out;  
+  -moz-transition: 200ms ease-in-out;
+  -o-transition: 200ms ease-in-out;
 }
 
 .buttonWrapper {

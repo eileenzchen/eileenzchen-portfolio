@@ -1,5 +1,6 @@
 .projectSectionTan {
-  background-color: #D2B597;
+  background-color: #e0cdba;
+  /* background-color: #D2B597; */
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -20,7 +21,8 @@
 .dividerTan {
   width: 20%;
   height: 8px;
-  background-color: #D2B597;
+  background-color: #e0cdba;
+  /* background-color: #D2B597; */
   margin: 50px 0px 20px 0px;
 }
 

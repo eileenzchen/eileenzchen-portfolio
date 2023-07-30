@@ -1,0 +1,25 @@
+@media (min-width: 901px) {
+  .related-projects-container {
+    padding: 0 50px 50px 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .related-projects-container {
+    padding: 0 20px 30px 20px;
+  }
+}
+
+.related-projects-heading {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid #92AD70; 
+  line-height: 0.05em;
+  /* margin: 10px 0 20px;  */
+  color: #3D2309;
+  font-size: 18px;
+  > span {
+    background:#ffffff; 
+    padding:0 12px; 
+  }
+}

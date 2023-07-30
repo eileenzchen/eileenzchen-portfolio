@@ -10,11 +10,20 @@
   box-sizing: border-box;
 }
 
-.polaroid:hover a img{
-  opacity: 60%;
+.polaroid:hover a img {
+  opacity: 70%;
   transition: opacity 200ms ease-in-out;
   -webkit-transition: opacity 200ms ease-in-out;  
   -moz-transition: opacity 200ms ease-in-out;
+  -o-transition: opacity 200ms ease-in-out;
+}
+
+.polaroid:hover .aspectRatioWide + .polaroidText p {
+  color: #806549;
+  transition: color 200ms ease-in-out;
+  -webkit-transition: color 200ms ease-in-out;  
+  -moz-transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;
 }
 
 /* washy tape */

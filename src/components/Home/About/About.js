@@ -9,6 +9,7 @@ import tonysImageCropped from '../assets/me_w_tonys_pizza_cropped.jpg'
 import './About.css'
 import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
 import KeyboardDoubleArrowDownRoundedIcon from '@mui/icons-material/KeyboardDoubleArrowDownRounded';
+import ArrowDownwardRoundedIcon from '@mui/icons-material/ArrowDownwardRounded';
 import PrimaryButton from '../../PrimaryButton/PrimaryButton.js';
 
 function About() {
@@ -33,7 +34,7 @@ function About() {
           <h2 className="monospace-500">Here's a little about me 🤗</h2>
           <br></br>
           {/* about me descriptions  */}
-          <Grid container columns={12}>
+          <Grid container columns={12} style={{color: "#3D2309"}}>
             <Grid item xs={12} sm={3}>
               <h2 style={{marginTop: 5, letterSpacing: 1}}>
                 <span className="highlight">identity</span>
@@ -66,10 +67,10 @@ function About() {
               <OpenInNew sx={{ml: 1}}/>
             </a> */}
             <div className="about-button">
-              <SecondaryButton buttonText="resumé" icon={<OpenInNewRoundedIcon sx={{ml: 1}}/>} buttonLink={process.env.PUBLIC_URL + '/EileenZChen_resume.pdf'} target="_blank" rel="noopener noreferrer nofollow"/>
+              <SecondaryButton buttonText="resumé" icon={<OpenInNewRoundedIcon sx={{ml: 1}} style={{paddingTop: "2px"}}/>} buttonLink={process.env.PUBLIC_URL + '/EileenZChen_resume.pdf'} target="_blank" rel="noopener noreferrer nofollow"/>
             </div>
             <div className="about-button" onClick={handleClick}>
-              <PrimaryButton buttonText="projects" icon={<KeyboardDoubleArrowDownRoundedIcon sx={{ml: 1}}/>} buttonLink="#weee-project"/>
+              <PrimaryButton buttonText="projects" icon={<ArrowDownwardRoundedIcon sx={{ml: 1}} style={{paddingTop: "2px"}}/>} buttonLink="#weee-project"/>
             </div>
 
 

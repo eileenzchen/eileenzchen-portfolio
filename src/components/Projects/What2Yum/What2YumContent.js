@@ -11,25 +11,9 @@ import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 
 export function Intro() {
-  const desc =  {
-    role: "UX Researcher, Product Designer, iOS Engineer",
-    team: "3 total engineers",
-    skills: "user testing, prototyping, project management, SwiftUI development, agile development",
-    tools: "Figma, XCode, Github, Firebase",
-    duration: "4 months",
-    cols: 2
-  }
-
   return (
     <div id="Intro">
       <img src={Assets.What2yumPreview} alt="What2Yum" title="What2Yum" style={{marginTop: "30px"}}/>
-      {/* <Polaroid 
-        linkUrl="https://apps.apple.com/us/app/what2yum/id1540868286" 
-        imageUrl={Assets.What2yumPreview} 
-        alt="What2Yum"
-        polaroidTitle="What2Yum"
-        polaroidDescription="Empowering friends and couples to decide where to eat within minutes——no bickering, no indecisiveness"
-        aspectRatio="aspectRatioWide"/> */}
     </div>
   )
 }

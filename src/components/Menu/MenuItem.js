@@ -1,6 +1,7 @@
 // https://medium.com/the-coders-guide-to-javascript/smooth-scrolling-anchor-menu-in-reactjs-175030d0bce2
 import React, { useState, useEffect } from 'react';
 import './MenuItem.css'
+import ArrowUpwardRoundedIcon from '@mui/icons-material/ArrowUpwardRounded';
 
 /*
  * A single menu item
@@ -43,11 +44,15 @@ const MenuItem = ({ itemName, linkClass, containerClass, displayName }) => {
 
   if (itemName == 'BackToTop') {
     return (
-      <div className="MenuItem">
+      <div className="MenuItem" style={{marginBottom: "50px"}}>
         <a href={`#${itemName}`}
           onClick={handleClick}
-          aria-label={`Scroll to ${itemName}`}>
-            <p className={`${containerClass}`} style={{marginBottom: "32px"}}><span className={`${linkClass}`}>{displayName}</span></p>
+          aria-label={`Scroll to ${itemName}`}
+          style={{display:"flex", "alignItems":"center"}}
+          id="back-top-link"
+          >
+            <p className={`${containerClass}`}><span className={`${linkClass}`}>{displayName}</span></p>
+            <ArrowUpwardRoundedIcon sx={{ml:1}} style={{marginTop: "1px"}}/>
         </a>
       </div>
     )

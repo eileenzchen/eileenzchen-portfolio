@@ -9,25 +9,9 @@ import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 
 export function Intro() {
-  const desc =  {
-    role: "replace",
-    team: "replace",
-    skills: "replace, replace",
-    tools: "replace, replace",
-    duration: "replace months",
-    cols: 2
-  }
-
   return (
     <div id="Intro">
       <img src={Assets.WeeePreview} alt="Weee! Redesign" title="Weee! Redesign" style={{marginTop: "30px"}}/>
-      {/* <Polaroid 
-        linkUrl="https://www.figma.com/proto/RnKtg5yRt8PQmSb0G185lA/Weee!-Redesign?type=design&node-id=464-11434&scaling=scale-down&page-id=464%3A11433&starting-point-node-id=464%3A11434" 
-        imageUrl={Assets.WeeePreview} 
-        alt="Weee! Redesign"
-        polaroidTitle="Weee! Redesign"
-        polaroidDescription="Fostering community within the grocery purchasing journey to inspire shoppers and drive e-grocery sales"
-        aspectRatio="aspectRatioWide"/> */}
     </div>
   )
 }

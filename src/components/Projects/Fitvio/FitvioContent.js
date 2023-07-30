@@ -5,25 +5,9 @@ import ModalImage from 'react-modal-image'
 import './Fitvio.css'
 
 export function Intro() {
-  const desc =  {
-    role: "Head of Design",
-    team: "cross-functional startup team working remotely (<10 people)",
-    skills: "brand design, design strategy, roadmapping, interviewing, prototyping",
-    tools: "Figma, InDesign, Illustrator",
-    duration: "4 months",
-    cols: 2
-  }
-
   return (
     <div id="Intro">
       <img src={Assets.FitvioPreview} alt="Fitvio" title="Fitvio" style={{marginTop: "30px"}}/>
-      {/* <Polaroid 
-        linkUrl="/fitvio" 
-        imageUrl={Assets.FitvioPreview} 
-        alt="Fitvio"
-        polaroidTitle="Fitvio"
-        polaroidDescription="Designing an easily accessible fitness app – and wearing many design hats along the way"
-        aspectRatio="aspectRatioWide"/> */}
     </div>
   )
 

@@ -159,6 +159,10 @@ b {
   font-weight: 600;
 }
 
+li {
+  margin-bottom: 9px;
+}
+
 .project-content p, .project-content h2, .project-content h1, blockquote {
   max-width: 600px;
   margin-left: auto;
@@ -194,7 +198,7 @@ b {
 }
 
 .drop-shadow {
-  filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.08));
 }
 
 .drop-shadow-hover:hover {
@@ -204,6 +208,25 @@ b {
 .drop-shadow-hover-light:hover {
   filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.08));
   cursor: zoom-in !important;
+}
+
+.return-home-link {
+  display: inline-block;
+}
+.return-home-container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  font-weight: 300;
+  font-size: 15px;
+  margin-left: -6px;
+  &:hover {
+    text-decoration: underline;
+    font-weight: 400;
+  }
+  > svg {
+    margin: 0;
+  }
 }
 
 

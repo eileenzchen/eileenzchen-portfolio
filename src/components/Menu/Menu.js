@@ -124,6 +124,16 @@ const Menu = ({menuItems}) => {
     }
   };
 
+  const handleClickOutside = event => {
+    event.preventDefault();
+    if (!document.querySelector('#Menu').contains(event.target)){
+      setMenuState('closed');
+    }
+    // if (ref.current && !ref.current.contains(event.target)) {
+      // alert("You clicked outside of me!");
+    // }
+  }
+
   /*
    * The MutationObserver allows us to watch for a few different
    * events, including page resizing when new elements might be 
@@ -138,10 +148,19 @@ const Menu = ({menuItems}) => {
       childList: true,
       subtree: true,
     });
-    window.addEventListener('scroll', handleScroll);
+    document.addEventListener('scroll', handleScroll);
     // window.addEventListener('scroll', getAnchorPoints);
     window.addEventListener('resize', handleScroll);
     window.addEventListener('resize', handleMenuDisplay);
+    // Bind the event listener
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      // Unbind the event listener on clean up
+      document.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+      window.removeEventListener('resize', handleMenuDisplay);
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
     // window.addEventListener('resize', getAnchorPoints);
   }, [getAnchorPoints, handleScroll, handleMenuDisplay]);
 

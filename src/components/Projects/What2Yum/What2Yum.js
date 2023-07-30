@@ -4,11 +4,22 @@ import Menu from '../../Menu/Menu.js'
 import * as What2YumContent from './What2YumContent.js'
 import './What2Yum.css'
 import '../Projects.css'
+import MoreProjects from '../MoreProjects/MoreProjects.js'
+import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
 
 function What2Yum() {
 
   return (
     <>
+      {/* return home link */}
+      <Container maxWidth="xl">
+        <a href="/" className="return-home-link">
+          <span className="return-home-container">
+            <KeyboardArrowLeftRoundedIcon sx={{mr:1}} style={{marginTop: "1px"}}/>
+            <span>return home</span>
+          </span>
+        </a>
+      </Container>
       <Container className="project-content" maxWidth="xl">
         <Grid container columns={16} columnSpacing={12}>
           <Grid className="menuBlock" item sm={0} md={3}>
@@ -31,6 +42,7 @@ function What2Yum() {
           </Grid>
         </Grid>
       </Container>
+      <MoreProjects relatedProjects={['Fitvio', 'BakingFactory', 'Weee']}/>
     </>
     
   )

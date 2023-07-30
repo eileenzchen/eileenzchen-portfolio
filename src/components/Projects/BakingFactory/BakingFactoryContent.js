@@ -6,26 +6,9 @@ import * as Assets from './assets'
 
 
 export function Intro() {
-  const desc =  {
-    role: "Full-stack Engineer, UX Designer",
-    team: "individual",
-    skills: "wireframing, user testing, full-stack dev, database design",
-    tools: "Figma, HTML/CSS, Javascript, Ruby on Rails",
-    duration: "4 months",
-    cols: 2
-  }
-
   return (
     <div id="Intro">
       <img src={Assets.BakingFactoryPreview} alt="The Baking Factory" title="The Baking Factory" style={{marginTop: "30px"}}/>
-      {/* <Polaroid 
-        linkUrl="" 
-        imageUrl={Assets.BakingFactoryPreview} 
-        alt="The Baking Factory"
-        polaroidTitle="The Baking Factory"
-        polaroidDescription="An ecommerce system enabling both customers and employees to streamline bakery transactions"
-        aspectRatio="aspectRatioWide"/> */}
-      {/* <ProjectSummary desc={desc} style={{fontSize: 12}}/> */}
     </div>
   )
 }
@@ -388,37 +371,23 @@ export function Interplay() {
   )
 }
 
-export function Learnings() {
+export function Challenges() {
   return (
-    <div id="Learnings" className="project-section">
-      <h1><span className="section-title highlight">learnings & reflection</span></h1>
-      <p className="subheading">Learnings</p>
-      <p><b>1. Understanding user motivation is key</b></p>
+    <div id="Challenges" className="project-section">
+      <h1><span className="section-title highlight">challenges & takeaways</span></h1>
       <p>
-        Use cases tie user needs with technical system requirements, but are not insightful about why a user is coming to the site and how to engage users. I started empathizing with the customers more and understanding how to present certain information so that users get where they want to be and we get users where we want them to be in the easiest way.
+        <ol>
+          <li>
+            I learned to borrow from existing design patterns, but more importantly learned to <b>be wary that “how it has been done” is not always the best way</b>. Although there are design patterns and general rules and practices, it does not mean it applies in every situation. Hero banners may be great for marketing a single mobile app with a download button, but are not effective for a bakery app with many items.
+          </li>
+          <li>
+            As a designer in industry, it is <b>my priority to involve user voices and feedback in every step of the design process</b> (e.g. weekly user studies, share outs of user trends). It’s vital to stay in the know of <b>changing user perception</b>.
+          </li>
+          <li>
+            It was challenging designing when I did not have the clear user motivation and goals in mind and how that would be measured. With more time, I would focus on <b>designing around a specific KPI or goal metric such as number of orders or number of items bought in total</b>. With quantitative as well as qualitative metrics, I would be able to hone in on creating user flows and interactions that drive those goals, and of course, test them out. 
+          </li>
+        </ol>
       </p>
-      <p><b>2. "How it's been done" is not how it should always be done</b></p>
-      <p>
-        Although there are design patterns and general rules and practices, it does not mean it applies in every situation. Hero banners may be great for marketing a single mobile app with a download button, but are not effective for a bakery app with many items.
-      </p>
-      <p className="subheading">What I would do differently</p>
-      <p><b>1. Conduct thorough user testing</b></p>
-      <p>
-        With more time, I would have conducted thorough user testing to see how efficiently and smoothly users would have been able to accomplish certain tasks like changing the price of an item for admins and how to buy a previous item again for customers.
-      </p>
-      <p><b>2. Deep dive on KPIs</b></p>
-      <p>
-        I would think through even more user flows and features that would encourage users to buy bakery products. For example, to drive virality, I could include how many people have bought each baked item. Of course, I would have to test the new interactions to prove that they drive traffic.
-      </p>
-      <p><b>3. Reduce complexity and friction in frequent interactions</b></p>
-      <p>
-        I would gather data through observing the users using the Baking Factory, analyze each user more in depth, and reconsider what actions to put up front and how they could be simplified. Right now, there is an “add to cart” button and “make inactive” button for admins next to the items. Admins most likely would not want to purchase items, so what are their most common actions and how should they be able to perform them with the least amount of friction?
-      </p>
-      <p>
-        If we suppose owners change the prices of items a lot, right now changing an item price takes four steps: click on item, click on “add a new price”, type the new price, and click on “create item price”. With inline editing of the price, this could be reduced to just clicking the item price and typing a new price.
-      </p>
-
-
     </div>
   )
 }
