@@ -1,9 +1,10 @@
 footer {
-  color: #ffffff;
+  color: #3D2309;
   font-size: 12px;
   padding-top: 100px;
   padding-bottom: 20px;
-  background-color: #D2B597;
+  background-color: #e2c9b0;
+  /* background-color: #D2B597; */
 }
 
 .social-icon {
@@ -13,5 +14,6 @@ footer {
 
 .footer-text {
   margin-top: 20px;
-  color: #ffffff;
+  color: #3D2309;
+  /* color: #ffffff; */
 }
