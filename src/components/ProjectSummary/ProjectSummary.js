@@ -48,7 +48,11 @@ function ProjectSummary(props) {
           <tr>
             <td style={{fontWeight: 600, letterSpacing:1}}>duration</td>
             <td style={{letterSpacing:1}}>{props.desc.duration}</td>
-          </tr>               
+          </tr>       
+          <tr>
+            <td style={{fontWeight: 600, letterSpacing:1}}>device</td>
+            <td style={{letterSpacing:1}}>{props.desc.device}</td>
+          </tr>           
         </tbody>
       </table>
     </div> 

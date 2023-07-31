@@ -18,7 +18,8 @@ export const weeeProps = {
     team: "individual",
     skills: "user research, usability testing, wireframing, prototyping",
     tools: "Figma",
-    duration: "1 month",
+    duration: "2 months",
+    device: "native mobile",
     cols: 1
   },
   button: {
@@ -44,6 +45,7 @@ export const what2yumProps = {
     skills: "user testing, prototyping, project management, SwiftUI development, agile development",
     tools: "Figma, XCode, Github, Firebase",
     duration: "4 months",
+    device: "native mobile",
     cols: 1
   },
   button: {
@@ -69,6 +71,7 @@ export const bakingFactoryProps = {
     skills: "wireframing, user testing, full-stack dev, database design",
     tools: "Figma, HTML/CSS, Javascript, Ruby on Rails",
     duration: "4 months",
+    device: "desktop web",
     cols: 1
   },
   button: {
@@ -94,6 +97,7 @@ export const fitvioProps = {
     skills: "brand design, design strategy, roadmapping, interviewing, prototyping",
     tools: "Figma, InDesign, Illustrator",
     duration: "4 months",
+    device: "web app",
     cols: 1
   },
   button: {
