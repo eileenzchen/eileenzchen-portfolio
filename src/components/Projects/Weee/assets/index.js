@@ -13,6 +13,7 @@ import HifiSearchCommunity from './hifi-search-community.png'
 import Storyboard from './TJ-shopping-storyboard.png'
 import FinalScreensHighlight from './final-screens-highlight.png'
 import EnhanceCartVid from './enhance-cart-vid.mov';
+import EnhanceCartVidV2 from './enhance-cart-vid-v2.mov';
 import PrimaryPalette from './color-palette-primary.png';
 import SecondaryPalette from './color-palette-secondary.png';
 import FinalColor from './final-color.png'
@@ -21,6 +22,7 @@ import FinalGifProduct from './final-gif-specific-product-flow.mov'
 import FinalGifCommunity from './final-gif-community-flow.mov'
 import FinalGifViewItem from './final-gif-view-items-used.mov';
 import FinalGifViewItemFullPhone from './final-gif-view-items-used-full-phone.mov'
+import OriginalDesign from './weee-original-design.png'
 
 
 export {
@@ -46,5 +48,7 @@ export {
   FinalGifProduct,
   FinalGifCommunity,
   FinalGifViewItem,
-  FinalGifViewItemFullPhone
+  FinalGifViewItemFullPhone,
+  OriginalDesign,
+  EnhanceCartVidV2
 };

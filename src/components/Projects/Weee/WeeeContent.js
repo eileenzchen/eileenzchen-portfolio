@@ -36,6 +36,17 @@ export function Summary() {
       <p>
         I learned to <b>design for an actual product with business goals, user incentives, and pre-existing workflows & design systems</b>. I was not building something from scratch here; I had to put myself in the mindset of a Weee! designer and leverage the systems in place while thinking creatively in order to effectively design for Weee!'s product needs and goals.
       </p>
+      <p className="subheading" style={{marginBottom: "0px"}}>original Weee! design</p>
+      <ModalImage
+        className="drop-shadow-hover-light"
+        small={Assets.OriginalDesign}
+        large={Assets.OriginalDesign}
+        alt="original Weee! design"
+        imageBackgroundColor="transparent"
+        hideDownload={true}
+        hideZoom={true}
+      />
+      <p className="subheading" style={{marginBottom: "0px"}}>final redesign</p>
       <ModalImage
         className="drop-shadow-hover-light"
         small={Assets.FinalScreensHighlight}
@@ -45,12 +56,10 @@ export function Summary() {
         hideDownload={true}
         hideZoom={true}
       />
-      <div className="caption-container">
-        <caption style={{marginTop:"-15px", marginBottom: "30px"}}>a few final designs</caption>        
-      </div>
+      <p className="subheading" style={{marginBottom: "5px"}}>a moment  of delight</p>
       <div style={{textAlign:"center"}}>
         <video className="small-asset" style={{width: "40%"}} autoPlay loop muted playsInline>
-          <source src={Assets.EnhanceCartVid} type="video/mp4"/>
+          <source src={Assets.EnhanceCartVidV2} type="video/mp4"/>
         </video>
       </div>
       <div className="caption-container">
