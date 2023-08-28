@@ -30,6 +30,7 @@ function What2Yum() {
               CompetitiveAnalysis: null,
               SolutionExploration: null,
               FinalDesign: null,
+              Challenges: null
               }}></Menu>
           </Grid>
           <Grid item sm={16} md={10} sx={{pb:10}}>
@@ -39,6 +40,7 @@ function What2Yum() {
             <What2YumContent.CompetitiveAnalysis/>
             <What2YumContent.SolutionExploration/>
             <What2YumContent.FinalDesign/>
+            <What2YumContent.Challenges/>
           </Grid>
         </Grid>
       </Container>

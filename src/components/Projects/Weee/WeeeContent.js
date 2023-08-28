@@ -98,7 +98,7 @@ export function UserResearch() {
         Weee!'s customer base started out as primarily first generation Chinese immigrants and has since grown with second- and third-generation shoppers. Thus, I interviewed both <b>first generation shoppers 50+ years old and second and third generation shoppers in their 20s</b>. Users' frequency of use ranged from once every few months to biweekly. By <b>conducting grocery purchase task analyses and asking qualitative questions</b>, I gathered user behavior and opinions on Weee!. 
       </p>
       <p>
-        Through first bucketing the type of feedback I got (pain points, strength, recommendation, user patterns) and then <b>affinity mapping</b> them to pain point categories such as navigation and communication, I was able to start formulating areas of the app that could use redesigning. 
+        Through first bucketing the type of feedback I got (pain points, strength, recommendation, user patterns) and then <b>affinity mapping</b> them to pain point categories such as navigation and community, I was able to start formulating areas of the app that could use redesigning.
       </p>
       <p>
       Some notable user insights included:
@@ -241,7 +241,7 @@ export function Wireframing() {
       />
       <p>
         <ul>
-          <li>moved the community recipe video to the last item instead of the first reduce distraction and follow users' mental model of a product image being first</li>
+          <li>moved the community recipe video from first to last to reduce distraction and follow users' mental model of a product image coming first</li>
           <li>included additional language to convey a sense of limit in quantity and popularity</li>
         </ul>
       </p>

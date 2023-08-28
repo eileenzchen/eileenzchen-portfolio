@@ -147,12 +147,12 @@ export function SolutionExploration() {
       <Grid container columns={2} style={{marginTop: "30px", marginBottom: "30px"}}>
         <Grid item xs={2} sm={1} className="align-right">
           <video className="small-asset" autoPlay loop muted playsInline>
-            <source src={Assets.LofiSwipeGif} type="video/mp4" />
+            <source src={Assets.LofiSwipeGifV2} type="video/mp4" />
           </video>
         </Grid>
         <Grid item xs={2} sm={1} display="flex">
           <video className="small-asset" autoPlay loop muted playsInline>
-            <source src={Assets.LofiSyncSharingGif} type="video/mp4" />
+            <source src={Assets.LofiSyncSharingGifV2} type="video/mp4" />
           </video>
         </Grid>
       </Grid>
@@ -292,6 +292,27 @@ export function FinalDesign() {
         </div>
 
       </div> */}
+    </div>
+  )
+}
+
+export function Challenges() {
+  return (
+    <div id="Challenges" className="project-section">
+      <h1><span className="section-title highlight">challenges & takeaways</span></h1>
+      <p>
+        <ol>
+          <li>
+            I learned the importance of <b>integrating a mobile app into users' daily routine</b>. In order to do so, I had to understand the principles of a good mobile app that fits user motivations and behaviors. For example, users like using their phone utilities on-the-go.
+          </li>
+          <li>
+            While it was difficult to cut features that we thought were "cool", <b>reevaluating priorities</b> based on user feedback, the level of effort, and our timeline were crucial to ensuring we got our most important features done.
+          </li>
+          <li>
+            While having discussions and debates among the team could be very productive in revealing unique ideas and collaborative solutions, <b>there are times when it is better to step away from the meeting room and back to the drawing board</b>. When our discussions started becoming stagnant due to differing opinions, we learned that it was much more valuable to <b>test out the different experiences</b> on users to make a decision based on concrete evidence.
+          </li>
+        </ol>
+      </p>
     </div>
   )
 }

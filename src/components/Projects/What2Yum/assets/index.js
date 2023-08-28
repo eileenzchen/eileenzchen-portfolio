@@ -6,7 +6,9 @@ import PaperPrototypeV1 from './paper-prototype-v1.jpeg';
 import PaperPrototypeV2 from './paper-prototype-v2.png';
 import AsyncSyncFlow from './lofi-async-vs-sync-flow.png';
 import LofiSwipeGif from './lofi-sync-swipe-interaction-gif.mov';
+import LofiSwipeGifV2 from './lofi-sync-swipe-interaction-gif-v2.mov';
 import LofiSyncSharingGif from './lofi-sync-sharing-gif.mov';
+import LofiSyncSharingGifV2 from './lofi-sync-sharing-gif-v2.mov';
 import HifiSwipeChoices from './hifi-swipe-vs-choices-flow.png';
 import HifiSuggestionV1 from './hifi-suggestions-v1.png';
 import HifiSuggestionV2 from './hifi-suggestions-v2.png';
@@ -36,7 +38,9 @@ export {
   PaperPrototypeV2,
   AsyncSyncFlow,
   LofiSwipeGif,
+  LofiSwipeGifV2,
   LofiSyncSharingGif,
+  LofiSyncSharingGifV2,
   HifiSwipeChoices,
   HifiSuggestionV1,
   HifiSuggestionV2,
