@@ -12,7 +12,7 @@ function What2Yum() {
   return (
     <>
       {/* return home link */}
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" style={{marginLeft:"0px"}}>
         <a href="/" className="return-home-link">
           <span className="return-home-container">
             <KeyboardArrowLeftRoundedIcon sx={{mr:1}} style={{marginTop: "1px"}}/>
