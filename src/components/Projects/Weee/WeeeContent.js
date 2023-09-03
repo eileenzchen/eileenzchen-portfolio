@@ -422,7 +422,7 @@ export function Joy() {
       </p>
       <div style={{textAlign:"center"}}>
         <video className="small-asset" style={{width: "40%"}} autoPlay loop muted playsInline>
-          <source src={Assets.EnhanceCartVid} type="video/mp4"/>
+          <source src={Assets.EnhanceCartVidV2} type="video/mp4"/>
         </video>
       </div>
       <div className="caption-container">
