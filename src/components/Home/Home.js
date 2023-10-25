@@ -10,12 +10,12 @@ import fitvioPreview from '../Projects/Fitvio/assets/fitvio-preview.png'
 import { Fab } from '@mui/material';
 import KeyboardDoubleArrowDownRounded from '@mui/icons-material/KeyboardDoubleArrowDownRounded';
 import './Home.css'
-import { weeeProps, what2yumProps, fitvioProps, bakingFactoryProps } from 'components/Constants.js';
+import { c1Props, weeeProps, what2yumProps, fitvioProps, bakingFactoryProps } from 'components/Constants.js';
 
 function Home() {
   const handleClick = event => {
     event.preventDefault();
-    const anchor = document.querySelector('#weee-project');
+    const anchor = document.querySelector('#projects');
     anchor.scrollIntoView({ behavior: 'smooth', block: "start" });
   };
 
@@ -31,7 +31,7 @@ function Home() {
     let heightToHideFrom = 1000;
     const winScroll = document.body.scrollTop ||
         document.documentElement.scrollTop;
-    const secondElem = document.querySelector('#weee-project');
+    const secondElem = document.querySelector('#projects');
     const yCoordinate = secondElem.getBoundingClientRect().y;
     if (winScroll > yCoordinate) {
        isVisible &&      // to limit setting state only the first time
@@ -54,13 +54,13 @@ function Home() {
       </div>
       }
       <About></About>
-      <div id="weee-project"></div>
-      <ProjectSectionTan projectProps={weeeProps}></ProjectSectionTan>
+      <div id="projects"></div>
+      <ProjectSectionTan projectProps={c1Props}></ProjectSectionTan>
       <div id="second-section"></div>
-      <ProjectSectionWhite projectProps={what2yumProps}></ProjectSectionWhite>
-      <ProjectSectionTan projectProps={fitvioProps}></ProjectSectionTan>
-      <ProjectSectionWhite projectProps={bakingFactoryProps}></ProjectSectionWhite>
-      {/* <ProjectSectionTan projectProps={project4Props}></ProjectSectionTan> */}
+      <ProjectSectionWhite projectProps={weeeProps}></ProjectSectionWhite>
+      <ProjectSectionTan projectProps={what2yumProps}></ProjectSectionTan>
+      <ProjectSectionWhite projectProps={fitvioProps}></ProjectSectionWhite>
+      <ProjectSectionTan projectProps={bakingFactoryProps}></ProjectSectionTan>
     </>
 
     

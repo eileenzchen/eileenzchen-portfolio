@@ -1,0 +1,15 @@
+@media (max-width: 900px) {
+  .menuBlock {
+    /* display: none; */
+  }
+}
+
+#brand-guidelines-pdf {
+  width: 100%;
+  height: 600px;
+}
+@media (max-width: 900px) {
+  #brand-guidelines-pdf {
+    height: 400px;
+  }
+}

@@ -2,6 +2,33 @@ import { WeeePreview } from "./Projects/Weee/assets/index.js"
 import { What2yumPreview } from "./Projects/What2Yum/assets"
 import { FitvioPreview } from "./Projects/Fitvio/assets"
 import { BakingFactoryPreview } from "./Projects/BakingFactory/assets"
+import { C1Preview } from "./Projects/CapitalOne/assets"
+
+export const c1Props = {
+  name: "CapitalOne",
+  polaroid: {
+    linkUrl: "/capitalone",
+    imageUrl: C1Preview,
+    alt: "Capital One",
+    polaroidTitle: "Capital One",
+    polaroidDescription: "I'm currently collaborating with cross-functional partners from design, product, accessibility, and data analytics to create a better user experience on capitalone.com.",
+    aspectRatio: "aspectRatioWide"
+  },
+  desc: {
+    role: "Front-End Engineer",
+    team: "engineers, designers, product managers, analysts, and more",
+    skills: "front-end engineering, user-centered thinking, design systems, A/B testing, mentoring",
+    tools: "Angular, HTML / CSS, Javascript, Github, Figma",
+    duration: "Aug 2021 — present",
+    device: "mobile and desktop web",
+    cols: 1
+  },
+  button: {
+    buttonText: "view work",
+    buttonLink: "/capitalone",
+    target: "_self"
+  }
+}
 
 export const weeeProps = {
   name: "Weee",
@@ -10,11 +37,11 @@ export const weeeProps = {
     imageUrl: WeeePreview,
     alt: "Weee Redesign",
     polaroidTitle: "Weee! Redesign",
-    polaroidDescription: "Fostering community within the grocery purchasing journey to inspire shoppers and drive e-grocery sales",
+    polaroidDescription: "I love shopping for groceries on Weee!. I redesigned the app to foster community, inspire shoppers, and make grocery shopping fun.",
     aspectRatio: "aspectRatioWide"
   },
   desc: {
-    role: "UX Designer & Researcher",
+    role: "UX Designer",
     team: "individual",
     skills: "user research, usability testing, wireframing, prototyping",
     tools: "Figma",
@@ -36,13 +63,13 @@ export const what2yumProps = {
     imageUrl: What2yumPreview,
     alt: "What2Yum",
     polaroidTitle: "What2Yum",
-    polaroidDescription: "Empowering friends and couples to decide where to eat within minutes——no bickering, no indecisiveness",
+    polaroidDescription: "Being indecisive foodies, my friends and I created an app to empower friends and couples to decide where to eat within minutes.",
     aspectRatio: "aspectRatioWide"
   },
   desc: {
-    role: "UX Researcher, Product Designer, iOS Engineer",
+    role: "Product Designer, iOS Developer",
     team: "3 total engineers",
-    skills: "user testing, prototyping, project management, SwiftUI development, agile development",
+    skills: "user testing, mobile app design, project management, SwiftUI development, agile development",
     tools: "Figma, XCode, Github, Firebase",
     duration: "4 months",
     device: "native mobile",
@@ -62,11 +89,11 @@ export const bakingFactoryProps = {
     imageUrl: BakingFactoryPreview,
     alt: "The Baking Factory",
     polaroidTitle: "The Baking Factory",
-    polaroidDescription: "An ecommerce system enabling both customers and employees to streamline bakery transactions",
+    polaroidDescription: "Running a bakery can be complicated. I designed and developed an ecommerce system that enables both customers and employees to streamline bakery transactions.",
     aspectRatio: "aspectRatioWide"
   },
   desc: {
-    role: "Full-stack Engineer, UX Designer",
+    role: "UX Designer, Full-stack Engineer",
     team: "individual",
     skills: "wireframing, user testing, full-stack dev, database design",
     tools: "Figma, HTML/CSS, Javascript, Ruby on Rails",
@@ -88,7 +115,7 @@ export const fitvioProps = {
     imageUrl: FitvioPreview,
     alt: "Fitvio Startup",
     polaroidTitle: "Fitvio",
-    polaroidDescription: "Designing an easily accessible fitness app – and wearing many design hats along the way",
+    polaroidDescription: "Working out at the gym can be inaccessible to many, especially during the pandemic. I joined a startup to lead the design of an easily accessible fitness app.",
     aspectRatio: "aspectRatioWide"
   },
   desc: {

@@ -47,7 +47,11 @@ const Menu = ({menuItems}) => {
     UnderstandingUsers: "understanding our users",
     ProductRoadmapping: "product roadmapping",
     UserAcquisitionOnboarding: "user acquisition & onboarding",
-    Rebranding: "rebranding"
+    Rebranding: "rebranding",
+    SearchEnhancements: "enhancing Capital One Search",
+    BlogRedesign: "revamping the Capital One blog",
+    AdobeTargetTesting: "Conducting Adobe Target experimentation tests",
+    AutomatingData: "Automating an internal data management platform"
   }
   /*
    * Store the active menuItem in state to force update

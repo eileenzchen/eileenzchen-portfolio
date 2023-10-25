@@ -30,7 +30,7 @@ export function Summary() {
       </p>
       <p className="subheading">role</p>
       <p>
-        As this was a personal project, I was the sole user researcher and designer.
+        As this was a personal project, I was the sole user researcher and product designer.
       </p>
       <p className="subheading">growth</p>
       <p>

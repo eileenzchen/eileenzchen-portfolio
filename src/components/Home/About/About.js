@@ -15,7 +15,7 @@ import PrimaryButton from '../../PrimaryButton/PrimaryButton.js';
 function About() {
   const handleClick = event => {
     event.preventDefault();
-    const anchor = document.querySelector('#weee-project');
+    const anchor = document.querySelector('#projects');
     anchor.scrollIntoView({ behavior: 'smooth', block: "start" });
   };
   return (
@@ -37,11 +37,11 @@ function About() {
           <Grid container columns={12} style={{color: "#3D2309"}}>
             <Grid item xs={12} sm={3}>
               <h2 style={{marginTop: 5, letterSpacing: 1}}>
-                <span className="highlight">identity</span>
+                <span className="highlight">strengths</span>
               </h2>
             </Grid>
             <Grid item xs={12} sm={9}>
-              <h2 style={{marginTop: 5, letterSpacing: 1, fontWeight: 300}}>designer, engineer, asian american woman</h2>
+              <h2 style={{marginTop: 5, letterSpacing: 1, fontWeight: 300}}>problem solver, cross-functional collaborator</h2>
             </Grid>
 
             <Grid item xs={12} sm={3}>
@@ -50,7 +50,7 @@ function About() {
               </h2>
             </Grid>
             <Grid item xs={12} sm={9}>
-              <h2 style={{marginTop: 5, letterSpacing: 1, fontWeight: 300}}>driven, empathetic, detail-oriented</h2>
+              <h2 style={{marginTop: 5, letterSpacing: 1, fontWeight: 300}}>self-starter, empathetic, detail-oriented</h2>
             </Grid>
 
             <Grid item xs={12} sm={3}>
@@ -59,7 +59,7 @@ function About() {
               </h2>
             </Grid>
             <Grid item xs={12} sm={9}>
-              <h2 style={{marginTop: 5, letterSpacing: 1, fontWeight: 300}}>traveling, cooking, playing music, planting</h2>
+              <h2 style={{marginTop: 5, letterSpacing: 1, fontWeight: 300}}>cooking, traveling, playing music, planting</h2>
             </Grid>
             {/* resume */}
             {/* <a href={process.env.PUBLIC_URL + '/EileenZChen_resume.pdf'} target="_blank" rel="noopener noreferrer nofollow" className="resume-link">
@@ -70,7 +70,7 @@ function About() {
               <SecondaryButton buttonText="resumé" icon={<OpenInNewRoundedIcon sx={{ml: 1}} style={{paddingTop: "2px"}}/>} buttonLink={process.env.PUBLIC_URL + '/EileenChen-resume.pdf'} target="_blank" rel="noopener noreferrer nofollow"/>
             </div>
             <div className="about-button" onClick={handleClick}>
-              <PrimaryButton buttonText="projects" icon={<ArrowDownwardRoundedIcon sx={{ml: 1}} style={{paddingTop: "2px"}}/>} buttonLink="#weee-project"/>
+              <PrimaryButton buttonText="projects" icon={<ArrowDownwardRoundedIcon sx={{ml: 1}} style={{paddingTop: "2px"}}/>} buttonLink="#projects"/>
             </div>
 
 

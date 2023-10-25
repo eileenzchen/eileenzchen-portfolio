@@ -9,6 +9,7 @@ import What2Yum from './components/Projects/What2Yum/What2Yum.js'
 import BakingFactory from './components/Projects/BakingFactory/BakingFactory.js'
 import Fitvio from 'components/Projects/Fitvio/Fitvio';
 import Weee from 'components/Projects/Weee/Weee';
+import CapitalOne from 'components/Projects/CapitalOne/CapitalOne';
 import NotFound from './components/NotFound/NotFound.js'
 import ScrollToTop from './components/ScrollToTop';
 import {
@@ -29,6 +30,7 @@ function App() {
           <div className="SiteContent">
             <Switch>
               <Route exact path="/" component={Home}/>
+              <Route path="/capitalone" component={CapitalOne}/>
               <Route path="/weee" component={Weee}/>
               <Route path="/what2yum" component={What2Yum}/>
               <Route path="/bakingfactory" component={BakingFactory}/>
