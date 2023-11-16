@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Polaroid from '../../Polaroid/Polaroid.js'
 import * as Assets from './assets/index.js'
 import ModalImage from 'react-modal-image'

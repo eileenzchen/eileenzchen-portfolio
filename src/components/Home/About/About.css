@@ -2,6 +2,10 @@ h1 {
   margin-bottom: 10px;
 }
 
+.typewriter-block {
+  /* height: 500px; */
+}
+
 @media screen and (min-width: 900px) {
   .spacer {
     height: 24px;

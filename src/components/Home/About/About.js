@@ -11,6 +11,7 @@ import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
 import KeyboardDoubleArrowDownRoundedIcon from '@mui/icons-material/KeyboardDoubleArrowDownRounded';
 import ArrowDownwardRoundedIcon from '@mui/icons-material/ArrowDownwardRounded';
 import PrimaryButton from '../../PrimaryButton/PrimaryButton.js';
+import Typewriter from 'typewriter-effect';
 
 function About() {
   const handleClick = event => {
@@ -21,7 +22,7 @@ function About() {
   return (
     <div style={{marginBottom: 30}}>
       <Container maxWidth="lg">
-        <Grid container columns={12} rowSpacing={0} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        <Grid container columns={12} rowSpacing={0} columnSpacing={{ xs: 1, sm: 2, md: 7 }}>
         {/* <Grid item xs={12} md={8}>
           <div className="spacer"></div>
           <h1 className="monospace-400">Hey, I'm <span className="monospace-500 highlight">Eileen</span>!</h1>
@@ -29,13 +30,27 @@ function About() {
         {/* about */}
         <Grid item xs={12} md={8} order={{ xs: 2, sm: 1 }}>
           <div className="spacer"></div>
-          <h1 className="monospace-400">Hey, I'm <span className="monospace-500 highlight">Eileen</span>!</h1>
+          {/* <h1 className="monospace-400">Hey, I'm <span className="monospace-500 highlight">Eileen</span>! I'm a product designer who is experienced in end-to-end user experience design, coding up prototypes, and empathizing with engineers (because I was one). </h1> */}
+
+          <h1 className="typewriter-block">
+            {/* make it so that the white space is fixed */}
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter.typeString('<span class="monospace-400">Hey! I\'m <span class="monospace-500 highlight">Eileen</span>, a product designer skilled in <b class="monospace-400" style="color: #92AD70">creating<\/b> end-to-end user experiences, <b class="monospace-400" style="color: #92AD70">coding<\/b> up prototypes, and <b class="monospace-400" style="color: #92AD70">empathizing<\/b> with engineers (because I was one myself!)</span>')
+                .start();
+            }}
+            options={{
+              delay: 40,
+            }}
+          />
+          </h1>
+
           
-          <h2 className="monospace-500">Here's a little about me 🤗</h2>
+          {/* <h2 className="monospace-500">Here's a little about me 🤗</h2> */}
           <br></br>
           {/* about me descriptions  */}
           <Grid container columns={12} style={{color: "#3D2309"}}>
-            <Grid item xs={12} sm={3}>
+            {/* <Grid item xs={12} sm={3}>
               <h2 style={{marginTop: 5, letterSpacing: 1}}>
                 <span className="highlight">strengths</span>
               </h2>
@@ -60,19 +75,9 @@ function About() {
             </Grid>
             <Grid item xs={12} sm={9}>
               <h2 style={{marginTop: 5, letterSpacing: 1, fontWeight: 300}}>cooking, traveling, playing music, planting</h2>
-            </Grid>
-            {/* resume */}
-            {/* <a href={process.env.PUBLIC_URL + '/EileenZChen_resume.pdf'} target="_blank" rel="noopener noreferrer nofollow" className="resume-link">
-              view my resumé
-              <OpenInNew sx={{ml: 1}}/>
-            </a> */}
-            <div className="about-button">
-              <SecondaryButton buttonText="resumé" icon={<OpenInNewRoundedIcon sx={{ml: 1}} style={{paddingTop: "2px"}}/>} buttonLink={process.env.PUBLIC_URL + '/EileenChen-resume.pdf'} target="_blank" rel="noopener noreferrer nofollow"/>
-            </div>
-            <div className="about-button" onClick={handleClick}>
-              <PrimaryButton buttonText="projects" icon={<ArrowDownwardRoundedIcon sx={{ml: 1}} style={{paddingTop: "2px"}}/>} buttonLink="#projects"/>
-            </div>
+            </Grid> */}
 
+            
 
           </Grid>
         </Grid>
@@ -88,6 +93,14 @@ function About() {
           </Polaroid>
         </Grid>
 
+      </Grid>
+      <Grid container columns={12}>
+        <div className="about-button">
+          <SecondaryButton buttonText="resumé" icon={<OpenInNewRoundedIcon sx={{ml: 1}} style={{paddingTop: "2px"}}/>} buttonLink={process.env.PUBLIC_URL + '/EileenChen-resume.pdf'} target="_blank" rel="noopener noreferrer nofollow"/>
+        </div>
+        <div className="about-button" onClick={handleClick}>
+          <PrimaryButton buttonText="projects" icon={<ArrowDownwardRoundedIcon sx={{ml: 1}} style={{paddingTop: "2px"}}/>} buttonLink="#projects"/>
+        </div>
       </Grid>
     </Container>
       

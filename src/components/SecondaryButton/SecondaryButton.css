@@ -21,10 +21,10 @@
   /* text-decoration: underline; */
   color: #718d4e !important;
   border:#718d4e 2px solid;
-  transition: 200ms ease-in-out;
-  -webkit-transition: 200ms ease-in-out;  
-  -moz-transition: 200ms ease-in-out;
-  -o-transition: 200ms ease-in-out;
+  transition: 100ms ease-in-out;
+  -webkit-transition: 100ms ease-in-out;  
+  -moz-transition: 100ms ease-in-out;
+  -o-transition: 100ms ease-in-out;
 }
 
 .buttonWrapper {

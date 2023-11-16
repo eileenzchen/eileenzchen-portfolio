@@ -16,6 +16,9 @@
 .button-primary:hover {
   cursor: pointer;
   background-color: #718d4e;
+  /* color: #92AD70 !important; */
+  /* border:#92AD70 1px solid; */
+  /* background-color: transparent; */
   transition: 200ms ease-in-out;
   -webkit-transition: 200ms ease-in-out;  
   -moz-transition: 200ms ease-in-out;

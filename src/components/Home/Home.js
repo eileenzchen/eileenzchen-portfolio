@@ -7,10 +7,11 @@ import what2yumPreview from '../Projects/What2Yum/assets/what2yum_preview.png';
 import bakingFactoryPreview from '../Projects/BakingFactory/assets/baking-factory-preview.png'
 import weeePreview from '../Projects/Weee/assets/weee-preview.png'
 import fitvioPreview from '../Projects/Fitvio/assets/fitvio-preview.png'
-import { Fab } from '@mui/material';
+import { Container, Fab, Grid } from '@mui/material';
 import KeyboardDoubleArrowDownRounded from '@mui/icons-material/KeyboardDoubleArrowDownRounded';
 import './Home.css'
 import { c1Props, weeeProps, what2yumProps, fitvioProps, bakingFactoryProps } from 'components/Constants.js';
+import Polaroid from 'components/Polaroid/Polaroid.js';
 
 function Home() {
   const handleClick = event => {
@@ -55,12 +56,72 @@ function Home() {
       }
       <About></About>
       <div id="projects"></div>
+      <Container maxWidth="lg">
+        <Grid container columns={12} rowSpacing={0} columnSpacing={{ xs: 1, md: 8 }}>
+          <Grid item xs={12} md={6}>
+            <Polaroid 
+              linkUrl={c1Props.polaroid.linkUrl}
+              imageUrl={c1Props.polaroid.imageUrl}
+              alt={c1Props.polaroid.alt}
+              polaroidTitle={c1Props.polaroid.polaroidTitle}
+              polaroidDescription={c1Props.polaroid.polaroidDescription}
+              aspectRatio={c1Props.polaroid.aspectRatio}
+              fadeDelay="200">
+            </Polaroid>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Polaroid 
+              linkUrl={weeeProps.polaroid.linkUrl}
+              imageUrl={weeeProps.polaroid.imageUrl}
+              alt={weeeProps.polaroid.alt}
+              polaroidTitle={weeeProps.polaroid.polaroidTitle}
+              polaroidDescription={weeeProps.polaroid.polaroidDescription}
+              aspectRatio={weeeProps.polaroid.aspectRatio}
+              fadeDelay="500">
+            </Polaroid>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Polaroid 
+              linkUrl={fitvioProps.polaroid.linkUrl}
+              imageUrl={fitvioProps.polaroid.imageUrl}
+              alt={fitvioProps.polaroid.alt}
+              polaroidTitle={fitvioProps.polaroid.polaroidTitle}
+              polaroidDescription={fitvioProps.polaroid.polaroidDescription}
+              aspectRatio={fitvioProps.polaroid.aspectRatio}
+              fadeDelay="200">
+            </Polaroid>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Polaroid 
+              linkUrl={what2yumProps.polaroid.linkUrl}
+              imageUrl={what2yumProps.polaroid.imageUrl}
+              alt={what2yumProps.polaroid.alt}
+              polaroidTitle={what2yumProps.polaroid.polaroidTitle}
+              polaroidDescription={what2yumProps.polaroid.polaroidDescription}
+              aspectRatio={what2yumProps.polaroid.aspectRatio}
+              fadeDelay="500">
+            </Polaroid>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Polaroid 
+              linkUrl={bakingFactoryProps.polaroid.linkUrl}
+              imageUrl={bakingFactoryProps.polaroid.imageUrl}
+              alt={bakingFactoryProps.polaroid.alt}
+              polaroidTitle={bakingFactoryProps.polaroid.polaroidTitle}
+              polaroidDescription={bakingFactoryProps.polaroid.polaroidDescription}
+              aspectRatio={bakingFactoryProps.polaroid.aspectRatio}
+              fadeDelay="100">
+            </Polaroid>
+          </Grid>
+        </Grid>
+      </Container>
+      {/* <div id="projects"></div>
       <ProjectSectionTan projectProps={c1Props}></ProjectSectionTan>
       <div id="second-section"></div>
       <ProjectSectionWhite projectProps={weeeProps}></ProjectSectionWhite>
       <ProjectSectionTan projectProps={what2yumProps}></ProjectSectionTan>
       <ProjectSectionWhite projectProps={fitvioProps}></ProjectSectionWhite>
-      <ProjectSectionTan projectProps={bakingFactoryProps}></ProjectSectionTan>
+      <ProjectSectionTan projectProps={bakingFactoryProps}></ProjectSectionTan> */}
     </>
 
     

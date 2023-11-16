@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Grid, Container } from '@mui/material';
 import Menu from '../../Menu/Menu.js'
 import * as WeeeContent from './WeeeContent.js'
 import './Weee.css'
 import MoreProjects from '../MoreProjects/MoreProjects.js'
 import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 function Weee() {
+  useEffect(() => {
+    Aos.init({duration: 1500, offset: -10});
+  }, []);
   return (
     <>
       {/* return home link */}
@@ -35,7 +40,7 @@ function Weee() {
               Challenges: null,
               }}></Menu>
           </Grid>
-          <Grid item sm={16} md={10} sx={{pb:10}}>
+          <Grid item sm={16} md={10} sx={{pb:10}} data-aos="fade-up">
             <WeeeContent.Intro/>
             <WeeeContent.Summary/>
             <WeeeContent.BackgroundResearch/>
