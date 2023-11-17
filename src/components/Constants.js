@@ -36,7 +36,7 @@ export const weeeProps = {
     linkUrl: "/weee",
     imageUrl: WeeePreview,
     alt: "Weee Redesign",
-    polaroidTitle: "Weee! Redesign",
+    polaroidTitle: "Weee!",
     polaroidDescription: "Fostering community, inspiring shoppers, and making grocery shopping fun",
     aspectRatio: "aspectRatioWide"
   },

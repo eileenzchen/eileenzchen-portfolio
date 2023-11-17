@@ -11,7 +11,7 @@ import 'swiper/swiper.min.css'
 export function Intro() {
   return (
     <div id="Intro">
-      <img src={Assets.WeeePreview} alt="Weee! Redesign" title="Weee! Redesign" style={{marginTop: "30px"}}/>
+      <img src={Assets.WeeePreview} alt="Weee!" title="Weee!" style={{marginTop: "30px"}}/>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Grid, Container } from '@mui/material';
 import Menu from '../../Menu/Menu.js'
 import * as CapitalOneContent from './CapitalOneContent.js'
@@ -7,6 +7,7 @@ import MoreProjects from '../MoreProjects/MoreProjects.js'
 import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
 
 function CapitalOne() {
+  document.title = "Capital One - Eileen Chen";
   return (
     <>
       {/* return home link */}
