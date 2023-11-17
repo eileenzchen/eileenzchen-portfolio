@@ -12,6 +12,7 @@ import Weee from 'components/Projects/Weee/Weee';
 import CapitalOne from 'components/Projects/CapitalOne/CapitalOne';
 import NotFound from './components/NotFound/NotFound.js'
 import ScrollToTop from './components/ScrollToTop';
+import ReactGA from "react-ga4";
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,6 +21,8 @@ import {
 } from "react-router-dom";
 
 function App() {
+  // const TRACKING_ID = "G-TXCV3YQ850"; // YOUR_OWN_TRACKING_ID
+  // ReactGA.initialize(TRACKING_ID);
   return (
     <>
       <Router>

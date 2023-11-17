@@ -5,13 +5,8 @@ import * as WeeeContent from './WeeeContent.js'
 import './Weee.css'
 import MoreProjects from '../MoreProjects/MoreProjects.js'
 import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
-import Aos from "aos";
-import 'aos/dist/aos.css';
 
 function Weee() {
-  useEffect(() => {
-    Aos.init({duration: 1500, offset: -10});
-  }, []);
   return (
     <>
       {/* return home link */}

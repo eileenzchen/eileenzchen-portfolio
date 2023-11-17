@@ -31,7 +31,7 @@ function Fitvio() {
               Challenges: null
               }}></Menu>
           </Grid>
-          <Grid item sm={16} md={10} sx={{pb:10}}>
+          <Grid item sm={16} md={10} sx={{pb:10}} data-aos="fade-up">
             <FitvioContent.Intro/>
             <FitvioContent.Summary/>
             <FitvioContent.UnderstandingUsers/>
@@ -42,7 +42,7 @@ function Fitvio() {
           </Grid>
         </Grid>
       </Container>
-      <MoreProjects relatedProjects={['BakingFactory', 'Weee', 'What2Yum']}/>
+      <MoreProjects relatedProjects={['BakingFactory', 'CapitalOne', 'Weee']}/>
     </>
     
   )

@@ -33,7 +33,7 @@ function What2Yum() {
               Challenges: null
               }}></Menu>
           </Grid>
-          <Grid item sm={16} md={10} sx={{pb:10}}>
+          <Grid item sm={16} md={10} sx={{pb:10}} data-aos="fade-up">
             <What2YumContent.Intro/>
             <What2YumContent.Summary/>
             <What2YumContent.Problem/>

@@ -30,7 +30,7 @@ function CapitalOne() {
               AutomatingData: null
               }}></Menu>
           </Grid>
-          <Grid item sm={16} md={10} sx={{pb:10}}>
+          <Grid item sm={16} md={10} sx={{pb:10}} data-aos="fade-up">
             <CapitalOneContent.Intro/>
             <CapitalOneContent.Summary/>
             <CapitalOneContent.SearchEnhancements/>
@@ -40,7 +40,7 @@ function CapitalOne() {
           </Grid>
         </Grid>
       </Container>
-      <MoreProjects relatedProjects={['BakingFactory', 'Weee', 'What2Yum']}/>
+      <MoreProjects relatedProjects={['Fitvio', 'Weee', 'What2Yum']}/>
     </>
     
   )

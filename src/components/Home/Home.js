@@ -57,7 +57,7 @@ function Home() {
       <About></About>
       <div id="projects"></div>
       <Container maxWidth="lg">
-        <Grid container columns={12} rowSpacing={0} columnSpacing={{ xs: 1, md: 8 }}>
+        <Grid container columns={12} rowSpacing={0} columnSpacing={{ xs: 1, md: 6 }}>
           <Grid item xs={12} md={6}>
             <Polaroid 
               linkUrl={c1Props.polaroid.linkUrl}

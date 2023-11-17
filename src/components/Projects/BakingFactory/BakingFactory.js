@@ -32,7 +32,7 @@ function BakingFactory() {
               Challenges:null
               }}></Menu>
           </Grid>
-          <Grid item sm={16} md={10} sx={{pb:10}}>
+          <Grid item sm={16} md={10} sx={{pb:10}} data-aos="fade-up">
             <BakingFactoryContent.Intro/>
             <BakingFactoryContent.Summary/>
             <BakingFactoryContent.PersonasUseCases/>
@@ -43,7 +43,7 @@ function BakingFactory() {
           </Grid>
         </Grid>
       </Container>
-      <MoreProjects relatedProjects={['Weee', 'What2Yum', 'Fitvio']}/>
+      <MoreProjects relatedProjects={['CapitalOne', 'Weee', 'What2Yum']}/>
     </>
     
   )

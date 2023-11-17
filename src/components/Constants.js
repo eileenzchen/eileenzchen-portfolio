@@ -11,7 +11,7 @@ export const c1Props = {
     imageUrl: C1Preview,
     alt: "Capital One",
     polaroidTitle: "Capital One",
-    polaroidDescription: "I'm currently collaborating with cross-functional partners from design, product, accessibility, and data analytics to create a better user experience on capitalone.com.",
+    polaroidDescription: "Improving the findability and accessibility of Search on capitalone.com",
     aspectRatio: "aspectRatioWide"
   },
   desc: {
@@ -37,7 +37,7 @@ export const weeeProps = {
     imageUrl: WeeePreview,
     alt: "Weee Redesign",
     polaroidTitle: "Weee! Redesign",
-    polaroidDescription: "I love shopping for groceries on Weee!. I redesigned the app to foster community, inspire shoppers, and make grocery shopping fun.",
+    polaroidDescription: "Fostering community, inspiring shoppers, and making grocery shopping fun",
     aspectRatio: "aspectRatioWide"
   },
   desc: {
@@ -63,7 +63,7 @@ export const what2yumProps = {
     imageUrl: What2yumPreview,
     alt: "What2Yum",
     polaroidTitle: "What2Yum",
-    polaroidDescription: "Being indecisive foodies, my friends and I created an app to empower friends and couples to decide where to eat within minutes.",
+    polaroidDescription: "Empowering people to decide where to eat within minutes",
     aspectRatio: "aspectRatioWide"
   },
   desc: {
@@ -89,7 +89,7 @@ export const bakingFactoryProps = {
     imageUrl: BakingFactoryPreview,
     alt: "The Baking Factory",
     polaroidTitle: "The Baking Factory",
-    polaroidDescription: "Running a bakery can be complicated. I designed and developed an ecommerce system that enables both customers and employees to streamline bakery transactions.",
+    polaroidDescription: "Streamlining a bakery's ecommerce transactions for customers and employees",
     aspectRatio: "aspectRatioWide"
   },
   desc: {
@@ -115,7 +115,7 @@ export const fitvioProps = {
     imageUrl: FitvioPreview,
     alt: "Fitvio Startup",
     polaroidTitle: "Fitvio",
-    polaroidDescription: "Working out at the gym can be inaccessible to many, especially during the pandemic. I joined a startup to lead the design of an easily accessible fitness app.",
+    polaroidDescription: "Leading the end-to-end design and branding of a fitness app",
     aspectRatio: "aspectRatioWide"
   },
   desc: {
@@ -138,5 +138,6 @@ export const projectsMap = {
   "Fitvio": fitvioProps,
   "Weee": weeeProps,
   "BakingFactory": bakingFactoryProps,
-  "What2Yum": what2yumProps
+  "What2Yum": what2yumProps,
+  "CapitalOne": c1Props
 }
