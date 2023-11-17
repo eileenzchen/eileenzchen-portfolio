@@ -7,7 +7,7 @@ import MoreProjects from '../MoreProjects/MoreProjects.js'
 import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
 
 function Fitvio() {
-  document.title = "Fitvio - Eileen Chen";
+  document.title = "Fitvio — Eileen Chen";
   return (
     <>
       {/* return home link */}

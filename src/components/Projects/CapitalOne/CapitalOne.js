@@ -7,7 +7,7 @@ import MoreProjects from '../MoreProjects/MoreProjects.js'
 import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
 
 function CapitalOne() {
-  document.title = "Capital One - Eileen Chen";
+  document.title = "Capital One — Eileen Chen";
   return (
     <>
       {/* return home link */}
@@ -28,7 +28,7 @@ function CapitalOne() {
               SearchEnhancements: null,
               BlogRedesign: null,
               AdobeTargetTesting: null,
-              AutomatingData: null
+              // AutomatingData: null
               }}></Menu>
           </Grid>
           <Grid item sm={16} md={10} sx={{pb:10}} data-aos="fade-up">
@@ -37,7 +37,7 @@ function CapitalOne() {
             <CapitalOneContent.SearchEnhancements/>
             <CapitalOneContent.BlogRedesign/>
             <CapitalOneContent.AdobeTargetTesting/>
-            <CapitalOneContent.AutomatingData/>
+            {/* <CapitalOneContent.AutomatingData/> */}
           </Grid>
         </Grid>
       </Container>

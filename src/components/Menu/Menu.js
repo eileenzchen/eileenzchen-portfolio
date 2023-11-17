@@ -69,11 +69,11 @@ const Menu = ({menuItems}) => {
     * item is currently active
     */
   const handleScroll = useCallback(() => {
-    console.log('handle scroll');
+    // console.log('handle scroll');
     const curPos = window.scrollY;
     let curSection = null;
     if (curPos > 100) {
-      console.log('scroll pos', curPos);
+      // console.log('scroll pos', curPos);
       setBackToTop(true);
     }
     else {

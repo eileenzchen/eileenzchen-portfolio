@@ -5,7 +5,7 @@ import * as ProjectDetails from 'components/Constants.js';
 import { projectsMap } from 'components/Constants.js';
 import './MoreProjects.css'
 function MoreProjects(props) {
-
+  let delay = 0;
   const polaroidsList = props.relatedProjects.map((projectKey, i) => 
     <div key={projectKey}>
       <Polaroid 
@@ -14,9 +14,9 @@ function MoreProjects(props) {
         alt={projectsMap[projectKey].polaroid.alt} 
         polaroidTitle={projectsMap[projectKey].polaroid.polaroidTitle} 
         polaroidDescription={projectsMap[projectKey].polaroid.polaroidDescription}
-        aspectRatio={projectsMap[projectKey].polaroid.aspectRatio}/>
+        aspectRatio={projectsMap[projectKey].polaroid.aspectRatio}
+        fadeDelay={delay += 200}/>
     </div>
-
     // <MenuItem itemName={e} key={`menuitem_${i}`} displayName={menuNameMappings[e]} linkClass={e === activeItem ? "link activeItem" : "link"} containerClass={e === activeItem ? "activeItemContainer" : ''}  />
     // linkUrl: "/fitvio",
     // imageUrl: FitvioPreview,

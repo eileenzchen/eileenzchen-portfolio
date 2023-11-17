@@ -7,7 +7,7 @@ import './CapitalOne.css'
 export function Intro() {
   return (
     <div id="Intro">
-      <img src={Assets.C1Preview} alt="Capital One" title="Capital One" style={{marginTop: "30px"}}/>
+      <img src={Assets.C1Preview} alt="Capital One" title="Capital One" style={{marginTop: "30px", marginBottom: "30px"}}/>
     </div>
   )
 
@@ -17,17 +17,21 @@ export function Summary() {
   return (
     <div id="Summary" className="project-section">
       <h1><span className="section-title highlight">summary</span></h1>
-      <p className="subheading">users</p>
+      <p className="subheading">problem space</p>
       <p>
-        I worked on the Capital One homepage, search, blog pages, and help center which serve more than 100 million users in North America.
+        How can we tailor Capital One's homepage and search experiences for 100M+ customers so that they discover the products and find the help they need?
       </p>
       <p className="subheading">role</p>
       <p>
-        I lead front-end engineering initiatives and build components and experiences on capitalone.com for mobile and desktop web. I work by bringing cross-functional partners together and understanding problems from multiple angles to identify tradeoffs and find the optimal solution. I also enjoy mentoring interns and other full-time engineers, and learning from peers across design and product.
+        I lead development efforts to build out components and test experiences on capitalone.com for mobile and desktop web. I work by bringing cross-functional partners together to understand tradeoffs and find the optimal solution.
+      </p>
+      <p className="subheading">key skills</p>
+      <p>
+        HTML/CSS/JS, Angular, user-centered thinking, design systems, A/B testing, mentoring
       </p>
       <p className="subheading">outcomes</p>
       <p>
-        I implemented and launched the Capital One blog redesign and Search dropdown autocomplete, partnering closely with design and accessibility teams to ensure the best experience for all users. I also launched 10+ A/B experimentation tests through Adobe Target and developed processes and materials to decrease the team’s onboarding time.
+        I implemented and launched the Search dropdown and other enterprise-wide components, ensuring both a seamless and accessible (WCAG) experience. I also launched 10+ A/B experimentation tests to further optimize our pages.
       </p>
     </div>
   )
@@ -38,12 +42,20 @@ export function SearchEnhancements() {
     <div id="SearchEnhancements" className="project-section">
       <h1><span className="section-title highlight">enhancing Capital One Search</span></h1>
       <p>
-        Capital One Search gets around 200K+ visitors every month looking for content on the site. It houses thousands of articles, product pages, and support pages. In order to ensure users find what they are looking for and reduce calls to our call center, we want to ensure that the Capital One Search is easy to use and quickly gets users to their end destination. 
+        Capital One Search gets around 200K+ visitors every month looking for content on the site. In order to ensure users find what they are looking for and reduce calls to our customer support center, we want to ensure that Search is easy to use and quickly gets users to their end destination. I led efforts in adding URL query parameters for search to increase navigability and co-led the Search autocomplete experience. I drove workshopping sessions with the accessibility team to ensure full keyboard navigability and screen reader compatibility.
       </p>
-      <p>
-        I led efforts in reducing the gulf of evaluation while browsing with Capital One Search. I also co-led the implementation of the Search dropdown autocomplete experience that is present in the main header navigation on every page. I championed human-centered design thinking while pair programming and drove workshopping sessions with design and accessibility.
-      </p>
+      <img src={Assets.C1SearchOld} alt="Capital One Search old experience" style={{marginTop: "10px"}}></img>
+      <div className="caption-container">
+        <caption>the previous Search experience</caption>
+      </div>
       <img src={Assets.C1Search} alt="Capital One Search desktop vs mobile" style={{marginTop: "10px"}}></img>
+      <div className="caption-container">
+        <caption>improved navigability with URL query parameters, more personalized search results based on search term</caption>
+      </div>
+      <img src={Assets.C1SearchDropdown} alt="Capital One Search dropdown with autocomplete" style={{marginTop: "10px"}}></img>
+      <div className="caption-container">
+        <caption>increased findability with default suggestions and dynamic suggested terms</caption>
+      </div>
     </div>
   )
 }

@@ -8,7 +8,7 @@ import MoreProjects from '../MoreProjects/MoreProjects.js'
 import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
 
 function What2Yum() {
-  document.title = "What2Yum - Eileen Chen";
+  document.title = "What2Yum — Eileen Chen";
   return (
     <>
       {/* return home link */}

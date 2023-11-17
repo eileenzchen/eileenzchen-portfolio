@@ -8,7 +8,7 @@ import MoreProjects from '../MoreProjects/MoreProjects.js'
 import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
 
 function BakingFactory() {
-  document.title = "Baking Factory - Eileen Chen";
+  document.title = "Baking Factory — Eileen Chen";
   return (
     <>
       {/* return home link */}

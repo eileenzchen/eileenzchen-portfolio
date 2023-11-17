@@ -7,7 +7,7 @@ import MoreProjects from '../MoreProjects/MoreProjects.js'
 import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
 
 function Weee() {
-  document.title = "Weee! - Eileen Chen";
+  document.title = "Weee! — Eileen Chen";
   return (
     <>
       {/* return home link */}
