@@ -59,7 +59,7 @@ export function Summary() {
       <p className="subheading" style={{marginBottom: "5px"}}>a moment  of delight</p>
       <div style={{textAlign:"center"}}>
         <video className="small-asset" style={{width: "40%"}} autoPlay loop muted playsInline>
-          <source src={Assets.EnhanceCartVidV2} type="video/mp4"/>
+          <source src="/enhance-cart-vid-v2.mov" type="video/mp4"/>
         </video>
       </div>
       <div className="caption-container">
@@ -422,7 +422,7 @@ export function Joy() {
       </p>
       <div style={{textAlign:"center"}}>
         <video className="small-asset" style={{width: "40%"}} autoPlay loop muted playsInline>
-          <source src={Assets.EnhanceCartVidV2} type="video/mp4"/>
+          <source src="/enhance-cart-vid-v2.mov" type="video/mp4"/>
         </video>
       </div>
       <div className="caption-container">
