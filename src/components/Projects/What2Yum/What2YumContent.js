@@ -13,7 +13,7 @@ import 'swiper/swiper.min.css'
 export function Intro() {
   return (
     <div id="Intro">
-      <img src={Assets.What2yumPreview} alt="What2Yum" title="What2Yum" style={{marginTop: "30px"}}/>
+      <img src={Assets.What2yumPreview} alt="What2Yum" title="What2Yum" style={{marginTop: "30px"}} loading="lazy"/>
     </div>
   )
 }
@@ -97,21 +97,23 @@ export function SolutionExploration() {
       </p>
 
       <div style={{marginTop: "30px"}}>
-        <ModalImage
+        <img src={Assets.PaperPrototypeV1} alt="form filling paper prototype" loading="lazy"></img>
+        {/* <ModalImage
           small={Assets.PaperPrototypeV1}
           large={Assets.PaperPrototypeV1}
           alt="form filling paper prototype"
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-        />
+        /> */}
       </div>
       <div className="caption-container">
         <caption>my paper prototype - form filling</caption>
       </div>
 
       <div style={{marginTop: "30px"}}>
-        <ModalImage
+        <img src={Assets.PaperPrototypeV2} alt="Tinder swiping paper prototype" loading="lazy"></img>
+        {/* <ModalImage
           style={{marginTop: "30px"}}
           small={Assets.PaperPrototypeV2}
           large={Assets.PaperPrototypeV2}
@@ -119,7 +121,7 @@ export function SolutionExploration() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-        />
+        /> */}
       </div>
       <div className="caption-container">
         <caption style={{marginBottom: "30px"}}>teammate's paper prototype - Tinder-like swiping</caption>
@@ -131,7 +133,8 @@ export function SolutionExploration() {
       <p>
         During a meeting, we realized that the app can function in a synchronous (everyone has to be on the app at the same time to decide) versus asynchronous (people can input preferences at different times) way for a friend group. My team had differing opinions and thus we decided to settle our debate by testing these two flows on users. 
       </p>
-      <ModalImage
+      <img src={Assets.AsyncSyncFlow} alt="synchronous vs asynchronous user flow" loading="lazy"></img>
+      {/* <ModalImage
         style={{marginTop: "30px", marginBottom: "30px"}}
         className="drop-shadow-hover-light"
         small={Assets.AsyncSyncFlow}
@@ -140,19 +143,19 @@ export function SolutionExploration() {
         imageBackgroundColor="transparent"
         hideDownload={true}
         hideZoom={true}
-      />
+      /> */}
       <p>
         We simulated interactions such as a user waiting for five others to join during the synchronous experience. We furthermore sent out a user servey to collect data on user behavior when deciding what to eat with friends as well as their preferred experience.
       </p>
       <Grid container columns={2} style={{marginTop: "30px", marginBottom: "30px"}}>
         <Grid item xs={2} sm={1} className="align-right">
           <video className="small-asset" autoPlay loop muted playsInline>
-            <source src={Assets.LofiSwipeGifV2} type="video/mp4" />
+            <source src="/what2yum-gifs/lofi-sync-swipe-interaction-gif-v2.mov" type="video/mp4" />
           </video>
         </Grid>
         <Grid item xs={2} sm={1} display="flex">
           <video className="small-asset" autoPlay loop muted playsInline>
-            <source src={Assets.LofiSyncSharingGifV2} type="video/mp4" />
+            <source src="/what2yum-gifs/lofi-sync-sharing-gif-v2.mov" type="video/mp4" />
           </video>
         </Grid>
       </Grid>
@@ -166,7 +169,8 @@ export function SolutionExploration() {
         We user tested with hifi prototypes. One design follows our original card swiping interaction and ranks the outcome based on factors such as distance and rating. The other design shows users two restaurants to choose from at a time and ultimately creates a top three ranked list of all of the users' rankings.
       </p>
       <div style={{marginTop: "30px"}}>
-        <ModalImage
+        <img src={Assets.HifiSwipeChoices} alt="swiping preferences vs picking out of two choices" loading="lazy"></img>
+        {/* <ModalImage
           className="drop-shadow-hover-light"
           style={{marginTop: "30px"}}
           small={Assets.HifiSwipeChoices}
@@ -175,7 +179,7 @@ export function SolutionExploration() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-        />
+        /> */}
       </div>
       <p>
         Ultimately, we evaluated the tradeoffs between a more interesting user experience with the swipes versus a better final recommendation with the ranked list. Since the recommendation was only marginally more absolute than the other, we decided to go with the swipe interaction. We wanted to create a more engaging user experience and have a pretty good recommendation model over a worse user experience and a better recommendation model.
@@ -183,14 +187,15 @@ export function SolutionExploration() {
       <p>
         Additionally through user testing, I discovered that people want more explainable suggestions. They want to know why those particular restaurant suggestions were shown in that order. I thus added ranking factors such as the number of people in the group that voted for the particular restaurant and the distance from the user's chosen location. I also made a couple iterations of the suggestions page to improve clarity and readability. I grouped each restaurant into its own card and restructured the flow of information.
       </p>
-      <ModalImage
+      <img src={Assets.HifiRecommendations} alt="suggestion screens" loading="lazy"></img>
+      {/* <ModalImage
         small={Assets.HifiRecommendations}
         large={Assets.HifiRecommendations}
         alt="suggestion screens"
         imageBackgroundColor="transparent"
         hideDownload={true}
         hideZoom={true}
-      />
+      /> */}
     </div>
 
   )
@@ -226,7 +231,7 @@ export function FinalDesign() {
         <SwiperSlide>
           <div className="carousel-video-container">
             <video className="carousel-video" loop muted playsInline>
-              <source src={Assets.AppLaunch} type="video/mp4" />
+              <source src="/what2yum-gifs/app-launch.mp4" type="video/mp4" />
             </video>
           </div>
           {/* <p style={{textAlign: "left", width: "70%"}}>launch animation with simple create and join event options, event history, and an intro to What2Yum for beginning users</p> */}
@@ -234,28 +239,28 @@ export function FinalDesign() {
         <SwiperSlide>
           <div className="carousel-video-container">
             <video className="carousel-video" loop muted playsInline>
-              <source src={Assets.Create} type="video/mp4" />
+              <source src="/what2yum-gifs/create.mp4" type="video/mp4" />
             </video>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="carousel-video-container">
             <video className="carousel-video" loop muted playsInline>
-              <source src={Assets.Join} type="video/mp4" />
+              <source src="/what2yum-gifs/join.mp4" type="video/mp4" />
             </video>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="carousel-video-container">
             <video className="carousel-video" loop muted playsInline>
-              <source src={Assets.Swipe} type="video/mp4" />
+              <source src="/what2yum-gifs/swiping.mp4" type="video/mp4" />
             </video>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="carousel-video-container">
             <video className="carousel-video" loop muted playsInline>
-              <source src={Assets.Suggestions} type="video/mp4" />
+              <source src="/what2yum-gifs/suggestions.mp4" type="video/mp4" />
             </video>
           </div>
         </SwiperSlide>
@@ -268,14 +273,15 @@ export function FinalDesign() {
       </div>
 
       <p  style={{marginTop: "30px"}}>If you want to try it yourself, <a href="https://apps.apple.com/us/app/what2yum/id1540868286" className="content-link" target="_blank" rel="noopener noreferrer">download it on the app store today</a></p>
-      <ModalImage
+      <img src={Assets.AppStoreScreenshots} alt="app store screenshots" loading="lazy"></img>
+      {/* <ModalImage
           small={Assets.AppStoreScreenshots}
           large={Assets.AppStoreScreenshots}
           alt="app store screenshots"
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-        />
+        /> */}
 
       <br></br><br></br>
       {/* <p className="subheading">keynote presentation deck</p>

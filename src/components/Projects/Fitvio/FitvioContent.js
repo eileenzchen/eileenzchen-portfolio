@@ -1,5 +1,4 @@
 import React from 'react'
-import Polaroid from '../../Polaroid/Polaroid.js'
 import * as Assets from './assets'
 import ModalImage from 'react-modal-image'
 import './Fitvio.css'
@@ -34,7 +33,8 @@ export function Summary() {
         <iframe className="video" src="https://www.youtube.com/embed/TPkmpMa107M" title="What2Yum video pitch" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
       <p className="subheading" style={{marginBottom:"0px"}}>rebranding</p>
-      <ModalImage
+      <img src={Assets.Rebranding} alt="Fitvio rebranding"></img>
+      {/* <ModalImage
         className="drop-shadow-hover-light"
         small={Assets.Rebranding}
         large={Assets.Rebranding}
@@ -42,7 +42,7 @@ export function Summary() {
         imageBackgroundColor="transparent"
         hideDownload={true}
         hideZoom={true}
-      />
+      /> */}
     </div>
   )
 }
@@ -57,7 +57,8 @@ export function UnderstandingUsers() {
         We needed to identify where their pain points lie and how Fitvio could position itself to help them in a way other apps do not already. <b>I led the efforts to interview users, collect insights, and hold workshops with the entire team to create personas and customer journey maps</b>.
       </p>
       <div style={{marginTop: "30px", marginBottom: "30px"}}>
-        <ModalImage
+        <img src={Assets.Personas} alt="Fitvio personas"></img>
+        {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.Personas}
           large={Assets.Personas}
@@ -65,10 +66,10 @@ export function UnderstandingUsers() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-        />
+        /> */}
       </div>
-
-      <ModalImage
+      <img src={Assets.CustomerJourneyMap} alt="Fitvio customer journey map"></img>
+      {/* <ModalImage
         className="drop-shadow-hover-light"
         small={Assets.CustomerJourneyMap}
         large={Assets.CustomerJourneyMap}
@@ -76,12 +77,13 @@ export function UnderstandingUsers() {
         imageBackgroundColor="transparent"
         hideDownload={true}
         hideZoom={true}
-      />
+      /> */}
       <p>
         From this, we worked to identify Fitvio's <b>market differentiator</b>, which was having an all-in-one platform for both fitness enthusiasts and instructors to grow and share in their fitness journey. From here, I led brainstorming sessions to identify and <b>prioritize features</b> for Fitvio, <b>encouraging the team to think with the customer in mind first</b>.
       </p>
       <div style={{marginTop: "30px", marginBottom: "30px"}}>
-        <ModalImage
+      <img src={Assets.FeasibilityImpact} alt="feasilbity impact diagram"></img>
+        {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.FeasibilityImpact}
           large={Assets.FeasibilityImpact}
@@ -89,9 +91,10 @@ export function UnderstandingUsers() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-        />
+        /> */}
       </div>
-      <ModalImage
+      <img src={Assets.FeaturePrioritization} alt="feature prioritization"></img>
+      {/* <ModalImage
         className="drop-shadow-hover-light"
         small={Assets.FeaturePrioritization}
         large={Assets.FeaturePrioritization}
@@ -99,7 +102,7 @@ export function UnderstandingUsers() {
         imageBackgroundColor="transparent"
         hideDownload={true}
         hideZoom={true}
-      />
+      /> */}
     </div>
   )
 }
@@ -114,7 +117,8 @@ export function ProductRoadmapping() {
         <b>I viewed the role of design as one that should be incorporated in every step of the process</b> and one where I make sure everyone else on the team also understands our product from a human point of view. At the same time, I knew that <b>I had to understand the business value and direction of our product to achieve tangible outcomes</b>. With product roadmapping, I wanted to ensure the team never lost sight of the user at the core during each phase.
       </p>
       <div style={{marginTop: "30px"}}>
-        <ModalImage
+       <img src={Assets.Roadmap} alt="product roadmap for phase 1"></img>
+        {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.Roadmap}
           large={Assets.Roadmap}
@@ -122,7 +126,7 @@ export function ProductRoadmapping() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-        />
+        /> */}
       </div>
     </div>
   )
@@ -135,7 +139,8 @@ export function UserAcquisitionOnboarding() {
         As we were working towards an MVP, I thought that <b>first and foremost the design strategy should be to acquire customers</b>. With no customers, no one will be seeing the product. With just an initial outsourced logo to work off of that was handed to me by one of the cofounders, I built an <b>onboarding experience for new users, starting from the Fitvio marketing page all the way to the authenticated home page</b>. 
       </p>
       <div style={{marginTop: "30px", marginBottom: "30px"}}>
-        <ModalImage
+        <img src={Assets.Onboarding} alt="onboarding flow with old branding"></img>
+        {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.Onboarding}
           large={Assets.Onboarding}
@@ -143,10 +148,10 @@ export function UserAcquisitionOnboarding() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-        />
+        /> */}
       </div>
       <video className="small-asset" autoPlay loop muted playsInline>
-        <source src={Assets.OnboardingGif} type="video/mp4" />
+        <source src="/onboarding-gif.mov" type="video/mp4" />
       </video>
       <div className="videoContainer pitchContent" style={{marginTop: "35px"}}>
         <iframe className="video" src="https://www.youtube.com/embed/TPkmpMa107M" title="What2Yum video pitch" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
@@ -176,7 +181,8 @@ export function Rebranding() {
         See the full <a className="content-link" href={Assets.BrandGuidelines}>brand guidelines</a> here.
       </p>
       <div style={{marginTop: "30px"}}>
-        <ModalImage
+        <img src={Assets.LogoConstruction} alt="logo construction"></img>
+        {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.LogoConstruction}
           large={Assets.LogoConstruction}
@@ -184,13 +190,14 @@ export function Rebranding() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-        />
+        /> */}
       </div>
       <div className="caption-container">
         <caption>Logo construction</caption>
       </div>
       <div style={{marginTop: "30px"}}>
-        <ModalImage
+      <img src={Assets.LogoClearSpace} alt="logo minimal clear space"></img>
+        {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.LogoClearSpace}
           large={Assets.LogoClearSpace}
@@ -198,13 +205,14 @@ export function Rebranding() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-        />
+        /> */}
       </div>
       <div className="caption-container">
         <caption>Minimum spacing guidelines</caption>
       </div>
       <div style={{marginTop: "40px"}}>
-        <ModalImage
+        <img src={Assets.LogoIteration} alt="logo interations"></img>
+        {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.LogoIteration}
           large={Assets.LogoIteration}
@@ -212,13 +220,14 @@ export function Rebranding() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-        />
+        /> */}
       </div>
       <div className="caption-container">
         <caption>Logo iterations and variation from the old logo to the new one</caption>
       </div>
       <div style={{marginTop: "40px"}}>
-        <ModalImage
+      <img src={Assets.Colors} alt="Fitvio color palette"></img>
+        {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.Colors}
           large={Assets.Colors}
@@ -226,13 +235,14 @@ export function Rebranding() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-        />
+        /> */}
       </div>
       <div className="caption-container">
         <caption>Fitvio color palette</caption>
       </div>
       <div style={{marginTop: "40px"}}>
-        <ModalImage
+       <img src={Assets.FontStyles} alt="Fitvio font styles"></img>
+        {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.FontStyles}
           large={Assets.FontStyles}
@@ -240,14 +250,15 @@ export function Rebranding() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-        />
+        /> */}
       </div>
       <div className="caption-container" style={{marginBottom: "30px"}}>
         <caption>Fitvio font styles</caption>
       </div>
       <p>After establishing our rebrand, I applied it to a couple of screens. To take this forward, I would continue thinking about what the brand conveys and incorporate Fitvio's unique voice in it.</p>
       <div style={{marginTop: "30px", marginBottom: "30px"}}>
-        <ModalImage
+        <img src={Assets.Rebranding} alt="Fitvio rebranding"></img>
+        {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.Rebranding}
           large={Assets.Rebranding}
@@ -255,7 +266,7 @@ export function Rebranding() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-        />
+        /> */}
       </div>
       <p className="subheading" id="brand-guidelines-heading" style={{marginBottom:"20px", scrollMarginBlockStart:40}}>Fitvio brand guidelines</p>
       {/* <object id="brand-guidelines-pdf" data={Assets.BrandGuidelines} type="application/pdf">

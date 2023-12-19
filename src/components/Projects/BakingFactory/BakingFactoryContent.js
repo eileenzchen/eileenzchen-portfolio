@@ -84,7 +84,8 @@ export function PersonasUseCases() {
       </p>
 
       <div style={{marginTop: "30px"}}>
-        <ModalImage
+        <img src={Assets.ERD} alt="entity relationship diagram"></img>
+        {/* <ModalImage
         className="drop-shadow-hover-light"
         small={Assets.ERD}
         large={Assets.ERD}
@@ -92,7 +93,7 @@ export function PersonasUseCases() {
         imageBackgroundColor="transparent"
         hideDownload={true}
         hideZoom={true}
-      />
+      /> */}
       </div>
       <div className="caption-container">
         <caption>entity relationship diagram of The Baking Factory</caption>
@@ -113,7 +114,8 @@ export function QuickSketches() {
         After browsing through some bakery website examples online, I sketched what I thought a bakery website was "supposed to look like", especially for the guest home page. 
       </p>
       <div style={{marginTop: "30px", marginBottom: "30px"}}>
-        <ModalImage
+        <img src={Assets.Sketches} alt="baking factory initial sketches"></img>
+        {/* <ModalImage
         className="drop-shadow-hover-light"
         small={Assets.Sketches}
         large={Assets.Sketches}
@@ -121,7 +123,7 @@ export function QuickSketches() {
         imageBackgroundColor="transparent"
         hideDownload={true}
         hideZoom={true}
-        />
+        /> */}
       </div>
       <p>
         As it turned out, the first pass at the website turned out to be a cookie cutter version of all the other bakery websites I saw. I thought it was a fine way to design the site and put it in front of a couple of mentors to help critique the design and get feedback early on. And it’s a good thing I did. The most important piece of advice I received during this whole process was from my research mentor, who commented,
@@ -155,7 +157,8 @@ export function ContextualizingDesign() {
 
       <Grid container columns={2} spacing={1} style={{marginTop: "30px"}}>
         <Grid item xs={2} sm={1}>
-          <ModalImage
+          <img src={Assets.GuestHomeV1} alt="guest home midfi wireframe v1"></img>
+          {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.GuestHomeV1}
           large={Assets.GuestHomeV1}
@@ -163,10 +166,11 @@ export function ContextualizingDesign() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-          />
+          /> */}
         </Grid>
         <Grid item xs={2} sm={1}>
-          <ModalImage
+          <img src={Assets.CustomerDashboardV1} alt="customer dashboard midfi wireframe v1"></img>
+          {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.CustomerDashboardV1}
           large={Assets.CustomerDashboardV1}
@@ -174,7 +178,7 @@ export function ContextualizingDesign() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-          />
+          /> */}
         </Grid>
       </Grid>
 
@@ -187,7 +191,8 @@ export function ContextualizingDesign() {
 
       <Grid container columns={2} spacing={1} style={{marginTop: "30px"}}>
         <Grid item xs={2} sm={1}>
-          <ModalImage
+          <img src={Assets.GuestHomeV2} alt="guest home midfi wireframe v2"></img>
+          {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.GuestHomeV2}
           large={Assets.GuestHomeV2}
@@ -195,10 +200,11 @@ export function ContextualizingDesign() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-          />
+          /> */}
         </Grid>
         <Grid item xs={2} sm={1}>
-          <ModalImage
+          <img src={Assets.CustomerDashboardV2}alt="customer dashboard midfi wireframe v2" ></img>
+          {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.CustomerDashboardV2}
           large={Assets.CustomerDashboardV2}
@@ -206,7 +212,7 @@ export function ContextualizingDesign() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-          />
+          /> */}
         </Grid>
       </Grid>
       <div className="caption-container">
@@ -215,7 +221,8 @@ export function ContextualizingDesign() {
 
       <Grid container columns={4} spacing={1} style={{marginTop: "30px"}}>
         <Grid item xs={4} sm={1}>
-          <ModalImage
+          <img src={Assets.CartMidfi}alt="cart midfi wireframe" ></img>
+          {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.CartMidfi}
           large={Assets.CartMidfi}
@@ -223,10 +230,11 @@ export function ContextualizingDesign() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-          />
+          /> */}
         </Grid>
         <Grid item xs={4} sm={1}>
-          <ModalImage
+          <img src={Assets.CheckoutMidfi} alt="checkout midfi wireframe"></img>
+          {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.CheckoutMidfi}
           large={Assets.CheckoutMidfi}
@@ -234,10 +242,11 @@ export function ContextualizingDesign() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-          />
+          /> */}
         </Grid>
         <Grid item xs={4} sm={1}>
-          <ModalImage
+          <img src={Assets.OrderDetailsMidfi} alt="order details midfi wireframe"></img>
+          {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.OrderDetailsMidfi}
           large={Assets.OrderDetailsMidfi}
@@ -245,10 +254,11 @@ export function ContextualizingDesign() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-          />
+          /> */}
         </Grid>
         <Grid item xs={4} sm={1}>
-          <ModalImage
+          <img src={Assets.OrdersMidfi} alt="all orders midfi wireframe"></img>
+          {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.OrdersMidfi}
           large={Assets.OrdersMidfi}
@@ -256,7 +266,7 @@ export function ContextualizingDesign() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-          />
+          /> */}
         </Grid>
       </Grid>
       <div className="caption-container">
@@ -268,7 +278,8 @@ export function ContextualizingDesign() {
       </p>
       <Grid container columns={3} spacing={1} style={{marginTop: "30px"}}>
         <Grid item xs={3} sm={1}>
-          <ModalImage
+          <img src={Assets.PinkTheme} alt="pink color theme exploration"></img>
+          {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.PinkTheme}
           large={Assets.PinkTheme}
@@ -276,10 +287,11 @@ export function ContextualizingDesign() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-          />
+          /> */}
         </Grid>
         <Grid item xs={3} sm={1}>
-          <ModalImage
+          <img src={Assets.PinkWhiteTheme} alt="pink and white color theme exploration"></img>
+          {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.PinkWhiteTheme}
           large={Assets.PinkWhiteTheme}
@@ -287,10 +299,11 @@ export function ContextualizingDesign() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-          />
+          /> */}
         </Grid>
         <Grid item xs={3} sm={1}>
-          <ModalImage
+          <img src={Assets.BrownTheme} alt="tan color theme exploration"></img>
+          {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.BrownTheme}
           large={Assets.BrownTheme}
@@ -298,7 +311,7 @@ export function ContextualizingDesign() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-          />
+          /> */}
         </Grid>
       </Grid>
     </div>
@@ -318,26 +331,26 @@ export function Interplay() {
       </p>
 
       <video className="drop-shadow" width="100%" height="auto" style={{marginTop: "30px", marginBottom: "30px"}} autoPlay loop muted playsInline>
-        <source src={Assets.InvalidCC} type="video/mp4" />
+        <source src="baking-factory-gifs/invalid-credit-card.mov" type="video/mp4" />
       </video>
       <p>
         Given the number of items sold was a primary KPI for the owners, I also thought about how to empower customers to easily add items to their cart. If a user comes back to the Baking Factory, they likely enjoyed what they bought before, and thus I positioned the customer’s last order at the top of the page with “buy again” CTAs to easily add their previously bought items to cart. For discoverability of new products, there is a search bar and a featured product of the week.  
       </p>
       <video className="drop-shadow" width="100%" height="auto" style={{marginTop: "30px", marginBottom: "30px"}} autoPlay loop muted playsInline>
-        <source src={Assets.BuyAgain} type="video/mp4" />
+        <source src="baking-factory-gifs/logged-in-user-buy-again.mov" type="video/mp4" />
       </video>
       <p>
         Bakers and shippers come to the Baking Factory for the very specific purpose of tracking what to bake and what to ship, so the UI is kept very simple. For shippers, the two tabs allow them to easily filter between what is shipped and what needs to be shipped. Furthermore, an inline CTA allows them to mark and unmark items as shipped through just one click. For bakers, they have categorized tabs that show them what needs to be baked that day.
       </p>
 
       <video className="drop-shadow" width="100%" height="auto" style={{marginTop: "30px"}} autoPlay loop muted playsInline>
-        <source src={Assets.Shipper} type="video/mp4" />
+        <source src="baking-factory-gifs/shipper-ux.mov" type="video/mp4" />
       </video>
       <div className="caption-container">
         <caption style={{marginBottom: "30px"}}>shipper dashboard</caption>
       </div>
       <video className="drop-shadow" width="100%" height="auto" autoPlay loop muted playsInline>
-        <source src={Assets.Baker} type="video/mp4" />
+        <source src="baking-factory-gifs/baker-ux.mov" type="video/mp4" />
       </video>
       <div className="caption-container">
         <caption style={{marginBottom: "30px"}}>baker dashboard</caption>
@@ -350,7 +363,7 @@ export function Interplay() {
         The admins are also able to perform the most amount of actions, as we learned by listing out use cases. For example, they are able to update prices of items, add new items, and upload a picture for an item. They are also able to create, view, update, and/or delete orders, customers, addresses, and employees. With so many functionalities, I organized them in the navigation by buckets. 
       </p>
       <video className="drop-shadow" width="100%" height="auto" style={{marginTop: "30px", marginBottom: "30px"}} autoPlay loop muted playsInline>
-        <source src={Assets.AdminDashboard} type="video/mp4" />
+        <source src="baking-factory-gifs/admin-sales-dashboard.mov" type="video/mp4" />
       </video>
       <p>
         I also ensured that the designs were consistent across the buckets. Whether adding a new item or a new address, the user flow and interactions were generally the same. 
@@ -359,7 +372,7 @@ export function Interplay() {
         However, in certain cases, user flows are modified in order to make completing a frequent task easier. Updating an item price is something the admins would more frequently interact with than updating the name or weight of an item. So instead of embedding it in the edit item form, I brought the functionality out to the main item page. 
       </p>
       <video className="drop-shadow" width="100%" height="auto" style={{marginTop: "30px", marginBottom: "30px"}} autoPlay loop muted playsInline>
-        <source src={Assets.UpdatingItemPrice} type="video/mp4" />
+        <source src="baking-factory-gifs/updating-item-price.mov" type="video/mp4" />
       </video>
       <p>
         At the end of the course, the TAs and professor judged the web apps of all the students taking the course, and I won the award for having the best design and technical implementation. You can see the codebase on Github. After the course was over, I deployed my app to Heroku, but due to recent policy changes for a free account, the site is no longer functioning at this time. Below is a video demo of all of the interactions for each user.

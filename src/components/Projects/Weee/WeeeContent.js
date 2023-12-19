@@ -11,7 +11,7 @@ import 'swiper/swiper.min.css'
 export function Intro() {
   return (
     <div id="Intro">
-      <img src={Assets.WeeePreview} alt="Weee!" title="Weee!" style={{marginTop: "30px"}}/>
+      <img src={Assets.WeeePreview} alt="Weee!" title="Weee!" style={{marginTop: "30px"}} loading="lazy"/>
     </div>
   )
 }
@@ -37,7 +37,8 @@ export function Summary() {
         I learned to <b>design for an actual product with business goals, user incentives, and pre-existing workflows & design systems</b>. I was not building something from scratch here; I had to put myself in the mindset of a Weee! designer and leverage the systems in place while thinking creatively in order to effectively design for Weee!'s product needs and goals.
       </p>
       <p className="subheading" style={{marginBottom: "0px"}}>original Weee! design</p>
-      <ModalImage
+      <img src={Assets.OriginalDesign} alt="original Weee! design" loading="lazy"></img>
+      {/* <ModalImage
         className="drop-shadow-hover-light"
         small={Assets.OriginalDesign}
         large={Assets.OriginalDesign}
@@ -45,9 +46,10 @@ export function Summary() {
         imageBackgroundColor="transparent"
         hideDownload={true}
         hideZoom={true}
-      />
+      /> */}
       <p className="subheading" style={{marginBottom: "0px"}}>final redesign</p>
-      <ModalImage
+      <img src={Assets.FinalScreensHighlight} alt="final design" loading="lazy"/>
+      {/* <ModalImage
         className="drop-shadow-hover-light"
         small={Assets.FinalScreensHighlight}
         large={Assets.FinalScreensHighlight}
@@ -55,11 +57,11 @@ export function Summary() {
         imageBackgroundColor="transparent"
         hideDownload={true}
         hideZoom={true}
-      />
+      /> */}
       <p className="subheading" style={{marginBottom: "5px"}}>a moment  of delight</p>
       <div style={{textAlign:"center"}}>
         <video className="small-asset" style={{width: "40%"}} autoPlay loop muted playsInline>
-          <source src="/enhance-cart-vid-v2.mov" type="video/mp4"/>
+          <source src="/weee-gifs/enhance-cart-vid-v2.mov" type="video/mp4"/>
         </video>
       </div>
       <div className="caption-container">
@@ -121,17 +123,17 @@ export function UserResearch() {
         </ul>
       </p>
       <video className="small-asset" autoPlay loop muted playsInline>
-        <source src={Assets.BucketingAffinity} type="video/mp4" />
+        <source src="/weee-gifs/bucketing-affinity-mapping.mov" type="video/mp4" />
       </video>
 
       <p>
         From there, I used an impact-effort matrix to help me identify the areas that had the highest impact while requiring lower development effort. While there were “quick wins” identified, I wanted to challenge myself with something that was a “big bet”. That landed me on two options: the Community page or taxonomy and findability of groceries. As I pondered further, I realized that there was an opportunity here to integrate these experiences to both increase the ability for users to find relevant groceries while introducing them to new items through community posts throughout their purchasing process.
       </p>
-      <img alt="impact effort matrix" src={Assets.ImpactEffort}></img>
+      <img alt="impact effort matrix" src={Assets.ImpactEffort} loading="lazy"></img>
       <p>
         With the user insights gathered on needs and behaviors, I jotted the main findings down to funnel into a main problem statement. 
       </p> 
-      <img alt="problem framing" src={Assets.ProblemFraming}></img>
+      <img alt="problem framing" src={Assets.ProblemFraming} loading="lazy"></img>
       <blockquote>
         How can we have Weee! users inspire each other to try new items throughout the purchasing process?
       </blockquote>
@@ -152,7 +154,8 @@ export function DesignPatterns() {
         <p>
           A consistent design practice I saw across the three apps was having recent searches show once users tapped the search bar. The use of drawers were also common for showing more information without taking users away from a page. For social engagement pages within Instagram and Pinterest, the media was always the focus of the page and the rest of the page was kept to a minimal so that the content could pretty much speak for itself. 
         </p>
-        <ModalImage
+        <img src={Assets.DesignPatterns} alt="design patterns analysis" loading="lazy"/>
+        {/* <ModalImage
           className="drop-shadow-hover-light"
           small={Assets.DesignPatterns}
           large={Assets.DesignPatterns}
@@ -160,7 +163,7 @@ export function DesignPatterns() {
           imageBackgroundColor="transparent"
           hideDownload={true}
           hideZoom={true}
-        />
+        /> */}
     </div>
   )
 }
@@ -175,11 +178,11 @@ export function Sketching() {
       <p>
         After sketching my ideas out, I mocked a user flow to make sense of how the different journeys users could take to ultimately add an item to cart. <b>With this mapping, I was able to identify points in the journey I missed.</b>
       </p>
-      <img style={{marginTop:"20px", marginBottom:"20px"}} alt="sketches user flow" src={Assets.SketchUserFlow}/>
+      <img style={{marginTop:"20px", marginBottom:"20px"}} alt="sketches user flow" src={Assets.SketchUserFlow} loading="lazy"/>
       <p>
         To ideate on the gaps, I did a couple more sketches to visualize how and at what point users could view the items used in the post and add them to cart. I created two versions of the community page, one with a gallery view and one with a single post view to test with users. 
       </p>
-      <img alt="community flow sketches" src={Assets.CommunitySketches}/>
+      <img alt="community flow sketches" src={Assets.CommunitySketches} loading="lazy"/>
       <p>
         Even though they were just rough sketches, I put my initial ideas in front of my design mentor and a couple of users to get feedback early on. 
       </p>
@@ -212,7 +215,8 @@ export function Wireframing() {
       <p>
         I then began adding more fidelity into wireframes, focusing on incorporating the feedback and how different components and new features would work together to <b>drive discovery and purchases</b>.
       </p>
-      <ModalImage
+      <img src={Assets.GroceriesSearchLofi} alt="lofi wireframes for the groceries and search pages" loading="lazy"></img>
+      {/* <ModalImage
         className="drop-shadow-hover-light"
         small={Assets.GroceriesSearchLofi}
         large={Assets.GroceriesSearchLofi}
@@ -220,7 +224,7 @@ export function Wireframing() {
         imageBackgroundColor="transparent"
         hideDownload={true}
         hideZoom={true}
-      />
+      /> */}
       <p>
         <ul>
           <li>collapsed home and search to a groceries tab in the navigation bar</li>
@@ -230,7 +234,8 @@ export function Wireframing() {
           <li>created another avenue for users to see community posts for inspiration from search</li>
         </ul>
       </p>
-      <ModalImage
+      <img src={Assets.ProductLofi} alt="lofi wireframes for the product pages" loading="lazy"></img>
+      {/* <ModalImage
         className="drop-shadow-hover-light"
         small={Assets.ProductLofi}
         large={Assets.ProductLofi}
@@ -238,14 +243,15 @@ export function Wireframing() {
         imageBackgroundColor="transparent"
         hideDownload={true}
         hideZoom={true}
-      />
+      /> */}
       <p>
         <ul>
           <li>moved the community recipe video from first to last to reduce distraction and follow users' mental model of a product image coming first</li>
           <li>included additional language to convey a sense of limit in quantity and popularity</li>
         </ul>
       </p>
-      <ModalImage
+      <img src={Assets.CommunityLofi} alt="lofi wireframes for the community pages" loading="lazy"></img>
+      {/* <ModalImage
         className="drop-shadow-hover-light"
         small={Assets.CommunityLofi}
         large={Assets.CommunityLofi}
@@ -253,7 +259,7 @@ export function Wireframing() {
         imageBackgroundColor="transparent"
         hideDownload={true}
         hideZoom={true}
-      />
+      /> */}
       <p>
         <ul>
           <li>thought through how only one video would be playing at a time in gallery view to not overwhelm the user</li>
@@ -274,7 +280,8 @@ export function PrototypingDetails() {
       <p>
         Along with finalizing the individual screens, I <b>focused on details</b> with specific copy, colors, product images, and even envision small animations that would help catch user attention. Throughout this process, I closely <b>aligned with Weee!'s current design system and patterns</b> (font, sizing, button components, use of graphics) to ensure that my redesign would be practical and fit in branding with the current system. At the same time, I <b>took liberties where I saw fit</b>, such as with pops of color and animations.
       </p>
-      <ModalImage
+      <img src={Assets.HifiHomeProduct} alt="hifi wireframes for home and product pages" loading="lazy"/>
+      {/* <ModalImage
         className="drop-shadow-hover-light"
         small={Assets.HifiHomeProduct}
         large={Assets.HifiHomeProduct}
@@ -282,8 +289,9 @@ export function PrototypingDetails() {
         imageBackgroundColor="transparent"
         hideDownload={true}
         hideZoom={true}
-      />
-      <ModalImage
+      /> */}
+      <img src={Assets.HifiSearchCommunity} alt="hifi wireframes for search and community pages" loading="lazy"/>
+      {/* <ModalImage
         className="drop-shadow-hover-light"
         small={Assets.HifiSearchCommunity}
         large={Assets.HifiSearchCommunity}
@@ -291,7 +299,7 @@ export function PrototypingDetails() {
         imageBackgroundColor="transparent"
         hideDownload={true}
         hideZoom={true}
-      />
+      /> */}
       <p>
         <ul>
           <li>brought back the home screen since users feel more grounded with a home screen</li>
@@ -324,7 +332,7 @@ export function PrototypingDetails() {
         <SwiperSlide>
           <div className="carousel-video-container">
             <video className="carousel-video" loop muted playsInline>
-              <source src={Assets.FinalGifCommunity} type="video/mp4" />
+              <source src="/weee-gifs/final-gif-community-flow.mov" type="video/mp4" />
             </video>
           </div>
           <div className="caption-container" style={{marginTop: "20px"}}>
@@ -334,7 +342,7 @@ export function PrototypingDetails() {
         <SwiperSlide>
           <div className="carousel-video-container">
             <video className="carousel-video" loop muted playsInline>
-              <source src={Assets.FinalGifProduct} type="video/mp4" />
+              <source src="/weee-gifs/final-gif-specific-product-flow.mov" type="video/mp4" />
             </video>
           </div>
           <div className="caption-container" style={{marginTop: "20px"}}>
@@ -344,7 +352,7 @@ export function PrototypingDetails() {
         <SwiperSlide>
           <div className="carousel-video-container">
             <video className="carousel-video" loop muted playsInline>
-              <source src={Assets.FinalGifViewItemFullPhone} type="video/mp4" />
+              <source src="/weee-gifs/final-gif-view-items-used-full-phone.mov" type="video/mp4" />
             </video>
           </div>
           <div className="caption-container" style={{marginTop: "20px"}}>
@@ -379,10 +387,11 @@ export function Color() {
         </ul>
       </p>
       <p className="subheading" style={{marginBottom:"10px"}}>color palettes generated with plugin UI Color Palette</p>
-      <img src={Assets.PrimaryPalette} alt="primary color palette"/>
-      <img src={Assets.SecondaryPalette} alt="secondary color palette for highlights"/>
+      <img src={Assets.PrimaryPalette} alt="primary color palette" loading="lazy"/>
+      <img src={Assets.SecondaryPalette} alt="secondary color palette for highlights" loading="lazy"/>
       <p className="subheading" style={{marginBottom:"0px"}}>final designs</p>
-      <ModalImage
+      <img src={Assets.FinalColor} alt="final color iteration" loading="lazy"></img>
+      {/* <ModalImage
         className="drop-shadow-hover-light"
         small={Assets.FinalColor}
         large={Assets.FinalColor}
@@ -390,10 +399,10 @@ export function Color() {
         imageBackgroundColor="transparent"
         hideDownload={true}
         hideZoom={true}
-      />
+      /> */}
       <div style={{textAlign:"center"}}>
         <video className="small-asset" style={{width: "40%"}} autoPlay loop muted playsInline>
-          <source src={Assets.FinalColorVid} type="video/mp4"/>
+          <source src="/weee-gifs/final-color-vid.mov" type="video/mp4"/>
         </video>
       </div>
     </div>
@@ -413,7 +422,7 @@ export function Joy() {
       <p>
         To really pinpoint the moments that bring someone joy when grocery shopping at a brick and mortar store, I asked a user to describe the last time they enjoyed their grocery shopping experience in person. And from that, I created a storyboard. <b>From storyboarding, I realized that people get a lot of joy from moments of pleasant surprise and discovery</b>, such as picking up spur of the moment items. Ben picked up a bottle of wine, a bag of okra chips, and a bouquet of flowers, none of which were on his grocery list coming in or remotely related to the other items, but got him excited. The flowers caught his eye in the beginning of his shopping time, and the wine and okra caught his eye at the end of his shopping experience, starting and ending the trip with moments of delight.
       </p>
-      <img src={Assets.Storyboard} alt="storyboard of shopping at Trader Joe's" style={{marginBottom: "30px"}}></img>
+      <img src={Assets.Storyboard} alt="storyboard of shopping at Trader Joe's" style={{marginBottom: "30px"}} loading="lazy"></img>
       <p>
         From here, I thought about how to incorporate a moment of delightful surprise when discovering an add-on item. Throughout the design process, I made sure to <b>balance bringing joy while not detracting from the productivity of grocery shopping</b> as the convenience and efficiency is a big draw of Weee!. During checkout seemed the most logical place to introduce people to a few possible add-on items. With the Weee! Community feature, people already post recipes from their shopping hauls and tag which Weee! items they used. <b>I realized how that user generated recipe data could be leveraged</b> to create an <b>AI feature where Weee! identifies what the shopper is trying to cook based on ingredients in their cart and would suggest a few more add-on items to enhance their dish</b>.
       </p>
@@ -422,7 +431,7 @@ export function Joy() {
       </p>
       <div style={{textAlign:"center"}}>
         <video className="small-asset" style={{width: "40%"}} autoPlay loop muted playsInline>
-          <source src="/enhance-cart-vid-v2.mov" type="video/mp4"/>
+          <source src="/weee-gifs/enhance-cart-vid-v2.mov" type="video/mp4"/>
         </video>
       </div>
       <div className="caption-container">
