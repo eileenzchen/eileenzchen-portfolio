@@ -150,7 +150,7 @@ export function SolutionExploration() {
       <Grid container columns={2} style={{marginTop: "30px", marginBottom: "30px"}}>
         <Grid item xs={2} sm={1} className="align-right">
           <video className="small-asset" autoPlay loop muted playsInline>
-            <source src="/what2yum-gifs/lofi-sync-swipe-interaction-gif-v2.mov" type="video/mp4" />
+            <source src="/what2yum-gifs/lofi-sync-swipe.mov" type="video/mp4" />
           </video>
         </Grid>
         <Grid item xs={2} sm={1} display="flex">

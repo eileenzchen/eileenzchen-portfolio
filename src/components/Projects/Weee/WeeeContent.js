@@ -342,7 +342,7 @@ export function PrototypingDetails() {
         <SwiperSlide>
           <div className="carousel-video-container">
             <video className="carousel-video" loop muted playsInline>
-              <source src="/weee-gifs/final-gif-specific-product-flow.mov" type="video/mp4" />
+              <source src="/weee-gifs/final-gif-product-flow.mov" type="video/mp4" />
             </video>
           </div>
           <div className="caption-container" style={{marginTop: "20px"}}>
@@ -352,7 +352,7 @@ export function PrototypingDetails() {
         <SwiperSlide>
           <div className="carousel-video-container">
             <video className="carousel-video" loop muted playsInline>
-              <source src="/weee-gifs/final-gif-view-items-used-full-phone.mov" type="video/mp4" />
+              <source src="/weee-gifs/final-gif-view-items-flow.mov" type="video/mp4" />
             </video>
           </div>
           <div className="caption-container" style={{marginTop: "20px"}}>
