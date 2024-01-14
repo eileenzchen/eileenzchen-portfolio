@@ -11,7 +11,7 @@ function Header() {
         <Container maxWidth="xl">
           <a href="/">
             <p className="monospace-200 header-name">Eileen Z Chen</p>
-            <p className="monospace-400 header-subheading">product designer</p>
+            <p className="monospace-400 header-subheading">ux designer x engineer</p>
           </a>
         </Container>
       </header>
@@ -22,7 +22,7 @@ function Header() {
     <header>
       <Container maxWidth="xl">
         <p className="monospace-200 header-name">Eileen Z Chen</p>
-        <p className="monospace-400 header-subheading">product designer</p>
+        <p className="monospace-400 header-subheading">ux designer x engineer</p>
       </Container>
     </header>
   )

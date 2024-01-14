@@ -36,7 +36,7 @@ function About() {
             {/* make it so that the white space is fixed */}
           <Typewriter
             onInit={(typewriter) => {
-              typewriter.typeString('<span class="monospace-400">Hey! I\'m <span class="monospace-500 highlight">Eileen</span>, a product designer skilled in <b class="monospace-400" style="color: #92AD70">creating<\/b> end-to-end user experiences, <b class="monospace-400" style="color: #92AD70">coding<\/b> up prototypes, and <b class="monospace-400" style="color: #92AD70">empathizing<\/b> with engineers (because I was one myself!)</span>')
+              typewriter.typeString('<span class="monospace-400">Hey! I\'m <span class="monospace-500 highlight">Eileen</span> 🙋🏻‍♀️ I wear many different hats, including but not limited to beanies, dad caps, buckets, <b class="monospace-400" style="color: #92AD70">UX designer<\/b>, and <b class="monospace-400" style="color: #92AD70">full-stack engineer<\/b>.</span>')
                 .start();
             }}
             options={{
@@ -88,7 +88,7 @@ function About() {
             imageUrl={tonysImageCropped} 
             alt="Me with Tony's Pizza"
             polaroidTitle=""
-            polaroidDescription="Driven by opportunities to make a difference and good food ✌🏻"
+            polaroidDescription="Fueled by the chance to make a difference (& good food) 🍕"
             aspectRatio="aspectRatioRegular">
           </Polaroid>
         </Grid>
