@@ -12,7 +12,8 @@ export const c1Props = {
     alt: "Capital One",
     polaroidTitle: "Capital One",
     polaroidDescription: "Improving the findability and accessibility of Search on capitalone.com",
-    aspectRatio: "aspectRatioWide"
+    aspectRatio: "aspectRatioWide",
+    tags: ["mobile & desktop", "front-end web dev"]
   },
   desc: {
     role: "Front-End Engineer",
@@ -38,7 +39,8 @@ export const weeeProps = {
     alt: "Weee Redesign",
     polaroidTitle: "Weee!",
     polaroidDescription: "Fostering community, inspiring shoppers, and making grocery shopping fun",
-    aspectRatio: "aspectRatioWide"
+    aspectRatio: "aspectRatioWide",
+    tags: ["mobile native", "UX/UI designer"]
   },
   desc: {
     role: "UX Designer",
@@ -64,7 +66,8 @@ export const what2yumProps = {
     alt: "What2Yum",
     polaroidTitle: "What2Yum",
     polaroidDescription: "Empowering people to decide where to eat within minutes",
-    aspectRatio: "aspectRatioWide"
+    aspectRatio: "aspectRatioWide",
+    tags: ["mobile native", "full-stack iOS dev"]
   },
   desc: {
     role: "Product Designer, iOS Developer",
@@ -90,7 +93,8 @@ export const bakingFactoryProps = {
     alt: "The Baking Factory",
     polaroidTitle: "The Baking Factory",
     polaroidDescription: "Streamlining a bakery's ecommerce transactions for customers and employees",
-    aspectRatio: "aspectRatioWide"
+    aspectRatio: "aspectRatioWide",
+    tags: ["desktop","full-stack web dev"]
   },
   desc: {
     role: "UX Designer, Full-stack Engineer",
@@ -116,7 +120,8 @@ export const fitvioProps = {
     alt: "Fitvio Startup",
     polaroidTitle: "Fitvio",
     polaroidDescription: "Leading the end-to-end design and branding of a fitness app",
-    aspectRatio: "aspectRatioWide"
+    aspectRatio: "aspectRatioWide",
+    tags: ["desktop", "UX/UI designer"]
   },
   desc: {
     role: "Head of Design",

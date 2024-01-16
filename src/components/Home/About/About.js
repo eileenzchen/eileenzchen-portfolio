@@ -96,7 +96,7 @@ function About() {
       </Grid>
       <Grid container columns={12}>
         <div className="about-button">
-          <SecondaryButton buttonText="resumé" icon={<OpenInNewRoundedIcon sx={{ml: 1}} style={{paddingTop: "2px"}}/>} buttonLink={process.env.PUBLIC_URL + '/EileenChen-resume.pdf'} target="_blank" rel="noopener noreferrer nofollow"/>
+          <SecondaryButton buttonText="resumé" icon={<OpenInNewRoundedIcon sx={{ml: 1}} style={{paddingTop: "2px"}}/>} buttonLink={process.env.PUBLIC_URL + '/EileenChen-ux-eng-resume.pdf'} target="_blank" rel="noopener noreferrer nofollow"/>
         </div>
         <div className="about-button" onClick={handleClick}>
           <PrimaryButton buttonText="projects" icon={<ArrowDownwardRoundedIcon sx={{ml: 1}} style={{paddingTop: "2px"}}/>} buttonLink="#projects"/>

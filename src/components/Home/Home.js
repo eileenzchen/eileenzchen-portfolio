@@ -66,6 +66,7 @@ function Home() {
               polaroidTitle={c1Props.polaroid.polaroidTitle}
               polaroidDescription={c1Props.polaroid.polaroidDescription}
               aspectRatio={c1Props.polaroid.aspectRatio}
+              tags={c1Props.polaroid.tags}
               fadeDelay="200">
             </Polaroid>
           </Grid>
@@ -77,6 +78,7 @@ function Home() {
               polaroidTitle={weeeProps.polaroid.polaroidTitle}
               polaroidDescription={weeeProps.polaroid.polaroidDescription}
               aspectRatio={weeeProps.polaroid.aspectRatio}
+              tags={weeeProps.polaroid.tags}
               fadeDelay="500">
             </Polaroid>
           </Grid>
@@ -88,6 +90,7 @@ function Home() {
               polaroidTitle={fitvioProps.polaroid.polaroidTitle}
               polaroidDescription={fitvioProps.polaroid.polaroidDescription}
               aspectRatio={fitvioProps.polaroid.aspectRatio}
+              tags={fitvioProps.polaroid.tags}
               fadeDelay="200">
             </Polaroid>
           </Grid>
@@ -99,6 +102,7 @@ function Home() {
               polaroidTitle={what2yumProps.polaroid.polaroidTitle}
               polaroidDescription={what2yumProps.polaroid.polaroidDescription}
               aspectRatio={what2yumProps.polaroid.aspectRatio}
+              tags={what2yumProps.polaroid.tags}
               fadeDelay="500">
             </Polaroid>
           </Grid>
@@ -110,6 +114,7 @@ function Home() {
               polaroidTitle={bakingFactoryProps.polaroid.polaroidTitle}
               polaroidDescription={bakingFactoryProps.polaroid.polaroidDescription}
               aspectRatio={bakingFactoryProps.polaroid.aspectRatio}
+              tags={bakingFactoryProps.polaroid.tags}
               fadeDelay="100">
             </Polaroid>
           </Grid>

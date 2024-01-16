@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Aos from "aos";
 import 'aos/dist/aos.css';
 import './Polaroid.css';
-import ModalImage from "react-modal-image";
+import Tag from '../Tag/Tag.js'
 
 function Polaroid(props) {
 
@@ -33,7 +33,10 @@ function Polaroid(props) {
           <p className="monospace-500 title">{props.polaroidTitle}</p>
           <p className="monospace-300 description">{props.polaroidDescription}</p>
         </div>
-        
+        <div className="tagsContainer">
+          <Tag class="device" tagName={props.tags[0]}></Tag>
+          <Tag class="role" tagName={props.tags[1]}></Tag>
+        </div>
       </a>
       
     </div>
