@@ -11,7 +11,7 @@ export const c1Props = {
     imageUrl: C1Preview,
     alt: "Capital One",
     polaroidTitle: "Capital One",
-    polaroidDescription: "Improving the findability and accessibility of Search on capitalone.com",
+    polaroidDescription: "An improved search experience to increase customer conversion",
     aspectRatio: "aspectRatioWide",
     tags: ["mobile & desktop", "front-end web dev"]
   },
@@ -38,7 +38,7 @@ export const weeeProps = {
     imageUrl: WeeePreview,
     alt: "Weee Redesign",
     polaroidTitle: "Weee!",
-    polaroidDescription: "Fostering community, inspiring shoppers, and making grocery shopping fun",
+    polaroidDescription: "A streamlined and engaging shopping journey",
     aspectRatio: "aspectRatioWide",
     tags: ["mobile native", "UX/UI designer"]
   },
@@ -65,7 +65,7 @@ export const what2yumProps = {
     imageUrl: What2yumPreview,
     alt: "What2Yum",
     polaroidTitle: "What2Yum",
-    polaroidDescription: "Empowering people to decide where to eat within minutes",
+    polaroidDescription: "A zero to one app that empowers people to decide where to eat within minutes",
     aspectRatio: "aspectRatioWide",
     tags: ["mobile native", "full-stack iOS dev"]
   },
@@ -92,7 +92,7 @@ export const bakingFactoryProps = {
     imageUrl: BakingFactoryPreview,
     alt: "The Baking Factory",
     polaroidTitle: "The Baking Factory",
-    polaroidDescription: "Streamlining a bakery's ecommerce transactions for customers and employees",
+    polaroidDescription: "An all-in-one bakery ecommerce system for customers and employees",
     aspectRatio: "aspectRatioWide",
     tags: ["desktop","full-stack web dev"]
   },
@@ -119,7 +119,7 @@ export const fitvioProps = {
     imageUrl: FitvioPreview,
     alt: "Fitvio Startup",
     polaroidTitle: "Fitvio",
-    polaroidDescription: "Leading the end-to-end design and branding of a fitness app",
+    polaroidDescription: "A reimagined brand and onboarding experience",
     aspectRatio: "aspectRatioWide",
     tags: ["desktop", "UX/UI designer"]
   },
