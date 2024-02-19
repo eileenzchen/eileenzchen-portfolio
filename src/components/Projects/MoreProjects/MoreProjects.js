@@ -15,6 +15,7 @@ function MoreProjects(props) {
         polaroidTitle={projectsMap[projectKey].polaroid.polaroidTitle} 
         polaroidDescription={projectsMap[projectKey].polaroid.polaroidDescription}
         aspectRatio={projectsMap[projectKey].polaroid.aspectRatio}
+        tags={projectsMap[projectKey].polaroid.tags}
         fadeDelay={delay += 200}/>
     </div>
     // <MenuItem itemName={e} key={`menuitem_${i}`} displayName={menuNameMappings[e]} linkClass={e === activeItem ? "link activeItem" : "link"} containerClass={e === activeItem ? "activeItemContainer" : ''}  />
