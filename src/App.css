@@ -75,6 +75,11 @@ p {
   font-weight: 300;
 }
 
+::selection {
+  color: white;
+  background: #637b46;
+}
+
 .heading-text {
   color: #3D2309;
 }
