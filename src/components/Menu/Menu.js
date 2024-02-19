@@ -131,7 +131,7 @@ const Menu = ({menuItems}) => {
   };
 
   const handleClickOutside = event => {
-    event.preventDefault();
+    // event.preventDefault();
     if (!document.querySelector('#Menu').contains(event.target)){
       setMenuState('closed');
     }
