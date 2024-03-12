@@ -52,13 +52,13 @@ function Home() {
         <Grid container columns={2} rowSpacing={0} columnSpacing={{ xs: 1, md: 6 }}>
           <Grid item xs={2} md={1}>
             <Polaroid 
-              linkUrl={c1Props.polaroid.linkUrl}
-              imageUrl={c1Props.polaroid.imageUrl}
-              alt={c1Props.polaroid.alt}
-              polaroidTitle={c1Props.polaroid.polaroidTitle}
-              polaroidDescription={c1Props.polaroid.polaroidDescription}
-              aspectRatio={c1Props.polaroid.aspectRatio}
-              tags={c1Props.polaroid.tags}
+              linkUrl={weeeProps.polaroid.linkUrl}
+              imageUrl={weeeProps.polaroid.imageUrl}
+              alt={weeeProps.polaroid.alt}
+              polaroidTitle={weeeProps.polaroid.polaroidTitle}
+              polaroidDescription={weeeProps.polaroid.polaroidDescription}
+              aspectRatio={weeeProps.polaroid.aspectRatio}
+              tags={weeeProps.polaroid.tags}
               fadeDelay="100">
             </Polaroid>
             <Polaroid 
@@ -83,14 +83,14 @@ function Home() {
             </Polaroid> */}
           </Grid>
           <Grid item xs={2} md={1}>
-            <Polaroid 
-              linkUrl={weeeProps.polaroid.linkUrl}
-              imageUrl={weeeProps.polaroid.imageUrl}
-              alt={weeeProps.polaroid.alt}
-              polaroidTitle={weeeProps.polaroid.polaroidTitle}
-              polaroidDescription={weeeProps.polaroid.polaroidDescription}
-              aspectRatio={weeeProps.polaroid.aspectRatio}
-              tags={weeeProps.polaroid.tags}
+          <Polaroid 
+              linkUrl={c1Props.polaroid.linkUrl}
+              imageUrl={c1Props.polaroid.imageUrl}
+              alt={c1Props.polaroid.alt}
+              polaroidTitle={c1Props.polaroid.polaroidTitle}
+              polaroidDescription={c1Props.polaroid.polaroidDescription}
+              aspectRatio={c1Props.polaroid.aspectRatio}
+              tags={c1Props.polaroid.tags}
               fadeDelay="400">
             </Polaroid>
             <Polaroid 
