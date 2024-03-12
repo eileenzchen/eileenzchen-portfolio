@@ -15,7 +15,7 @@ function Polaroid(props) {
 
   if (props.aspectRatio == 'aspectRatioRegular') {
     return (
-      <div data-aos="fade-up" className="polaroid">
+      <div data-aos="fade-up" className="polaroid regular">
         <img src={props.imageUrl} alt={props.alt} title={props.alt} className={props.aspectRatio}></img>
         <div className="polaroidText">
           <p className="monospace-500 title">{props.polaroidTitle}</p>

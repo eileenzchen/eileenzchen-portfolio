@@ -7,11 +7,9 @@ function PrimaryButton(props) {
 
   return (  
     <div className="buttonWrapper">
-      <Link to={props.buttonLink} target={props.target}>
-        <button className="monospace-500 button-primary">
-          {props.buttonText}
-          {props.icon}
-        </button>
+      <Link to={props.buttonLink} target={props.target} className="monospace-500 button-primary">
+        {props.buttonText}
+        {props.icon}
       </Link> 
     </div>
   )

@@ -14,7 +14,11 @@ import PrimaryButton from '../../PrimaryButton/PrimaryButton.js';
 import Typewriter from 'typewriter-effect';
 
 function About() {
-  const handleClick = event => {
+  const updateCursorSize = () => {
+    (document.querySelector('.Typewriter__cursor')).id = 'typewriter-cursor';
+    (document.getElementById('typewriter-cursor')).style.fontSize = '12px';
+  };
+  const handleProjectsClick = event => {
     event.preventDefault();
     const anchor = document.querySelector('#projects');
     anchor.scrollIntoView({ behavior: 'smooth', block: "start" });
@@ -32,18 +36,41 @@ function About() {
           <div className="spacer"></div>
           {/* <h1 className="monospace-400">Hey, I'm <span className="monospace-500 highlight">Eileen</span>! I'm a product designer who is experienced in end-to-end user experience design, coding up prototypes, and empathizing with engineers (because I was one). </h1> */}
 
-          <h1 className="typewriter-block">
-            {/* make it so that the white space is fixed */}
-          <Typewriter
+          
+            {/* have to wrap h1 around typewriter so that the cursor is the right height */}
+          <h1>
+            <Typewriter
             onInit={(typewriter) => {
-              typewriter.typeString('<span class="monospace-400">Hey! I\'m <span class="monospace-500 highlight">Eileen</span>. I wear many different hats, including but not limited to beanies, dad caps, buckets, <b class="monospace-400" style="color: #92AD70">UX designer<\/b>, and <b class="monospace-400" style="color: #92AD70">full-stack engineer<\/b>.</span>')
-                .start();
+              typewriter.typeString('<span class="monospace-400">Hey! I\'m <span class="monospace-500 highlight">Eileen</span>. I\'m a <b class="monospace-400" style="color: #92AD70">UX designer<\/b> by trade, <b class="monospace-400" style="color: #92AD70">engineer<\/b> by day, and <b class="monospace-400" style="color: #92AD70">problem solver<\/b> at heart. I see empathetic design as a way to bring people together to create meaningful, delightful experiences.</span></h1>')
+              .pauseFor(550).typeString('<br>')
+              .callFunction(updateCursorSize)
+              .pauseFor(550).typeString('<br>')
+              .pauseFor(800).typeString('<span class="monospace-400" style="font-size: 12px">(yes I actually type 250 wpm...</span>')
+              .pauseFor(500).typeString('<span class="monospace-400" style="font-size: 12px">or do I? hire me to find out)</span>')
+              .pauseFor(750).typeString('<br>')
+              .pauseFor(800).typeString('<span class="monospace-400" style="font-size: 12px">^_^</span>')
+              .start()
             }}
             options={{
-              delay: 40,
+              delay: 20,
             }}
           />
           </h1>
+
+          {/* <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+              .pauseFor(750).typeString('<br>')
+              .pauseFor(750).typeString('<br>')
+              .pauseFor(1000).typeString('<span class="monospace-400">(yes I actually type 250 wpm...</span>')
+              .pauseFor(500).typeString('<span class="monospace-400">or do I? <b class="monospace-400" style="color: #92AD70">hire me</b> to find out)</span>')
+              .pauseFor(1000).typeString('<br><br><span class="monospace-400">^_^</span>')
+                .start();
+            }}
+            options={{
+              delay: 20,
+            }}
+          /> */}
 
           
           {/* <h2 className="monospace-500">Here's a little about me 🤗</h2> */}
@@ -88,7 +115,7 @@ function About() {
             imageUrl={tonysImageCropped} 
             alt="Me with Tony's Pizza"
             polaroidTitle=""
-            polaroidDescription="Fueled by the chance to make a difference (& good food!)"
+            polaroidDescription="foodie & plant mom"
             aspectRatio="aspectRatioRegular">
           </Polaroid>
         </Grid>
@@ -96,9 +123,9 @@ function About() {
       </Grid>
       <Grid container columns={12}>
         <div className="about-button">
-          <SecondaryButton buttonText="resumé" icon={<OpenInNewRoundedIcon sx={{ml: 1}} style={{paddingTop: "2px"}}/>} buttonLink={process.env.PUBLIC_URL + '/EileenChen-ux-eng-resume.pdf'} target="_blank" rel="noopener noreferrer nofollow"/>
+          <SecondaryButton buttonText="resumé" icon={<OpenInNewRoundedIcon sx={{ml: 1}} style={{paddingTop: "2px"}}/>} buttonLink={process.env.PUBLIC_URL + '/EileenChen-resume.pdf'} target="_blank" rel="noopener noreferrer nofollow"/>
         </div>
-        <div className="about-button" onClick={handleClick}>
+        <div className="about-button" onClick={handleProjectsClick}>
           <PrimaryButton buttonText="projects" icon={<ArrowDownwardRoundedIcon sx={{ml: 1}} style={{paddingTop: "2px"}}/>} buttonLink="#projects"/>
         </div>
       </Grid>

@@ -1,14 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import About from './About/About.js';
-import ProjectSectionTan from './ProjectSection/ProjectSectionTan.js';
-import ProjectSectionWhite from './ProjectSection/ProjectSectionWhite.js';
-import tonysImage from './assets/me_w_tonys_pizza.jpg';
-import what2yumPreview from '../Projects/What2Yum/assets/what2yum_preview.png';
-import bakingFactoryPreview from '../Projects/BakingFactory/assets/baking-factory-preview.png'
-import weeePreview from '../Projects/Weee/assets/weee-preview.png'
-import fitvioPreview from '../Projects/Fitvio/assets/fitvio-preview.png'
 import { Container, Fab, Grid } from '@mui/material';
-import KeyboardDoubleArrowDownRounded from '@mui/icons-material/KeyboardDoubleArrowDownRounded';
 import './Home.css'
 import { c1Props, weeeProps, what2yumProps, fitvioProps, bakingFactoryProps } from 'components/Constants.js';
 import Polaroid from 'components/Polaroid/Polaroid.js';
@@ -57,8 +49,8 @@ function Home() {
       <About></About>
       <div id="projects"></div>
       <Container maxWidth="lg">
-        <Grid container columns={12} rowSpacing={0} columnSpacing={{ xs: 1, md: 6 }}>
-          <Grid item xs={12} md={6}>
+        <Grid container columns={2} rowSpacing={0} columnSpacing={{ xs: 1, md: 6 }}>
+          <Grid item xs={2} md={1}>
             <Polaroid 
               linkUrl={c1Props.polaroid.linkUrl}
               imageUrl={c1Props.polaroid.imageUrl}
@@ -67,22 +59,8 @@ function Home() {
               polaroidDescription={c1Props.polaroid.polaroidDescription}
               aspectRatio={c1Props.polaroid.aspectRatio}
               tags={c1Props.polaroid.tags}
-              fadeDelay="200">
+              fadeDelay="100">
             </Polaroid>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Polaroid 
-              linkUrl={weeeProps.polaroid.linkUrl}
-              imageUrl={weeeProps.polaroid.imageUrl}
-              alt={weeeProps.polaroid.alt}
-              polaroidTitle={weeeProps.polaroid.polaroidTitle}
-              polaroidDescription={weeeProps.polaroid.polaroidDescription}
-              aspectRatio={weeeProps.polaroid.aspectRatio}
-              tags={weeeProps.polaroid.tags}
-              fadeDelay="500">
-            </Polaroid>
-          </Grid>
-          <Grid item xs={12} md={6}>
             <Polaroid 
               linkUrl={fitvioProps.polaroid.linkUrl}
               imageUrl={fitvioProps.polaroid.imageUrl}
@@ -91,10 +69,30 @@ function Home() {
               polaroidDescription={fitvioProps.polaroid.polaroidDescription}
               aspectRatio={fitvioProps.polaroid.aspectRatio}
               tags={fitvioProps.polaroid.tags}
-              fadeDelay="200">
+              fadeDelay="400">
             </Polaroid>
+            {/* <Polaroid 
+              linkUrl={bakingFactoryProps.polaroid.linkUrl}
+              imageUrl={bakingFactoryProps.polaroid.imageUrl}
+              alt={bakingFactoryProps.polaroid.alt}
+              polaroidTitle={bakingFactoryProps.polaroid.polaroidTitle}
+              polaroidDescription={bakingFactoryProps.polaroid.polaroidDescription}
+              aspectRatio={bakingFactoryProps.polaroid.aspectRatio}
+              tags={bakingFactoryProps.polaroid.tags}
+              fadeDelay="300">
+            </Polaroid> */}
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={2} md={1}>
+            <Polaroid 
+              linkUrl={weeeProps.polaroid.linkUrl}
+              imageUrl={weeeProps.polaroid.imageUrl}
+              alt={weeeProps.polaroid.alt}
+              polaroidTitle={weeeProps.polaroid.polaroidTitle}
+              polaroidDescription={weeeProps.polaroid.polaroidDescription}
+              aspectRatio={weeeProps.polaroid.aspectRatio}
+              tags={weeeProps.polaroid.tags}
+              fadeDelay="400">
+            </Polaroid>
             <Polaroid 
               linkUrl={what2yumProps.polaroid.linkUrl}
               imageUrl={what2yumProps.polaroid.imageUrl}
@@ -103,19 +101,7 @@ function Home() {
               polaroidDescription={what2yumProps.polaroid.polaroidDescription}
               aspectRatio={what2yumProps.polaroid.aspectRatio}
               tags={what2yumProps.polaroid.tags}
-              fadeDelay="500">
-            </Polaroid>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Polaroid 
-              linkUrl={bakingFactoryProps.polaroid.linkUrl}
-              imageUrl={bakingFactoryProps.polaroid.imageUrl}
-              alt={bakingFactoryProps.polaroid.alt}
-              polaroidTitle={bakingFactoryProps.polaroid.polaroidTitle}
-              polaroidDescription={bakingFactoryProps.polaroid.polaroidDescription}
-              aspectRatio={bakingFactoryProps.polaroid.aspectRatio}
-              tags={bakingFactoryProps.polaroid.tags}
-              fadeDelay="100">
+              fadeDelay="200">
             </Polaroid>
           </Grid>
         </Grid>

@@ -35,7 +35,7 @@
     overflow: hidden;
   }
   #Menu.open {
-    border-radius: 10px 10px 32px 10px;
+    border-radius: 32px;
     max-width: calc(100% - 58px);
   }
   #Menu .MenuItem {

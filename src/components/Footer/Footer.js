@@ -7,7 +7,7 @@ import {ReactComponent as Email} from '../../images/social-icons/email.svg';
 
 function Footer() {
   return (      
-    <footer>
+    <footer id="contact-me">
       <Container maxWidth="lg">
         <a href="https://www.linkedin.com/in/eileenzchen/" target="_blank" rel="noopener noreferrer"><LinkedIn className="social-icon"/></a>
         <a href="mailto:ezch09@gmail.com" target="_blank" rel="noopener noreferrer"><Email className="social-icon"/></a>

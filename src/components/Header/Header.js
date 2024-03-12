@@ -2,6 +2,7 @@ import React from 'react'
 import './Header.css';
 import { Container } from '@mui/material';
 import { useLocation } from 'react-router-dom/cjs/react-router-dom';
+import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
 
 function Header() {
   const location = useLocation();
@@ -14,6 +15,14 @@ function Header() {
             <p className="monospace-400 header-subheading">ux designer x engineer</p>
           </a>
         </Container>
+        <Container maxWidth="xl" style={{marginLeft:"0px"}}>
+        <a href="/" className="return-home-link">
+          <span className="return-home-container">
+            <KeyboardArrowLeftRoundedIcon sx={{mr:1}} style={{marginTop: "1px"}}/>
+            <span>return home</span>
+          </span>
+        </a>
+      </Container>
       </header>
     )
 

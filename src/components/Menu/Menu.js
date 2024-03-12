@@ -48,10 +48,11 @@ const Menu = ({menuItems}) => {
     ProductRoadmapping: "product roadmapping",
     UserAcquisitionOnboarding: "user acquisition & onboarding",
     Rebranding: "rebranding",
-    SearchEnhancements: "enhancing Capital One Search",
-    BlogRedesign: "revamping the Capital One blog",
-    AdobeTargetTesting: "Conducting Adobe Target experimentation tests",
-    AutomatingData: "Automating an internal data management platform"
+    Limitations: "limitations",
+    WeighingTradeoffs: "weighing tradeoffs",
+    UserFlows: "mapping out user flows",
+    HCD: "championing human-centered design",
+    Impact: "impact",
   }
   /*
    * Store the active menuItem in state to force update

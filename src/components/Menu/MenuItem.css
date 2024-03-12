@@ -3,7 +3,7 @@
   .MenuItem p {
     margin-bottom: 16px;
     font-size: 15px;
-    line-height: normal;
+    line-height: 24px;
   }
   #back-top-link {
     text-decoration: none;
@@ -92,7 +92,7 @@
     /* padding: 10px; */
     border-radius: 10px;
     font-size: 20px;
-    line-height: normal;
+    line-height: 24px;
     font-weight: 600;
     /* padding: 10px; */
     .link {

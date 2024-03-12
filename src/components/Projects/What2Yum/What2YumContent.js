@@ -147,7 +147,21 @@ export function SolutionExploration() {
       <p>
         We simulated interactions such as a user waiting for five others to join during the synchronous experience. We furthermore sent out a user servey to collect data on user behavior when deciding what to eat with friends as well as their preferred experience.
       </p>
-      <Grid container columns={2} style={{marginTop: "30px", marginBottom: "30px"}}>
+      <Grid container columns={6} style={{marginTop: "30px", marginBottom: "30px"}} justifyContent="center">
+        <Grid item xs={6} sm={1} style={{padding: "0px"}}></Grid>
+        <Grid item xs={3} sm={2} display="flex" style={{maxHeight: "600px"}}>
+          <video className="small-asset" style={{padding: "0px"}} autoPlay loop muted playsInline>
+            <source src="/what2yum-gifs/lofi-sync-swipe.mov" type="video/mp4" />
+          </video>
+        </Grid>
+        <Grid item xs={3} sm={2} display="flex" style={{maxHeight: "600px"}}>
+          <video className="small-asset" style={{padding: "0px"}} autoPlay loop muted playsInline>
+            <source src="/what2yum-gifs/lofi-sync-sharing-gif-v2.mov" type="video/mp4" />
+          </video>
+        </Grid>
+        <Grid item xs={6} sm={1}></Grid>
+      </Grid>
+      {/* <Grid container columns={2} style={{marginTop: "30px", marginBottom: "30px"}}>
         <Grid item xs={2} sm={1} className="align-right">
           <video className="small-asset" autoPlay loop muted playsInline>
             <source src="/what2yum-gifs/lofi-sync-swipe.mov" type="video/mp4" />
@@ -158,7 +172,7 @@ export function SolutionExploration() {
             <source src="/what2yum-gifs/lofi-sync-sharing-gif-v2.mov" type="video/mp4" />
           </video>
         </Grid>
-      </Grid>
+      </Grid> */}
       <p>
         From our user testing and user survey results, users predominantly preferred an asynchronous experience as it allowed for flexibility in when to decide. Users decide what to eat at different times, some deciding day of and some planning 2-3 days in advance.
       </p>
