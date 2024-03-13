@@ -36,7 +36,7 @@ function Verification(props) {
     // @ts-ignore
     const answer = (document.getElementById("password-input")).value;
 
-    if (answer === "eileenisaplantmom") { 
+    if (answer === "plantmom") { 
       props.sendVerified(true);
       window.sessionStorage.setItem("verified", "true");
     } else {
