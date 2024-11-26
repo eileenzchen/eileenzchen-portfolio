@@ -1,48 +1,89 @@
 import React from 'react'
 import * as Assets from './assets'
-import ModalImage from 'react-modal-image'
 import './Fitvio.css'
+import { Grid } from '@mui/material'
 
 export function Intro() {
   return (
     <div id="Intro">
-      <img src={Assets.FitvioPreview} alt="Fitvio" title="Fitvio" style={{marginTop: "30px"}}/>
+      <h1 data-aos="fade-up"><span className="project-title monospace-300">Removing barriers to staying active</span></h1>
+      <h2 data-aos="fade-up" data-aos-delay="100" className="project-subheading monospace-200">How can we create a frictionless & personalized onboarding experience? How can we create a reimagined brand identity that resonates with people of different fitness levels?</h2>
+      <img data-aos="fade-up" data-aos-delay="300" src={Assets.FeatureHighlight} alt="onboarding and rebrand features" loading="lazy"></img>
+      <Grid data-aos="fade-up" data-aos-delay="400" container columns={4} columnSpacing={4} style={{marginTop: "30px"}}>
+        <Grid item xs={2} md={1}>
+          <h2>role</h2>
+          <p className="project-description">
+            Head of Design<br></br>product designer<br></br>brand designer
+          </p>
+        </Grid>
+        <Grid item xs={2} md={1}>
+          <h2>team</h2>
+          <p className="project-description">
+            cross-functional startup team
+          </p>
+        </Grid>
+        <Grid item xs={2} md={1}>
+          <h2>tools</h2>
+          <p className="project-description">
+            Figma<br></br>
+            InDesign<br></br>
+            Illustrator<br></br>
+          </p>
+        </Grid>
+        <Grid item xs={2} md={1}>
+          <h2>skills</h2>
+          <Grid container columns={2} rowSpacing={2}>
+            <Grid xs={1}>
+              <p className="project-description">
+                brand design<br></br>
+                design strategy<br></br>
+                roadmapping<br></br>
+              </p>
+            </Grid>
+            <Grid xs={1}>
+              <p className="project-description">
+                user research<br></br>
+                design systems<br></br>
+              </p>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+      <div className="text-divider">
+        <img className="leaf-divider" src={process.env.PUBLIC_URL + '/leaf-divider.png'}/>
+      </div>
     </div>
   )
-
 }
 
-export function Summary() {
+export function Motivation() {
   return (
-    <div id="Summary" className="project-section">
-      <h1><span className="section-title highlight">summary</span></h1>
-      <p className="subheading">context</p>
+    <div id="Motivation" className="project-section">
+      <h1><span className="section-title highlight">motivation</span></h1>
       <p>
-        <b>Fitvio was a startup</b> founded by my classmate with the vision of creating a <b>cohesive platform to help people, whether beginners or pros, improve their fitness and document their personal journeys</b> via easy access to content from personal trainers and connection with a fitness community.
+        During the heights of COVID-19, people prioritized their health and were <b>finding ways to stay active while staying safe</b>. Many looked for gym alternatives while others looked for ways to get into exercising with minimal prior experience. <b>As someone intimiated by gyms and just starting to look for ways to stay active at home, this problem deeply mattered to me.</b>
       </p>
-      <p className="subheading">role</p>
       <p>
-        I was brought on as <b>Head of Design and the sole designer</b>. My first time in this kind of design leadership role, I took on the challenge of <b>creating a brand, design strategy, and onboarding experience</b> for Fitvio from the ground up while staying aligned with the product goals.
+        <b>Fitvio was a startup</b> founded by my classmate with the vision of creating a cohesive platform to help <b>beginners and pros alike improve their fitness and share their personal journeys</b>.
       </p>
-      <p className="subheading">growth</p>
       <p>
-        Through this experience, I <b>expanded the breadth of my design capabilities and pushed myself to learn new skills</b> like brand design. I furthermore was able to <b>experience first hand how design and product strategy need to be interwoven to drive forward a common vision</b>. 
+        I joined as <b>Head of Design</b> at Fitvio to create a brand identity, build the design strategy for the fast moving startup, and lead the user research and UX design of the app.
       </p>
-      <p className="subheading" style={{marginBottom: '15px'}}>user onboarding prototype</p>
-      <div className="videoContainer pitchContent">
-        <iframe className="video" src="https://www.youtube.com/embed/TPkmpMa107M" title="What2Yum video pitch" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-      </div>
-      <p className="subheading" style={{marginBottom:"0px"}}>rebranding</p>
-      <img src={Assets.Rebranding} alt="Fitvio rebranding"></img>
-      {/* <ModalImage
-        className="drop-shadow-hover-light"
-        small={Assets.Rebranding}
-        large={Assets.Rebranding}
-        alt="Fitvio rebranding"
-        imageBackgroundColor="transparent"
-        hideDownload={true}
-        hideZoom={true}
-      /> */}
+    </div>
+  )
+}
+
+export function Problem() {
+  return (
+    <div id="Problem" className="project-section">
+      <h1><span className="section-title highlight">problem</span></h1>
+      <p>
+        The goal of Fitvio was to provide easy access to <b>content from a diverse set of personal trainers and connection with a fitness community</b>.
+      </p>
+      <p>We sought to answer the question:</p>
+      <blockquote>
+        How can we empower people of all fitness levels to find workouts and trainers that work for them at the comfort of their home?
+      </blockquote>
     </div>
   )
 }
@@ -51,58 +92,64 @@ export function UnderstandingUsers() {
     <div id="UnderstandingUsers" className="project-section">
       <h1><span className="section-title highlight">understanding our users</span></h1>
       <p>
-        As the only thing we had was an idea so far, I knew that it was vital to first understand our users. And not just for me to understand our users, but for the whole team from our engineer to the data analyst to the cofounders. From the get-go, I wanted to <b>establish design as a critical function for Fitvio and one that the whole team should understand and partake in</b>. I demonstrated that design was not there to make things look pretty, but to advocate for Fitvio's users and create experiences that are both usable and beautiful. 
+        With just a product mission, I knew that it was vital to first understand our users and their pain points. With a diverse team unfamiliar with the role of design, I wanted to <b>establish design as a critical function</b> for Fitvio and help the team understand and partake in it. Thus, I <b>rallied the team to conduct and sit in on user interviews</b> and then held workshops based on the insights to <b>create personas and customer journey maps together</b>. I advocated for everyone to think of design not as the visuals to make things look nice, but a way of problem solving.
       </p>
-      <p>
-        We needed to identify where their pain points lie and how Fitvio could position itself to help them in a way other apps do not already. <b>I led the efforts to interview users, collect insights, and hold workshops with the entire team to create personas and customer journey maps</b>.
-      </p>
+      <p>From our personas, we have Lisa who is a part-time Fitness Instructor on YouTube and seeks to connect with her viewers more intimately in order to help them.</p>
+      <p>We also have Sam, a casual health nut who has been struggling to get into working out consistently and finding exercises that work for her, especially confined to the comforts of her home.</p>
+
       <div style={{marginTop: "30px", marginBottom: "30px"}}>
         <img src={Assets.Personas} alt="Fitvio personas"></img>
-        {/* <ModalImage
-          className="drop-shadow-hover-light"
-          small={Assets.Personas}
-          large={Assets.Personas}
-          alt="Fitvio personas"
-          imageBackgroundColor="transparent"
-          hideDownload={true}
-          hideZoom={true}
-        /> */}
       </div>
-      <img src={Assets.CustomerJourneyMap} alt="Fitvio customer journey map"></img>
-      {/* <ModalImage
-        className="drop-shadow-hover-light"
-        small={Assets.CustomerJourneyMap}
-        large={Assets.CustomerJourneyMap}
-        alt="Fitvio customer journey map"
-        imageBackgroundColor="transparent"
-        hideDownload={true}
-        hideZoom={true}
-      /> */}
+      <Grid container columns={2} columnSpacing={4}>
+        <Grid item xs={2} md={1}>
+          <img src={Assets.CustomerJourneyMap} alt="Fitvio customer journey map"></img>
+          <div className="caption-container">
+            <caption>customer journey map for personal trainers</caption>
+          </div>
+        </Grid>
+        <Grid item xs={2} md={1}>
+          <p>
+            Learnings about personal trainers:
+            <ul>
+              <li>
+                It's hard to know if their client will be a good match with them.
+              </li>
+              <li>
+                Tracking clients' progress is important.
+              </li>
+              <li>
+                Various technologies are used to track client data and schedule appointments from spreadsheets to email to other training management software.
+              </li>
+            </ul>
+          </p>
+          <p>
+            Learnings about fitness enthusiasts (beginner to intermediate level):
+            <ul>
+              <li>
+                It's hard to find workouts that work for their own body and situation (e.g. location, equipment).
+              </li>
+              <li>
+                It's hard to stay motivated to work out.
+              </li>
+              <li>
+                Many workouts can be tedious and repetitive.
+              </li>
+            </ul>
+          </p>
+          
+        </Grid>
+      </Grid>
       <p>
-        From this, we worked to identify Fitvio's <b>market differentiator</b>, which was having an all-in-one platform for both fitness enthusiasts and instructors to grow and share in their fitness journey. From here, I led brainstorming sessions to identify and <b>prioritize features</b> for Fitvio, <b>encouraging the team to think with the customer in mind first</b>.
+        From this, we worked to identify Fitvio's <b>market differentiator</b>, which was having a platform for <b>both fitness enthusiasts and instructors</b> to grow and share in their fitness journey. We started with the fitness enthusiast journey. From here, I led brainstorming sessions to identify and <b>prioritize features</b> for Fitvio.
       </p>
-      <div style={{marginTop: "30px", marginBottom: "30px"}}>
-      <img src={Assets.FeasibilityImpact} alt="feasilbity impact diagram"></img>
-        {/* <ModalImage
-          className="drop-shadow-hover-light"
-          small={Assets.FeasibilityImpact}
-          large={Assets.FeasibilityImpact}
-          alt="feasibility impact diagram"
-          imageBackgroundColor="transparent"
-          hideDownload={true}
-          hideZoom={true}
-        /> */}
-      </div>
-      <img src={Assets.FeaturePrioritization} alt="feature prioritization"></img>
-      {/* <ModalImage
-        className="drop-shadow-hover-light"
-        small={Assets.FeaturePrioritization}
-        large={Assets.FeaturePrioritization}
-        alt="feature prioritization"
-        imageBackgroundColor="transparent"
-        hideDownload={true}
-        hideZoom={true}
-      /> */}
+      <Grid container columns={2} columnSpacing={4} alignItems={'center'}>
+        <Grid item xs={2} md={1}>
+          <img src={Assets.FeasibilityImpact} alt="feasilbity impact diagram"></img>
+        </Grid>
+        <Grid item xs={2} md={1}>
+          <img src={Assets.FeaturePrioritization} alt="feature prioritization"></img>
+        </Grid>
+      </Grid>
     </div>
   )
 }
@@ -110,24 +157,19 @@ export function ProductRoadmapping() {
   return (
     <div id="ProductRoadmapping" className="project-section">
       <h1><span className="section-title highlight">product roadmapping</span></h1>
-      <p>
-        With our workshopping sessions and weekly sync meetings, I <b>learned to work in parallel with my partners</b> in engineering, product, marketing, and business to align on the goals of each phase of development and work, even as pivots or changes came up&mdash;which they often did. 
-      </p>
-      <p>
-        <b>I viewed the role of design as one that should be incorporated in every step of the process</b> and one where I make sure everyone else on the team also understands our product from a human point of view. At the same time, I knew that <b>I had to understand the business value and direction of our product to achieve tangible outcomes</b>. With product roadmapping, I wanted to ensure the team never lost sight of the user at the core during each phase.
-      </p>
-      <div style={{marginTop: "30px"}}>
-       <img src={Assets.Roadmap} alt="product roadmap for phase 1"></img>
-        {/* <ModalImage
-          className="drop-shadow-hover-light"
-          small={Assets.Roadmap}
-          large={Assets.Roadmap}
-          alt="product roadmap for phase 1"
-          imageBackgroundColor="transparent"
-          hideDownload={true}
-          hideZoom={true}
-        /> */}
-      </div>
+      <Grid container columns={2} columnSpacing={4} alignItems={'center'}>
+        <Grid item xs={2} md={1}>
+          <p>
+            With our workshopping sessions and weekly sync meetings, I <b>worked with my partners in engineering, product, marketing, and business</b> to align on the goals of each phase of development. With product roadmapping, I wanted to ensure the team never lost sight of the user during each phase of development.
+          </p>
+          <p>
+            Even though we were iterating quickly, I ensured that we never lost the cycle of <b>user feedback and team critique</b> in our design roadmap.
+          </p>
+        </Grid>
+        <Grid item xs={2} md={1}>
+          <img src={Assets.Roadmap} alt="product roadmap for phase 1"></img>
+        </Grid>
+      </Grid>
     </div>
   )
 }
@@ -136,26 +178,25 @@ export function UserAcquisitionOnboarding() {
     <div id="UserAcquisitionOnboarding" className="project-section">
       <h1><span className="section-title highlight">user acquisition & onboarding</span></h1>
       <p>
-        As we were working towards an MVP, I thought that <b>first and foremost the design strategy should be to acquire customers</b>. With no customers, no one will be seeing the product. With just an initial outsourced logo to work off of that was handed to me by one of the cofounders, I built an <b>onboarding experience for new users, starting from the Fitvio marketing page all the way to the authenticated home page</b>. 
+        As we were working towards an MVP, I thought that <b>first and foremost, the design strategy should start with acquiring customers</b>. With no customers, no one will be seeing the product. Using the existing logo to work off of, I built a <b>personalizaiton onboarding experience for new users, starting from the Fitvio marketing page all the way to the authenticated home page</b>. I started with Sam's&mdash;our casual health nut's&mdash;experience.
       </p>
+      <p>Sam can choose to start working out right away without even creating an account. To track her progress and engage with instructors though, she can create an account, answer a couple questions, and get a personalized list of workout videos in just a few minutes.</p>
       <div style={{marginTop: "30px", marginBottom: "30px"}}>
-        <img src={Assets.Onboarding} alt="onboarding flow with old branding"></img>
-        {/* <ModalImage
-          className="drop-shadow-hover-light"
-          small={Assets.Onboarding}
-          large={Assets.Onboarding}
-          alt="onboarding flow with old branding"
-          imageBackgroundColor="transparent"
-          hideDownload={true}
-          hideZoom={true}
-        /> */}
+        <img src={Assets.AquisitonOnboardingFlow} alt="onboarding flow with old branding"></img>
       </div>
-      <video className="small-asset" autoPlay loop muted playsInline>
-        <source src="/onboarding-gif.mov" type="video/mp4" />
-      </video>
-      <div className="videoContainer pitchContent" style={{marginTop: "35px"}}>
-        <iframe className="video" src="https://www.youtube.com/embed/TPkmpMa107M" title="What2Yum video pitch" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-      </div>
+
+      <Grid container columns={2} columnSpacing={4}>
+        <Grid item xs={2} md={1}>
+          <video className="small-asset" autoPlay loop muted playsInline>
+            <source src="/onboarding-gif.mov" type="video/mp4" />
+          </video>
+        </Grid>
+        <Grid item xs={2} md={1}>
+          <div className="videoContainer pitchContent">
+            <iframe className="video" src="https://www.youtube.com/embed/TPkmpMa107M" title="What2Yum video pitch" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          </div>
+        </Grid>
+      </Grid>
     </div>
   )
 }
@@ -169,114 +210,67 @@ export function Rebranding() {
     <div id="Rebranding">
       <h1><span className="section-title highlight">rebranding</span></h1>
       <p>
-        With only the logo, our brand identity was severely lacking. The marketing strategist and I were asked by the co-founders to create a brand guide to improve this. <b>Although I've never designed a brand guide before or worked on branding, I was pretty excited to get my hands dirty and learn about it</b>. I quickly searched different brand guides like Peleton's and Uber's for inspiration and understanding of what they entailed. I created a color palette, logos and their usages, and font styles. 
+        With a couple rounds of user testing, many users <b>did not identify with our current branding</b>. The cool colors and rigid logo font make it intimidating and unapproachable. Thus, our marketing strategist and I worked together to <b>rebrand and create a brand guide</b>. I created the color palette, various logos and their usages, and font styles for our design system with Fitvio's value of <b>inclusive fitness</b> in mind.
       </p>
-      <p>
-        Beyond the pure design, I wanted to <b>extend the brand to all parts of Fitvio</b>, including the team itself. As we were working completely virtually, it was hard to build a team culture of connection and engagement. I uploaded our new logo as a Slack emoji to <b>socialize the new brand with the team and build excitement</b>.
-      </p>
-      {/* <p>
-        See the full <a className="content-link" href="#brand-guidelines-heading" onClick={handleClick}>brand guidelines</a> below.
-      </p> */}
-      <p>
-        See the full <a className="content-link" href={Assets.BrandGuidelines}>brand guidelines</a> here.
-      </p>
+      <img src={Assets.OldNewLogo} alt="new Fitvio logo Slack emoji use"></img>
+      <Grid container columns={2} columnSpacing={4}>
+        <Grid item xs={2} md={1}>
+          <p>
+            In addition, I wanted to <b>extend the brand to all parts of Fitvio</b>, including the team itself. As we were working completely virtually, it was hard to build a team culture of connection and engagement. I uploaded our new logo as a Slack emoji to <b>socialize the new brand with the team and build excitement</b>.
+          </p>
+        </Grid>
+        <Grid item xs={2} md={1}>
+          <img src={Assets.SlackEmojiUse} alt="new Fitvio logo Slack emoji use"></img>
+        </Grid>
+      </Grid>
       <div style={{marginTop: "30px"}}>
         <img src={Assets.LogoConstruction} alt="logo construction"></img>
-        {/* <ModalImage
-          className="drop-shadow-hover-light"
-          small={Assets.LogoConstruction}
-          large={Assets.LogoConstruction}
-          alt="logo construction"
-          imageBackgroundColor="transparent"
-          hideDownload={true}
-          hideZoom={true}
-        /> */}
       </div>
+
       <div className="caption-container">
         <caption>Logo construction</caption>
       </div>
+
       <div style={{marginTop: "30px"}}>
-      <img src={Assets.LogoClearSpace} alt="logo minimal clear space"></img>
-        {/* <ModalImage
-          className="drop-shadow-hover-light"
-          small={Assets.LogoClearSpace}
-          large={Assets.LogoClearSpace}
-          alt="logo minimal clear space"
-          imageBackgroundColor="transparent"
-          hideDownload={true}
-          hideZoom={true}
-        /> */}
+        <img src={Assets.LogoClearSpace} alt="logo minimal clear space"></img>
       </div>
+
       <div className="caption-container">
         <caption>Minimum spacing guidelines</caption>
       </div>
+
       <div style={{marginTop: "40px"}}>
         <img src={Assets.LogoIteration} alt="logo interations"></img>
-        {/* <ModalImage
-          className="drop-shadow-hover-light"
-          small={Assets.LogoIteration}
-          large={Assets.LogoIteration}
-          alt="logo iterations"
-          imageBackgroundColor="transparent"
-          hideDownload={true}
-          hideZoom={true}
-        /> */}
       </div>
-      <div className="caption-container">
+
+      <div className="caption-container" style={{marginTop: '20px'}}>
         <caption>Logo iterations and variation from the old logo to the new one</caption>
       </div>
-      <div style={{marginTop: "40px"}}>
-      <img src={Assets.Colors} alt="Fitvio color palette"></img>
-        {/* <ModalImage
-          className="drop-shadow-hover-light"
-          small={Assets.Colors}
-          large={Assets.Colors}
-          alt="Fitvio color palette"
-          imageBackgroundColor="transparent"
-          hideDownload={true}
-          hideZoom={true}
-        /> */}
+
+      <div style={{marginTop: "60px"}}>
+        <img src={Assets.Colors} alt="Fitvio color palette"></img>
       </div>
-      <div className="caption-container">
+
+      <div className="caption-container" style={{marginTop: '20px'}}>
         <caption>Fitvio color palette</caption>
       </div>
-      <div style={{marginTop: "40px"}}>
-       <img src={Assets.FontStyles} alt="Fitvio font styles"></img>
-        {/* <ModalImage
-          className="drop-shadow-hover-light"
-          small={Assets.FontStyles}
-          large={Assets.FontStyles}
-          alt="Fitvio font styles"
-          imageBackgroundColor="transparent"
-          hideDownload={true}
-          hideZoom={true}
-        /> */}
+
+      <div style={{marginTop: "60px"}}>
+        <img src={Assets.FontStyles} alt="Fitvio font styles"></img>
       </div>
+
       <div className="caption-container" style={{marginBottom: "30px"}}>
         <caption>Fitvio font styles</caption>
       </div>
-      <p>After establishing our rebrand, I applied it to a couple of screens. To take this forward, I would continue thinking about what the brand conveys and incorporate Fitvio's unique voice in it.</p>
+      <p>
+        See the full <a className="content-link" href={Assets.BrandGuidelines} target="_blank">brand guidelines</a> here.
+      </p>
+      <p>After establishing our rebrand, I applied it to a couple of designs from our onboarding journey.</p>
+
       <div style={{marginTop: "30px", marginBottom: "30px"}}>
         <img src={Assets.Rebranding} alt="Fitvio rebranding"></img>
-        {/* <ModalImage
-          className="drop-shadow-hover-light"
-          small={Assets.Rebranding}
-          large={Assets.Rebranding}
-          alt="Fitvio rebranding"
-          imageBackgroundColor="transparent"
-          hideDownload={true}
-          hideZoom={true}
-        /> */}
       </div>
-      <p className="subheading" id="brand-guidelines-heading" style={{marginBottom:"20px", scrollMarginBlockStart:40}}>Fitvio brand guidelines</p>
-      {/* <object id="brand-guidelines-pdf" data={Assets.BrandGuidelines} type="application/pdf">
-        <p>
-          Unable to display brand guidelines pdf. <a href={Assets.BrandGuidelines} target="_blank" rel="noopener noreferrer nofollow" className='content-link'>Download</a> instead.
-        </p>
-      </object> */}
-      <p>
-        <a href={Assets.BrandGuidelines} target="_blank" rel="noopener noreferrer nofollow" className='content-link'>Open the Fitvio brand guidelines</a> pdf in a new tab.
-      </p>
+      <p>Continuing this work, I would narrow in on Lisa's, the fitness instructor's, onboarding experience and design how the instructor and student would interact with each other on the platform.</p>
     </div>
   )
 }

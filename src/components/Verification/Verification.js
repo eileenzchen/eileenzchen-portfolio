@@ -54,7 +54,7 @@ function Verification(props) {
       <div id="lock-emoji">
         <span>🔒</span>
       </div>
-      <p>This section is password protected because I'm unable to publicly share more details about this project. To read on, shoot me a <a className="content-link" href="mailto:ezch09@gmail.com" target="_blank" rel="noopener noreferrer">message</a>!</p>
+      <p>This section is password protected because I'm unable to publicly share more details about this project. To read on, enter the password or shoot me a <a className="content-link" href="mailto:ezch09@gmail.com" target="_blank" rel="noopener noreferrer">message</a>!</p>
       <form onSubmit={checkPw} id="pw-form">
         {/* hidden username field for accessibility */}
         <input 

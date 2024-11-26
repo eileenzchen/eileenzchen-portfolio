@@ -6,7 +6,7 @@ import './BakingFactory.css'
 import '../Projects.css'
 import MoreProjects from '../MoreProjects/MoreProjects.js'
 
-function BakingFactory() {
+function BakingFactory(props) {
   document.title = "Baking Factory — Eileen Chen";
   return (
     <>
@@ -23,7 +23,7 @@ function BakingFactory() {
               Challenges:null
               }}></Menu>
           </Grid>
-          <Grid item sm={16} md={10} sx={{pb:10}} data-aos="fade-up">
+          <Grid item sm={16} md={13} sx={{pb:10}} data-aos="fade-up">
             <BakingFactoryContent.Intro/>
             <BakingFactoryContent.Summary/>
             <BakingFactoryContent.PersonasUseCases/>

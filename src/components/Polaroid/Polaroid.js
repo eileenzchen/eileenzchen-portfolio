@@ -10,33 +10,38 @@ function Polaroid(props) {
   const hrefAttribute = props.linkUrl ? {href: props.linkUrl} : {};
 
   useEffect(() => {
-    Aos.init({duration: 1000, offset: -10});
+    Aos.init({duration: 1000, offset: -5});
   }, []);
 
-  if (props.aspectRatio == 'aspectRatioRegular') {
+  if (props.aspectRatio === 'aspectRatioRegular') {
     return (
-      <div data-aos="fade-up" className="polaroid regular">
-        <img src={props.imageUrl} alt={props.alt} title={props.alt} className={props.aspectRatio}></img>
-        <div className="polaroidText">
-          <p className="monospace-500 title">{props.polaroidTitle}</p>
-          <p className="monospace-300 description">{props.polaroidDescription}</p>
+      <a {...hrefAttribute}>
+        <div data-aos={props.animation || "fade-up"} data-aos-delay={props.fadeDelay} className="polaroid regular">
+          <img src={props.imageUrl} alt={props.alt} title={props.alt} className={props.aspectRatio} loading="lazy"></img>
+          <div className="polaroidText">
+            <p className="monospace-500 title">{props.polaroidTitle}</p>
+            <p className="monospace-300 description">{props.polaroidDescription}</p>
+          </div>
         </div>
-      </div>
+      </a>
     );
   }
   return (
-    <div data-aos="fade-up" data-aos-delay={props.fadeDelay} >
+    <div data-aos={props.animation || "fade-up"} data-aos-delay={props.fadeDelay}>
       
-      <a {...hrefAttribute} className={`polaroid ${props.aspectRatio}`}>
-        <img src={props.imageUrl} alt={props.alt} title={props.alt} className={props.aspectRatio}></img>
+      <a {...hrefAttribute} className={`polaroid wide`}>
+        <img src={props.imageUrl} alt={props.alt} title={props.alt} className={props.aspectRatio} loading="lazy"></img>
         <div className="polaroidText">
           <p className="monospace-500 title">{props.polaroidTitle}</p>
           <p className="monospace-300 description">{props.polaroidDescription}</p>
         </div>
-        <div className="tagsContainer">
-          <Tag class="device" tagName={props.tags[0]}></Tag>
-          <Tag class="role" tagName={props.tags[1]}></Tag>
-        </div>
+        {props.tags && 
+          <div className="tagsContainer">
+            <Tag class="device" tagName={props.tags[0]}></Tag>
+            <Tag class="role" tagName={props.tags[1]}></Tag>
+          </div>
+        }
+
       </a>
       
     </div>

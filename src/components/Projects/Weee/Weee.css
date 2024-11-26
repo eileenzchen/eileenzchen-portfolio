@@ -9,3 +9,10 @@
   height: auto;
   padding: 10px 0 10px 0;
 }
+
+.metadata {
+  background-color: #C2917F;
+  padding: 16px;
+  border-radius: 5px;
+  color: white;
+}

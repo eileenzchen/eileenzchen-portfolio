@@ -9,12 +9,14 @@
   border-radius: 10px;
   box-sizing: border-box;
   transition: all .2s;
+  width: 100%;
 }
 
-.polaroid.aspectRatioWide:hover{
+.polaroid.wide:hover {
   /* transform: rotate(10deg); */
   transform: rotate(-2deg) translate(0, -3px);
   filter: drop-shadow(1px 4px 6px rgba(0, 0, 0, 0.15));
+  transition-duration: .2s;
   /* transition: all .7s ease-in-out; */
 }
 
@@ -70,7 +72,7 @@ img {
 }
 
 .aspectRatioWide {
-  aspect-ratio: 50%;
+  /* aspect-ratio: 1.8/1; */
 }
 
 p.description {

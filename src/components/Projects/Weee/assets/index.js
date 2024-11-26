@@ -23,6 +23,9 @@ import FinalGifCommunity from './final-gif-community-flow.mov'
 import FinalGifViewItem from './final-gif-view-items-used.mov';
 import FinalGifViewItemFullPhone from './final-gif-view-items-used-full-phone.mov'
 import OriginalDesign from './weee-original-design.png'
+import FinalScreensMagnify from './final-screens-magnify.png'
+import OriginalDesignProblems from './original-design-problems.png'
+import FeatureHighlight from './feature-highlight.png'
 
 
 export {
@@ -50,5 +53,8 @@ export {
   FinalGifViewItem,
   FinalGifViewItemFullPhone,
   OriginalDesign,
-  EnhanceCartVidV2
+  EnhanceCartVidV2,
+  FinalScreensMagnify,
+  OriginalDesignProblems,
+  FeatureHighlight
 };

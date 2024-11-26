@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import About from './About/About.js';
+import Intro from './Intro/Intro.js';
 import { Container, Fab, Grid } from '@mui/material';
 import './Home.css'
 import { c1Props, weeeProps, what2yumProps, fitvioProps, bakingFactoryProps } from 'components/Constants.js';
@@ -46,7 +46,7 @@ function Home() {
         </Fab> */}
       </div>
       }
-      <About></About>
+      <Intro></Intro>
       <div id="projects"></div>
       <Container maxWidth="lg">
         <Grid container columns={2} rowSpacing={0} columnSpacing={{ xs: 1, md: 6 }}>
@@ -69,7 +69,7 @@ function Home() {
               polaroidDescription={fitvioProps.polaroid.polaroidDescription}
               aspectRatio={fitvioProps.polaroid.aspectRatio}
               tags={fitvioProps.polaroid.tags}
-              fadeDelay="400">
+              fadeDelay="300">
             </Polaroid>
             {/* <Polaroid 
               linkUrl={bakingFactoryProps.polaroid.linkUrl}

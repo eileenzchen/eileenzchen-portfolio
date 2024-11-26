@@ -26,18 +26,16 @@ const Menu = ({menuItems}) => {
     BackToTop: "scroll to top",
     Intro: "intro",
     Summary: "summary",
-    Problem: "problem space",
+    Problem: "problem",
     CompetitiveAnalysis: "competitive analysis",
     SolutionExploration: "solution exploration",
-    FinalDesign: "final design",
+    FinalApp: "final app & result",
     Learnings: "learnings & reflection",
     QuickSketches: "quick sketches",
     PersonasUseCases: "personas & use cases",
     ContextualizingDesign: "placing the design in context",
     Interplay: "interplay between design & engineering",
-    BackgroundResearch: "background research",
-    UserResearch: "user research",
-    DesignPatterns: "analyzing design patterns",
+    Research: "research",
     Sketching: "sketching",
     Wireframing: "lofi wireframing",
     PrototypingDetails: "refining & prototyping",
@@ -53,6 +51,13 @@ const Menu = ({menuItems}) => {
     UserFlows: "mapping out user flows",
     HCD: "championing human-centered design",
     Impact: "impact",
+    Inspiration: "inspiration",
+    Reflections: "reflections",
+    Motivation: "motivation",
+    Solution: "solution",
+    Context: "context",
+    Search: "helping customers find answers with Search",
+    Homepage: "driving customer discovery with the Homepage"
   }
   /*
    * Store the active menuItem in state to force update
@@ -62,7 +67,7 @@ const Menu = ({menuItems}) => {
   const [showBackToTop, setBackToTop] = useState(false);
   const [menuState, setMenuState] = useState('closed');
 
-  const [showHamburger, setShowHamburger] = useState(window.screen.width <= 900);
+  const [showHamburger, setShowHamburger] = useState(window.innerWidth <= 900);
   
   /*
     * Determine which section the user is viewing, based on their scroll-depth
@@ -123,10 +128,10 @@ const Menu = ({menuItems}) => {
   // for window listener of screen resize toggle whether or not to show hamburger
   const handleMenuDisplay = event => {
     event.preventDefault();
-    if (window.screen.width <= 900 && !showHamburger) {
+    if (window.innerWidth <= 900 && !showHamburger) {
       setShowHamburger(true);
     }
-    else if (window.screen.width > 900 && showHamburger) {
+    else if (window.innerWidth > 900 && showHamburger) {
       setShowHamburger(false);
     }
   };
@@ -222,7 +227,7 @@ const Menu = ({menuItems}) => {
           <ArrowUpwardRoundedIcon/>
         </a>
       }
-      <section id="Menu" className={menuState}>
+      {/* <section id="Menu" className={menuState}>
         <div id="main-menu" className={menuState}>
           {menuList}
         </div>
@@ -234,7 +239,8 @@ const Menu = ({menuItems}) => {
             <span></span>
           </button>
         </nav>
-      </section>
+      </section> */}
+
     </>
     );
   }

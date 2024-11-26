@@ -14,6 +14,7 @@
   }
 }
 
+/* 
 @media (max-width: 900px) {
   #Menu nav button {
     background-color: transparent;
@@ -47,7 +48,6 @@
     display: block;
   }
   #main-menu {
-    /* max-width: 100px; */
     max-height: 20px;
     opacity: 0.5;
     -webkit-transition: .5s ease-in-out;
@@ -57,7 +57,6 @@
   }
   #main-menu.open {
     max-height: 1200px;
-    /* max-width: 1000px; */
     opacity: 1;
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
@@ -68,17 +67,12 @@
   #hamburgerContainer {
     float: right;
     position: relative;
-    /* top: 0px; */
     padding: 5px;
   }
   #hamburger {
     background-color: #92AD70;
     width: 26px;
     height: 22px;
-    /* width: 36px;
-    height: 36px; */
-    /* left: 14px; */
-    /* https://codepen.io/designcouch/pen/ExvwPY */
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -94,7 +88,6 @@
     position: absolute;
     height: 3px;
     width: 100%;
-    /* color: #ffffff; */
     background: #ffffff;
     border-radius: 9px;
     opacity: 1;
@@ -139,12 +132,13 @@
     width: 0%;
     left: 50%;
   }
-}
+} 
+*/
 
 #scrollTopButton {
   z-index: 99999;
   position: fixed;
-  bottom: 120px;
+  bottom: 60px;
   right: 16px;
   color: #3D2309;
   display: flex;

@@ -12,6 +12,11 @@ import DropdownMouse from './videos/search-dropdown-mouse-banking.mov'
 import RegularKeyboardDropdown from './videos/search-dropdown-venture-keyboard-desktop.mov'
 import Experimentation from './c1-search-dropdown-experimentation.png'
 import BackButtonFlow from './back-button-navigation-flow.png'
+import HomepageSearch from './c1-homepage-search.png'
+import OldDevProcess from './old-dev-process.png'
+import NewDevProcess from './new-dev-process.png'
+import HomepageTabs from './c1-homepage-tabs.png'
+import FeatureHighlight from './feature-highlight.png'
 
 
 export {
@@ -28,5 +33,10 @@ export {
   DropdownMouse,
   RegularKeyboardDropdown,
   Experimentation,
-  BackButtonFlow
+  BackButtonFlow,
+  HomepageSearch,
+  OldDevProcess,
+  NewDevProcess,
+  HomepageTabs,
+  FeatureHighlight
 };

@@ -5,7 +5,7 @@ import * as FitvioContent from './FitvioContent.js'
 import './Fitvio.css'
 import MoreProjects from '../MoreProjects/MoreProjects.js'
 
-function Fitvio() {
+function Fitvio(props) {
   document.title = "Fitvio — Eileen Chen";
   return (
     <>
@@ -14,7 +14,8 @@ function Fitvio() {
           <Grid className="menuBlock" item sm={0} md={3}>
             <Menu menuItems={{
               BackToTop: null,
-              Summary: null, 
+              Motivation: null,
+              Problem: null, 
               UnderstandingUsers: null,
               ProductRoadmapping: null,
               UserAcquisitionOnboarding: null,
@@ -22,9 +23,10 @@ function Fitvio() {
               Challenges: null
               }}></Menu>
           </Grid>
-          <Grid item sm={16} md={10} sx={{pb:10}} data-aos="fade-up">
+          <Grid item sm={16} md={13} sx={{pb:10}} data-aos="fade-up">
             <FitvioContent.Intro/>
-            <FitvioContent.Summary/>
+            <FitvioContent.Motivation/>
+            <FitvioContent.Problem/>
             <FitvioContent.UnderstandingUsers/>
             <FitvioContent.ProductRoadmapping/>
             <FitvioContent.UserAcquisitionOnboarding/>
@@ -33,7 +35,7 @@ function Fitvio() {
           </Grid>
         </Grid>
       </Container>
-      <MoreProjects relatedProjects={['BakingFactory', 'CapitalOne', 'Weee']}/>
+      <MoreProjects relatedProjects={['What2Yum', 'CapitalOne', 'Weee']}/>
     </>
     
   )

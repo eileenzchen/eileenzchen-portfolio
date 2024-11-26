@@ -1,0 +1,338 @@
+#footer {
+  /* background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/leaves.png"); */
+
+}
+
+#about-intro {
+  position: relative;
+  z-index: 10;
+}
+
+#wave-container {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  /* overflow-x: hidden; */
+  #wave {
+    /* background-image: url('./assets/wave.svg'); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background: white; */
+    height: 300px;
+    position: relative;
+    margin-top: -200px;
+    overflow-x: clip;
+    /* z-index: 1; */
+    @media screen and (max-width: 899px) {
+      height: 200px;
+      margin-top: -80px;
+    }    
+    @media screen and (max-width: 600px) {
+      height: 150px;
+      margin-top: -120px;
+    }
+  }
+  #wave:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 70%;
+    height: 300px;
+    background-color: rgb(229, 238, 217);
+    /* background-color: green; */
+    right: -20%;
+    top: 120px;
+  }
+  @media screen and (max-width: 899px) {
+    #wave:before {
+      top: 60px;
+      height: 200px;
+      right: -5%;
+      width: 60%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    #wave:before {
+      top: 40px;
+      height: 150px;
+      right: -4.45%;
+      width: 60%;
+    }
+  }
+  #wave:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 64%;
+    height: 300px;
+    background-color: white;
+    /* background-color: red; */
+    left: -5.55%;
+    top: 51px;
+  }
+  @media screen and (max-width: 899px) {
+    #wave:after {
+      top: 33px;
+      height: 200px;
+      left: -5.2%;
+      width: 55%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    #wave:after {
+      top: 14.5px;
+      height: 150px;
+      left: -4.75%;
+      width: 55%;
+    }
+  }
+}
+
+/* @media screen and (max-width: 899px) {
+  #wave-container {
+    #wave {
+      height: 150px;
+      #wave:before {
+        height: 150px;
+      }
+      #wave:after {
+        height: 150px;
+      }
+    }
+  }
+} */
+
+
+#about-container {
+  /* background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/leaves.png"); */
+  position: relative;
+  background: rgb(229, 238, 217);
+  top: -50px;
+  overflow-x: clip;
+  /* padding-top: 120px; */
+  @media screen and (max-width: 899px) {
+    top: -50px;
+  }
+  @media screen and (max-width: 600px) {
+    top: -40px;
+    padding-top: 50px;
+  }
+}
+.polaroids-container {
+  margin-left: 12px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.intro-line {
+  font-size: 48px;
+  line-height: 64px;
+  margin-bottom: 0;
+  /* @media screen and (max-width: 750px) {
+    font-size: 40px;
+    line-height: 1.333em;
+  } */
+}
+
+.about-body {
+  position: relative;
+  display: grid;
+  z-index: 2;
+  padding-bottom: 50px;
+  /* max-width: 960px; */
+}
+
+.about-polaroid {
+  @media screen and (min-width: 600px) {
+    max-width: 55%;
+    /* position: absolute; */
+  }
+  @media screen and (min-width: 900px) {
+    max-width: 450px;
+  }
+}
+
+#about-polaroid-one {
+  @media screen and (min-width: 600px) {
+    justify-self: flex-end;
+    position: relative;
+    margin-top: -420px;
+  }
+  transform: rotate(0) translate(0, 0);
+  &:hover {
+    transform: rotate(4deg) translate(0, 3px);
+    transition-duration: .2s;
+  }
+}
+
+#about-polaroid-two {
+  @media screen and (min-width: 600px) {
+    /* top: -380px;  */
+    /* float: left; */
+    position: relative;
+    margin-top: -440px;
+  } 
+  transform: rotate(0) translate(0, 0);
+  &:hover {
+    transform: rotate(-4deg) translate(0, -3px);
+    transition-duration: .2s;
+  }
+}
+
+#about-polaroid-three {
+  @media screen and (min-width: 600px) {
+    position: relative;
+    justify-self: flex-end;
+    margin-top: -470px;
+  } 
+  transform: rotate(0.001deg) translate(0px, 0px);
+  > .polaroid > video {
+    filter: brightness(110%);
+  }
+  &:hover {
+    transform: rotate(4deg) translate(0, 3px);
+    transition-duration: .2s;
+  }
+}
+
+#about-polaroid-four {
+  @media screen and (min-width: 600px) {
+    position: relative;
+    margin-top: -430px;
+  } 
+  transform: rotate(0) translate(0px, 0px);
+  &:hover {
+    transform: rotate(-4deg) translate(0, -3px);
+    transition-duration: .2s;
+  }
+}
+
+.instagram-polaroid {
+  width: 100%;
+  max-width: 100% !important;
+}
+
+.text-card {
+  /* border: white 10px solid; */
+  background-color: #C2917F;
+  padding: 16px 24px;
+  border-radius: 10px;
+  color: white;
+  filter: drop-shadow(1px 4px 6px rgba(0, 0, 0, 0.15));
+  height: fit-content;
+  .section-label {
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+  }
+  /* position: absolute; */
+  @media screen and (min-width: 600px) {
+    width: 100%;
+    max-width: 45%;
+    z-index: 1;
+    padding: 0px 24px;
+    /* .section-label {
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.5em;
+    } */
+  }
+  @media screen and (min-width: 750px) {
+    width: 100%;
+    max-width: 45%;
+    z-index: 1;
+    /* .section-label {
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 1.5em;
+    } */
+    /* position: absolute; */
+  }
+  @media screen and (min-width: 900px) {
+    width: 100%;
+    max-width: 400px;
+    z-index: 1;
+    /* .section-label {
+      font-size: 36px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 1.5em;
+    } */
+  }
+}
+
+/* washy tape */
+.text-card:before {
+  width: 25%;
+  height: 30px;
+  display: block;
+  content: "";
+  background: rgba(245, 245, 220, 0.8);
+  transform: translateX(-50%) translateY(calc(0%)) rotate(-35deg);
+}
+.text-card:after {
+  width: 25%;
+  height: 30px;
+  display: block;
+  content: "";
+  background: rgba(245, 245, 220, 0.8);
+  transform: translateX(350%) translateY(calc(0%)) rotate(-35deg);
+}
+
+@media screen and (min-width: 600px) {
+  #text-card-1 {
+    position: relative;
+    margin-top: 40px;
+    &:hover {
+      transform: rotate(-4deg) translate(0, -3px);
+      transition-duration: .2s;
+    }
+  }
+  
+  #text-card-2 {
+    /* background-color: #CBA589; */
+    justify-self: flex-end;
+    position: relative;
+    margin-top: 100px;
+    &:hover {
+      transform: rotate(4deg) translate(0, 3px);
+      transition-duration: .2s;
+    }
+  }
+
+  #text-card-3 {
+    /* background-color: #C2917F; */
+    position: relative;
+    margin-top: 20px;
+    &:hover {
+      transform: rotate(-4deg) translate(0, -3px);
+      transition-duration: .2s;
+    }
+    ul {
+      margin-block-start: 0.5em;
+      margin-block-end: 0.5em;
+      padding-inline-start: 25px;
+      li:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  #text-card-4 {
+    /* background-color: #CBA589; */
+    margin-top: 100px;
+    justify-self: flex-end;
+    &:hover {
+      transform: rotate(4deg) translate(0, 3px);
+      transition-duration: .2s;
+    }
+  }
+} 

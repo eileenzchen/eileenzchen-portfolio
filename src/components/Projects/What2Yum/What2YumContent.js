@@ -1,7 +1,5 @@
 import React from 'react'
 import { Grid, Container } from '@mui/material';
-import Polaroid from '../../Polaroid/Polaroid.js'
-import ModalImage from "react-modal-image";
 import * as Assets from './assets'
 import './What2Yum.css'
 // Import Swiper styles
@@ -13,7 +11,66 @@ import 'swiper/swiper.min.css'
 export function Intro() {
   return (
     <div id="Intro">
-      <img src={Assets.What2yumPreview} alt="What2Yum" title="What2Yum" style={{marginTop: "30px"}} loading="lazy"/>
+      <h1 data-aos="fade-up"><span className="project-title monospace-300">Picking restaurants made easy</span></h1>
+      <h2 data-aos="fade-up" data-aos-delay="100" className="project-subheading monospace-200">How can we help friends quickly share their dining preferences with each other to decide on a place to eat?</h2>
+      <img data-aos="fade-up" data-aos-delay="300" src={Assets.FeatureHighlight} alt="what2yum features" loading="lazy"></img>
+      <Grid data-aos="fade-up" data-aos-delay="400" container columns={4} columnSpacing={1} style={{marginTop: "30px"}}>
+        <Grid item xs={2} md={1}>
+          <h2>role</h2>
+          <p className="project-description">
+            Product Designer<br></br>
+            iOS Developer
+          </p>
+        </Grid>
+        <Grid item xs={2} md={1}>
+          <h2>team</h2>
+          <p className="project-description">
+            Kevin Wang<br></br>
+            Sebastian Yang
+          </p>
+        </Grid>
+        <Grid item xs={2} md={1}>
+          <h2>tools</h2>
+          <p className="project-description">
+            XCode<br></br>
+            Swift<br></br>
+            Figma<br></br>
+            Firebase<br></br>
+          </p>
+        </Grid>
+        <Grid item xs={2} md={1}>
+          <h2>skills</h2>
+          <p className="project-description">
+            mobile app design<br></br>
+            iOS development<br></br>
+            user research and testing<br></br>
+            project management<br></br>
+          </p>
+        </Grid>
+      </Grid>
+      <div className="text-divider">
+        <img className="leaf-divider" src={process.env.PUBLIC_URL + '/leaf-divider.png'}/>
+      </div>
+    </div>
+  )
+}
+
+export function Motivation() {
+  return (
+    <div id="Motivation" className="project-section">
+      <h1><span className="section-title highlight">motivation</span></h1>
+      <p>
+        During undergrad, one of the questions most often asked in a group chat of friends or between romantic partners was, <b>"Where should we go for dinner?"</b>. It was often either <b>indecision about where to go or difficulty finding a restaurant</b> that satisfies everyone's different tastes and cravings. "I don't know, what do you want?" and "I had Italian yesterday" and "I'm good with anything" (even though they're not) were commonly tossed around in the chat.
+      </p>
+      <p>
+        Food to me is something that everyone should enjoy and it should not be a point of frustration for anyone. To address this problem, I and two other classmates at CMU designed and implemented <b>What2Yum, an iOS app that enables friends to make quick decisions about what to eat together</b>.
+      </p>
+      <div className="videoContainer pitchContent">
+        <iframe className="video" src="https://www.youtube.com/embed/0OwvGgoA4-E?autoplay=1&mute=1" title="What2Yum video pitch" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+      </div>
+      <div className="caption-container" style={{marginTop: '30px'}}>
+        <caption>video created by teammate Kevin Wang</caption>
+      </div>
     </div>
   )
 }
@@ -37,12 +94,11 @@ export function Summary() {
       </p>
       <p className="subheading">solution</p>
       <p>
-        I, along with two other engineers at CMU, designed and implemented What2Yum, an iOS app that enables friends, near or far, to make quick decisions of what to eat together. 
+        I, along with two other engineers at CMU, designed and implemented What2Yum, an iOS app that enables friends, near or far, to make quick decisions of what to eat together. We won second place among 15 teams for our app design and development.
       </p>
       <p className="subheading">role</p>
       <p>
-        I designed and implemented the user interaction, user flow, and visual 
-        aesthetic.
+        I designed and implemented the user interaction, user flow, and visual aesthetic.
       </p>
       <p className="subheading">growth</p>
       <p>
@@ -63,12 +119,15 @@ export function Problem() {
 
   return (
     <div id="Problem">
-      <h1><span className="section-title highlight">problem space</span></h1>
+      <h1><span className="section-title highlight">problem</span></h1>
       <p>
-        <a href="https://nypost.com/2017/11/17/american-couples-spend-5-5-days-a-year-deciding-what-to-eat/" className="content-link" target="_blank" rel="noopener noreferrer">According to the NY Post</a>, the question of "what do you want to eat" is, on average, asked 6.67 times per person per week by Americans. Through interviewing six users who go out to eat at least once a week, we gathered that it is a pain for users to figure out what to eat, especially with a group of people with many opinions. For an individual, deciding what to eat can take up to 20 minutes. For a group, <b>deciding what to eat can take several days</b>. Some experience groupthink and are too afraid to voice their opinions. Others experience choice overload with factors such as cuisine, location, and price exacerbating the decision making process.
+        <a href="https://nypost.com/2017/11/17/american-couples-spend-5-5-days-a-year-deciding-what-to-eat/" className="content-link" target="_blank" rel="noopener noreferrer">According to the NY Post</a>, the question of "what do you want to eat" is, on average, asked 6.67 times per person per week by Americans. Through interviewing six users who go out to eat at least once a week, we gathered that it is a pain for users to figure out what to eat, especially with a group of people with many opinions. For an individual, deciding what to eat can take up to 20 minutes. For a group, <b>deciding what to eat can take several days</b>. Some experience groupthink and are too afraid to voice their opinions. Others experience choice overload with factors such as cuisine, location, and price, exacerbating the decision making process.
+      </p>
+      <p>
+        Thus, we sought to answer:
       </p>
       <blockquote>
-        "How can we ease decision paralysis and reduce the time it takes to choose what to eat?"
+        "How can we reconcile differing opinions and ease decision paralysis to reduce the time it takes to choose what to eat?"
       </blockquote>
     </div>
   )
@@ -97,7 +156,7 @@ export function SolutionExploration() {
       </p>
 
       <div style={{marginTop: "30px"}}>
-        <img src={Assets.PaperPrototypeV1} alt="form filling paper prototype" loading="lazy"></img>
+        <img src={Assets.PaperPrototypeV1} alt="form filling paper prototype" loading="lazy"/>
         {/* <ModalImage
           small={Assets.PaperPrototypeV1}
           large={Assets.PaperPrototypeV1}
@@ -107,12 +166,12 @@ export function SolutionExploration() {
           hideZoom={true}
         /> */}
       </div>
-      <div className="caption-container">
+      <div className="caption-container" style={{marginTop: '30px'}}>
         <caption>my paper prototype - form filling</caption>
       </div>
 
       <div style={{marginTop: "30px"}}>
-        <img src={Assets.PaperPrototypeV2} alt="Tinder swiping paper prototype" loading="lazy"></img>
+        <img src={Assets.PaperPrototypeV2} alt="Tinder swiping paper prototype" loading="lazy"/>
         {/* <ModalImage
           style={{marginTop: "30px"}}
           small={Assets.PaperPrototypeV2}
@@ -123,15 +182,15 @@ export function SolutionExploration() {
           hideZoom={true}
         /> */}
       </div>
-      <div className="caption-container">
+      <div className="caption-container" style={{marginTop: '30px'}}>
         <caption style={{marginBottom: "30px"}}>teammate's paper prototype - Tinder-like swiping</caption>
       </div>
       
       <p>
-        After user testing, we gathered that users liked the fun interaction of swiping their preferences, but also wanted to be able to fill out a couple preferences like location and price. Thus, we essentially took the best of both worlds and merged our two user flows for our next iteration of lofi prototypes.
+        After user testing, we gathered that users liked the fun interaction of swiping their restaurant choices, but also wanted to be able to fill out a couple preferences like location and price. Thus, we essentially <b>took the best of both worlds and merged our two user flows</b> for our next iteration of lofi prototypes.
       </p>
       <p>
-        During a meeting, we realized that the app can function in a synchronous (everyone has to be on the app at the same time to decide) versus asynchronous (people can input preferences at different times) way for a friend group. My team had differing opinions and thus we decided to settle our debate by testing these two flows on users. 
+        During a meeting, we realized that the app can function in a synchronous (everyone has to be on the app at the same time to decide) versus asynchronous (people can input preferences at different times) way for a friend group. My team had differing opinions and thus we decided to <b>settle our debate by testing these two flows on users</b>. 
       </p>
       <img src={Assets.AsyncSyncFlow} alt="synchronous vs asynchronous user flow" loading="lazy"></img>
       {/* <ModalImage
@@ -145,7 +204,7 @@ export function SolutionExploration() {
         hideZoom={true}
       /> */}
       <p>
-        We simulated interactions such as a user waiting for five others to join during the synchronous experience. We furthermore sent out a user servey to collect data on user behavior when deciding what to eat with friends as well as their preferred experience.
+        We simulated interactions such as a user waiting for five others to join during the synchronous experience. We furthermore sent out a user servey to collect data on user behavior when deciding what to eat with friends to gather <b>quantitative in addition to qualitative data</b>.
       </p>
       <Grid container columns={6} style={{marginTop: "30px", marginBottom: "30px"}} justifyContent="center">
         <Grid item xs={6} sm={1} style={{padding: "0px"}}></Grid>
@@ -161,6 +220,9 @@ export function SolutionExploration() {
         </Grid>
         <Grid item xs={6} sm={1}></Grid>
       </Grid>
+      <div className="caption-container" style={{marginBottom: '40px'}}>
+        <caption>Figma prototypes for the swiping interaction and waiting for others to join</caption>
+      </div>
       {/* <Grid container columns={2} style={{marginTop: "30px", marginBottom: "30px"}}>
         <Grid item xs={2} sm={1} className="align-right">
           <video className="small-asset" autoPlay loop muted playsInline>
@@ -174,10 +236,10 @@ export function SolutionExploration() {
         </Grid>
       </Grid> */}
       <p>
-        From our user testing and user survey results, users predominantly preferred an asynchronous experience as it allowed for flexibility in when to decide. Users decide what to eat at different times, some deciding day of and some planning 2-3 days in advance.
+        From our user testing and user survey results, users predominantly <b>preferred an asynchronous experience</b> as it allowed for flexibility in when to decide. Users decide what to eat at different times with some deciding day of and some planning 2-3 days in advance.
       </p>
       <p>
-        After figuring out how to collect preference data from users, we came across another challenge: How should our restaurant recommendation algorithm work? What if two restaurants are chosen the same amount of times? 
+        We soon came across another challenge: <b>How should our restaurant recommendation algorithm work?</b> What if two restaurants are chosen the same amount of times? 
       </p>
       <p>
         We user tested with hifi prototypes. One design follows our original card swiping interaction and ranks the outcome based on factors such as distance and rating. The other design shows users two restaurants to choose from at a time and ultimately creates a top three ranked list of all of the users' rankings.
@@ -196,10 +258,10 @@ export function SolutionExploration() {
         /> */}
       </div>
       <p>
-        Ultimately, we evaluated the tradeoffs between a more interesting user experience with the swipes versus a better final recommendation with the ranked list. Since the recommendation was only marginally more absolute than the other, we decided to go with the swipe interaction. We wanted to create a more engaging user experience and have a pretty good recommendation model over a worse user experience and a better recommendation model.
+        Ultimately, we evaluated the tradeoffs between a more interesting user experience with the swipes versus a better final recommendation with the ranked list. Since the recommendation was only marginally more absolute than the other, we decided to go with the swipe interaction. We <b>wanted to create a more engaging user experience and have a pretty good recommendation model over a less engaging user experience and a better recommendation model</b>.
       </p>
       <p>
-        Additionally through user testing, I discovered that people want more explainable suggestions. They want to know why those particular restaurant suggestions were shown in that order. I thus added ranking factors such as the number of people in the group that voted for the particular restaurant and the distance from the user's chosen location. I also made a couple iterations of the suggestions page to improve clarity and readability. I grouped each restaurant into its own card and restructured the flow of information.
+        Additionally through user testing, I discovered that people want more explainable suggestions. They want to know why those particular restaurant suggestions were shown in that order. I thus added ranking factors such as the number of people in the group that voted for the particular restaurant and the distance from the user's chosen location. I also made a couple iterations of the suggestions page to improve clarity and readability. I grouped each restaurant into its own card and restructured the information flow.
       </p>
       <img src={Assets.HifiRecommendations} alt="suggestion screens" loading="lazy"></img>
       {/* <ModalImage
@@ -215,12 +277,15 @@ export function SolutionExploration() {
   )
 }
 
-export function FinalDesign() {
+export function FinalApp() {
   return (
-    <div id="FinalDesign" className="project-section">
-      <h1><span className="section-title highlight">final design</span></h1>
+    <div id="FinalApp" className="project-section">
+      <h1><span className="section-title highlight">final app & result</span></h1>
       <p>
-        For the final versions of our app, we continuously re-evaluated our development priorities as we built out different features based on user feedback, our timeline, and the techinical difficulty versus impact of the feature. I also designed the app logo, icon, and app store screenshots for launching our app in the Apple app store.
+        For the final versions of our app, we <b>continuously re-evaluated our development priorities</b> as we built out different features based on user feedback, our timeline, and the techinical difficulty versus impact of the feature. I also <b>designed the app logo, icon, and app store screenshots for launching our app in the Apple App Store</b>. I focused on aligning these assets with What2Yum's focus on efficiency and fun.
+      </p>
+      <p>
+        My team ultimately <b>won second place</b> for What2Yum among 13 apps for the course competition.
       </p>
 
       <Swiper
@@ -280,14 +345,10 @@ export function FinalDesign() {
         </SwiperSlide>
       </Swiper>
       <div style={{marginTop: "20px"}} className="swiper-custom-pagination"/>
-
-      <p className="subheading" style={{marginBottom: "20px"}}>demo video</p>
-      <div className="videoContainer pitchContent">
-        <iframe className="video" src="https://www.youtube.com/embed/8_s1joibork" title="What2Yum demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+      <div className="videoContainer pitchContent" style={{marginTop: "40px"}}>
+        <iframe className="video" src="https://www.youtube.com/embed/8_s1joibork?autoplay=1&mute=1" title="What2Yum demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
-
-      <p  style={{marginTop: "30px"}}>If you want to try it yourself, <a href="https://apps.apple.com/us/app/what2yum/id1540868286" className="content-link" target="_blank" rel="noopener noreferrer">download it on the app store today</a></p>
-      <img src={Assets.AppStoreScreenshots} alt="app store screenshots" loading="lazy"></img>
+      <img src={Assets.AppStoreScreenshots} style={{marginTop: "40px"}} alt="app store screenshots" loading="lazy"></img>
       {/* <ModalImage
           small={Assets.AppStoreScreenshots}
           large={Assets.AppStoreScreenshots}

@@ -27,6 +27,7 @@ import Join from './final-vids-with-iphone/join.mp4'
 import Swipe from './final-vids-with-iphone/swiping.mp4'
 import Suggestions from './final-vids-with-iphone/suggestions.mp4'
 import HifiRecommendations from './recommendations-hifi.png'
+import FeatureHighlight from './feature-highlight.png'
 
 
 export {
@@ -53,5 +54,6 @@ export {
   AppStore,
   iPhone,
   iPhone13,
-  HifiRecommendations
+  HifiRecommendations,
+  FeatureHighlight
 };

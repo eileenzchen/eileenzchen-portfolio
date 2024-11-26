@@ -6,7 +6,7 @@ import * as CapitalOneContent from './CapitalOneContent.js'
 import './CapitalOne.css'
 import MoreProjects from '../MoreProjects/MoreProjects.js'
 
-function CapitalOne() {
+function CapitalOne(props) {
   document.title = "Capital One — Eileen Chen";
   
   const [isVerified, setIsVerified] = useState(false);
@@ -50,22 +50,31 @@ function CapitalOne() {
               <Menu menuItems={{
                 BackToTop: null,
                 // Summary: null,
+                Context: null,
                 Problem: null,
-                WeighingTradeoffs: null,
-                UserFlows: null,
-                HCD: null,
+                Solution: null,
+                // WeighingTradeoffs: null,
+                // UserFlows: null,
+                // HCD: null,
+                Search: null,
+                Homepage: null,
                 Impact: null,
                 }}></Menu>
             </Grid>
-            <Grid item sm={16} md={10} sx={{pb:10}} data-aos="fade-up">
+            <Grid item sm={16} md={13} sx={{pb:10}} data-aos="fade-up">
               <CapitalOneContent.Intro/>
+              <CapitalOneContent.Context/>
               {/* <CapitalOneContent.Summary/> */}
               <Verification verified={isVerified} sendVerified={callbackVerified}/>
               <div style={{display: isVerified ? 'block' : 'none'}}>
+              {/* <div> */}
                 <CapitalOneContent.Problem/>
-                <CapitalOneContent.WeighingTradeoffs/>
-                <CapitalOneContent.UserFlows/>
-                <CapitalOneContent.HCD/>
+                <CapitalOneContent.Solution/>
+                {/* <CapitalOneContent.WeighingTradeoffs/> */}
+                {/* <CapitalOneContent.UserFlows/> */}
+                {/* <CapitalOneContent.HCD/> */}
+                <CapitalOneContent.Search/>
+                <CapitalOneContent.Homepage/>
                 <CapitalOneContent.Impact/>
               </div>
               {/* <CapitalOneContent.AutomatingData/> */}

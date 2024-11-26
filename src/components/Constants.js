@@ -11,7 +11,7 @@ export const c1Props = {
     imageUrl: C1Preview,
     alt: "Capital One",
     polaroidTitle: "Capital One",
-    polaroidDescription: "An improved search experience to increase customer conversion",
+    polaroidDescription: "Usability and accessibility on capitalone.com",
     aspectRatio: "aspectRatioWide",
     tags: ["mobile & desktop", "front-end web dev"]
   },
@@ -38,7 +38,7 @@ export const weeeProps = {
     imageUrl: WeeePreview,
     alt: "Weee Redesign",
     polaroidTitle: "Weee!",
-    polaroidDescription: "A streamlined and engaging shopping journey",
+    polaroidDescription: "A community-focused shopping journey",
     aspectRatio: "aspectRatioWide",
     tags: ["mobile native", "UX/UI designer"]
   },
@@ -65,7 +65,7 @@ export const what2yumProps = {
     imageUrl: What2yumPreview,
     alt: "What2Yum",
     polaroidTitle: "What2Yum",
-    polaroidDescription: "A zero to one app that empowers people to decide where to eat within minutes",
+    polaroidDescription: "A quick way for friends to decide where to eat",
     aspectRatio: "aspectRatioWide",
     tags: ["mobile native", "full-stack iOS dev"]
   },
@@ -119,7 +119,7 @@ export const fitvioProps = {
     imageUrl: FitvioPreview,
     alt: "Fitvio Startup",
     polaroidTitle: "Fitvio",
-    polaroidDescription: "A reimagined brand and onboarding experience",
+    polaroidDescription: "An inclusive and fun workout platform",
     aspectRatio: "aspectRatioWide",
     tags: ["desktop", "UX/UI designer"]
   },

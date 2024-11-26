@@ -5,7 +5,7 @@ import * as WeeeContent from './WeeeContent.js'
 import './Weee.css'
 import MoreProjects from '../MoreProjects/MoreProjects.js'
 
-function Weee() {
+function Weee(props) {
   document.title = "Weee! — Eileen Chen";
   return (
     <>
@@ -14,34 +14,34 @@ function Weee() {
           <Grid className="menuBlock" item sm={0} md={3}>
             <Menu menuItems={{
               BackToTop: null,
-              Summary: null, 
-              BackgroundResearch: null, 
-              UserResearch: null,
-              DesignPatterns: null,
+              Inspiration: null,
+              Problem: null, 
+              Research: null, 
+              CompetitiveAnalysis: null,
               Sketching: null,
               Wireframing: null,
               PrototypingDetails: null,
               Color: null,
               Joy: null,
-              Challenges: null,
+              Reflections: null,
               }}></Menu>
           </Grid>
-          <Grid item sm={16} md={10} sx={{pb:10}} data-aos="fade-up">
+          <Grid item sm={16} md={13} sx={{pb:10}}>
             <WeeeContent.Intro/>
-            <WeeeContent.Summary/>
-            <WeeeContent.BackgroundResearch/>
-            <WeeeContent.UserResearch/>
-            <WeeeContent.DesignPatterns/>
+            <WeeeContent.Inspiration/>
+            <WeeeContent.Problem/>
+            <WeeeContent.Research/>
+            <WeeeContent.CompetitiveAnalysis/>
             <WeeeContent.Sketching/>
             <WeeeContent.Wireframing/>
             <WeeeContent.PrototypingDetails/>
             <WeeeContent.Color/>
             <WeeeContent.Joy/>
-            <WeeeContent.Challenges/>
+            <WeeeContent.Reflections/>
           </Grid>
         </Grid>
       </Container>
-      <MoreProjects relatedProjects={['What2Yum', 'Fitvio', 'BakingFactory']}/>
+      <MoreProjects relatedProjects={['What2Yum', 'Fitvio', 'CapitalOne']}/>
     </>
     
   )

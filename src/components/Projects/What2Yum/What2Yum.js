@@ -6,7 +6,7 @@ import './What2Yum.css'
 import '../Projects.css'
 import MoreProjects from '../MoreProjects/MoreProjects.js'
 
-function What2Yum() {
+function What2Yum(props) {
   document.title = "What2Yum — Eileen Chen";
   return (
     <>
@@ -15,26 +15,26 @@ function What2Yum() {
           <Grid className="menuBlock" item sm={0} md={3}>
             <Menu menuItems={{
               BackToTop: null,
-              Summary: null, 
+              Motivation: null,
               Problem: null, 
               CompetitiveAnalysis: null,
               SolutionExploration: null,
-              FinalDesign: null,
+              FinalApp: null,
               Challenges: null
               }}></Menu>
           </Grid>
-          <Grid item sm={16} md={10} sx={{pb:10}} data-aos="fade-up">
+          <Grid item sm={16} md={13} sx={{pb:10}} data-aos="fade-up">
             <What2YumContent.Intro/>
-            <What2YumContent.Summary/>
+            <What2YumContent.Motivation/>
             <What2YumContent.Problem/>
             <What2YumContent.CompetitiveAnalysis/>
             <What2YumContent.SolutionExploration/>
-            <What2YumContent.FinalDesign/>
+            <What2YumContent.FinalApp/>
             <What2YumContent.Challenges/>
           </Grid>
         </Grid>
       </Container>
-      <MoreProjects relatedProjects={['Fitvio', 'BakingFactory', 'Weee']}/>
+      <MoreProjects relatedProjects={['Fitvio', 'CapitalOne', 'Weee']}/>
     </>
     
   )
