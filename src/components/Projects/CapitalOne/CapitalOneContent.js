@@ -118,21 +118,43 @@ export function Search() {
     <div id="Search" className="project-section">
       <h1><span className="section-title highlight">helping customers find answers with Search</span></h1>
       <p>
-        Two projects come to mind when I think about how we put these new accessibility practices into action. The first was the Capital One Search dropdown, which we redesigned from the ground up with a deeper focus on how users of all disabilities would be able to match their search intent to a search result.
+        Two projects come to mind when I think about how we put these new accessibility practices into action. The first was the Capital One Search dropdown, which was a new feature we built from the ground up with a <b>deeper focus on how users with disabilities would be able to match their search intent to a search result</b>.
       </p>
       <img src={Assets.C1SearchDropdown} alt="search dropdown"></img>
+      <div className="caption-container" style={{marginBottom: '40px'}}>
+        <caption>Search dropdown without accessibility features. There is no way to navigate through the options with the keyboard.</caption>
+      </div>
       <p> 
-        When I first received the designs, I realized that keyboard interactions were not considered. Not only are keyboard interactions a common way for users to navigate in a dropdown, but they are also a vital element of meeting accessibility needs across all users.
+        When I first received the designs, I realized that keyboard interactions were not accounted for. Not only are keyboard interactions a common way for users to navigate in a dropdown, but they are also a vital element of meeting accessibility needs across all users.
       </p>
       <blockquote>How can we ensure keyboard users can easily navigate the Search dropdown?</blockquote>
       <p>
-        I balanced requirements for the dropdown to be both elegantly designed and semantically understandable to those who may be visually impaired. After a few live code workshopping sessions with the accessibility and design teams, we arrived at a search dropdown that was accessible and easy to use. 
+        I balanced requirements for the dropdown to be both elegantly designed and semantically understandable to those who may be visually impaired. <b>After a few live code workshopping sessions with the accessibility and design teams, we arrived at a search dropdown that was accessible and easy to use</b>. 
+      </p>
+      <p>
+        <ol>
+          <li>
+            Users can navigate with keyboard <code>Up</code> and <code>Down</code> arrow keys through the search options
+          </li>
+          <li>
+            Users can <code>Tab</code> through search options with a focus highlight state
+          </li>
+          <li>
+            Underlines indicate the active option
+          </li>
+          <li>
+            Addition of proper <code>aria-labels</code> and <code>roles</code> so that assistive technology can read out the proper options and functions
+          </li>
+          <li>
+            Researched design patterns across other search engines to follow keyboard patterns familiar to users
+          </li>
+        </ol>
       </p>
       <video className="small-asset" style={{border: "1px solid #E7E7E7", padding: "0px", marginTop: "30px"}}  autoPlay loop muted playsInline>
         <source src="/c1-gifs/search-dropdown-venture-keyboard-desktop.mov" type="video/mp4" />
       </video>
       <div className="caption-container">
-        <caption style={{marginTop: "20px"}}>standard keyboard user experience</caption>
+        <caption style={{marginTop: "20px"}}>the new search dropdown with accessible keyboard navigation</caption>
       </div>
       <Grid container columns={2} rowSpacing={2} columnSpacing={3} style={{marginTop: "30px", marginBottom: "30px"}}>
         <Grid item xs={2} sm={1} display="flex">
@@ -147,10 +169,10 @@ export function Search() {
         </Grid>
       </Grid>
       <div className="caption-container">
-        <caption style={{ marginTop: "-10px", marginBottom: "30px"}}>keyboard experience using assistive technology (Voiceover)</caption>
+        <caption style={{ marginTop: "-10px", marginBottom: "30px"}}>navigating with the keyboard experience using Apple's assistive technology, Voiceover</caption>
       </div>
       <p>
-        Through this work and other enhancements to surface featured results on the search page itself, we increased the likelihood of users making a high quality search that drove them to their intended destination. We saw a +7.1% increase in first page click through rates and a baseline 41.2% click through rate on the newly developed dynamic dropdown. This was a big milestone in part of our efforts to capture user intent and provide them with relevant information and guidance.
+        Through this work and other enhancements to surface featured results on the search page itself, we increased the likelihood of users making a high quality search that drove them to their intended destination. We saw a <b>+7.1% increase</b> in first page click through rates and a baseline <b>41.2% click through rate</b> on the newly developed dynamic dropdown. This was a big milestone in part of our efforts to capture user intent and provide them with relevant information and guidance.
       </p>
     </div>
   )
@@ -161,9 +183,12 @@ export function Homepage() {
     <div id="Homepage" className="project-section">
       <h1><span className="section-title highlight">driving customer discovery on the Homepage</span></h1>
       <p>
-        The second case that exemplified strong accessibility practices was the capitalone.com Homepage personalization feature. Specifically, we wanted customers to be able to personalize the Homepage to their specific intent by clicking on different tabs, swapping out the content underneath. Planning with design and accessibility partners was crucial here to set us up for smooth development.
+        The second case that exemplified strong accessibility practices was the capitalone.com<b>Homepage customization feature</b>. Specifically, we wanted customers to be able to change the Homepage to match their specific intent by clicking on different tabs, swapping out the content underneath. <b>Planning with design and accessibility partners was crucial</b> to set us up for smooth development.
       </p>
       <img src={Assets.HomepageTabs} alt="homepage tabs"></img>
+      <div className="caption-container">
+        <caption style={{ marginBottom: "30px"}}>new homepage component that introduces customizability options</caption>
+      </div>
       <p>
         As this component design was new to Capital One, it wasn't clear what kind of component architecture would make the most sense for users. Should the buttons act like links that link to subpages? Should it act like a filter? What kind of semantic HTML should we use?
       </p>
@@ -172,13 +197,13 @@ export function Homepage() {
         While planning out how we were going to implement this new component, I pulled in design and accessibility partners to discuss the intention of this component and the most semantically logical HTML.
       </p>
       <p>
-        Since this component is meant to segment out different customers (e.g. people seeking to build credit, frequent travelers) and products (e.g. credit cards vs banking accounts), our accessibility partner suggested a tab panel implementation for desktop. With the buttons stacking with an overlay on mobile, it acts more like a navigation menu for mobile users.
+        Since this component is meant to segment out different customers (e.g. people seeking to build credit, frequent travelers) and products (e.g. credit cards vs banking accounts), our accessibility partner suggested a <b>tab panel implementation for desktop</b>. On mobile, we would leverage a <b>dropdown navigational menu</b>, with the menu appearing as an overlay.
       </p>
       <p>
         When it came to development time, my teammate and I kept in constant communication with our accessibility partner to ensure our approach was in line with what we had discussed. We also asked questions as they came up around keyboard interactions and HTML structure. 
       </p>
       <p>
-        Ultimately, <b>we started as early as possible in the process to understand the accessibility requirements and were able to save a lot of code rework</b>.
+        Ultimately, <b>we started as early as possible in the process to understand the accessibility requirements and were able to save a lot of code rework</b>. If we had not aligned with our accessibility partners from the get-go, we may have had to redo the code structure and caused additional churn. Instead, we swiftly introduced a more accessible, customizable homepage experience for all types of users.
       </p>
 
       <Grid container columns={3} rowSpacing={2} columnSpacing={3} style={{marginTop: "30px", marginBottom: "30px"}}>
@@ -193,6 +218,9 @@ export function Homepage() {
           </video>
         </Grid>
       </Grid>
+      <div className="caption-container">
+        <caption style={{ marginBottom: "30px"}}>visual demonstration of how the customization tabs allow a user to navigate their desired homepage view</caption>
+      </div>
     </div>
   )
 }
@@ -313,7 +341,7 @@ export function Impact() {
     <div id="Impact" className="project-section">
       <h1><span className="section-title highlight">impact</span></h1>
       <p>
-        With this more collaborative and streamlined workflow, our team is much more productive. Capital One's site a11y standards also go far beyond what's legally required of it, as we put inclusive experiences first and foremost in the development process. With my learnings about human-centered development, I wrote an internal blog about how engineers can adopt human-centered design and development in their day-to-day work. Today, I continue to advocate for human-centered thinking and cross-pollination to bridge the gap between engineers, designers, accessibility teams, and product managers.
+        With this more collaborative and streamlined workflow, our team is much more productive. <b>Capital One's site a11y standards also go far beyond what's legally required of it</b>, as we put inclusive experiences first and foremost in the development process. With my learnings about human-centered development, I wrote an internal blog about how engineers can adopt human-centered design and development in their day-to-day work. <b>Today, I continue to advocate for human-centered thinking and cross-pollination to bridge the gap between engineers, designers, accessibility teams, and product managers</b>.
       </p>
     </div>
   )

@@ -31,6 +31,14 @@ p {
   }
 }
 
+code {
+  background-color: #eeeeee;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+
 @media screen and (min-width: 600px) {
 	h1 {
     font-size: 36px;
