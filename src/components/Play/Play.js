@@ -11,7 +11,7 @@ import crochet from './assets/wooble.JPG'
 import chinatown from './assets/sf-chinatown.jpg'
 import cat from './assets/cat-greece.jpg'
 import painting from './assets/painting.JPG'
-import bookshelf from './assets/bookshelf.JPG'
+import bookshelf from './assets/bookshelf.jpeg'
 import animalcrossing from './assets/animal-crossing.JPG'
 import boothMailbox from './assets/mail-box.JPG'
 
@@ -126,7 +126,7 @@ function Play() {
                   polaroidTitle=""
                   polaroidDescription="a mailbox for Isabelle made out of cardboard and paint"
                   aspectRatio="aspectRatioRegular"
-                  fadeDelay="200"
+                  fadeDelay="300"
                   animation="fade-down">
                 </Polaroid>
               </Grid>
@@ -152,7 +152,7 @@ function Play() {
                   polaroidTitle=""
                   polaroidDescription="SF Chinatown's bustling night market"
                   aspectRatio="aspectRatioWide"
-                  fadeDelay="350"
+                  fadeDelay="500"
                   animation="fade-down">
                 </Polaroid>
                 <Polaroid 
@@ -162,7 +162,7 @@ function Play() {
                   polaroidTitle=""
                   polaroidDescription="a rare aurora borealis over Sutro Baths"
                   aspectRatio="aspectRatioWide"
-                  fadeDelay="200"
+                  fadeDelay="300"
                   animation="fade-down">
                 </Polaroid>
               </Grid>
@@ -184,7 +184,7 @@ function Play() {
                   polaroidTitle=""
                   polaroidDescription="the Ritz peeking over the cliffs"
                   aspectRatio="aspectRatioWide"
-                  fadeDelay="0"
+                  fadeDelay="100"
                   animation="fade-down">
                 </Polaroid>
               </Grid>
@@ -202,7 +202,7 @@ function Play() {
           <Grid item xs={3} md={2}>
             <Grid container columns={2} columnSpacing={4}>
               <Grid item xs={2} md={1}>
-                <div className="polaroid" data-aos="fade-down" data-aos-delay="200">
+                <div className="polaroid" data-aos="fade-down" data-aos-delay="250">
                   <video width="100%" height="auto" controls autoPlay muted loop controlsList="nodownload">
                     <source src="jason-meredith-engagement-720.mov" type="video/mp4" />
                   </video>
@@ -222,7 +222,7 @@ function Play() {
                 </div>
               </Grid>
               <Grid item xs={1}>
-                <div className="polaroid" data-aos="fade-down" data-aos-delay="300">
+                <div className="polaroid" data-aos="fade-down" data-aos-delay="400">
                   <video width="100%" height="auto" controls muted loop controlsList="nodownload">
                     <source src="norway.mov" type="video/mp4" />
                   </video>
@@ -263,7 +263,7 @@ function Play() {
                   polaroidTitle=""
                   polaroidDescription="an organized bookshelf is so satisfying 😌"
                   aspectRatio="aspectRatioRegular"
-                  fadeDelay="250"
+                  fadeDelay="350"
                   animation="fade-down">
                 </Polaroid>
               </Grid>
@@ -275,7 +275,7 @@ function Play() {
                   polaroidTitle=""
                   polaroidDescription="tried to be Bob Ross"
                   aspectRatio="aspectRatioRegular"
-                  fadeDelay="250"
+                  fadeDelay="300"
                   animation="fade-down">
                 </Polaroid>
               </Grid>

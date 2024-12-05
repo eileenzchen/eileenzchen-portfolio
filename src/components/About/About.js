@@ -45,7 +45,7 @@ function About() {
           <div id="text-card-2" className="text-card" data-aos="fade-up-left">
             <p className="section-label">my background</p>
             <p>
-              I graduated as an Information Systems major from Carnegie Mellon University in 2021. I learned how to build web and mobile solutions that deliver value to users. I was most intruiged with how technology--if built right--could positively impact people's lives.
+              I graduated as an Information Systems major from Carnegie Mellon University in 2021. I learned how to build web and mobile solutions that deliver value to users. I was most intruiged with how technology&mdash;if built right&mdash;could positively impact people's lives.
             </p>
           </div>
           <div id="about-polaroid-two" className="about-polaroid">
