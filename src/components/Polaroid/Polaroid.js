@@ -17,7 +17,7 @@ function Polaroid(props) {
     return (
       <a {...hrefAttribute}>
         <div data-aos={props.animation || "fade-up"} data-aos-delay={props.fadeDelay} className="polaroid regular">
-          <img src={props.imageUrl} alt={props.alt} title={props.alt} className={props.aspectRatio} loading="lazy"></img>
+          <img src={props.imageUrl} alt={props.alt} title={props.alt} className={props.aspectRatio}></img>
           <div className="polaroidText">
             <p className="monospace-500 title">{props.polaroidTitle}</p>
             <p className="monospace-300 description">{props.polaroidDescription}</p>
@@ -30,7 +30,7 @@ function Polaroid(props) {
     <div data-aos={props.animation || "fade-up"} data-aos-delay={props.fadeDelay}>
       
       <a {...hrefAttribute} className={`polaroid wide`}>
-        <img src={props.imageUrl} alt={props.alt} title={props.alt} className={props.aspectRatio} loading="lazy"></img>
+        <img src={props.imageUrl} alt={props.alt} title={props.alt} className={props.aspectRatio}></img>
         <div className="polaroidText">
           <p className="monospace-500 title">{props.polaroidTitle}</p>
           <p className="monospace-300 description">{props.polaroidDescription}</p>

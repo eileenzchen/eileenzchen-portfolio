@@ -353,7 +353,6 @@ export function Color() {
           </li>
         </ul>
       </p>
-      <p className="subheading" style={{marginBottom:"10px"}}>color palettes generated with plugin UI Color Palette</p>
       <Grid container columns={2}>
         <Grid item xs={2} md={1}>
           <img src={Assets.PrimaryPalette} alt="primary color palette" loading="lazy"/>
@@ -362,13 +361,25 @@ export function Color() {
           <img src={Assets.SecondaryPalette} alt="secondary color palette for highlights" loading="lazy"/>
         </Grid>
       </Grid>
+      <div className="caption-container">
+        <caption>color palette with more pops of fun, highlight colors</caption>
+      </div>
       {/* <p className="subheading" style={{marginBottom:"0px"}}>final designs</p> */}
       <img src={Assets.FinalScreensMagnify} alt="magnify design features" loading="lazy"></img>
+      <div className="caption-container" style={{marginBottom: '30px'}}>
+        <caption>specific features with updated colors and more organic shapes</caption>
+      </div>
       <img src={Assets.FinalColor} alt="final color iteration" loading="lazy" style={{marginBottom:"16px"}}></img>
+      <div className="caption-container" style={{marginBottom:"48px"}}>
+        <caption>a refreshed color theme applied across the UI</caption>
+      </div>
       <div style={{textAlign:"center"}}>
         <video className="small-asset" style={{width: "40%"}} autoPlay loop muted playsInline>
           <source src="/weee-gifs/final-color-vid.mov" type="video/mp4"/>
         </video>
+      </div>
+      <div className="caption-container" style={{marginBottom:"48px"}}>
+        <caption>exploring community content while shopping</caption>
       </div>
     </div>
   )
@@ -385,14 +396,14 @@ export function Joy() {
         "How can I bring a smile to someone's face when shopping on Weee!"?
       </blockquote>
       <p>
-        Personally, I could spend hours going down every single aisle and freezer chest at Trader Joe's, picking up random snacks and frozen meals that were not planned for along the way. At 99 Ranch, I beeline to the sales, ogle at the live fish and crabs, and throw some instant ramen into my cart on the way out—how could you not when there are fifty different kinds?
+        Personally, <b>I could spend hours going down every single aisle and freezer chest at Trader Joe's</b>, picking up random snacks and frozen meals that were not planned for along the way. At 99 Ranch, I beeline to the sales, ogle at the live fish and crabs, and throw some instant ramen into my cart on the way out—how could you not when there are fifty different kinds?
       </p>
       <p>
-        I asked a Weee! user to describe the last time they enjoyed their grocery shopping experience in person. From storyboarding their experience, I realized that people get a lot of joy from moments of pleasant surprise and discovery, such as picking up spur of the moment items. 
+        I asked a Weee! user to describe the last time they enjoyed their grocery shopping experience in person. <b>From storyboarding their experience, I realized that people get a lot of joy from moments of pleasant surprise and discovery</b>, such as picking up spur of the moment items. 
       </p>
       <img src={Assets.Storyboard} alt="storyboard of shopping at Trader Joe's" style={{marginBottom: "30px"}} loading="lazy"></img>
       <p>
-        I thought about how during checkout, there are already suggestions for some add-on items. But how can we make the items more personalized and useful? I thought AI could play a part in this. With the Weee! Community feature, people already post recipes from their shopping hauls and tag which Weee! items they used. That user generated recipe data could be leveraged to create an AI feature where Weee! identifies what the shopper is trying to cook based on ingredients in their cart and would suggest a few more add-on items to enhance their dish.
+        I thought about how during checkout, there are already suggestions for some add-on items. <b>But how can we make the add-on items more personalized and useful?</b> I thought AI could play a part in this. With the Weee! Community feature, people already post recipes from their shopping hauls and tag which Weee! items they used. <b>That user generated recipe data could be leveraged to create an AI feature</b> where Weee! identifies what the shopper is trying to cook based on ingredients in their cart and would suggest a few more add-on items to enhance their dish.
       </p>
       <div style={{textAlign:"center"}}>
         <video className="small-asset" style={{width: "40%"}} autoPlay loop muted playsInline>
@@ -400,7 +411,7 @@ export function Joy() {
         </video>
       </div>
       <div className="caption-container">
-        <caption>Weee! suggests ingredients for kimchi fried rice based on shopper's cart</caption>
+        <caption>Weee! suggests ingredients for kimchi fried rice based on the shopper's cart</caption>
       </div>
 
 
@@ -413,7 +424,7 @@ export function Reflections() {
     <div id="Reflections" className="project-section">
       <h1><span className="section-title highlight">reflections</span></h1>
       <p>
-        Grocery shopping is an inherently community-oriented activity, with each store catering to different communities. With this project, I learned how to cater towards different cultural norms of interacting with apps and how to take from our physical experiences as inspiration for our digital ones. I hope to continue exploring this area of how we can have people inspire each other in their daily lives.
+        Grocery shopping is an inherently community-oriented activity, with each store catering to different communities. With this project, I learned how to <b>cater towards different cultural norms of interacting with apps</b> and how to <b>take from our physical experiences as inspiration for our digital ones</b>. I hope to continue exploring this area of how we can have people inspire each other in their daily lives.
       </p>
     </div>
   )
