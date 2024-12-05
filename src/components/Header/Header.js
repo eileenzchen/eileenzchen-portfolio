@@ -83,9 +83,9 @@ function Header() {
                 {navItems}
               </div>
               <div id="socials">
-                <a href="https://www.linkedin.com/in/eileenzchen/" target="_blank" rel="noopener noreferrer"><LinkedIn className="social-icon"/></a>
-                <a href="mailto:ezch09@gmail.com" target="_blank" rel="noopener noreferrer"><Email className="social-icon"/></a>
-                <a href="https://github.com/eileenzchen" target="_blank" rel="noopener noreferrer"><Github className="social-icon"/></a>
+                <a href="https://www.linkedin.com/in/eileenzchen/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><LinkedIn className="social-icon"/></a>
+                <a href="mailto:ezch09@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email"><Email className="social-icon"/></a>
+                <a href="https://github.com/eileenzchen" target="_blank" rel="noopener noreferrer" aria-label="Github"><Github className="social-icon"/></a>
               </div>
             </nav>
           }

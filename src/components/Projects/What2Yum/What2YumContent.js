@@ -49,7 +49,7 @@ export function Intro() {
         </Grid>
       </Grid>
       <div className="text-divider">
-        <img className="leaf-divider" src={process.env.PUBLIC_URL + '/leaf-divider.png'}/>
+        <img className="leaf-divider" src={process.env.PUBLIC_URL + '/leaf-divider.png'} alt='leaf divider'/>
       </div>
     </div>
   )
@@ -152,7 +152,7 @@ export function SolutionExploration() {
     <div id="SolutionExploration" className="project-section">
       <h1><span className="section-title highlight">solution exploration</span></h1>
       <p>
-        To start off, we employed parallel design and independently sketched a couple paper prototypes with our initial features in mind. We wanted to quickly gain user feedback on multiple interactions and merge the good parts of the designs. The main interactions we wanted to test were filling out a preference questionnaire versus using a Tinder-like swiping mechanism to gather data on user food preferences.
+        To start off, we employed <b>parallel design</b> and independently sketched a couple paper prototypes with our initial features in mind. We wanted to <b>quickly gain user feedback on multiple interactions</b> and merge the good parts of the designs. The main interactions we wanted to test were filling out a preference questionnaire versus using a Tinder-like swiping mechanism to gather data on user food preferences.
       </p>
 
       <div style={{marginTop: "30px"}}>
@@ -258,7 +258,7 @@ export function SolutionExploration() {
         /> */}
       </div>
       <p>
-        Ultimately, we evaluated the tradeoffs between a more interesting user experience with the swipes versus a better final recommendation with the ranked list. Since the recommendation was only marginally more absolute than the other, we decided to go with the swipe interaction. We <b>wanted to create a more engaging user experience and have a pretty good recommendation model over a less engaging user experience and a better recommendation model</b>.
+        Ultimately, we evaluated the tradeoffs between a more interesting user experience with the swipes versus a better final recommendation with the ranked list. Since the recommendation was only marginally more absolute than the other, we decided to go with the swipe interaction. <b>We wanted to create a more engaging user experience and have a pretty good recommendation model over a less engaging user experience and a better recommendation model</b>.
       </p>
       <p>
         Additionally through user testing, I discovered that people want more explainable suggestions. They want to know why those particular restaurant suggestions were shown in that order. I thus added ranking factors such as the number of people in the group that voted for the particular restaurant and the distance from the user's chosen location. I also made a couple iterations of the suggestions page to improve clarity and readability. I grouped each restaurant into its own card and restructured the information flow.
@@ -348,7 +348,13 @@ export function FinalApp() {
       <div className="videoContainer pitchContent" style={{marginTop: "40px"}}>
         <iframe className="video" src="https://www.youtube.com/embed/8_s1joibork?autoplay=1&mute=1" title="What2Yum demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
+      <div className="caption-container" style={{marginTop: '20px'}}>
+        <caption>live demo of friends using What2Yum</caption>
+      </div>
       <img src={Assets.AppStoreScreenshots} style={{marginTop: "40px"}} alt="app store screenshots" loading="lazy"></img>
+      <div className="caption-container" style={{marginTop: '20px'}}>
+        <caption>What2Yum app store marketing</caption>
+      </div>
       {/* <ModalImage
           small={Assets.AppStoreScreenshots}
           large={Assets.AppStoreScreenshots}

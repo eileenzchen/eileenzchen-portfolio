@@ -41,7 +41,7 @@ export function Intro() {
         </Grid>
       </Grid>
       <div className="text-divider">
-        <img className="leaf-divider" src={process.env.PUBLIC_URL + '/leaf-divider.png'}/>
+        <img className="leaf-divider" src={process.env.PUBLIC_URL + '/leaf-divider.png'} alt='leaf divider'/>
       </div>
     </div>
   )

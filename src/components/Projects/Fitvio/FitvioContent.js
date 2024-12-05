@@ -50,7 +50,7 @@ export function Intro() {
         </Grid>
       </Grid>
       <div className="text-divider">
-        <img className="leaf-divider" src={process.env.PUBLIC_URL + '/leaf-divider.png'}/>
+        <img className="leaf-divider" src={process.env.PUBLIC_URL + '/leaf-divider.png'} alt='leaf divider'/>
       </div>
     </div>
   )
@@ -259,7 +259,7 @@ export function Rebranding() {
         <img src={Assets.FontStyles} alt="Fitvio font styles"></img>
       </div>
 
-      <div className="caption-container" style={{marginBottom: "30px"}}>
+      <div className="caption-container" style={{marginTop: "20px", marginBottom: "30px"}}>
         <caption>Fitvio font styles</caption>
       </div>
       <p>
