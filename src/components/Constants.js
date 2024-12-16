@@ -13,7 +13,7 @@ export const c1Props = {
     polaroidTitle: "Capital One",
     polaroidDescription: "Usability and accessibility on capitalone.com",
     aspectRatio: "aspectRatioWide",
-    tags: ["mobile & desktop", "front-end web dev"]
+    tags: ["mobile & desktop", "front-end web dev", "professional work"]
   },
   desc: {
     role: "Front-End Engineer",
@@ -40,7 +40,7 @@ export const weeeProps = {
     polaroidTitle: "Weee!",
     polaroidDescription: "A community-focused shopping journey",
     aspectRatio: "aspectRatioWide",
-    tags: ["mobile native", "UX/UI designer"]
+    tags: ["mobile native", "UX/UI designer", "personal exploration"]
   },
   desc: {
     role: "UX Designer",
@@ -67,7 +67,7 @@ export const what2yumProps = {
     polaroidTitle: "What2Yum",
     polaroidDescription: "A quick way for friends to decide where to eat",
     aspectRatio: "aspectRatioWide",
-    tags: ["mobile native", "full-stack iOS dev"]
+    tags: ["mobile native", "full-stack iOS dev", "class project"]
   },
   desc: {
     role: "Product Designer, iOS Developer",
@@ -94,7 +94,7 @@ export const bakingFactoryProps = {
     polaroidTitle: "The Baking Factory",
     polaroidDescription: "An all-in-one bakery ecommerce system for customers and employees",
     aspectRatio: "aspectRatioWide",
-    tags: ["desktop","full-stack web dev"]
+    tags: ["desktop","full-stack web dev", "class"]
   },
   desc: {
     role: "UX Designer, Full-stack Engineer",
@@ -121,7 +121,7 @@ export const fitvioProps = {
     polaroidTitle: "Fitvio",
     polaroidDescription: "An inclusive and fun workout platform",
     aspectRatio: "aspectRatioWide",
-    tags: ["desktop", "UX/UI designer"]
+    tags: ["desktop", "UX/UI designer", "professional work"]
   },
   desc: {
     role: "Head of Design",

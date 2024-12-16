@@ -4,11 +4,8 @@ import Polaroid from '../../Polaroid/Polaroid.js';
 import SecondaryButton from '../../SecondaryButton/SecondaryButton.js';
 // @ts-ignore
 // import resume from '../assets/EileenZChen_resume.pdf';
-import tonysImage from '../assets/me_w_tonys_pizza.jpg';
 import tonysImageCropped from '../assets/me_w_tonys_pizza_cropped.jpg'
 import './Intro.css'
-import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
-import KeyboardDoubleArrowDownRoundedIcon from '@mui/icons-material/KeyboardDoubleArrowDownRounded';
 import ArrowDownwardRoundedIcon from '@mui/icons-material/ArrowDownwardRounded';
 import PrimaryButton from '../../PrimaryButton/PrimaryButton.js';
 import Typewriter from 'typewriter-effect';

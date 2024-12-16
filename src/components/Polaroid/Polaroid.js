@@ -39,6 +39,7 @@ function Polaroid(props) {
           <div className="tagsContainer">
             <Tag class="device" tagName={props.tags[0]}></Tag>
             <Tag class="role" tagName={props.tags[1]}></Tag>
+            <Tag class="context" tagName={props.tags[2]}></Tag>
           </div>
         }
 
