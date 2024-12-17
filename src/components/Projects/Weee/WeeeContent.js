@@ -68,7 +68,7 @@ export function Inspiration() {
         <b>I grew up loving to grocery shop.</b> It was a ritual that I had with my mom to go to the 99 Ranch, the Asian supermarket, and Costco every weekend. We perused the aisles for the newest ice cream and fresh pastries, checked the store magazines for the best sales, and ran into neighbors and friends who told us about their good finds.
       </p>
       <p>
-        Now with the prevalance of online grocery shopping, I <b>wanted to bring this sense of wonder and community</b> to a platform myself, my family, and friends commonly use to deliver groceries&mdash;Weee!.
+        Now with the prevalence of online grocery shopping, I <b>wanted to bring this sense of wonder and community</b> to a platform myself, my family, and friends commonly use to deliver groceries&mdash;Weee!.
       </p>
     </div>
   )
