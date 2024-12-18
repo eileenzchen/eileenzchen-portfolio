@@ -390,7 +390,7 @@ export function Joy() {
     <div id="Joy" className="project-section">
       <h1><span className="section-title highlight">sparking joy!</span></h1>
       <p>
-        Inspired by a talk at Config, <a href="https://config.figma.com/video-on-demand/6329868113112" className="content-link" target="_blank" rel="noopener noreferrer">Putting Joy on the Roadmap</a>, in which designers discussed how they sought inspiration for creating joy from our physical world, I began thinking:
+        Inspired by a talk at Config, <a href="https://config.figma.com/video-on-demand/6329868113112" className="content-link" target="_blank" rel="noopener noreferrer">Putting Joy on the Roadmap</a>, during which designers discussed how they sought inspiration for creating joy from our physical world, I began thinking:
       </p>
       <blockquote>
         "How can I bring a smile to someone's face when shopping on Weee!"?
@@ -399,11 +399,11 @@ export function Joy() {
         Personally, <b>I could spend hours going down every single aisle and freezer chest at Trader Joe's</b>, picking up random snacks and frozen meals that were not planned for along the way. At 99 Ranch, I beeline to the sales, ogle at the live fish and crabs, and throw some instant ramen into my cart on the way out—how could you not when there are fifty different kinds?
       </p>
       <p>
-        I asked a Weee! user to describe the last time they enjoyed their grocery shopping experience in person. <b>From storyboarding their experience, I realized that people get a lot of joy from moments of pleasant surprise and discovery</b>, such as picking up spur of the moment items. 
+        I asked a Weee! user to describe the last time they enjoyed their grocery shopping experience in person. <b>From storyboarding their experience, I realized that people get a lot of joy from moments of pleasant surprise and discovery</b>, such as picking up spur-of-the-moment items. 
       </p>
       <img src={Assets.Storyboard} alt="storyboard of shopping at Trader Joe's" style={{marginBottom: "30px"}} loading="lazy"></img>
       <p>
-        I thought about how during checkout, there are already suggestions for some add-on items. <b>But how can we make the add-on items more personalized and useful?</b> I thought AI could play a part in this. With the Weee! Community feature, people already post recipes from their shopping hauls and tag which Weee! items they used. <b>That user generated recipe data could be leveraged to create an AI feature</b> where Weee! identifies what the shopper is trying to cook based on ingredients in their cart and would suggest a few more add-on items to enhance their dish.
+        During checkout, there are already suggestions for some add-on items. <b>But how can we make the add-on items more personalized and useful?</b> I thought AI could play a part in this. With the Weee! Community feature, people already post recipes from their shopping hauls and tag which Weee! items they used. That <b>user-generated recipe data could be leveraged to create an AI recipe completion feature</b>. Weee! could identify what the shopper is trying to cook based on ingredients in their cart and suggest a few more add-on items to enhance their dish.
       </p>
       <div style={{textAlign:"center"}}>
         <video className="small-asset" style={{width: "40%"}} autoPlay loop muted playsInline>
