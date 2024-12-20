@@ -2,6 +2,7 @@ import React from 'react'
 import * as Assets from './assets/index.js'
 import './CapitalOne.css'
 import { Grid } from '@mui/material';
+//spell-checker:ignore capitalone, gifs, workshopping
 
 export function Intro() {
   return (

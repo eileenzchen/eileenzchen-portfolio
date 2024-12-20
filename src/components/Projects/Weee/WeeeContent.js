@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import { Grid } from '@mui/material'
+//spell-checker:ignore wireframe, wireframes, wireframing, Weee, lofi, hifi, gifs
 
 export function Intro() {
   return (
@@ -175,7 +176,7 @@ export function CompetitiveAnalysis() {
     <div id="CompetitiveAnalysis" className="project-section">
       <h1><span className="section-title highlight">competitive analysis</span></h1>
       <p>
-        I examined Pinterest, Amazon, and Instagram to see how existing successful social media and ecommerce products approach community engagement and searching compared to Weee!. 
+        I examined Pinterest, Amazon, and Instagram to see how existing successful social media and e-commerce products approach community engagement and searching compared to Weee!. 
       </p>
         
       <img src={Assets.DesignPatterns} alt="design patterns analysis" loading="lazy"/>
@@ -343,7 +344,7 @@ export function Color() {
             should not have competing action buttons (e.g. community feed page)
           </li>
           <li>
-            the usage of gray could be misleading for interactive elements as it usually dentoes something is disabled or inactive. 
+            the usage of gray could be misleading for interactive elements as it usually denotes something is disabled or inactive. 
           </li>
           <li>
             color blocking can be used to space sections out

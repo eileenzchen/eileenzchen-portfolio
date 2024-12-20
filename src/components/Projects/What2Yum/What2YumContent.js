@@ -7,6 +7,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
+//spell-checker:ignore gifs, lofi, hifi
 
 export function Intro() {
   return (
@@ -204,7 +205,7 @@ export function SolutionExploration() {
         hideZoom={true}
       /> */}
       <p>
-        We simulated interactions such as a user waiting for five others to join during the synchronous experience. We furthermore sent out a user servey to collect data on user behavior when deciding what to eat with friends to gather <b>quantitative in addition to qualitative data</b>.
+        We simulated interactions such as a user waiting for five others to join during the synchronous experience. We furthermore sent out a user survey to collect data on user behavior when deciding what to eat with friends to gather <b>quantitative in addition to qualitative data</b>.
       </p>
       <Grid container columns={6} style={{marginTop: "30px", marginBottom: "30px"}} justifyContent="center">
         <Grid item xs={6} sm={1} style={{padding: "0px"}}></Grid>
@@ -282,7 +283,7 @@ export function FinalApp() {
     <div id="FinalApp" className="project-section">
       <h1><span className="section-title highlight">final app & result</span></h1>
       <p>
-        For the final versions of our app, we <b>continuously re-evaluated our development priorities</b> as we built out different features based on user feedback, our timeline, and the techinical difficulty versus impact of the feature. I also <b>designed the app logo, icon, and app store screenshots for launching our app in the Apple App Store</b>. I focused on aligning these assets with What2Yum's focus on efficiency and fun.
+        For the final versions of our app, we <b>continuously re-evaluated our development priorities</b> as we built out different features based on user feedback, our timeline, and the technical difficulty versus impact of the feature. I also <b>designed the app logo, icon, and app store screenshots for launching our app in the Apple App Store</b>. I focused on aligning these assets with What2Yum's focus on efficiency and fun.
       </p>
       <p>
         My team ultimately <b>won second place</b> for What2Yum among 13 apps for the course competition.

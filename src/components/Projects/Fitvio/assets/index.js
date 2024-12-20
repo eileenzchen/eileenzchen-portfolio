@@ -17,7 +17,7 @@ import LogoClearSpace from './logo-min-clear-space-v2.png';
 import LogoConstruction from './logo-construction.png';
 import SlackEmojiUse from './fitvio-slack-emoji-use.png'
 import FeatureHighlight from './fitvio-feature-highlight.png';
-import AquisitonOnboardingFlow from './acquisition-onboarding-flow.png'
+import AquisitionOnboardingFlow from './acquisition-onboarding-flow.png'
 import OldNewLogo from './old-to-new-logo.png'
 
 
@@ -41,6 +41,6 @@ export {
   LogoConstruction,
   SlackEmojiUse,
   FeatureHighlight,
-  AquisitonOnboardingFlow,
+  AquisitionOnboardingFlow,
   OldNewLogo
 };

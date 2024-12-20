@@ -2,6 +2,7 @@ import React from 'react'
 import * as Assets from './assets'
 import './Fitvio.css'
 import { Grid } from '@mui/material'
+// spell-checker:ignore Fitvio, roadmapping, workshopping
 
 export function Intro() {
   return (
@@ -61,7 +62,7 @@ export function Motivation() {
     <div id="Motivation" className="project-section">
       <h1><span className="section-title highlight">motivation</span></h1>
       <p>
-        During the heights of COVID-19, people prioritized their health and were <b>finding ways to stay active while staying safe</b>. Many looked for gym alternatives while others looked for ways to get into exercising with minimal prior experience. <b>As someone intimiated by gyms and just starting to look for ways to stay active at home, this problem deeply mattered to me.</b>
+        During the heights of COVID-19, people prioritized their health and were <b>finding ways to stay active while staying safe</b>. Many looked for gym alternatives while others looked for ways to get into exercising with minimal prior experience. <b>As someone intimidated by gyms and just starting to look for ways to stay active at home, this problem deeply mattered to me.</b>
       </p>
       <p>
         <b>Fitvio was a startup</b> founded by my classmate with the vision of creating a cohesive platform to help <b>beginners and pros alike improve their fitness and share their personal journeys</b>.
@@ -144,7 +145,7 @@ export function UnderstandingUsers() {
       </p>
       <Grid container columns={2} columnSpacing={4} alignItems={'center'}>
         <Grid item xs={2} md={1}>
-          <img src={Assets.FeasibilityImpact} alt="feasilbity impact diagram"></img>
+          <img src={Assets.FeasibilityImpact} alt="feasibility impact diagram"></img>
         </Grid>
         <Grid item xs={2} md={1}>
           <img src={Assets.FeaturePrioritization} alt="feature prioritization"></img>
@@ -178,11 +179,11 @@ export function UserAcquisitionOnboarding() {
     <div id="UserAcquisitionOnboarding" className="project-section">
       <h1><span className="section-title highlight">user acquisition & onboarding</span></h1>
       <p>
-        As we were working towards an MVP, I thought that <b>first and foremost, the design strategy should start with acquiring customers</b>. With no customers, no one will be seeing the product. Using the existing logo to work off of, I built a <b>personalizaiton onboarding experience for new users, starting from the Fitvio marketing page all the way to the authenticated home page</b>. I started with Sam's&mdash;our casual health nut's&mdash;experience.
+        As we were working towards an MVP, I thought that <b>first and foremost, the design strategy should start with acquiring customers</b>. With no customers, no one will be seeing the product. Using the existing logo to work off of, I built a <b>personalization onboarding experience for new users, starting from the Fitvio marketing page all the way to the authenticated home page</b>. I started with Sam's&mdash;our casual health nut's&mdash;experience.
       </p>
       <p>Sam can choose to start working out right away without even creating an account. To track her progress and engage with instructors though, she can create an account, answer a couple questions, and get a personalized list of workout videos in just a few minutes.</p>
       <div style={{marginTop: "30px", marginBottom: "30px"}}>
-        <img src={Assets.AquisitonOnboardingFlow} alt="onboarding flow with old branding"></img>
+        <img src={Assets.AquisitionOnboardingFlow} alt="onboarding flow with old branding"></img>
       </div>
 
       <Grid container columns={2} columnSpacing={4}>
@@ -240,7 +241,7 @@ export function Rebranding() {
       </div>
 
       <div style={{marginTop: "40px"}}>
-        <img src={Assets.LogoIteration} alt="logo interations"></img>
+        <img src={Assets.LogoIteration} alt="logo interactions"></img>
       </div>
 
       <div className="caption-container" style={{marginTop: '20px'}}>
