@@ -7,7 +7,7 @@ export function Intro() {
   return (
     <div id="Intro">
       <h1 data-aos="fade-up"><span className="project-title monospace-300">Removing barriers to staying active</span></h1>
-      <h2 data-aos="fade-up" data-aos-delay="100" className="project-subheading monospace-200">How can we create a frictionless & personalized onboarding experience? How can we create a reimagined brand identity that resonates with people of different fitness levels?</h2>
+      <h2 data-aos="fade-up" data-aos-delay="100" className="project-subheading monospace-200">How can we create a frictionless & personalized onboarding experience? How can we create a reimagined brand identity that is inclusive to people of different fitness levels?</h2>
       <img data-aos="fade-up" data-aos-delay="300" src={Assets.FeatureHighlight} alt="onboarding and rebrand features" loading="lazy"></img>
       <Grid data-aos="fade-up" data-aos-delay="400" container columns={4} columnSpacing={4} style={{marginTop: "30px"}}>
         <Grid item xs={2} md={1}>

@@ -100,7 +100,7 @@ export function Solution() {
     <div id="Solution" className="project-section">
       <h1><span className="section-title highlight">solution</span></h1>
       <p>
-        Seeing this gap in our development process, I wanted to make <b>accessibility an intentional process right from the start instead of an afterthought</b> that was just there to satisfy legal requirements. I started advocating for both engineering and design teams to work with the accessibility teams during the early planning phases of the development process. I emphasized that <b>collaborative planning</b> of how this experience will function <b>reduces churn</b> later in the development process and emphasizes a <b>human-centered mindset</b> among the team. I also evangelized the importance of doing <b>manual accessiblity testing on top of automated accessibility testing</b> since not all accessibility requirements can be caught with automation.
+        Seeing this gap in our development process, I wanted to make <b>accessibility an intentional process right from the start instead of an afterthought</b> that was just there to satisfy legal requirements. I started advocating for both engineering and design teams to work with the accessibility teams during the early planning phases of the development process. I emphasized that <b>collaborative planning</b> of how this experience will function <b>reduces churn</b> later in the development process and emphasizes a <b>human-centered mindset</b> among the team. I also evangelized the importance of doing <b>manual accessibility testing on top of automated accessibility testing</b> since not all accessibility requirements can be caught with automation.
       </p>
       <p>
         With that, this was the new process I proposed and brought forth to my team:
@@ -183,7 +183,7 @@ export function Homepage() {
     <div id="Homepage" className="project-section">
       <h1><span className="section-title highlight">driving customer discovery on the Homepage</span></h1>
       <p>
-        The second case that exemplified strong accessibility practices was the capitalone.com<b>Homepage customization feature</b>. Specifically, we wanted customers to be able to change the Homepage to match their specific intent by clicking on different tabs, swapping out the content underneath. <b>Planning with design and accessibility partners was crucial</b> to set us up for smooth development.
+        The second case that exemplified strong accessibility practices was the capitalone.com <b>Homepage customization feature</b>. Specifically, we wanted customers to be able to change the Homepage to match their specific intent by clicking on different tabs, swapping out the content underneath. <b>Planning with design and accessibility partners was crucial</b> to set us up for smooth development.
       </p>
       <img src={Assets.HomepageTabs} alt="homepage tabs"></img>
       <div className="caption-container">
