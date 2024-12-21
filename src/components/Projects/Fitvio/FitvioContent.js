@@ -182,7 +182,7 @@ export function UserAcquisitionOnboarding() {
         As we were working towards an MVP, I thought that <b>first and foremost, the design strategy should start with acquiring customers</b>. With no customers, no one will be seeing the product. Using the existing logo to work off of, I built a <b>personalization onboarding experience for new users, starting from the Fitvio marketing page all the way to the authenticated home page</b>. I started with Sam's&mdash;our casual health nut's&mdash;experience.
       </p>
       <p>Sam can choose to start working out right away without even creating an account. To track her progress and engage with instructors though, she can create an account, answer a couple questions, and get a personalized list of workout videos in just a few minutes.</p>
-      <div style={{marginTop: "30px", marginBottom: "30px"}}>
+      <div style={{marginTop: "20px", marginBottom: "30px"}}>
         <img src={Assets.AquisitionOnboardingFlow} alt="onboarding flow with old branding"></img>
       </div>
 

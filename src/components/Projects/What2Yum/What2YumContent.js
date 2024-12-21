@@ -262,7 +262,7 @@ export function SolutionExploration() {
         Ultimately, we evaluated the tradeoffs between a more interesting user experience with the swipes versus a better final recommendation with the ranked list. Since the recommendation was only marginally more absolute than the other, we decided to go with the swipe interaction. <b>We wanted to create a more engaging user experience and have a pretty good recommendation model over a less engaging user experience and a better recommendation model</b>.
       </p>
       <p>
-        Additionally through user testing, I discovered that people want more explainable suggestions. They want to know why those particular restaurant suggestions were shown in that order. I thus added ranking factors such as the number of people in the group that voted for the particular restaurant and the distance from the user's chosen location. I also made a couple iterations of the suggestions page to improve clarity and readability. I grouped each restaurant into its own card and restructured the information flow.
+        Additionally through user testing, I discovered that people want more explainable suggestions. They want to know why those particular restaurant suggestions were shown in that order. I thus added transparent ranking factors such as the number of people in the group that voted for the particular restaurant and the distance from the user's chosen location. I also made a couple iterations of the suggestions page to improve clarity and readability. I grouped each restaurant into its own card and restructured the information flow.
       </p>
       <img src={Assets.HifiRecommendations} alt="suggestion screens" loading="lazy"></img>
       {/* <ModalImage
@@ -283,7 +283,7 @@ export function FinalApp() {
     <div id="FinalApp" className="project-section">
       <h1><span className="section-title highlight">final app & result</span></h1>
       <p>
-        For the final versions of our app, we <b>continuously re-evaluated our development priorities</b> as we built out different features based on user feedback, our timeline, and the technical difficulty versus impact of the feature. I also <b>designed the app logo, icon, and app store screenshots for launching our app in the Apple App Store</b>. I focused on aligning these assets with What2Yum's focus on efficiency and fun.
+        For the final versions of our app, we <b>continuously re-evaluated our development priorities</b> as we built out different features based on user feedback, our timeline, and the technical difficulty versus impact of the feature. I also <b>designed the app logo and app store screenshots for launching our app in the Apple App Store</b>. I focused on aligning these assets with What2Yum's focus on efficiency and fun.
       </p>
       <p>
         My team ultimately <b>won second place</b> for What2Yum among 13 apps for the course competition.
