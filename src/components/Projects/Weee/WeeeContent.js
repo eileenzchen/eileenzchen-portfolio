@@ -182,7 +182,7 @@ export function CompetitiveAnalysis() {
       <img src={Assets.DesignPatterns} alt="design patterns analysis" loading="lazy"/>
 
       <p>
-        With this comparison, I noticed the <b>differences between apps that target different cultures</b>. One of Weee!'s primary audiences is its Chinese-speaking base. Chinese apps often condense a lot of text into small areas because Chinese characters are compact and succinct. However, <b>when translated, Chinese characters evolve into lengthy English words that overwhelm the user</b>. However, American apps often focus more on minimal text since English words are lengthy. With Weee!'s intention to expand their market to more second and third generation Americans, I focused on <b>minimal text</b> and using media to speak for itself.
+        With this comparison, I noticed the <b>differences between apps that target different cultures</b>. One of Weee!'s primary audiences is its Chinese-speaking base. Chinese apps often condense a lot of text into small areas because Chinese characters are compact and succinct. However, <b>when translated, Chinese characters evolve into lengthy English words that overwhelm the user</b>. American apps often focus more on minimal text since English words are lengthy. With Weee!'s intention to expand their market to more second and third generation Americans, I focused on <b>minimal text</b> and using media to speak for itself.
       </p>
     </div>
   )
