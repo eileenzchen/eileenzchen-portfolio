@@ -182,7 +182,7 @@ export function CompetitiveAnalysis() {
       <img src={Assets.DesignPatterns} alt="design patterns analysis" loading="lazy"/>
 
       <p>
-        With this comparison, I noticed the <b>differences between apps that target different cultures</b>. One of Weee!'s primary audiences is its Chinese-speaking base. Chinese apps often condense a lot of text into small areas because Chinese characters are compact and succinct. However, <b>when translated, Chinese characters evolve into lengthy English words that overwhelm the user</b>. With Weee!'s intention to expand their market to more second and third generation Americans, I focused on <b>minimal text</b> and using media to speak for itself.
+        With this comparison, I noticed the <b>differences between apps that target different cultures</b>.One of Weee!'s primary user bases are Chinese-speaking users. Chinese apps often condense a lot of text into small areas because Chinese characters are compact and succinct. However, <b>when translated, Chinese characters evolve into lengthy English words that overwhelm the user</b>. Given Weee!'s self-proclaimed intention to expand their market to more second and third generation Americans across various ethnic backgrounds, I focused on <b>minimizing text</b> and allowing food media to speak for itself. Looking forward, I would take similar <b>culture-specific design</b> approaches for other languages with varying character lengths, such as Spanish or Japanese.
       </p>
     </div>
   )
@@ -391,7 +391,7 @@ export function Joy() {
     <div id="Joy" className="project-section">
       <h1><span className="section-title highlight">sparking joy!</span></h1>
       <p>
-        Inspired by a talk at Config, <a href="https://config.figma.com/video-on-demand/6329868113112" className="content-link" target="_blank" rel="noopener noreferrer">Putting Joy on the Roadmap</a>, during which designers discussed how they sought inspiration for creating joy from our physical world, I began thinking:
+        For the last checkout experience, I was inspired by a talk at Config, <a href="https://config.figma.com/video-on-demand/6329868113112" className="content-link" target="_blank" rel="noopener noreferrer">Putting Joy on the Roadmap</a>, during which designers discussed how they sought inspiration for <b>creating joy from our physical world</b>. I began thinking:
       </p>
       <blockquote>
         "How can I bring a smile to someone's face when shopping on Weee!"?
@@ -404,7 +404,7 @@ export function Joy() {
       </p>
       <img src={Assets.Storyboard} alt="storyboard of shopping at Trader Joe's" style={{marginBottom: "30px"}} loading="lazy"></img>
       <p>
-        During checkout, there are already suggestions for some add-on items. <b>But how can we make the add-on items more personalized and useful?</b> I thought AI could play a part in this. With the Weee! Community feature, people already post recipes from their shopping hauls and tag which Weee! items they used. That <b>user-generated recipe data could be leveraged to create an AI recipe completion feature</b>. Weee! could identify what the shopper is trying to cook based on ingredients in their cart and suggest a few more add-on items to enhance their dish.
+        During checkout, there are already suggestions for some add-on items. <b>But how can we make the add-on items more personalized and useful?</b> Since the Weee! community already posts recipes from their shopping hauls and tag which items they used, I realized that that <b>user-generated recipe data</b> could be leveraged to imagine a new <b>AI recipe completion feature</b>. Weee! could identify what the shopper is trying to cook based on ingredients in their cart and suggest a few more add-on items to complete their dish.
       </p>
       <div style={{textAlign:"center"}}>
         <video className="small-asset" style={{width: "40%"}} autoPlay loop muted playsInline>

@@ -126,7 +126,7 @@ export function Search() {
         <caption>Search dropdown without accessibility features. There is no way to navigate through the options with the keyboard.</caption>
       </div>
       <p> 
-        When I first received the designs, I realized that keyboard interactions were not accounted for. Not only are keyboard interactions a common way for users to navigate in a dropdown, but they are also a vital element of meeting accessibility needs across all users.
+        When I first received the designs, I realized that keyboard interactions were completely unaccounted for. Not only are keyboard interactions a common way for users to navigate in a dropdown, but they are also a vital element of meeting accessibility needs across all users.
       </p>
       <blockquote>How can we ensure keyboard users can easily navigate the Search dropdown?</blockquote>
       <p>
@@ -173,7 +173,7 @@ export function Search() {
         <caption style={{ marginTop: "-10px", marginBottom: "30px"}}>navigating with the keyboard experience using Apple's assistive technology, Voiceover</caption>
       </div>
       <p>
-        Through this work and other enhancements to surface featured results on the search page itself, we increased the likelihood of users making a high quality search that drove them to their intended destination. We saw a <b>+7.1% increase</b> in first page click through rates and a baseline <b>41.2% click through rate</b> on the newly developed dynamic dropdown. This was a big milestone in part of our efforts to capture user intent and provide them with relevant information and guidance.
+        Through this work and other enhancements to surface featured results on the search page itself, we increased the likelihood of users making a high quality search that drove them to their intended destination. We saw a <b>+7.1% increase</b> in first page click-through rates and a baseline <b>41.2% click-through rate</b> on the newly developed dynamic dropdown. This was a big milestone in part of our efforts to capture user intent and provide them with relevant information and guidance.
       </p>
     </div>
   )
@@ -330,7 +330,7 @@ export function HCD() {
         <caption style={{ marginTop: "-10px", marginBottom: "30px"}}>A/B testing allowed us to hone in on what content users engaged with the most</caption>
       </div>
       <p>
-        Through this work and other enhancements to surface featured results on the search page itself, we increased the likelihood of users making a high quality search that drove them to their intended destination. We saw a +7.1% increase in first page click through rates and a baseline 41.2% click through rate on the newly developed dynamic dropdown. This was a big milestone in part of our efforts to capture user intent and provide them with relevant information and guidance.
+        Through this work and other enhancements to surface featured results on the search page itself, we increased the likelihood of users making a high quality search that drove them to their intended destination. We saw a +7.1% increase in first page click-through rates and a baseline 41.2% click-through rate on the newly developed dynamic dropdown. This was a big milestone in part of our efforts to capture user intent and provide them with relevant information and guidance.
       </p>
 
     </div>
