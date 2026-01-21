@@ -76,6 +76,20 @@ function Resume() {
             </p>
           </Grid>
           <Grid item xs={1}>
+            <p>2020 — present</p>
+          </Grid>
+          <Grid item xs={3}>
+            <p className="heading">Course Assistant at Stanford d.school (DESIGN 235)</p>
+            <p className="subheading">Stanford, CA</p>
+            <p>
+              <ul>
+                <li>
+                  Designed course experience including reflection guide for students to assess career goals, spatial layout of the classroom to maximize connection between students & guest speakers, and more.
+                </li>
+              </ul>
+            </p>
+          </Grid>
+          <Grid item xs={1}>
             <p>2019</p>
           </Grid>
           <Grid item xs={3}>
@@ -96,6 +110,13 @@ function Resume() {
         <Grid container columns={4} columnSpacing={2} alignItems="top" className="resume-section">
           <Grid item xs={4}>
             <h2>Education</h2>
+          </Grid>
+          <Grid item xs={1}>
+            <p>2025 — 2026</p>
+          </Grid>
+          <Grid item xs={3} className="resume-subsection">
+            <p className="heading">Stanford University</p>
+            <p className="subheading">M.S. Design</p>
           </Grid>
           <Grid item xs={1}>
             <p>2017 — 2021</p>

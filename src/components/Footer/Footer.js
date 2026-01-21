@@ -12,7 +12,7 @@ function Footer() {
           &nbsp;/&nbsp;
           <a className="monospace-500" style={{whiteSpace: "nowrap"}} href="tel:240-481-0447">(240)&#8197;481-0447</a>
         </p> */}
-        <p className="monospace-500 footer-text">© 2024 designed 🎨 and coded 👩🏻‍💻 by Eileen Chen with React and Material UI.</p>
+        <p className="monospace-500 footer-text">© 2026 designed 🎨 and coded 👩🏻‍💻 by Eileen Chen with React and Material UI.</p>
       </footer>
     </Container>
   )

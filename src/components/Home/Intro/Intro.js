@@ -38,7 +38,7 @@ function Intro() {
           <h1>
             <Typewriter
             onInit={(typewriter) => {
-              typewriter.typeString('<span class="monospace-400">Hey! I\'m <span class="monospace-500 highlight">Eileen</span>. I\'m a <b class="monospace-400" style="color: #92AD70">UX designer<\/b> by trade, <b class="monospace-400" style="color: #92AD70">engineer<\/b> by day, and <b class="monospace-400" style="color: #92AD70">problem solver<\/b> at heart. I see empathetic design as a way to bring people together to create meaningful, delightful experiences.</span></h1>')
+              typewriter.typeString('<span class="monospace-400">Hey! I\'m <span class="monospace-500 highlight">Eileen</span>. I enjoy creating experiences that <b class="monospace-400" style="color: #92AD70">bring people together<\/b> through shared <b class="monospace-400" style="color: #92AD70">food and culture<\/b>. I see empathetic design as a way to connect to people and <b class="monospace-400" style="color: #92AD70">storytell meaningfully<\/b>.</span></h1>')
               .pauseFor(550).typeString('<br>')
               .callFunction(updateCursorSize)
               .pauseFor(550).typeString('<br>')

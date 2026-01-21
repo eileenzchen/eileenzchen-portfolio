@@ -45,7 +45,7 @@ function About() {
           <div id="text-card-2" className="text-card" data-aos="fade-up-left">
             <p className="section-label">my background</p>
             <p>
-              I graduated as an Information Systems major from Carnegie Mellon University in 2021. I learned how to build web and mobile solutions that deliver value to users. I was most intruiged with how technology&mdash;if built right&mdash;could positively impact people's lives.
+              I graduated as an Information Systems major from Carnegie Mellon University in 2021. I learned how to build web and mobile solutions that deliver value to users. I was most intrigued with how technology&mdash;if built right&mdash;could positively impact people's lives.
             </p>
           </div>
           <div id="about-polaroid-two" className="about-polaroid">
@@ -90,7 +90,7 @@ function About() {
               href="https://designingyour.life/books-designing-life-original-book/">
                 Designing Your Life
               </a>, 
-              I am currently building a life I find meaningful and fulfilling. The next step for me is going back to school to sharpen my design craft and gain perspective on how to tackle issues I care about such as gender inequality in tech and environmental sustainability.
+              I am currently building a life I find meaningful and fulfilling. Now back at school, I am sharpening my design craft and gaining perspective on how to build communities through shared food and culture.
             </p>
           </div>
           <div data-aos="fade-up" id="about-polaroid-four" className="about-polaroid">
