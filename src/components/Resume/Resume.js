@@ -33,10 +33,10 @@ function Resume() {
             <h2>Work experience</h2>
           </Grid>
           <Grid item xs={1}>
-            <p>2021 — present</p>
+            <p>2021 — 2025</p>
           </Grid>
           <Grid item xs={3} className="resume-subsection">
-            <p className="heading">Front-end developer at Capital One</p>
+            <p className="heading"> Sr. Associate Full-Stack Developer at Capital One</p>
             <p className="subheading">San Francisco, CA</p>
             <p>
               <ul>
@@ -76,7 +76,7 @@ function Resume() {
             </p>
           </Grid>
           <Grid item xs={1}>
-            <p>2020 — present</p>
+            <p>2025 — present</p>
           </Grid>
           <Grid item xs={3}>
             <p className="heading">Course Assistant at Stanford d.school (DESIGN 235)</p>
@@ -112,7 +112,7 @@ function Resume() {
             <h2>Education</h2>
           </Grid>
           <Grid item xs={1}>
-            <p>2025 — 2026</p>
+            <p>2025 — 2027</p>
           </Grid>
           <Grid item xs={3} className="resume-subsection">
             <p className="heading">Stanford University</p>
